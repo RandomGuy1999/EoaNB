@@ -14,8 +14,6 @@ state = {
 	
 	history = {
 		buildings = {
-			infrastructure = 1
-
 		}
 
 	victory_points = {
@@ -24,6 +22,7 @@ state = {
 
 		owner = MOR
 		add_core_of = MOR
+		add_core_of = WES
 
 		add_to_array = { state_culture_array = 170 } #Hassaniya
 		add_to_array = { state_culture_array_num = 0.89 }
