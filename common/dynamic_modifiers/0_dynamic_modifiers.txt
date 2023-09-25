@@ -520,7 +520,7 @@ dynmod_RUS_moscow = {
 dynmod_RUS_zemstvo = {
 	enable = { always = yes }
 	
-	icon = "GFX_idea_RUS_state_of_army"
+	icon = "GFX_idea_RUS_zemstvo"
 	
 	monthly_population = RUS_zemstvo_mp
 	research_speed_factor = RUS_zemstvo_rsf
@@ -545,15 +545,20 @@ dynmod_RUS_urbanisation = {
 dynmod_RUS_peasant_reform = {
 	enable = { always = yes }
 
-	icon = "GFX_idea_RUS_urban_start"
+	icon = "GFX_idea_RUS_peasant_reform"
 
 	monthly_population = RUS_peasant_mp
-	
-
+	political_power_gain = RUS_peasant_ppg
+	stability_factor = RUS_peasant_sf
+	consumer_goods_factor = RUS_peasant_cgf
+	industrial_capacity_factory = RUS_peasant_icf
+	 	
 	remove_trigger = {
-		has_idea = RUS_idea_radical_buyback_operation
+		OR = {
+			has_idea = RUS_idea_moderate_peasant_reform
+			has_idea = RUS_idea_radical_peasant_reform
+		}
 	}
-
 }
 
 # Small modifier for the area which Amur Cossacks settle

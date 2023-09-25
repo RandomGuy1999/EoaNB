@@ -2564,8 +2564,44 @@ spriteTypes = {
 			texturefile = "gfx/interface/ideas/RUS/idea_RUS_table_ranks.png"
 		}
 		SpriteType = {
+			name = "GFX_idea_RUS_peasant_reform"
+			texturefile = "gfx/interface/ideas/RUS/idea_RUS_peasant_reform.png"
+		}
+		SpriteType = {
+			name = "GFX_idea_RUS_radical_peasant_reform"
+			texturefile = "gfx/interface/ideas/RUS/idea_RUS_radical_peasant_reform.png"
+		}
+		SpriteType = {
 			name = "GFX_idea_RUS_peasants"
 			texturefile = "gfx/interface/ideas/RUS/idea_RUS_peasants.png"
+		}
+		SpriteType = {
+			name = "GFX_idea_RUS_female_education1"
+			texturefile = "gfx/interface/ideas/RUS/idea_RUS_female_education1.png"
+		}
+		SpriteType = {
+			name = "GFX_idea_RUS_female_education2"
+			texturefile = "gfx/interface/ideas/RUS/idea_RUS_female_education2.png"
+		}
+		SpriteType = {
+			name = "GFX_idea_RUS_female_education3"
+			texturefile = "gfx/interface/ideas/RUS/idea_RUS_female_education3.png"
+		}
+		SpriteType = {
+			name = "GFX_idea_RUS_revolutionary_terrorism_low"
+			texturefile = "gfx/interface/ideas/RUS/idea_RUS_revolutionary_terrorism_low.png"
+		}
+		SpriteType = {
+			name = "GFX_idea_RUS_revolutionary_terrorism_high"
+			texturefile = "gfx/interface/ideas/RUS/idea_RUS_revolutionary_terrorism_high.png"
+		}
+		SpriteType = {
+			name = "GFX_idea_RUS_zemstvo"
+			texturefile = "gfx/interface/ideas/RUS/idea_RUS_zemstvo.png"
+		}
+		SpriteType = {
+			name = "GFX_idea_RUS_dictatorship_of_the_heart"
+			texturefile = "gfx/interface/ideas/RUS/idea_RUS_dictatorship_of_the_heart.png"
 		}
 	
 	# Advisors
@@ -2732,6 +2768,22 @@ spriteTypes = {
 		spriteType = {
 			name = "GFX_portrait_RUS_konstantin_groth_small"
 			texturefile = "gfx/interface/ideas/RUS/RUS_Groth.png"
+		}
+		spriteType = {
+			name = "GFX_portrait_RUS_alexander_golovnin_small"
+			texturefile = "gfx/interface/ideas/RUS/RUS_alexander_golovnin.png"
+		}
+		spriteType = {
+			name = "GFX_portrait_RUS_dmitry_tolstoy_small"
+			texturefile = "gfx/interface/ideas/RUS/RUS_dmitry_tolstoy.png"
+		}
+		spriteType = {
+			name = "GFX_portrait_RUS_dmitry_zamyatin_small"
+			texturefile = "gfx/interface/ideas/RUS/RUS_dmitry_zamyatin.png"
+		}
+		spriteType = {
+			name = "GFX_portrait_RUS_michael_loris_melikov_small"
+			texturefile = "gfx/interface/ideas/RUS/RUS_michael_loris_melikov.png"
 		}
 	# Manufacturers
 		spriteType = {
@@ -3434,6 +3486,10 @@ spriteTypes={
 	}
 	SpriteType = {
 		name = "GFX_idea_MNT_army_prestige"
-		texturefile = "gfx/interface/ideas/MNT/MNT_army_prestige.png"
+		texturefile = "gfx/interface/ideas/MNT/MNT_army_prestige.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_MNT_oto_debt"
+		texturefile = "gfx/interface/ideas/MNT/MNT_oto_debt.dds"
 	}
 }

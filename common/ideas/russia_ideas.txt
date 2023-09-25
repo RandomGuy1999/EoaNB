@@ -100,6 +100,7 @@ ideas = {
 				experience_gain_army = 0.02
 				production_speed_buildings_factor = 0.03
 				research_speed_factor = 0.01
+				autocracy_drift = 0.03
             }
         }
 		
@@ -238,16 +239,37 @@ ideas = {
 			}
         }
 		
-		RUS_idea_radical_buyback_operation = {
+		RUS_idea_radical_peasant_reform = {
 		
             allowed = {
 				always = no
 			}
 			
-			#picture = RUS_peasants
+			picture = RUS_radical_peasant_reform
             
             modifier = {
-			   
+				monthly_population = 0.3
+				stability_factor = 0.2
+				consumer_goods_factor = 0.03
+			}
+			on_remove = {
+				country_event = rossiya.641
+			}
+        }
+
+		RUS_idea_moderate_peasant_reform = {
+		
+            allowed = {
+				always = no
+			}
+			
+			picture = RUS_peasant_reform
+            
+            modifier = {
+				monthly_population = 0.3
+				political_power_gain = 0.15
+				stability_factor = -0.2
+				industrial_capacity_factory = 0.05
 			}
         }
 		
@@ -449,7 +471,7 @@ ideas = {
 				always = no
 			}
 		
-            picture = generic_pp_unity_bonus
+            picture = GFX_idea_RUS_zemstvo
 			
             modifier = {
                 local_resources_factor = 0.02
@@ -459,6 +481,54 @@ ideas = {
             }
         }   
         
+		### Terrorism and Such
+
+		RUS_idea_revolutionary_terrorism_low = {
+			
+			allowed = {
+				always = no
+			}
+		
+            picture = RUS_revolutionary_terrorism_low
+			
+            modifier = {
+				stability_weekly_factor = -0.001
+				social_egalitarianism_drift = 0.02
+            }
+		}
+
+		RUS_idea_revolutionary_terrorism_high = {
+			allowed = {
+				always = no
+			}
+		
+            picture = RUS_revolutionary_terrorism_high
+			
+            modifier = {
+            	stability_weekly_factor = -0.003
+				social_egalitarianism_drift = 0.03
+            }
+		}
+
+		RUS_idea_dictatorship_of_the_heart = {
+			allowed = {
+				always = no
+			}
+		
+            picture = RUS_dictatorship_of_the_heart
+			
+            modifier = {
+            	stability_weekly_factor = 0.002
+				social_egalitarianism_drift = -0.01
+				centrism_drift = 0.01
+				#add_power_balance_modifier = {
+				#	id = RUS_Balance_of_Power_Russian_Establishment
+				#	modifier = RUS_Balance_of_Power_dictatorship_of_the_heart
+				#}
+				political_power_gain = -0.5
+            }
+		}
+
         RUS_idea_assassination_of_alexander = {
 		
 			allowed = {
@@ -504,6 +574,49 @@ ideas = {
             }
         }
 		
+		###Female Education
+		RUS_idea_female_education1 = {
+
+			allowed = {
+				always = no
+			}
+
+			picture = RUS_female_education1
+
+			modifier = {
+				political_power_gain = 0.01
+				research_speed_factor = 0.01
+			}
+		}
+
+		RUS_idea_female_education2 = {
+
+			allowed = {
+				always = no
+			}
+
+			picture = RUS_female_education2
+
+			modifier = {
+				political_power_gain = 0.03
+				research_speed_factor = 0.03
+			}
+		}
+
+		RUS_idea_female_education3 = {
+
+			allowed = {
+				always = no
+			}
+
+			picture = RUS_female_education3
+
+			modifier = {
+				political_power_gain = 0.05
+				research_speed_factor = 0.05
+			}
+		}
+
 		###Russian Corruption
 		RUS_idea_russian_corruption1 = {
 		
@@ -647,6 +760,7 @@ ideas = {
 				economics_tech = 0.04
 			}
         }
+
         
 		###For Future
         RUS_idea_hand_out_arrests = {
@@ -884,8 +998,8 @@ ideas = {
              modifier = {
                 consumer_goods_factor = -0.08
 				political_power_gain = 0.15
-				traditional_conservatism_drift = 0.01
-				centrism_drift = 0.01
+				traditional_conservatism_drift = 0.005
+				centrism_drift = 0.005
             } 
         }
 		
