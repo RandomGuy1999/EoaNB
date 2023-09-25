@@ -9,7 +9,6 @@ focus_tree = {
 		}
 	}
     default = no
-	
 ##############
 ### MUTINY ###
 ##############
@@ -57,9 +56,6 @@ focus_tree = {
 				add_idea = EIC_idea_army_muntinies_2
 				remove_idea = EIC_idea_army_muntinies
 			}
-			NOT = {
-				has_war_with = SRS
-			}
 		}
 	}
 
@@ -82,7 +78,8 @@ focus_tree = {
 		available={
 			has_war_with = SRS
 		}
-		
+
+
 		completion_reward = {
 			add_war_support = 0.1
 			add_political_power = 100
@@ -108,7 +105,6 @@ focus_tree = {
 				has_war_with = SRS
 			}
 		}
-		
 		completion_reward = {
 			swap_ideas={
 				add_idea = EIC_idea_army_muntinies_3
@@ -136,7 +132,8 @@ focus_tree = {
 				has_war_with = SRS
 			}
 		}
-		
+
+
 		completion_reward = {
 			if={
 				limit={has_idea=EIC_idea_army_muntinies_3}
@@ -170,9 +167,12 @@ focus_tree = {
 				has_war_with = SRS
 			}
 		}
-		
+
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = RAJ_idea_failing_economy
+				add_idea = RAJ_idea_reconstruction
+			}
 		}
 	}
 
@@ -184,9 +184,9 @@ focus_tree = {
 		x = -3
 		y = 2
 		prerequisite = { focus = RAJ_focus_rebuild_eco }
-		
+
 		completion_reward = {
-			
+			unlock_decision_tooltip = eoanb_decision_RAJ_rail_infrastructure
 		}
 	}
 
@@ -198,9 +198,9 @@ focus_tree = {
 		x = -3
 		y = 3
 		prerequisite = { focus = RAJ_focus_rail_infra }
-		
+
 		completion_reward = {
-			
+
 		}
 	}
 
@@ -216,12 +216,12 @@ focus_tree = {
 
 		available={
 			ENG = {
-				has_completed_focus = RAJ_focus_stop_lapse_doctrine
+				has_completed_focus = ENG_focus_stop_lapse_doctrine
 			}
 		}
-		
+
 		completion_reward = {
-			
+
 		}
 	}
 
@@ -237,12 +237,12 @@ focus_tree = {
 
 		available={
 			ENG = {
-				has_completed_focus = RAJ_focus_continue_annex_policy
+				has_completed_focus = ENG_focus_continue_annex_policy
 			}
 		}
-		
+
 		completion_reward = {
-			
+
 		}
 	}
 
@@ -254,9 +254,9 @@ focus_tree = {
 		x = -5
 		y = 5
 		prerequisite = { focus = RAJ_focus_lapse_abandoned }
-		
+
 		completion_reward = {
-			
+
 		}
 	}
 
@@ -268,9 +268,9 @@ focus_tree = {
 		x = -1
 		y = 5
 		prerequisite = { focus = RAJ_focus_continue_lapse }
-		
+
 		completion_reward = {
-			
+
 		}
 	}
 
@@ -281,13 +281,13 @@ focus_tree = {
 		relative_position_id = RAJ_focus_deal_with_traitors
 		x = -3
 		y = 5
-		prerequisite = { 
-			focus = RAJ_focus_continue_lapse 
-			focus =  RAJ_focus_lapse_abandoned 
+		prerequisite = {
+			focus = RAJ_focus_continue_lapse
+			focus =  RAJ_focus_lapse_abandoned
 		}
 
 		completion_reward = {
-			
+
 		}
 	}
 
@@ -296,7 +296,6 @@ focus_tree = {
 		icon = GFX_focus_generic_home_defense
 		x = 13
 		y = 1
-		relative_position_id = {RAJ_focus_deal_with_traitors }
 		cost = 35
 		available_if_capitulated = no
 		ai_will_do = {
@@ -304,7 +303,7 @@ focus_tree = {
 		}
 		available = { SRS = { exists = no } }
 		prerequisite = { focus = RAJ_focus_deal_with_traitors }
-		
+
 		completion_reward = {
 			add_political_power = -25
 			RAJ = { add_stability = 0.02 }
@@ -334,7 +333,6 @@ focus_tree = {
 		icon = GFX_goal_focus_peel_comission
 		x = 13
 		y = 2
-		relative_position_id = {RAJ_focus_deal_with_traitors }
 		cost = 35
 		available_if_capitulated = no
 		ai_will_do = {
@@ -342,7 +340,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = RAJ_focus_viceroy_india_investigate }
 		search_filters = {  FOCUS_FILTER_STABILITY }
-		
+
 		completion_reward = {
 			add_political_power = -100
 			add_stability = 0.05
@@ -377,7 +375,6 @@ focus_tree = {
 		icon = GFX_Focus_Partisans_Fund
 		x = 12
 		y = 3
-		relative_position_id = {RAJ_focus_deal_with_traitors }
 		cost = 70
 		available_if_capitulated = no
 		ai_will_do = {
@@ -391,7 +388,7 @@ focus_tree = {
 		mutually_exclusive = { focus = RAJ_focus_india_european_recruitment }
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		search_filters = { FOCUS_FILTER_MILITARY }
-		
+
 		completion_reward = {
 			RAJ = { add_ideas = ENG_idea_RAJ_army_indian }
 			add_political_power = 50
@@ -426,7 +423,6 @@ focus_tree = {
 		icon = GFX_focus_generic_military_academy
 		x = 12
 		y = 4
-		relative_position_id = {RAJ_focus_deal_with_traitors }
 		cost = 70
 		available_if_capitulated = no
 		ai_will_do = {
@@ -434,7 +430,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = RAJ_focus_india_regional_recruitment }
 		search_filters = { FOCUS_FILTER_MILITARY }
-		
+
 		completion_reward = {
 			RAJ = {
 				swap_ideas = {
@@ -457,7 +453,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = RAJ_focus_mixed_regiments }
 		search_filters = { FOCUS_FILTER_MILITARY }
-		
+
 		completion_reward = {
 			RAJ = {
 				swap_ideas = {
@@ -496,7 +492,6 @@ focus_tree = {
 		icon = GFX_goal_focus_form_british_raj
 		x = 12
 		y = 6
-		relative_position_id = {RAJ_focus_deal_with_traitors }
 		cost = 70
 		available_if_capitulated = no
 		ai_will_do = {
@@ -504,7 +499,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = RAJ_focus_india_nation_law }
 		search_filters = { FOCUS_FILTER_MILITARY }
-		
+
 		completion_reward = {
 			RAJ = {
 				swap_ideas = {
@@ -543,7 +538,6 @@ focus_tree = {
 		icon = GFX_Focus_colonial_empire_ENG
 		x = 14
 		y = 3
-		relative_position_id = {RAJ_focus_deal_with_traitors }
 		cost = 70
 		available_if_capitulated = no
 		ai_will_do = {
@@ -553,7 +547,7 @@ focus_tree = {
 		mutually_exclusive = { focus = RAJ_focus_india_regional_recruitment }
 		search_filters = { FOCUS_FILTER_MILITARY }
 		search_filters = { FOCUS_FILTER_ALTHISTORY }
-		
+
 		completion_reward = {
 			RAJ = { add_ideas = ENG_idea_RAJ_army_european }
 			add_political_power = -50
@@ -574,7 +568,6 @@ focus_tree = {
 		icon = GFX_focus_generic_little_entente
 		x = 14
 		y = 4
-		relative_position_id = {RAJ_focus_deal_with_traitors }
 		cost = 70
 		available_if_capitulated = no
 		ai_will_do = {
@@ -582,7 +575,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = RAJ_focus_india_european_recruitment }
 		search_filters = { FOCUS_FILTER_MILITARY }
-		
+
 		completion_reward = {
 			RAJ = {
 				swap_ideas = {
@@ -598,7 +591,6 @@ focus_tree = {
 		icon = GFX_focus_generic_military_mission
 		x = 14
 		y = 5
-		relative_position_id = {RAJ_focus_deal_with_traitors }
 		cost = 70
 		available_if_capitulated = no
 		ai_will_do = {
@@ -606,7 +598,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = RAJ_focus_homogenous_regiments }
 		search_filters = { FOCUS_FILTER_MILITARY }
-		
+
 		completion_reward = {
 			RAJ = {
 				swap_ideas = {
@@ -631,7 +623,6 @@ focus_tree = {
 		icon = GFX_goal_focus_valient_kingdom
 		x = 14
 		y = 6
-		relative_position_id = {RAJ_focus_deal_with_traitors }
 		cost = 70
 		available_if_capitulated = no
 		ai_will_do = {
@@ -639,7 +630,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = RAJ_focus_india_european_law }
 		search_filters = { FOCUS_FILTER_MILITARY }
-		
+
 		completion_reward = {
 			RAJ = {
 				swap_ideas = {
@@ -664,7 +655,6 @@ focus_tree = {
 		icon = GFX_Focus_Colonial_Troops
 		x = 13
 		y = 7
-		relative_position_id = {RAJ_focus_deal_with_traitors }
 		cost = 35
 		available_if_capitulated = no
 		ai_will_do = {
@@ -672,9 +662,10 @@ focus_tree = {
 		}
 		prerequisite = { focus = RAJ_focus_european_army_traditions_india focus = RAJ_focus_respect_indian_culture }
 		search_filters = { FOCUS_FILTER_MILITARY }
-		
+
 		completion_reward = {
 			custom_effect_tooltip = eoanb_tt_focus_ENG_RAJ_oriental_uniforms
+			remove_ideas = RAJ_idea_recovering_military
 			hidden_effect = {
 				RAJ = {
 					set_technology = {
@@ -684,7 +675,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 ##########################
 ### EIC ADMINISTRATION ###
 ##########################
@@ -709,7 +700,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_political_power = 10
 		}
 	}
 
@@ -734,7 +725,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			ENG = {
+				country_event = { 
+					id = britishindia.24
+					days = 3
+				}
+			}
 		}
 	}
 
@@ -753,7 +749,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_political_power = 25
+			add_stability = 0.01
 		}
 	}
 
@@ -772,7 +769,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			unlock_decision_tooltip = eoanb_decision_RAJ_south_industry
 		}
 	}
 
@@ -785,7 +782,6 @@ focus_tree = {
 		relative_position_id = RAJ_focus_trust_canning
 
 		prerequisite = { focus = RAJ_focus_establish_industries_south }
-		
 		available =	{
 			OR = {
 				controls_state = 438
@@ -801,7 +797,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			unlock_decision_tooltip = eoanb_decision_RAJ_confiscate_workshops
 		}
 	}
 
@@ -820,7 +816,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			unlock_decision_tooltip = eoanb_decision_RAJ_tea_plantations
 		}
 	}
 
@@ -839,13 +835,13 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			remove_ideas = RAJ_idea_universities_in_chaos
 		}
 	}
 
 	focus = {
 		id = RAJ_focus_continue_wood
-		icon = GFX_Focus_invest_in_logging
+		icon = GFX_Focus_Education_Gifted_Students
 		cost = 70
 		x = 0
 		y = 3
@@ -858,7 +854,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_timed_idea = {
+				idea = RAJ_idea_wood_report
+				days = 365
+			}
 		}
 	}
 
@@ -877,7 +876,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			unlock_decision_tooltip = eoanb_decision_RAJ_bombay_uni
 		}
 	}
 
@@ -896,7 +895,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			remove_ideas = RAJ_idea_taken_by_surprise
 		}
 	}
 
@@ -915,7 +914,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			unlock_decision_tooltip = eoanb_decision_RAJ_raise_militias
 		}
 	}
 
@@ -934,7 +933,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
 		}
 	}
 
@@ -953,13 +951,13 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			remove_ideas = RAJ_idea_taken_by_surprise
 		}
 	}
 
 	focus = {
 		id = RAJ_focus_makeshift_divisions
-		icon = GFX_ENG_focus_Regimental_Training_Excercises
+		icon = GFX_ENG_focus_The_Jones_Plan
 		cost = 35
 		x = 6
 		y = 3
@@ -972,7 +970,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_timed_idea = {
+				idea = RAJ_idea_makeshift_divisions
+				days = 500
+			}
 		}
 	}
 
@@ -991,7 +992,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			remove_ideas = RAJ_idea_universities_in_chaos
 		}
 	}
 
@@ -1010,7 +1011,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			unlock_decision_tooltip = eoanb_decision_RAJ_local_learning
 		}
 	}
 
@@ -1029,7 +1030,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+
 		}
 	}
 
@@ -1048,7 +1049,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			unlock_decision_tooltip = eoanb_decision_RAJ_revamp_industry
 		}
 	}
 
@@ -1059,9 +1060,9 @@ focus_tree = {
 		x = 3
 		y = 4
 		relative_position_id = RAJ_focus_trust_canning
-		
+
 		available = {
-			always = false
+			always = no
 		}
 
 		bypass = {
@@ -1085,9 +1086,9 @@ focus_tree = {
 		x = 5
 		y = 4
 		relative_position_id = RAJ_focus_trust_canning
-		
+
 		available = {
-			always = false
+			always = no
 		}
 
 		bypass = {
@@ -1100,6 +1101,514 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = RAJ_focus_victory
 		}
+
+		completion_reward = {
+		}
+	}
+
+	###########################
+	### POST-RECONSTRUCTION ###
+	###########################
+
+	focus = {
+		id = RAJ_focus_new_era
+		icon = GFX_goal_focus_form_british_raj
+		cost = 70
+		x = 35
+		y = 0
+
+		available = {
+			ENG = {
+				has_completed_focus = ENG_focus_the_RAJ_compromise
+			}
+			has_completed_focus = RAJ_focus_victory
+		}
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+
+		mutually_exclusive = {
+			focus = RAJ_focus_indian_dominion
+			focus = RAJ_focus_beaten_not_defeated
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = RAJ_focus_council_act
+		icon = GFX_Focus_Central_State_Administration
+		cost = 70
+		x = 0
+		y = 1
+		relative_position_id = RAJ_focus_new_era
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		prerequisite = { focus = RAJ_focus_new_era }
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = RAJ_focus_consult_indian_advisors
+		icon = GFX_Focus_Civil_Servant_Law
+		cost = 70
+		x = 3
+		y = 1
+		relative_position_id = RAJ_focus_council_act
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		prerequisite = {
+			focus = RAJ_focus_council_act
+		    focus = RAJ_focus_administrative_reforms
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = RAJ_focus_despositism_controlled_from_home
+		icon = GFX_goal_focus_british_isolationism
+		cost = 70
+		x = 0
+		y = 2
+		relative_position_id = RAJ_focus_council_act
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		prerequisite = { focus = RAJ_focus_council_act }
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = RAJ_focus_strengthen_the_government
+		icon = GFX_Focus_Government_populist
+		cost = 70
+		x = 0
+		y = 1
+		relative_position_id = RAJ_focus_despositism_controlled_from_home
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		prerequisite = { focus = RAJ_focus_despositism_controlled_from_home }
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = RAJ_focus_modernization_of_laws
+		icon = GFX_Focus_Law_Education
+		cost = 70
+		x = 0
+		y = 1
+		relative_position_id = RAJ_focus_strengthen_the_government
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		prerequisite = { focus = RAJ_focus_strengthen_the_government }
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = RAJ_focus_accelerated_growth
+		icon = GFX_Focus_stimulate_economy
+		cost = 70
+		x = 0
+		y = 1
+		relative_position_id = RAJ_focus_modernization_of_laws
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		prerequisite = { focus = RAJ_focus_modernization_of_laws }
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = RAJ_focus_laissez_faire
+		icon = GFX_Focus_Elite
+		cost = 70
+		x = 2
+		y = 1
+		relative_position_id = RAJ_focus_accelerated_growth
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		prerequisite = { 
+			focus = RAJ_focus_accelerated_growth 
+			focus = RAJ_focus_regional_development
+		}
+
+		mutually_exclusive = { focus = RAJ_focus_moderate_intervention }
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = RAJ_focus_moderate_intervention
+		icon = GFX_Focus_Elite_Arrested
+		cost = 70
+		x = 4
+		y = 1
+		relative_position_id = RAJ_focus_accelerated_growth
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		prerequisite = { 
+			focus = RAJ_focus_accelerated_growth 
+			focus = RAJ_focus_regional_development
+		}
+
+		mutually_exclusive = { focus = RAJ_focus_laissez_faire }
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = RAJ_focus_agricultural_subsidies
+		icon = GFX_goal_focus_profits_tea_spices
+		cost = 70
+		x = 1
+		y = 1
+		relative_position_id = RAJ_focus_laissez_faire
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		prerequisite = {
+			focus = RAJ_focus_moderate_intervention
+			focus = RAJ_focus_laissez_faire
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = RAJ_focus_indian_dominion
+		icon = GFX_goal_focus_south_india_colony
+		cost = 70
+		x = 6
+		y = 0
+		relative_position_id = RAJ_focus_new_era
+
+		available = {
+			ENG = {
+				has_completed_focus = ENG_focus_grant_RAJ_autonomy
+			}
+			has_completed_focus = RAJ_focus_victory
+		}
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+
+		mutually_exclusive = {
+			focus = RAJ_focus_new_era
+			focus = RAJ_focus_beaten_not_defeated
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = RAJ_focus_administrative_reforms
+		icon = GFX_focus_government_legislation
+		cost = 70
+		x = 0
+		y = 1
+		relative_position_id = RAJ_focus_indian_dominion
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		prerequisite = { focus = RAJ_focus_indian_dominion }
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = RAJ_focus_colonialism_with_a_human_face
+		icon = GFX_goal_focus_queen_return
+		cost = 70
+		x = 0
+		y = 2
+		relative_position_id = RAJ_focus_administrative_reforms
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		prerequisite = { focus = RAJ_focus_administrative_reforms }
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = RAJ_focus_royal_ports_act
+		icon = GFX_goal_focus_develop_canada
+		cost = 70
+		x = 0
+		y = 1
+		relative_position_id = RAJ_focus_colonialism_with_a_human_face
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		prerequisite = { focus = RAJ_focus_colonialism_with_a_human_face }
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = RAJ_focus_village_autonomy
+		icon = GFX_goal_focus_princely_local_governments
+		cost = 70
+		x = 0
+		y = 1
+		relative_position_id = RAJ_focus_royal_ports_act
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		prerequisite = { focus = RAJ_focus_royal_ports_act }
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = RAJ_focus_regional_development
+		icon = GFX_Focus_Roads_Canals_Investment
+		cost = 70
+		x = 0
+		y = 1
+		relative_position_id = RAJ_focus_village_autonomy
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		prerequisite = { focus = RAJ_focus_village_autonomy }
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = RAJ_focus_beaten_not_defeated
+		icon = GFX_Focus_Army_Law_Reform
+		cost = 70
+		x = 12
+		y = 0
+		relative_position_id = RAJ_focus_new_era
+
+		available = {
+			has_completed_focus = RAJ_focus_defeat
+		}
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+
+		mutually_exclusive = {
+			focus = RAJ_focus_new_era
+			focus = RAJ_focus_indian_dominion
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = RAJ_focus_relocate_capital
+		icon = GFX_Focus_Dissolve_Council
+		cost = 70
+		x = 0
+		y = 1
+		relative_position_id = RAJ_focus_beaten_not_defeated
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		prerequisite = { focus = RAJ_focus_beaten_not_defeated }
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = RAJ_focus_search_for_allies
+		icon = GFX_Focus_Law_plebicite
+		cost = 70
+		x = -2
+		y = 1
+		relative_position_id = RAJ_focus_relocate_capital
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		prerequisite = { focus = RAJ_focus_relocate_capital }
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = RAJ_focus_tribal_appeasement
+		icon = GFX_Focus_Electorate_cater_to_workers
+		cost = 70
+		x = 0
+		y = 1
+		relative_position_id = RAJ_focus_search_for_allies
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		prerequisite = { focus = RAJ_focus_search_for_allies }
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = RAJ_focus_bharatiya_adivasi
+		icon = GFX_Goal_manpower_duplication
+		cost = 70
+		x = 0
+		y = 1
+		relative_position_id = RAJ_focus_tribal_appeasement
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		prerequisite = { focus = RAJ_focus_tribal_appeasement }
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = RAJ_focus_secure_our_frontiers
+		icon = GFX_Focus_Army_Reactionary
+		cost = 70
+		x = 0
+		y = 1
+		relative_position_id = RAJ_focus_relocate_capital
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		prerequisite = { focus = RAJ_focus_relocate_capital }
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = RAJ_focus_shadow_war
+		icon = GFX_Focus_divide_africa
+		cost = 70
+		x = 0
+		y = 1
+		relative_position_id = RAJ_focus_secure_our_frontiers
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		prerequisite = { focus = RAJ_focus_secure_our_frontiers }
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = RAJ_focus_war_with_mutiny
+		icon = GFX_Focus_Colonial_Troops
+		cost = 70
+		x = 0
+		y = 1
+		relative_position_id = RAJ_focus_shadow_war
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		prerequisite = { focus = RAJ_focus_shadow_war }
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = RAJ_focus_relocate_frontier_industries
+		icon = GFX_Focus_Urbanization
+		cost = 70
+		x = 2
+		y = 1
+		relative_position_id = RAJ_focus_relocate_capital
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		prerequisite = { focus = RAJ_focus_relocate_capital }
 
 		completion_reward = {
 		}

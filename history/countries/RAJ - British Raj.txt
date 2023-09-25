@@ -46,6 +46,16 @@
 		ENG_idea_RAJ_civil_unrest
 		ENG_idea_RAJ_gse_act
 		EIC_idea_army_muntinies
+		RAJ_idea_taken_by_surprise
+		RAJ_idea_universities_in_chaos
+	}
+
+	set_power_balance = {
+		id = RAJ_Balance_of_Power
+		left_side = RAJ_BOP_Appeasement
+		right_side = RAJ_BOP_Profit
+	
+		set_value = 0.0
 	}
 
 
@@ -217,6 +227,7 @@
 
 	# POLITICAL LEADERS
 	recruit_character = RAJ_charles_canning
+	recruit_character = RAJ_frederick_currie
 	recruit_character = RAJ_James_Bruce
 	recruit_character = RAJ_Council_of_India
 	recruit_character = RAJ_John_Lawrence
