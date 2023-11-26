@@ -15,7 +15,7 @@ JAP_industrialization_category = {
 
 		fire_only_once = yes
 		is_good = no
-		days_mission_timeout = JAP_industralization_mission_civ_days
+		days_mission_timeout = JAP_industralization_mission_civ_days #300
 		modifier = {
 
 		}
@@ -32,6 +32,7 @@ JAP_industrialization_category = {
 					idea = failed_civ
 					days = 140
 				}
+				unlock_national_focus = JAP_catch_up_to_the_west
 			}
 		}
 		complete_effect = {
@@ -69,7 +70,7 @@ JAP_industrialization_category = {
 
 		fire_only_once = yes
 		is_good = no
-		days_mission_timeout = JAP_industralization_mission_mil_days
+		days_mission_timeout = JAP_industralization_mission_mil_days #500
 		modifier = {
 
 		}
@@ -83,6 +84,7 @@ JAP_industrialization_category = {
 					idea = failed_mil
 					days = 140
 				}
+				unlock_national_focus = JAP_unified_military_industry
 			}
 		}
 		complete_effect = {
@@ -117,7 +119,7 @@ JAP_industrialization_category = {
 
 		fire_only_once = yes
 		is_good = no
-		days_mission_timeout = JAP_industralization_mission_navy_days
+		days_mission_timeout = JAP_industralization_mission_navy_days #600
 		modifier = {
 
 		}
@@ -138,6 +140,7 @@ JAP_industrialization_category = {
 					idea = failed_navy
 					days = 140
 				}
+				unlock_national_focus = JAP_expand_nagasaki_shipyard
 			}
 		}
 		complete_effect = {
@@ -179,7 +182,7 @@ JAP_industrialization_category = {
 
 		fire_only_once = yes
 		is_good = no
-		days_mission_timeout = JAP_industralization_mission_rail_days
+		days_mission_timeout = JAP_industralization_mission_rail_days #925
 		modifier = {
 
 		}
@@ -201,6 +204,7 @@ JAP_industrialization_category = {
 					idea = JAP_failed_railroads
 					days = 140
 				}
+				unlock_national_focus = JAP_nationalization_of_our_railways
 			}
 		}
 		complete_effect = {
@@ -3779,61 +3783,61 @@ JAP_ministry_of_public_works_category = {
 					limit = {
 						check_variable = { JAP_upkeep_percentage = 100 }
 					}
-					add_idea = JAP_formed_mpw
+					add_ideas = JAP_formed_mpw
 				}
 				else_if = {
 					limit = {
 						check_variable = { JAP_upkeep_percentage = 90 }
 					}
-					add_idea = JAP_formed_mpw_90
+					add_ideas = JAP_formed_mpw_90
 				}
 				else_if = {
 					limit = {
 						check_variable = { JAP_upkeep_percentage = 80 }
 					}
-					add_idea = JAP_formed_mpw_80
+					add_ideas = JAP_formed_mpw_80
 				}
 				else_if = {
 					limit = {
 						check_variable = { JAP_upkeep_percentage = 70 }
 					}
-					add_idea = JAP_formed_mpw_70
+					add_ideas = JAP_formed_mpw_70
 				}
 				else_if = {
 					limit = {
 						check_variable = { JAP_upkeep_percentage = 60 }
 					}
-					add_idea = JAP_formed_mpw_60
+					add_ideas = JAP_formed_mpw_60
 				}
 				else_if = {
 					limit = {
 						check_variable = { JAP_upkeep_percentage = 50 }
 					}
-					add_idea = JAP_formed_mpw_50
+					add_ideas = JAP_formed_mpw_50
 				}
 				else_if = {
 					limit = {
 						check_variable = { JAP_upkeep_percentage = 40 }
 					}
-					add_idea = JAP_formed_mpw_40
+					add_ideas = JAP_formed_mpw_40
 				}
 				else_if = {
 					limit = {
 						check_variable = { JAP_upkeep_percentage = 30 }
 					}
-					add_idea = JAP_formed_mpw_30
+					add_ideas = JAP_formed_mpw_30
 				}
 				else_if = {
 					limit = {
 						check_variable = { JAP_upkeep_percentage = 20 }
 					}
-					add_idea = JAP_formed_mpw_20
+					add_ideas = JAP_formed_mpw_20
 				}
 				else_if = {
 					limit = {
 						check_variable = { JAP_upkeep_percentage = 10 }
 					}
-					add_idea = JAP_formed_mpw_10
+					add_ideas = JAP_formed_mpw_10
 				}
 			}
 		}

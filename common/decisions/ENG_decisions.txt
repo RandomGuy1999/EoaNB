@@ -71,7 +71,7 @@ eoanb_category_economic = {
 		days_remove = 60
 
 		modifier = {
-			consumer_goods_factor = 0.05
+			consumer_goods_expected_value = 0.05
 		}
 
 		remove_effect = {
@@ -2625,66 +2625,6 @@ ENG_decision_category_irish_unrest = {
         }
     }
 
-	ENG_DCI_irish_incident = {
-		icon = generic_civil_support
-		allowed = {
-			always = yes
-		}
-		activation = {
-				hidden_trigger = {
-				TAG = ENG
-				NOT = { has_country_flag = DCI_irish_incident_mission_stop }
-				custom_trigger_tooltip = {
-					tooltip = any_irish_states_have_over_10_DCI_tooltip
-					any_owned_state = {
-						if = {
-							limit = {
-								is_irish_land = yes
-								check_variable = { var = detrimental_colonial_impact_value value = 10 compare = greater_than_or_equals }
-							}
-							always = yes
-						}
-						else = {
-							always = no
-						}
-					}
-				}
-			}
-        }
-		available = {
-			hidden_trigger = { always = no }
-		}
-        cancel_trigger = {
-            custom_trigger_tooltip = {
-				tooltip = all_irish_states_have_under_10_DCI_tooltip
-				all_owned_state = {
-					if = {
-						limit = { is_irish_land = yes }
-						check_variable = { var = detrimental_colonial_impact_value value = 10 compare = less_than }
-					}
-				}
-			}
-        }
-        days_mission_timeout = 90
-		is_good = no
-		selectable_mission = no
-		fire_only_once = no
-        timeout_effect = {
-			custom_effect_tooltip = DCI_irish_incident_tooltip
-            hidden_effect = {
-				random_owned_state = {
-					limit = {
-						is_irish_land = yes
-						check_variable = { var = detrimental_colonial_impact_value value = 10 compare = greater_than_or_equals }
-					}
-					#state_event = { id = DCI_irish_incident_event.1 random_days = 90 }
-				}
-				set_country_flag = DCI_irish_incident_mission_stop
-				country_event = { id = DCI_irish_incident_mission_event.1 days = 90 }
-			}
-        }
-    }
-
 	ENG_defeat_1867_ireland_rebellion = {
 
 		icon= generic_civil_support
@@ -4671,7 +4611,35 @@ ENG_decision_category_royal_navy = {
 
 ENG_houses_of_parliament_category_decisions = {
 
-	ENG_decision_dissolved_commons = {
+	#ENG_decision_dissolved_commons = {
+	#	icon = constitution
+	#
+    #    #allowed = { always = no }
+	#
+    #    available = {
+    #    }
+	#
+    #    visible = {
+	#	   power_balance_value = {
+	#			id = ENG_Balance_of_Power_Parliament
+	#			value > 0.95
+	#		}
+	#	}
+	#
+	#	fire_only_once = yes
+	#
+	#	cost = 250
+	#
+	#	complete_effect = {
+	#	    country_event = britain.186
+	#	}
+	#
+	#	ai_will_do = {
+	#		base = 1000
+	#	}
+    #}
+
+	ENG_decision_pay_parliamentarians = {
 		icon = constitution
 
         #allowed = { always = no }
@@ -4679,23 +4647,205 @@ ENG_houses_of_parliament_category_decisions = {
         available = {
         }
 
-        visible = {
-		   power_balance_value = {
+		fire_only_once = yes
+
+		cost = 100
+
+		complete_effect = {
+		    add_power_balance_value = {
 				id = ENG_Balance_of_Power_Parliament
-				value > 0.95
+				value = -0.05
+				tooltip_side = ENG_BOP_House_of_Commons_Strength
 			}
 		}
 
+		ai_will_do = {
+			base = 10
+		}
+    }
+
+	ENG_decision_end_proxy_voting = {
+		icon = constitution
+
+        #allowed = { always = no }
+
+        available = {
+        }
+
 		fire_only_once = yes
 
-		cost = 250
+		cost = 50
 
 		complete_effect = {
-		    country_event = britain.186
+		    add_power_balance_value = {
+				id = ENG_Balance_of_Power_Parliament
+				value = -0.05
+				tooltip_side = ENG_BOP_House_of_Commons_Strength
+			}
 		}
 
 		ai_will_do = {
-			base = 1000
+			base = 100
+		}
+    }
+
+	ENG_decision_law_lords= {
+		icon = constitution
+
+        #allowed = { always = no }
+
+        available = {
+        }
+
+		fire_only_once = yes
+
+		cost = 50
+
+		complete_effect = {
+		    add_power_balance_value = {
+				id = ENG_Balance_of_Power_Parliament
+				value = 0.05
+				tooltip_side = ENG_BOP_House_of_Lords_Strength
+			}
+			add_stability = 0.05
+		}
+
+		ai_will_do = {
+			base = 100
+		}
+    }
+
+	ENG_decision_limit_party_lords= {
+		icon = constitution
+
+        #allowed = { always = no }
+
+        available = {
+        }
+
+		fire_only_once = yes
+
+		cost = 50
+
+		complete_effect = {
+		    add_power_balance_value = {
+				id = ENG_Balance_of_Power_Parliament
+				value = -0.05
+				tooltip_side = ENG_BOP_House_of_Commons_Strength
+			}
+			add_stability = 0.05
+		}
+
+		ai_will_do = {
+			base = 100
+		}
+    }
+
+	ENG_decision_increase_lords= {
+		icon = ENG_lords
+
+        #allowed = { always = no }
+
+        available = {
+        }
+
+		fire_only_once = no
+
+		cost = 100
+
+		days_re_enable = 365
+
+		complete_effect = {
+		    add_power_balance_value = {
+				id = ENG_Balance_of_Power_Parliament
+				value = 0.05
+				tooltip_side = ENG_BOP_House_of_Lords_Strength
+			}
+		}
+
+		ai_will_do = {
+			base = 100
+		}
+    }
+
+	ENG_decision_decrease_commons= {
+		icon = ENG_lords
+
+        #allowed = { always = no }
+
+        available = {
+        }
+
+		fire_only_once = no
+
+		cost = 100
+
+		days_re_enable = 365
+
+		complete_effect = {
+		    add_power_balance_value = {
+				id = ENG_Balance_of_Power_Parliament
+				value = 0.05
+				tooltip_side = ENG_BOP_House_of_Lords_Strength
+			}
+		}
+
+		ai_will_do = {
+			base = 100
+		}
+    }
+
+	ENG_decision_increase_commons= {
+		icon = ENG_commons
+
+        #allowed = { always = no }
+
+        available = {
+        }
+
+		fire_only_once = no
+
+		cost = 100
+
+		days_re_enable = 365
+
+		complete_effect = {
+		    add_power_balance_value = {
+				id = ENG_Balance_of_Power_Parliament
+				value = -0.05
+				tooltip_side = ENG_BOP_House_of_Commons_Strength
+			}
+		}
+
+		ai_will_do = {
+			base = 100
+		}
+    }
+
+	ENG_decision_decrease_lords= {
+		icon = ENG_commons
+
+        #allowed = { always = no }
+
+        available = {
+        }
+
+		fire_only_once = no
+
+		cost = 100
+
+		days_re_enable = 365
+
+		complete_effect = {
+		    add_power_balance_value = {
+				id = ENG_Balance_of_Power_Parliament
+				value = -0.05
+				tooltip_side = ENG_BOP_House_of_Commons_Strength
+			}
+		}
+
+		ai_will_do = {
+			base = 100
 		}
     }
 }

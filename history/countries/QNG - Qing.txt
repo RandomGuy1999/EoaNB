@@ -5,10 +5,17 @@
   set_country_flag = QNG_xianjing_tree
 
   oob = "QNG_1857"
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "QNG_mtg_naval"
+	else = {
+		set_naval_oob = "QNG_naval"
+	}
+}
 
   set_convoys = 30
   
-  set_research_slots = 3
+  set_research_slots = 2
   add_ideas = { 
     #POLITICS 
 		  
@@ -50,6 +57,7 @@
 	QNG_idea_opium_crissis
 	QNG_idea_han_nationalism
 	QNG_idea_devastation_first_opium_war
+	QNG_idea_corutpion1
   }
   
     #Rivals 
@@ -63,8 +71,29 @@
 	  ruling_party = autocracy
 }
 
+QNG = {
+	if = {
+		limit = {
+			eoanb_enable_autonomy = yes
+		}
+		set_autonomy = {
+			target = PAW
+			autonomous_state = autonomy_protectorate
+			freedom_level = 0.35
+		}
+	}
+	if = {
+		limit = {
+			eoanb_enable_autonomy = no
+		}
+		puppet = PAW
+	}
+}
+
+
+
 QNG = { set_country_flag = Oceania_industrializing }
-activate_mission = QNG_PTH_yunnan_peace
+#activate_mission = QNG_PTH_yunnan_peace
 
 set_popularities = {
     anarchism = 0
@@ -78,6 +107,15 @@ set_popularities = {
     autocracy = 100
     fundamentalism = 0
 }
+
+	#Balance of Power
+	set_power_balance = {
+		id = QNG_Balance_of_Power_Qing_Establishment
+		left_side = QNG_conservative_side
+		right_side = QNG_yangwu_side
+		set_value = 0
+	}
+
   
   add_opinion_modifier = { target = USA modifier = eoanb_om_USA_QNG_opium_neutral }
   add_opinion_modifier = { target = ENG modifier = eoanb_om_ENG_QNG_arrow_incident }
@@ -102,6 +140,8 @@ set_popularities = {
 	tribal_crop_rotation=1
 	tribal_salted_smoked_goods=1
 	tribal_leching=1
+	tech_naval_mtg_early_gunboat = 1
+	tech_naval_mtg_1850_gunboat = 1
 	tech_infantry_napoleonic_uniform = 1
 	tech_naval_mtg_simple_corvette_hull = 1
     tech_naval_mtg_24_pounder_battery = 1
@@ -119,6 +159,7 @@ set_popularities = {
   }
 	add_equipment_to_stockpile = { type = infantry_equipment_pike_and_shot_0 amount = 120000 producer = QNG }
 	add_equipment_to_stockpile = { type = uniform_equipment_0 amount = 120000 producer = QNG }
+	add_equipment_to_stockpile = { type = infantry_equipment_rifle_0 amount = 50000 producer = ENG }
 	
 	if = {
 		limit = { has_dlc = "Man the Guns" }
@@ -137,14 +178,13 @@ set_popularities = {
 				}
 			#obsolete = no
 		}
-		load_oob = "QNG_mtg_naval"
 	}
 
 
   # POLITICAL LEADERS
 	recruit_character = QNG_Xianfeng_Emperor
 	recruit_character = QNG_Sengge_Rinchen
-	recruit_character = QNG_Zhang_Guoliang
+	recruit_character = QNG_Feng_Zicai
 	recruit_character = QNG_Zuo_Zongtang
 	recruit_character = QNG_Nie_Shicheng
 	recruit_character = QNG_Song_Qing
@@ -154,6 +194,7 @@ set_popularities = {
 	recruit_character = QNG_Tongzhi_emperor
 	recruit_character = QNG_Guangxu_Emperor
 	recruit_character = QNG_Zeng_Guofan
+	recruit_character = QNG_ronglu
 	
 	#Advisors
 	recruit_character = QNG_weng_tonghe
@@ -180,6 +221,8 @@ set_popularities = {
 
   set_convoys = 30
   
+  unlock_national_focus = QNG_focus_self_strenthening_movement
+
   set_research_slots = 3
   add_ideas = { 
     #POLITICS 
@@ -233,7 +276,7 @@ set_popularities = {
 	}
 
 	QNG = { set_country_flag = Oceania_industrializing }
-	activate_mission = QNG_PTH_yunnan_peace
+	#activate_mission = 
 
 	set_popularities = {
 		anarchism = 0
@@ -288,27 +331,6 @@ set_popularities = {
   }
 	add_equipment_to_stockpile = { type = infantry_equipment_pike_and_shot_0 amount = 120000 producer = QNG }
 	add_equipment_to_stockpile = { type = uniform_equipment_0 amount = 120000 producer = QNG }
-	
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-		create_equipment_variant = {
-			name = "Chinese Junk class"
-			type = ship_hull_primitive_sailing_boat_2
-			name_group = GER_CA_HISTORICAL
-			parent_version = 0
-				modules = {
-					fixed_ship_battery_slot = ship_cannon_battery_0
-					#fixed_ship_fire_control_system_slot = empty
-					fixed_ship_engine_slot = ship_engine_primitive_sails_0
-					#fixed_ship_armor_slot = empty
-					mid_1_custom_slot = empty
-					#front_1_custom_slot = empty
-				}
-			#obsolete = no
-		}
-		load_oob = "QNG_mtg_naval"
-	}
-
 
   # POLITICAL LEADERS
 	retire_character = QNG_Xianfeng_Emperor

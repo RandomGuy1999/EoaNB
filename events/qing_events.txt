@@ -405,7 +405,6 @@ country_event = { #Lee Teng-Fan Residence
 
     trigger = {
         TAG = QNG
-        owns_state = 1229
         date > 1864.7.1
     }
 
@@ -707,16 +706,12 @@ country_event = { #death of tongzhi
 		}
 	}
 	
-	option = {#perfect
+	option = {#
 		name = qing.13.a
 		trigger = { tag = QNG } 
 		clr_country_flag = QNG_tongzhi_ruling_tree
 		set_country_flag = QNG_guangxu_rengency_tree
 		#load_focus_tree = qing_guangxu #doesn't exist
-	}
-	option = {#another young emperor dies?
-		name = qing.13.b
-		trigger = { NOT = { tag = QNG } }
 	}
 }
 
@@ -1006,17 +1001,116 @@ country_event = { #The Beiyang Army
 	}
 }
 
+country_event = { #Li Hongzhang proposal
+	id = qing.28
+	title = qing.28.t
+	desc = qing.28.d
+	fire_only_once = yes
+	is_triggered_only = yes
 
+	option = {#ok
+		name = qing.28.a
+	}
+	option = {# nuh uh
+		name = qing.28.b
+	}
+	
+}
 
+country_event = { #The people, the emperor and the empire
+	id = qing.29
+	title = qing.29.t
+	desc = qing.29.d 
+	
+	fire_only_once = yes
+	trigger = { 
+		tag = QNG
+		always = yes
+   }
+	
+	option = { #damn
+		name = qing.29.a 
+		complete_national_focus = QNG_focus_xianfeng_unlucky_reign
+	}
+}
 
+country_event = { #Universal Prosperity
+	id = qing.39
+	title = qing.39.t
+	desc = qing.39.d 
+	
+	fire_only_once = yes
+	trigger = { 
+		tag = QNG
+		always = yes
+   }
+	
+	option = { #damn
+		name = qing.39.a 
+		set_country_flag = xianfeng_universal_prosperity_flag
+		complete_national_focus = QNG_focus_universal_prosperity
+	}
+}
 
+country_event = { #Zeng Guofan
+	id = qing.30
+	title = qing.30.t
+	desc = qing.30.d 
+
+	picture = funni_zeng
+	
+	fire_only_once = yes 
+	trigger = {
+		tag = QNG
+		date > 1857.6.1
+	}
+	
+	option = { #damn 
+		name = qing.30.a 
+		add_political_power = -50
+	}
+}
+
+country_event = { #capture of Nanking
+	id = qing.31
+	title = qing.31.t
+	desc = qing.31.d
+	fire_only_once = yes
+	trigger = {
+	controls_state = 1056
+	tag = QNG
+	}
+	option = {# excellent
+		name = qing.31.a
+		set_province_name = { id = 11913 name = "Nanjing" }
+		add_political_power = 25
+	}
+	
+}
+
+country_event = { #First Battle of Canton summary
+	id = qing.32
+	title = qing.32.t
+	desc = qing.32.d 
+	
+	fire_only_once = yes
+	trigger = { 
+		tag = QNG
+		always = yes
+   }
+	
+	option = { #damn
+		name = qing.32.a 
+		add_war_support = 0.15
+	}
+}
 
 country_event = { #White hao army revolt
     id = qing_reb.1
     title = qing_reb.1.t
     desc = qing_reb.1.d
 
-#    picture = GFX_report_event_election_vote
+	#    picture = GFX_report_event_election_vote
 
     trigger = {
 		TAG = QNG
@@ -1068,7 +1162,7 @@ country_event = { #Shuntian revolt
     title = qing_reb.2.t
     desc = qing_reb.2.d
 
-#    picture = GFX_report_event_election_vote
+	#    picture = GFX_report_event_election_vote
 
     trigger = {
 		TAG = QNG
@@ -1131,7 +1225,7 @@ country_event = { #Tianshun revolt
     title = qing_reb.3.t
     desc = qing_reb.3.d
 
-#    picture = GFX_report_event_election_vote
+ 	#picture = GFX_report_event_election_vote
 
     trigger = {
 		TAG = QNG
@@ -1176,7 +1270,7 @@ country_event = { #Tianshun 2nd revolt
     title = qing_reb.4.t
     desc = qing_reb.4.d
 
-#    picture = GFX_report_event_election_vote
+	#    picture = GFX_report_event_election_vote
 
     trigger = {
 		TAG = QNG
@@ -1237,7 +1331,7 @@ country_event = { #Tianshun 3rd revolt
     title = qing_reb.5.t
     desc = qing_reb.5.d
 
-#    picture = GFX_report_event_election_vote
+	#    picture = GFX_report_event_election_vote
 
     trigger = {
 		TAG = QNG
@@ -1302,7 +1396,7 @@ country_event = { #Taiping loses nanjing
     title = qing_reb.6.t
     desc = qing_reb.6.d
 
-#    picture = GFX_report_event_election_vote
+	#    picture = GFX_report_event_election_vote
 
     trigger = {
 		tag = TAI
@@ -1332,7 +1426,7 @@ country_event = { #Taiping loses nanjing
         name = qing_reb.6.a
 		swap_ideas={
 			remove_idea = QNG_rebel_uprising
-			add_idea = QNG_rebel_uprising_lost
+			add_idea = QNG_rebel_uprising_2
 		}
     }
 }
@@ -1342,7 +1436,7 @@ country_event = { #Pugunhui revolt
     title = qing_reb.7.t
     desc = qing_reb.7.d
 
-#    picture = GFX_report_event_election_vote
+	#    picture = GFX_report_event_election_vote
 
     trigger = {
 		TAG = QNG
@@ -1355,8 +1449,6 @@ country_event = { #Pugunhui revolt
 	immediate={
 		hidden_effect={
 			TAW={
-				set_state_owner = 1229
-				add_state_core = 1229
 				set_state_owner = 524
 				add_state_core = 524
 				load_oob = "TAW_1862"
@@ -1396,7 +1488,7 @@ country_event = { #Bai Linga revolt
     title = qing_reb.8.t
     desc = qing_reb.8.d
 
-#    picture = GFX_report_event_election_vote
+	#    picture = GFX_report_event_election_vote
 
     trigger = {
 		TAG = QNG
@@ -1509,7 +1601,7 @@ country_event = { #Ma 2nd* revolt
     title = qing_reb.10.t
     desc = qing_reb.10.d
 
-#    picture = GFX_report_event_election_vote
+	#    picture = GFX_report_event_election_vote
 
     trigger = {
 		#TAG = QNG
@@ -1580,7 +1672,7 @@ country_event = { #Ma 3rd* revolt
     title = qing_reb.11.t
     desc = qing_reb.11.d
 
-#    picture = GFX_report_event_election_vote
+	#    picture = GFX_report_event_election_vote
 
     trigger = {
 		TAG = QNG
@@ -1649,7 +1741,7 @@ country_event = { #Ma 4th revolt
     title = qing_reb.12.t
     desc = qing_reb.12.d
 
-#    picture = GFX_report_event_election_vote
+	#    picture = GFX_report_event_election_vote
 
   trigger = {
 		#TAG = QNG
@@ -1726,7 +1818,7 @@ country_event = { #Gelaohui revolt
     title = qing_reb.13.t
     desc = qing_reb.13.d
 
-#    picture = GFX_report_event_election_vote
+	#    picture = GFX_report_event_election_vote
 
     trigger = {
 		TAG = QNG
@@ -1799,7 +1891,7 @@ country_event = { #hui revolt
     title = qing_reb.14.t
     desc = qing_reb.14.d
 
-#    picture = GFX_report_event_election_vote
+	#    picture = GFX_report_event_election_vote
 
     trigger = {
 		TAG = QNG
@@ -1867,7 +1959,7 @@ country_event = { #Dungan revolt
     title = qing_reb.15.t
     desc = qing_reb.15.d
 
-#    picture = GFX_report_event_election_vote
+	#    picture = GFX_report_event_election_vote
 
     trigger = {
 		#TAG = QNG
@@ -2007,7 +2099,7 @@ country_event = { #Ma Zhenlong revolt
     title = qing_reb.16.t
     desc = qing_reb.16.d
 
-#    picture = GFX_report_event_election_vote
+	#    picture = GFX_report_event_election_vote
 
     trigger = {
 		#TAG = QNG
@@ -2086,7 +2178,7 @@ country_event = { #Qing shattered
     title = qing_reb.17.t
     desc = qing_reb.17.d
 
-#    picture = GFX_report_event_election_vote
+	#    picture = GFX_report_event_election_vote
 
     trigger = {
 		TAG = QNG
@@ -2148,20 +2240,13 @@ country_event = { #Qing shattered
 				transfer_state = 614
 				add_state_core = 614
 				clr_country_flag = rebel_uprisisng
-				if={
-					limit={
-						ROOT={owns_state=1170}
-					}
-					transfer_state = 1170
-					add_state_core = 1170
 						
-				}
 				if={
 					limit={
-						ROOT={owns_state=1169}
+						ROOT={owns_state=595}
 					}
-					transfer_state = 1169
-					add_state_core = 1169
+					transfer_state = 595
+					add_state_core = 595
 						
 				}
 				if={
@@ -2409,7 +2494,7 @@ country_event = { #Qing shattered
 				load_focus_tree = CHI_warlords_1872	
 			}
 			#tibet declares independance
-			TIB={add_state_core = 1394}
+			TIB={add_state_core = 1157}
 			release = TIB
 			#mongolia declares independance
 			MON={
@@ -2562,8 +2647,6 @@ country_event = { #Qing shattered
 				add_ideas = {CHI_rebel_administration}
 				load_focus_tree = CHI_warlords_1872	
 				clr_country_flag = rebel_uprisisng
-				transfer_state = 1229
-				add_state_core = 1229
 				transfer_state = 524
 				add_state_core = 524
 			}
@@ -2585,8 +2668,6 @@ country_event = { #Qing shattered
 					}
 					transfer_state = 595
 					add_state_core = 595
-					transfer_state = 1159
-					add_state_core = 1159
 				}
 				if={
 					limit={
@@ -2594,12 +2675,6 @@ country_event = { #Qing shattered
 					}
 					transfer_state = 596
 					add_state_core = 596
-					transfer_state = 1161
-					add_state_core = 1161
-					transfer_state = 1165
-					add_state_core = 1165
-					transfer_state = 1162
-					add_state_core = 1162
 				}
 				if={
 					limit={
@@ -2607,10 +2682,6 @@ country_event = { #Qing shattered
 					}
 					transfer_state = 613
 					add_state_core = 613
-					transfer_state = 1164
-					add_state_core = 1164
-					transfer_state = 1165
-					add_state_core = 1165
 					
 				}
 				if={
@@ -2626,8 +2697,6 @@ country_event = { #Qing shattered
 					}
 					transfer_state = 598
 					add_state_core = 598
-					transfer_state = 1166
-					add_state_core = 1166
 				}
 				clr_country_flag = rebel_uprisisng
 			}
@@ -2664,10 +2733,6 @@ country_event = { #Qing shattered
 				add_state_core = 592
 				transfer_state = 593
 				add_state_core = 593
-				transfer_state = 1157
-				add_state_core = 1157
-				transfer_state = 1158
-				add_state_core = 1158	
 				if={
 					limit={
 						YAL={
@@ -2810,7 +2875,7 @@ country_event = { #Ming Declares you a vassal
     title = qing_reb.18.t
     desc = qing_reb.18.d
 
-#    picture = GFX_report_event_election_vote
+	#    picture = GFX_report_event_election_vote
 	is_triggered_only=yes
     option = { #we are always loyal to ming
         name = qing_reb.18.a
@@ -2843,7 +2908,7 @@ country_event = { #you art emperor now
 	}
 	major = yes
 
-#    picture = GFX_report_event_election_vote
+	#    picture = GFX_report_event_election_vote
 	is_triggered_only=yes
 	immediate={
 		hidden_effect={
@@ -2903,7 +2968,7 @@ country_event = { #Question of Shi Dakai
     title = qing_reb.20.t
     desc = qing_reb.20.d
 
-#    picture = GFX_report_event_election_vote
+	#    picture = GFX_report_event_election_vote
 	is_triggered_only=yes
     option = { #Sideline him
         name = qing_reb.20.a
@@ -2929,7 +2994,7 @@ country_event = { #taiping dies, lower the xiang army
     title = qing_reb.21.t
     desc = qing_reb.21.d
 
-#    picture = GFX_report_event_election_vote
+	#    picture = GFX_report_event_election_vote
 
     trigger = {
 		TAG = QNG
@@ -2954,7 +3019,7 @@ country_event = { #demand tribute
     title = qing_reb.22.t
     desc = qing_reb.22.d
 
-#    picture = GFX_report_event_election_vote
+	#    picture = GFX_report_event_election_vote
 	is_triggered_only=yes
     option = { #we are always loyal to ming
         name = qing_reb.22.a
@@ -2976,7 +3041,7 @@ country_event = { #TAI offers a trading port for support
     title = qing_reb.25.t
     desc = qing_reb.25.d
 
-#    picture = GFX_report_event_election_vote
+	#    picture = GFX_report_event_election_vote
 	is_triggered_only=yes
     option = { #a wedge to open china with
         name = qing_reb.25.a
@@ -3000,7 +3065,7 @@ country_event = { #offer agreed upon
     title = qing_reb.26.t
     desc = qing_reb.26.d
 
-#    picture = GFX_report_event_election_vote
+	#    picture = GFX_report_event_election_vote
 	is_triggered_only=yes
     option = { #perfect
         name = qing_reb.26.a
@@ -3017,7 +3082,7 @@ country_event = { #offer rejected
     title = qing_reb.27.t
     desc = qing_reb.27.d
 
-#    picture = GFX_report_event_election_vote
+	#    picture = GFX_report_event_election_vote
 	is_triggered_only=yes
     option = { #damn
         name = qing_reb.27.a
@@ -3033,7 +3098,7 @@ country_event = { #strike on shanghai
     title = qing_reb.29.t
     desc = qing_reb.29.d
 
-#    picture = GFX_report_event_election_vote
+	#    picture = GFX_report_event_election_vote
 	is_triggered_only=yes
     option = { #Besige the city
         name = qing_reb.29.a
@@ -3041,7 +3106,7 @@ country_event = { #strike on shanghai
 			factor = 100
 		}
 		add_manpower = -2000
-		QNG={country_event = {id = qing_reb.30}}
+		QNG={country_event = {id = qing_reb.30 days = 2}}
     }
 
 }
@@ -3050,7 +3115,7 @@ country_event = { #Countering the strike
     title = qing_reb.30.t
     desc = qing_reb.30.d
 
-#    picture = GFX_report_event_election_vote
+	#    picture = GFX_report_event_election_vote
 	is_triggered_only=yes
     option = { #Besige the city
         name = qing_reb.30.a
@@ -3058,23 +3123,17 @@ country_event = { #Countering the strike
 			factor = 100
 		}
 		add_manpower = -2000
-		random_list={
-			75={
-				FROM={country_event = {id = qing_reb.31}}#shanghai gambit fails
-			}
-			25={
-				FROM={country_event = {id = qing_reb.32}}#shanghai gambit succedes
-			}
+		hidden_effect = {
+		country_event = {id = qing_reb.31 days = 1}
 		}
-    }
-
+	}
 }
 country_event = { #ever victorius army formed
     id = qing_reb.31
     title = qing_reb.31.t
     desc = qing_reb.31.d
 
-#    picture = GFX_report_event_election_vote
+	#    picture = GFX_report_event_election_vote
 	is_triggered_only=yes
 	immediate={
 		QNG={
@@ -3095,7 +3154,7 @@ country_event = { #ever victorius army formed
 				picture = "Portrait_QNG_Frederick_Townsend_Ward.dds"
 				traits = { brilliant_strategist }
 				skill = 3
-				attack_skill = 5
+				attack_skill = 3
 				defense_skill = 2
 				planning_skill = 4
 				logistics_skill = 3
@@ -3107,22 +3166,23 @@ country_event = { #ever victorius army formed
 		ai_chance = {
 			factor = 100
 		}
+	TAI={country_event = {id = qing_reb.32}}
     }
 
 }
-country_event = { #strike on shanghai succedes
+country_event = { #fook
     id = qing_reb.32
     title = qing_reb.32.t
     desc = qing_reb.32.d
 
-#    picture = GFX_report_event_election_vote
+	#    picture = GFX_report_event_election_vote
 	is_triggered_only=yes
     option = { #perfect
         name = qing_reb.32.a
 		ai_chance = {
 			factor = 100
 		}
-		load_oob = TAI_shanghai_force
+		add_political_power = -25
     }
 
 }
@@ -3131,44 +3191,34 @@ country_event = { #Equipment Cache captured
     title = qing_reb.33.t
     desc = qing_reb.33.d
 
-#    picture = GFX_report_event_election_vote
+	    picture = "gfx/event_pictures/opium_war/report_event_second_opium_war_tianjin_treaty.png"
 	trigger={
 		OR={
 			has_idea = QNG_rebel_uprising
-			has_idea = QNG_rebel_uprising_lost
+			has_idea = QNG_rebel_uprising_2
 			has_idea = QNG_idea_banner_armies
 		}
 		has_war = yes
 	}
 	mean_time_to_happen={
-		days = 30
+		days = 45
 	}
     option = { #perfect
         name = qing_reb.33.a
 		ai_chance = {
 			factor = 100
 		}
-		random_list={
-			45={
-				add_equipment_to_stockpile={
+					equipment_to_stockpile={
 					type = uniform_equipment_0
 					amount = 1000
 					producer = QNG
-				}
-			}
-			30={
-				add_political_power = 10
-			}
-			25={
+					}
 				add_equipment_to_stockpile={
 					type = infantry_equipment_pike_and_shot_0
 					amount = 4000
 					producer = QNG
-				}
-			}
 		}
-    }
-
+	}
 }
 
 country_event = { #request for recognition - TODO
@@ -3176,7 +3226,7 @@ country_event = { #request for recognition - TODO
     title = qing_reb.34.t
     desc = qing_reb.34.d
 
-#    picture = GFX_report_event_election_vote
+	#    picture = GFX_report_event_election_vote
 	is_triggered_only=yes
     option = { #perfect
         name = qing_reb.34.a
@@ -3192,7 +3242,7 @@ country_event = { #Dreams of Transoxina
     title = qing_reb.35.t
     desc = qing_reb.35.d
 
-#    picture = GFX_report_event_election_vote
+	#    picture = GFX_report_event_election_vote
 	is_triggered_only=yes
     option = { #perfect
         name = qing_reb.35.a
@@ -3207,7 +3257,7 @@ country_event = { #Deligation from Dungan Clique Arrives
     title = qing_reb.36.t
     desc = qing_reb.36.d
 
-#    picture = GFX_report_event_election_vote
+	#    picture = GFX_report_event_election_vote
 	is_triggered_only=yes
     option = { #Agree
         name = qing_reb.36.a
@@ -3233,7 +3283,7 @@ news_event = { #formation of tranxoniana
 	
 	major = yes
 
-#    picture = GFX_report_event_election_vote
+	#    picture = GFX_report_event_election_vote
 	is_triggered_only=yes
     option = { #ok
         name = qing_reb.37.a
@@ -3249,7 +3299,7 @@ country_event = { #education reforms
     title = qing_reb.38.t
     desc = qing_reb.38.d
 
-# #    picture = GFX_report_event_election_vote
+	# #    picture = GFX_report_event_election_vote
 	is_triggered_only=yes
     option = { #open schools to all
         name = qing_reb.38.a
@@ -3277,7 +3327,7 @@ country_event = { #unifaction of taiwan
     title = qing_reb.39.t
     desc = qing_reb.39.d
 
-#    picture = GFX_report_event_election_vote
+	#    picture = GFX_report_event_election_vote
 	is_triggered_only=yes
     option = { #perfect
         name = qing_reb.39.a
@@ -3293,7 +3343,7 @@ country_event = { #shatter china
     title = qing_reb.40.t
     desc = qing_reb.40.d
 
-#    picture = GFX_report_event_election_vote
+	#    picture = GFX_report_event_election_vote
 	is_triggered_only=yes
     option = { #fully shattered
         name = qing_reb.40.a
@@ -3316,7 +3366,7 @@ country_event = { #refused
     title = qing_reb.41.t
     desc = qing_reb.41.d
 
-#    picture = GFX_report_event_election_vote
+	#    picture = GFX_report_event_election_vote
 	is_triggered_only=yes
     option = { #take them
         name = qing_reb.41.a
@@ -3346,7 +3396,7 @@ country_event = { #they agree
     title = qing_reb.42.t
     desc = qing_reb.42.d
 
-#    picture = GFX_report_event_election_vote
+	#    picture = GFX_report_event_election_vote
 	is_triggered_only=yes
     option = { #perfect
         name = qing_reb.42.a
@@ -3364,7 +3414,7 @@ country_event = { #Dungan revolt
     title = qing_reb.43.t
     desc = qing_reb.43.d
 
-#    picture = GFX_report_event_election_vote
+	#    picture = GFX_report_event_election_vote
 
     #trigger = {
 		#TAG = CHI
@@ -3431,7 +3481,7 @@ country_event = { #death of Zhu Heling
     title = qing_reb.44.t
     desc = qing_reb.44.d
 
-#    picture = GFX_report_event_election_vote
+	#    picture = GFX_report_event_election_vote
 	trigger = {
 		TAG = GXC
 		date < 1869.1.1
@@ -3468,7 +3518,7 @@ country_event = { #demand independance
     title = qing_reb.45.t
     desc = qing_reb.45.d
 
-#    picture = GFX_report_event_election_vote
+	#    picture = GFX_report_event_election_vote
 	is_triggered_only=yes
     option = { #perfect
         name = qing_reb.45.a
@@ -3489,7 +3539,7 @@ country_event = { #TAW offers a deal
     title = qing_reb.46.t
     desc = qing_reb.46.d
 
-#    picture = GFX_report_event_election_vote
+	#    picture = GFX_report_event_election_vote
 	is_triggered_only=yes
     option = { #accept
         name = qing_reb.46.a
@@ -3517,7 +3567,7 @@ country_event = { #PAW accepts
     title = qing_reb.47.t
     desc = qing_reb.47.d
 
-#    picture = GFX_report_event_election_vote
+	#    picture = GFX_report_event_election_vote
 	is_triggered_only=yes
 	option = { #ok
         name = qing_reb.47.a
@@ -3529,7 +3579,7 @@ country_event = { #PAW declines
     title = qing_reb.48.t
     desc = qing_reb.48.d
 
-#    picture = GFX_report_event_election_vote
+	#    picture = GFX_report_event_election_vote
 	is_triggered_only=yes
 	option = { #ok
         name = qing_reb.48.a
@@ -3542,7 +3592,7 @@ news_event = { #Unifaction of Taiwan
     title = qing_reb.49.t
     desc = qing_reb.49.d
 
-#    picture = GFX_report_event_election_vote
+	#    picture = GFX_report_event_election_vote
 	is_triggered_only=yes
 	
 	option = { #great
@@ -3578,7 +3628,7 @@ country_event = { #establishment of Pingnan Guo
     title = qing_reb.50.t
     desc = qing_reb.50.d
 
-#    picture = GFX_report_event_election_vote
+	#    picture = GFX_report_event_election_vote
 	is_triggered_only=yes
 	option = { #ok
         name = qing_reb.48.a
@@ -3592,7 +3642,7 @@ country_event = { #Equipment Cache captured
     title = qing_reb.51.t
     desc = qing_reb.51.d
 
-#    picture = GFX_report_event_election_vote
+	#    picture = GFX_report_event_election_vote
 	is_triggered_only = yes
     option = { #perfect
         name = qing_reb.51.a
@@ -3607,4 +3657,82 @@ country_event = { #Equipment Cache captured
 			}
 		}
     }
+}
+
+country_event = { #Rebels losing momentum
+	id = qing_reb.52
+	title = qing_reb.52.t
+	desc = qing_reb.52.d 
+	
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	   trigger = {
+		tag = TAI
+	}
+}
+country_event = { #taiping introduction
+	id = qing_reb.53
+	title = qing_reb.53.t
+	desc = qing_reb.53.d 
+	
+	#picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	
+	option = {
+		name = qing_reb.53.a
+	}
+}
+	
+country_event = { #Imperial maritime Customs Service 
+	id = qing.707
+	title = qing.707.t
+	desc = qing.707.d 
+	
+	#picture = 
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	option = { #WOW!!!!!!
+		name = qing.707.a 
+	}
+}
+country_event = { #China Merchants Steam Navigation Company
+	id = qing.708
+	title = qing.708.t
+	desc = qing.708.d 
+	
+	#picture = 
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #WOW!!!!!!
+		name = qing.708.a 
+	}
+}
+country_event = { #Imperial Chinese Telegraph Administration
+	id = qing.709
+	title = qing.709.t
+	desc = qing.709.d 
+	
+	#picture = 
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	option = { #WOW!!!!!!
+		name = qing.709.a 
+	}
+}
+
+country_event = { #Ye Mingchen’s remains return to China
+	id = qing.201
+	title = qing.201.t
+	desc = qing.201.d
+
+	#picture = 
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	option = { #this is sad
+		name = qing.201.a
+	}
 }

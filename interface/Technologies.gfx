@@ -913,6 +913,187 @@ spriteTypes = {
 		name = "GFX_air_superiority_medium"
 		texturefile = "gfx/interface/technologies/air_superiority.dds"
 	}
+
+	### Special Forces DOCTRINES
+	
+	SpriteType = {
+		name = "GFX_special_forces_placeholder_medium"
+		texturefile = "gfx/interface/technologies/fleet_in_being.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_special_forces_mountaineers_medium"
+		texturefile = "gfx/interface/technologies/special_forces_mountaineers_medium.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_ski_troops_medium"
+		texturefile = "gfx/interface/technologies/ski_troops_medium.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_rangers_medium"
+		texturefile = "gfx/interface/technologies/rangers_medium.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_special_forces_recon_medium"
+		texturefile = "gfx/interface/technologies/special_forces_recon_medium.dds"
+		alwaystransparent = yes
+	}
+	
+	SpriteType = {
+		name = "GFX_mountaineers_combat_1_medium"
+		texturefile = "gfx/interface/technologies/mountaineers_combat_1_medium.dds"
+		alwaystransparent = yes
+	}
+
+	SpriteType = {
+		name = "GFX_mountaineers_combat_2_medium"
+		texturefile = "gfx/interface/technologies/mountaineers_combat_2_medium.dds"
+		alwaystransparent = yes
+	}
+
+	SpriteType = {
+		name = "GFX_mountaineers_combat_3_medium"
+		texturefile = "gfx/interface/technologies/mountaineers_combat_3_medium.dds"
+		alwaystransparent = yes
+	}
+
+	SpriteType = {
+		name = "GFX_mountaineers_keystone_1_medium"
+		texturefile = "gfx/interface/technologies/mountaineers_keystone_1_medium.dds"
+		alwaystransparent = yes
+	}
+
+	SpriteType = {
+		name = "GFX_mountaineers_keystone_2_medium"
+		texturefile = "gfx/interface/technologies/mountaineers_keystone_2_medium.dds"
+		alwaystransparent = yes
+	}
+
+	SpriteType = {
+		name = "GFX_special_forces_paratroopers_medium"
+		texturefile = "gfx/interface/technologies/special_forces_paratroopers_medium.dds"
+		alwaystransparent = yes
+	}
+
+	SpriteType = {
+		name = "GFX_paras_dispersed_drop_medium"
+		texturefile = "gfx/interface/technologies/paras_dispersed_drop_medium.dds"
+		alwaystransparent = yes
+	}
+
+	SpriteType = {
+		name = "GFX_paras_combat_drop_medium"
+		texturefile = "gfx/interface/technologies/paras_combat_drop_medium.dds"
+		alwaystransparent = yes
+	}
+
+	SpriteType = {
+		name = "GFX_paras_airborne_light_armor_medium"
+		texturefile = "gfx/interface/technologies/paras_airborne_light_armor_medium.dds"
+		alwaystransparent = yes
+	}
+
+	SpriteType = {
+		name = "GFX_paras_combat_1_medium"
+		texturefile = "gfx/interface/technologies/paras_combat_1_medium.dds"
+		alwaystransparent = yes
+	}
+
+	SpriteType = {
+		name = "GFX_paras_combat_2_medium"
+		texturefile = "gfx/interface/technologies/paras_combat_2_medium.dds"
+		alwaystransparent = yes
+	}
+
+	SpriteType = {
+		name = "GFX_paras_bonus_1_medium"
+		texturefile = "gfx/interface/technologies/paras_bonus_1_medium.dds"
+		alwaystransparent = yes
+	}
+
+	SpriteType = {
+		name = "GFX_paras_bonus_2_medium"
+		texturefile = "gfx/interface/technologies/paras_bonus_2_medium.dds"
+		alwaystransparent = yes
+	}
+
+	SpriteType = {
+		name = "GFX_paras_keystone_1_medium"
+		texturefile = "gfx/interface/technologies/paras_keystone_1_medium.dds"
+		alwaystransparent = yes
+	}
+
+	SpriteType = {
+		name = "GFX_paras_keystone_2_medium"
+		texturefile = "gfx/interface/technologies/paras_keystone_2_medium.dds"
+		alwaystransparent = yes
+	}
+
+	SpriteType = {
+		name = "GFX_special_forces_marines_medium"
+		texturefile = "gfx/interface/technologies/special_forces_marines_medium.dds"
+		alwaystransparent = yes
+	}
+
+	SpriteType = {
+		name = "GFX_marines_jungle_troops_medium"
+		texturefile = "gfx/interface/technologies/marines_jungle_troops_medium.dds"
+		alwaystransparent = yes
+	}
+
+	SpriteType = {
+		name = "GFX_marines_shore_parties_medium"
+		texturefile = "gfx/interface/technologies/marines_shore_parties_medium.dds"
+		alwaystransparent = yes
+	}
+
+	SpriteType = {
+		name = "GFX_marines_recon_medium"
+		texturefile = "gfx/interface/technologies/marines_recon_medium.dds"
+		alwaystransparent = yes
+	}
+
+	SpriteType = {
+		name = "GFX_marines_commandoes_medium"
+		texturefile = "gfx/interface/technologies/marines_commandoes_medium.dds"
+		alwaystransparent = yes
+	}
+
+	SpriteType = {
+		name = "GFX_marines_expeditionary_medium"
+		texturefile = "gfx/interface/technologies/marines_expeditionary_medium.dds"
+		alwaystransparent = yes
+	}
+
+	SpriteType = {
+		name = "GFX_marines_commandos_demolition_medium"
+		texturefile = "gfx/interface/technologies/marines_commandos_demolition_medium.dds"
+		alwaystransparent = yes
+	}
+
+	SpriteType = {
+		name = "GFX_marines_expeditionary_blowtorch_medium"
+		texturefile = "gfx/interface/technologies/marines_expeditionary_blowtorch_medium.dds"
+		alwaystransparent = yes
+	}
+
+	SpriteType = {
+		name = "GFX_marines_commandoes_mechanised_medium"
+		texturefile = "gfx/interface/technologies/marines_commandoes_mechanised_medium.dds"
+		alwaystransparent = yes
+	}
+
+	SpriteType = {
+		name = "GFX_marines_expeditionary_support_medium"
+		texturefile = "gfx/interface/technologies/marines_expeditionary_support_medium.dds"
+		alwaystransparent = yes
+	}
 	### Soviet Aircrafts ###
 	SpriteType = {
 		name = "GFX_SOV_tactical_bomber1_medium"
@@ -1607,6 +1788,74 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_tech_naval_mtg_dedicated_transport_boats_medium"
 		texturefile = "gfx/interface/technologies/ships/convoy_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_naval_mtg_high_explosive_rounds_medium"
+		texturefile = "gfx/interface/technologies/ships/high_explosive_shells.png"
+	}
+	SpriteType = {
+		name = "GFX_tech_naval_mtg_breach_loaded_shells_medium"
+		texturefile = "gfx/interface/technologies/ships/breech_loaded_shells.png"
+	}
+	SpriteType = {
+		name = "GFX_tech_naval_mtg_hdyraulic_machinery_medium"
+		texturefile = "gfx/interface/technologies/ships/hdyraulic_machinery.png"
+	}
+	SpriteType = {
+		name = "GFX_tech_naval_mtg_modern_ironclad_rams_medium"
+		texturefile = "gfx/interface/technologies/ships/ironclad_ram.png"
+	}
+	SpriteType = {
+		name = "GFX_tech_naval_mtg_high_explosive_rounds_medium"
+		texturefile = "gfx/interface/technologies/ships/high_explosive_rounds.png"
+	}
+	SpriteType = {
+		name = "GFX_tech_naval_mtg_krupp_armor_medium"
+		texturefile = "gfx/interface/technologies/ships/krupp_armour.png"
+	}
+	SpriteType = {
+		name = "GFX_tech_naval_mtg_harvey_armor_medium"
+		texturefile = "gfx/interface/technologies/ships/harvey_armour.png"
+	}
+	SpriteType = {
+		name = "GFX_tech_naval_mtg_gunboat_engineering_1_medium"
+		texturefile = "gfx/interface/technologies/ships/gunboat_enginering.png"
+	}
+	SpriteType = {
+		name = "GFX_tech_naval_mtg_gunboat_hull_engineering_1_medium"
+		texturefile = "gfx/interface/technologies/ships/gunboat_hull_1.png"
+	}
+	SpriteType = {
+		name = "GFX_tech_naval_mtg_gunboat_engineering_2_medium"
+		texturefile = "gfx/interface/technologies/ships/gunboat_hull_2.png"
+	}
+	SpriteType = {
+		name = "GFX_tech_naval_mtg_monitor_engineering_2_medium"
+		texturefile = "gfx/interface/technologies/ships/monitor_engineering2.png"
+	}
+	SpriteType = {
+		name = "GFX_tech_naval_mtg_monitor_engineering_1_medium"
+		texturefile = "gfx/interface/technologies/ships/monitor_engineering1.png"
+	}
+	SpriteType = {
+		name = "GFX_tech_naval_mtg_monitor_hull_engineering_1_medium"
+		texturefile = "gfx/interface/technologies/ships/monitor_hull_enginering.png"
+	}
+	SpriteType = {
+		name = "GFX_tech_naval_mtg_monitor_hull_engineering_2_medium"
+		texturefile = "gfx/interface/technologies/ships/monitor_hull_engineering2.png"
+	}
+	SpriteType = {
+		name = "GFX_tech_naval_mtg_torpedo_boat_engineering_3_medium"
+		texturefile = "gfx/interface/technologies/ships/torpedo_boat_engineering3.png"
+	}
+	SpriteType = {
+		name = "GFX_tech_naval_mtg_torpedo_boat_engineering_2_medium"
+		texturefile = "gfx/interface/technologies/ships/torpedo_boat_engineering2.png"
+	}
+	SpriteType = {
+		name = "GFX_tech_naval_mtg_torpedo_boat_engineering_1_medium"
+		texturefile = "gfx/interface/technologies/ships/torpedo_boat_engineering1.png"
 	}
 	SpriteType = {
 		name = "GFX_tech_naval_dedicated_transport_boats_medium"
@@ -4280,6 +4529,14 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_hydraulic_recoil_mechanism_medium"
 		texturefile = "gfx/interface/technologies/artillery/hydraulic_recoil_mechanism.png"
+	}
+	SpriteType = {
+		name = "GFX_predicted_fire_sights_medium"
+		texturefile = "gfx/interface/technologies/artillery/predicted_fire_sights.png"
+	}
+	SpriteType = {
+		name = "GFX_predicted_fire_sights_medium"
+		texturefile = "gfx/interface/technologies/artillery/predicted_fire_sights.png"
 	}
 	SpriteType = {
 		name = "GFX_lining-plane_sights_medium"
@@ -11117,12 +11374,40 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/bba_tech_aa_cannon_2.dds"
 	}
 	SpriteType = {
+		name = "GFX_aa_cannon_3_medium"
+		texturefile = "gfx/interface/technologies/bba_tech_aa_cannon_3.dds"
+	}
+	SpriteType = {
 		name = "GFX_survivability_studies_medium"
 		texturefile = "gfx/interface/technologies/bba_tech_survivability_studies.dds"
 	}
 	SpriteType = {
 		name = "GFX_early_bombs_medium"
-		texturefile = "gfx/interface/technologies/bba_tech_bombs.dds"
+		texturefile = "gfx/interface/technologies/bba_tech_early_bombs.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_heavy_bombs_medium"
+		texturefile = "gfx/interface/technologies/bba_tech_heavy_bombs.dds"
+	}
+	SpriteType = {
+		name = "GFX_air_torpedoe_1_medium"
+		texturefile = "gfx/interface/technologies/basic_torpedo.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_air_torpedoe_2_medium"
+		texturefile = "gfx/interface/technologies/electric_torpedo.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_air_torpedoe_3_medium"
+		texturefile = "gfx/interface/technologies/bba_tech_air_torpedoe_3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_armor_piercing_bombs_medium"
+		texturefile = "gfx/interface/technologies/bba_tech_armor_piercing_bombs.dds"
 	}
 	SpriteType = {
 		name = "GFX_photo_reconnaisance_medium"

@@ -38,7 +38,7 @@ ideas = {
 			picture = jap_zaibatsu
 
 			modifier = {
-				consumer_goods_factor = -0.03
+				consumer_goods_expected_value = -0.03
 				political_power_factor = -0.15
 				research_speed_factor = 0.04
 				production_speed_buildings_factor = 0.08
@@ -165,7 +165,7 @@ ideas = {
 			picture = JAP_foreign_trade
 
 			modifier = {
-				consumer_goods_factor = -0.03
+				consumer_goods_expected_value = -0.03
 				
 			}
 		}
@@ -181,7 +181,7 @@ ideas = {
 			picture = JAP_foreign_trade
 
 			modifier = {
-				consumer_goods_factor = -0.03
+				consumer_goods_expected_value = -0.03
 				
 			}
 		}
@@ -197,7 +197,7 @@ ideas = {
 			picture = JAP_foreign_trade
 
 			modifier = {
-				consumer_goods_factor = -0.03
+				consumer_goods_expected_value = -0.03
 				
 			}
 		}
@@ -213,7 +213,7 @@ ideas = {
 			picture = JAP_foreign_trade
 
 			modifier = {
-				consumer_goods_factor = -0.03
+				consumer_goods_expected_value = -0.03
 				
 			}
 		}
@@ -229,17 +229,8 @@ ideas = {
 			picture = JAP_foreign_trade
 
 			modifier = {
-				consumer_goods_factor = -0.03
+				consumer_goods_expected_value = -0.03
 				
-			}
-		}
-		lacking_industry = {
-			allowed = {
-				always = no
-			}
-
-			modifier = {
-				consumer_goods_factor = 50
 			}
 		}
 		
@@ -341,10 +332,6 @@ ideas = {
 				local_resources_factor = -0.1
 				production_speed_industrial_complex_factor = -0.2
 				political_power_gain = -0.6
-			}
-			on_remove = {
-				# add_ideas = JAP_industrial_revolution_part2
-				# complete_national_focus = JAP_our_military_economy
 			}
 		}
 
@@ -489,13 +476,9 @@ ideas = {
 				political_power_gain = -0.6
 			}
 			equipment_bonus = {
-					infantry_equipment = {
-						build_cost_ic = 0.1 instant = yes
-					}
+				infantry_equipment = {
+					build_cost_ic = 0.1 instant = yes
 				}
-			on_remove = {
-				add_ideas = JAP_industrial_revolution_part2
-				#complete_national_focus = JAP_kaigun_industry
 			}
 		}
 
@@ -592,10 +575,6 @@ ideas = {
 				production_speed_naval_base_factor = -0.1
 				industrial_capacity_dockyard = -0.15
 				political_power_gain = -0.6
-			}
-			on_remove = {
-				# add_ideas = JAP_industrial_revolution_part3
-				# complete_national_focus = JAP_tetsudou_industry
 			}
 		}
 
@@ -762,9 +741,6 @@ ideas = {
 				production_speed_buildings_factor = -0.05
 				production_speed_rail_way_factor = -0.02
 				political_power_gain = -0.30
-			}
-			on_remove = {
-				#complete_national_focus = JAP_end_of_the_industrial_revolution
 			}
 		}
 
@@ -1239,7 +1215,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 
 			modifier = {
-				consumer_goods_factor = 0.05
+				consumer_goods_expected_value = 0.05
 				production_speed_arms_factory_factor = 0.02
 				industrial_capacity_factory = 0.02
 			}
@@ -1253,7 +1229,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 
 			modifier = {
-				consumer_goods_factor = 0.03
+				consumer_goods_expected_value = 0.03
 				production_speed_arms_factory_factor = 0.4
 				industrial_capacity_factory = 0.04
 			}
@@ -1268,7 +1244,7 @@ ideas = {
 			picture = budget_scientific_funding_regular_state_sponsorship
 
 			modifier = {
-				consumer_goods_factor = 0.05	
+				consumer_goods_expected_value = 0.05	
 			}
 		}
 
@@ -1280,7 +1256,7 @@ ideas = {
 			picture = budget_scientific_funding_regular_state_sponsorship
 
 			modifier = {
-				consumer_goods_factor = -0.05	
+				consumer_goods_expected_value = -0.05	
 			}
 		}
 
@@ -1292,7 +1268,7 @@ ideas = {
 			picture = budget_scientific_funding_regular_state_sponsorship
 
 			modifier = {
-				consumer_goods_factor = -0.05	
+				consumer_goods_expected_value = -0.05	
 			}
 		}
 		### POLITICAL IDEAS
@@ -1448,7 +1424,7 @@ ideas = {
 
 			modifier = {
 				research_speed_factor = 0.03
-				consumer_goods_factor = 0.02
+				consumer_goods_expected_value = 0.02
 			}
 		}
 		### imperial universities3
@@ -1461,7 +1437,7 @@ ideas = {
 
 			modifier = {
 				research_speed_factor = 0.04
-				consumer_goods_factor = -0.02
+				consumer_goods_expected_value = -0.02
 			}
 		}
 		### imperial universities4
@@ -1474,7 +1450,7 @@ ideas = {
 
 			modifier = {
 				research_speed_factor = 0.05
-				consumer_goods_factor = -0.02	
+				consumer_goods_expected_value = -0.02	
 			}
 		}
 		### imperial universities5
@@ -1487,7 +1463,7 @@ ideas = {
 
 			modifier = {
 				research_speed_factor = 0.06
-				consumer_goods_factor = -0.02
+				consumer_goods_expected_value = -0.02
 			}
 		}
 		### Reward Loyal Domains
@@ -1529,7 +1505,7 @@ ideas = {
 			picture = generic_foreign_capital
 
 			modifier = {
-				consumer_goods_factor = -0.1
+				consumer_goods_expected_value = -0.1
 			}
 		}
 		### Gold Standard
@@ -1575,7 +1551,7 @@ ideas = {
 			
 			modifier = {
 				stability_factor = 0.01
-				consumer_goods_factor = -0.005
+				consumer_goods_expected_value = -0.005
 				industrial_capacity_factory = 0.015
 			}
 		}
@@ -1591,7 +1567,7 @@ ideas = {
 			
 			modifier = {
 				line_change_production_efficiency_factor = 0.05
-				consumer_goods_factor = -0.05
+				consumer_goods_expected_value = -0.05
 				industry_repair_factor = 0.03
 			}
 		}
@@ -1608,7 +1584,7 @@ ideas = {
 			modifier = {
 				political_power_gain = 0.03
 				line_change_production_efficiency_factor = 0.05
-				consumer_goods_factor = 0.03
+				consumer_goods_expected_value = 0.03
 				industry_repair_factor = 0.03
 			}
 		}
@@ -1625,7 +1601,7 @@ ideas = {
 			modifier = {
 				min_export = 0.04
 				line_change_production_efficiency_factor = 0.05
-				consumer_goods_factor = 0.05
+				consumer_goods_expected_value = 0.05
 				trade_opinion_factor = 0.1
 			}
 		}
@@ -1642,7 +1618,7 @@ ideas = {
 			modifier = {
 				min_export = -0.06
 				line_change_production_efficiency_factor = 0.07
-				consumer_goods_factor = -0.03
+				consumer_goods_expected_value = -0.03
 			}
 		}
 		### Domestic Banking System
@@ -1769,7 +1745,7 @@ ideas = {
 			
 			modifier = {
 				war_support_factor = -0.15
-				consumer_goods_factor = 0.15
+				consumer_goods_expected_value = 0.15
 				political_power_gain = 0.25
 			}
 		}
