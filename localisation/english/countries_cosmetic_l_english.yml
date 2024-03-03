@@ -1820,14 +1820,8 @@
  WVG_reformed_virginia_centrism_ADJ: "West Virginian"
  WVG_reformed_virginia_centrism_DEF: "The Unionist Virginian Government in Wheeling"
 
- PHL_provisional: "Philadelphia Commune"
- PHL_provisional_DEF: "The Philadelphia Commune"
- PHL_provisional_ADJ: "Philadelphian"
-
  ### USA DECENTRALIZED ###
- PHL_USA_state: "Pennsylvania"
- PHL_USA_state_DEF: "Pennsylvania"
- PHL_USA_state_ADJ: "Pennsylvanian"
+
  MHC_USA_state: "New York"
  MHC_USA_state_DEF: "New York"
  MHC_USA_state_ADJ: "New Yorker"
@@ -3850,6 +3844,13 @@
  FIN_Svecoman: "Grand Duchy of Finland"
  FIN_Svecoman_ADJ: "Grand Duchy of Finland"
  FIN_Svecoman_DEF: "Grand Duchy of Finland"
+
+ ALK_governorate_general: "Governorate-General of Alyaska"
+ ALK_governorate_general_ADJ: "Governorate-General of Alyaska"
+ ALK_governorate_general_DEF: "Alyaskan"
+ ALK_Department_cosmetic: "Department of Alyaska"
+ ALK_Department_cosmetic_ADJ: "Department of Alyaska"
+ ALK_Department_cosmetic_DEF: "Alyaskan"
 
  SUL_North_Borneo: "North Borneo"
  SUL_North_Borneo_ADJ: "British North Borneo"

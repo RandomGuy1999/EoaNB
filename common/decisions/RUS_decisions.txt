@@ -1088,9 +1088,11 @@ RUS_Industrialisation_decisions = {
 
 		fire_only_once = yes
 
-		is_good = yes
+		is_good = no
 
 		days_mission_timeout = 70
+
+		selectable_mission = yes
 
 		complete_effect = {
 			### To Russia  ( 23349 )
@@ -1144,9 +1146,11 @@ RUS_Industrialisation_decisions = {
 
 		fire_only_once = yes
 
-		is_good = yes
+		is_good = no
 
 		days_mission_timeout = 120
+
+		selectable_mission = yes
 
 		complete_effect = {
 			### To Russia  ( 12093 )
@@ -2415,10 +2419,10 @@ RUS_Industrialisation_decisions = {
 					type = iron
 					amount = 12
 				}
-				add_resource = {
-					type = rare_earth_metals
-					amount = 7
-				}
+				#add_resource = {
+				#	type = rare_earth_metals
+				#	amount = 7
+				#}
 			}
 		}
 
@@ -3162,7 +3166,7 @@ RUS_Industrialisation_decisions = {
 		#allowed = { tag = RUS }
 
 		available = {
-			always = no
+			date > 1860.1.1
 		}
 
 		visible = {
@@ -3283,6 +3287,7 @@ RUS_Industrialisation_decisions = {
 	}
 }
 
+###Caucasian War
 RUS_Caucasian_decisions = {
 
 	RUS_Burn_CIR_Villages = {
@@ -5734,7 +5739,7 @@ RUS_decision_category_milyutin_reforms = {
 
 	RUS_mission_vic_Army_Reform = {
 
-		icon = generic_decision
+		icon = navy
 
 		available = {
 			OR = {
@@ -6471,14 +6476,6 @@ RUS_decision_category_milyutin_reforms = {
 		}
 
 		cancel_trigger = {
-			NOT = {
-					AND = {
-						owns_state = 195
-						FIN = {
-							is_subject_of = RUS
-					}
-				}
-			}
 		}
 
 		cancel_effect = {
@@ -7029,7 +7026,6 @@ RUS_decision_category_milyutin_reforms = {
 
 		cancel_trigger = {
 			OR = {
-				has_tech = rifle_equipment3
 				NOT = { debt_not_bankrupt_trigger = yes }
 			}
 		}
@@ -7086,25 +7082,18 @@ RUS_decision_category_milyutin_reforms = {
 		available = {
 			NOT = { has_country_flag = RUS_military_reform_ongoing_flag }
 			has_completed_focus = RUS_vic_new_rifle_models
-			NOT = {
-				has_tech = rifle_equipment3
-			}
 		}
 
 		visible = {
-			NOT = {
-				has_tech = rifle_equipment3
-			}
 		}
 
 		cancel_trigger = {
 			OR = {
-				has_tech = rifle_equipment3
 				NOT = { debt_not_bankrupt_trigger = yes }
 			}
 		}
 
-		fire_only_once = no
+		fire_only_once = yes
 
 		custom_cost_trigger = {
 			if = {
@@ -7133,14 +7122,11 @@ RUS_decision_category_milyutin_reforms = {
 				army_experience = -25
 				add_command_power = -50
 			}
-			set_technology = {
-				rifle_equipment3 = 1
-			}
-			create_equipment_variant = {
-				type = infantry_equipment_rifle_3
-				#parent = rifle_equipment3
-				name = "Berdan Rifle No1"
-			}
+			#create_equipment_variant = {
+			#	type = infantry_equipment_rifle_3
+			#	#parent = rifle_equipment3
+			#	name = "Berdan Rifle No1"
+			#}
 			hidden_effect = {
 				set_country_flag = RUS_military_reform_ongoing_flag
 			}
@@ -7152,7 +7138,10 @@ RUS_decision_category_milyutin_reforms = {
 			add_tech_bonus = { ahead_reduction = 1 uses = 1 category = rifle_equipment_techs }
 			hidden_effect = {
 				clr_country_flag = RUS_military_reform_ongoing_flag
-				country_event = { id = rossiya.808 days = 600 }
+				country_event = { 
+					id = rossiya.808 
+					days = 600 
+				}
 			}
 		}
 
@@ -7802,6 +7791,77 @@ RUS_decision_category_navy_reforms = {
 		}
 	}
 
+	#Finalise Nikolaevsk Naval Base
+	RUS_decision_finalise_nikolaevsk_naval_base = {
+
+		icon = naval_base
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 560
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		#allowed = { tag = RUS }
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 1
+			RUS = {
+				owns_state = 560
+			}
+			has_completed_focus = RUS_vic_far_eastern_navy
+		}
+
+		fire_only_once = yes
+		is_good = yes
+
+		cost = 0
+		days_remove = 120
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = RUS_military_reform_ongoing_flag
+			}
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = RUS_decision_nikolaevsk_tt
+			hidden_effect = {
+				560 = {
+					add_building_construction = {
+						type = naval_base
+						province = 12559
+						level = 1
+						instant_build = yes
+					}
+				}
+				560 = {
+					set_state_name = "Nikolaevsk"
+				}
+				add_victory_points = {
+					province = 12559
+					value = 3
+				}
+				set_province_name = {
+					id = 12559
+					name = "Nikolaevsk"
+				}
+
+				clr_country_flag = RUS_military_reform_ongoing_flag
+			}
+		}	
+		
+		ai_will_do = {
+			base = 1
+		}	
+	}
+
 	#The Siberian Military Flotilia
 	RUS_mission_vic_siberian_military_flotilia  = {
 
@@ -7814,8 +7874,8 @@ RUS_decision_category_navy_reforms = {
 			#tooltip = RUS_vic_mission_Support_USA_trigger_tt
 				OR = {
 					ships_in_state_ports = {
-						size > 5
-						state = 650
+						size > 4
+						state = 560
 					}
 					ROOT = { is_ai = yes }
 				}
@@ -10548,7 +10608,7 @@ RUS_peasant_reform_decision_category = {
 			country_event = rossiya.287
 			hidden_effect = {
 				clr_country_flag = RUS_judicial_reform_ongoing_flag
-				country_event = rossiya.574
+				country_event = rossiya.576
 			}
 		}
 
@@ -11400,7 +11460,7 @@ RUS_peasant_reform_decision_category = {
 			country_event = rossiya.286
 			hidden_effect = {
 				clr_country_flag = RUS_administrative_reform_ongoing_flag
-				country_event = rossiya.573
+				country_event = rossiya.577
 			}
 		}
 

@@ -3,6 +3,9 @@
   
   set_country_flag = true_china
   set_country_flag = QNG_xianjing_tree
+  QNG = {
+	country_event = { id = qing.29 days = 7}
+  }
 
   oob = "QNG_1857"
 if = {
@@ -178,6 +181,20 @@ set_popularities = {
 				}
 			#obsolete = no
 		}
+		create_equipment_variant = {
+			name = "Confucius-class"
+			type = ship_hull_gunboat_1
+			name_group = GER_CA_HISTORICAL
+			parent_version = 0
+			modules={
+				fixed_ship_battery_slot=ship_cannon_battery_1
+				fixed_ship_engine_slot=ship_engine_steam_screw_gunboat
+				fixed_ship_fire_control_system_slot=fire_control_system_0
+				mid_1_custom_slot=ship_cannon_battery_1
+				fixed_ship_armor_slot=ship_armor_capital_hardwood_0
+			}
+			#obsolete = no
+		}
 	}
 
 
@@ -199,8 +216,8 @@ set_popularities = {
 	#Advisors
 	recruit_character = QNG_weng_tonghe
 	recruit_character = QNG_keying
-	recruit_character = QNG_yixuan_princ_chun
-	recruit_character = QNG_duan
+	recruit_character = QNG_yixuan_princ_chun #yixuan was 17 but eh let's allow him to stay
+	#recruit_character = QNG_duan yixuan was literally 1 year old in 1857
 	recruit_character = QNG_shushun
 	recruit_character = QNG_prince_gong
 	recruit_character = QNG_prosper_giquel

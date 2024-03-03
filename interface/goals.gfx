@@ -1756,6 +1756,22 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/_general/international_politics/Focus_Diplomacy_UK.dds"
 	}
 	SpriteType = {
+		name = "GFX_Focus_diplomacy_JAP"
+		texturefile = "gfx/interface/goals/_general/international_politics/Focus_diplomacy_JAP.png"
+	}
+	SpriteType = {
+		name = "GFX_Focus_diplomacy_KOR"
+		texturefile = "gfx/interface/goals/_general/international_politics/Focus_diplomacy_KOR.png"
+	}
+	SpriteType = {
+		name = "GFX_Focus_diplomacy_RYK"
+		texturefile = "gfx/interface/goals/_general/international_politics/Focus_diplomacy_RYK.png"
+	}
+	SpriteType = {
+		name = "GFX_Focus_diplomacy_SPA"
+		texturefile = "gfx/interface/goals/_general/international_politics/Focus_diplomacy_SPA.png"
+	}
+	SpriteType = {
 		name = "GFX_focus_diplomatic_advancement"
 		texturefile = "gfx/interface/goals/_general/international_politics/focus_diplomatic_advancement.dds"
 	}
@@ -2116,6 +2132,22 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/_general/international_politics/Focus_Trade_Gun.dds"
 	}
 	SpriteType = {
+		name = "GFX_Focus_trade_JAP"
+		texturefile = "gfx/interface/goals/_general/international_politics/Focus_trade_JAP.png"
+	}
+	SpriteType = {
+		name = "GFX_Focus_trade_KOR"
+		texturefile = "gfx/interface/goals/_general/international_politics/Focus_trade_KOR.png"
+	}
+	SpriteType = {
+		name = "GFX_Focus_trade_RYK"
+		texturefile = "gfx/interface/goals/_general/international_politics/Focus_trade_RYK.png"
+	}
+	SpriteType = {
+		name = "GFX_Focus_trade_SPA"
+		texturefile = "gfx/interface/goals/_general/international_politics/Focus_trade_SPA.png"
+	}
+	SpriteType = {
 		name = "GFX_Focus_trade_scandinavia"
 		texturefile = "gfx/interface/goals/_general/international_politics/focus_trade_scandinavia.dds"
 	}
@@ -2126,6 +2158,10 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_Focus_War_American_Civil_War"
 		texturefile = "gfx/interface/goals/_general/international_politics/Focus_War_American_Civil_War.dds"
+	}
+	SpriteType = {
+		name = "GFX_Focus_war_BUR"
+		texturefile = "gfx/interface/goals/_general/international_politics/Focus_war_BUR.png"
 	}
 	SpriteType = {
 		name = "GFX_Focus_War_Opium"
@@ -5527,6 +5563,22 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/italy/focus_ITA_Nigra.png"
 	}
 	SpriteType = {
+		name = "GFX_focus_ITA_admiral_comission"
+		texturefile = "gfx/interface/goals/italy/focus_ITA_admiral_comission.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_ITA_limit_spending"
+		texturefile = "gfx/interface/goals/italy/focus_ITA_limit_spending.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_ITA_merge_fleets"
+		texturefile = "gfx/interface/goals/italy/focus_ITA_merge_fleets.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_ITA_results_of_independence"
+		texturefile = "gfx/interface/goals/italy/focus_ITA_results_of_independence.png"
+	}
+	SpriteType = {
 		name = "GFX_focus_ITA_third_independence_war"
 		texturefile = "gfx/interface/goals/italy/focus_ITA_third_independence_war.png"
 	}
@@ -7778,8 +7830,26 @@ spriteTypes = {
 		name = "GFX_focus_NOR_skorpionen"
 		texturefile = "gfx/interface/goals/nor/skorpionen.png"
 	}
-
-
+	spriteType = {
+		name = "GFX_focus_NOR_sweden_norway_training"
+		texturefile = "gfx/interface/goals/nor/sweden_norway_training.png"
+	}
+	spriteType = {
+		name = "GFX_focus_NOR_army_for_swedes"
+		texturefile = "gfx/interface/goals/nor/army_for_swedes.png"
+	}
+	spriteType = {
+		name = "GFX_focus_NOR_kammerloader_modernization"
+		texturefile = "gfx/interface/goals/nor/kammerloader_modernization.png"
+	}
+	spriteType = {
+		name = "GFX_focus_NOR_expand_kongsberg"
+		texturefile = "gfx/interface/goals/nor/expand_kongsberg.png"
+	}
+	spriteType = {
+		name = "GFX_focus_NOR_our_own_twist"
+		texturefile = "gfx/interface/goals/nor/our_own_twist.png"
+	}
 	##################
 	##### DENMARK ####
 	##################
@@ -8371,6 +8441,12 @@ spriteTypes = {
     spriteType = {
         name = "GFX_goal_Focus_RUS_alexander_second"
         texturefile = "gfx/interface/goals/russia/Focus_RUS_alexander_second.png"
+    }
+
+	### Alyaska
+	spriteType = {
+        name = "GFX_goal_Focus_ALK_pearl_of_the_motherland"
+        texturefile = "gfx/interface/goals/alyaska/Focus_ALK_pearl_of_the_motherland.png"
     }
 
 	##########################################
