@@ -13,16 +13,16 @@
 	add_ideas = {
 		#POLITICS
 
-		hos_is_leader
+		#hos_is_leader
 		pre_industrial_era
 		agrarian
-		non_monarchical_system
-		parliamentary_republic
+		#non_monarchical_system
+		#parliamentary_republic
 
 		civilian_economy
 		limited_exports
-		two_percent
-		normal_taxes
+		army_spending_level_2
+		taxation_level_3
 	cl_legal
 
 		#stagnation_growth
@@ -31,22 +31,22 @@
 		slavery
 		parliamentary_suffrage
 
-		no_constitution
+		#no_constitution
 		no_elections
 
 		privileged_education
 		state_religion
 		#religion_protestant
 
-		 hc_no_healthcare
-		law_police_force
-		inframain_no_subsidies_infrastructure
-		navinfra_no_naval_infrastructure
-		sfund_private_ventures_only
+		 social_spending_level_1
+		law_spending_level_4
+		road_spending_level_1
+		navy_spending_level_1
+		research_spending_level_1
 
 				 #NATIONAL SPIRITS
-		 trv_idea_occupied_swazi_territory
-		 trv_idea_disjointed_government
+		 TRV_idea_occupied_swazi_territory
+		 TRV_idea_disjointed_government
 
 	}
 
@@ -94,15 +94,9 @@
 	}
 
 	# POLITICAL LEADERS
-
-	create_country_leader = {
-		name = "Marthinus Wessel Pretorius"
-		desc = "POLITICS_GEORGE_V_DESC"
-		picture = "Portrait_TRV_Marthinus_Wessel_Pretorius.dds"
-		expire = "1900.1.1"
-		ideology = conserv
-		traits = {
-
-		}
-	}
+	recruit_character = TRV_Marthinus_Wessel_Pretorius
+	recruit_character = TRV_interregnum
+	recruit_character = TRV_Stephanus_Schoeman
+	recruit_character = TRV_Johannes_Grobler
+	recruit_character = TRV_Rensburg
 }

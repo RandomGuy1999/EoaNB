@@ -13,19 +13,31 @@
 	set_country_flag = ETH_south_eritrea_oromo
 	set_country_flag = ETH_gedaref_oromo
 
+	### Economy
+    add_ideas = generic_unemployment_idea
+    set_variable = { unemployment_value_modifier = 0.1 }
+    set_variable = { current_unemployment = 0.05 }
+    clamp_variable = {
+        var = current_unemployment
+        min = 0
+        max = 1
+    }
+    update_unemployment_modifier = yes
+    add_to_variable = { money = 1 }
+
 	add_ideas = {
 		#POLITICS
 
-		hos_is_leader
+		#hos_is_leader
 		pre_industrial_era
 		agrarian
-		nonfamily_heir
-		absolute_monarchy
+		#nonfamily_heir
+		#absolute_monarchy
 
 		civilian_economy
 		closed_economy
-		two_percent
-		high_taxes
+		army_spending_level_2
+		taxation_level_4
 	cl_legal
 
 		#stagnation_growth
@@ -34,18 +46,18 @@
 		slavery
 		absolutism
 
-		no_constitution
+		#no_constitution
 		no_elections
 
 		privileged_education
 		state_religion
 		#religion_coptic
 
-	 hc_no_healthcare
-		law_police_force
-		inframain_no_subsidies_infrastructure
-		navinfra_no_naval_infrastructure
-		sfund_private_ventures_only
+	 social_spending_level_1
+		law_spending_level_4
+		road_spending_level_1
+		navy_spending_level_1
+		research_spending_level_1
 
 				 #NATIONAL SPIRITS
 

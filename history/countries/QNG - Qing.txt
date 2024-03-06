@@ -3,6 +3,8 @@
   
   set_country_flag = true_china
   set_country_flag = QNG_xianjing_tree
+  set_country_flag = xianfeng_universal_prosperity_flag
+  set_country_flag = summer_palace_flag
   QNG = {
 	country_event = { id = qing.29 days = 7}
   }
@@ -22,17 +24,17 @@ if = {
   add_ideas = { 
     #POLITICS 
 		  
-    hos_is_leader
+    #hos_is_leader
     pre_industrial_era
     agrarian
-    no_heir
-    absolute_monarchy
+    #no_heir
+    #absolute_monarchy
 	law_pre_industrial_army_chinese
 
     civilian_economy
     limited_exports
-    two_percent
-    normal_taxes
+    army_spending_level_2
+    taxation_level_3
 	cl_legal
 
     #stagnation_growth
@@ -41,17 +43,17 @@ if = {
     slavery
     absolutism
 
-    no_constitution
+    #no_constitution
     no_elections
 	#religion_confucian
     privileged_education
     state_religion
 
-     hc_no_healthcare
-    law_police_force
-    inframain_no_subsidies_infrastructure
-    navinfra_no_naval_infrastructure
-    sfund_private_ventures_only
+     social_spending_level_1
+    law_spending_level_4
+    road_spending_level_1
+    navy_spending_level_1
+    research_spending_level_1
 
          #NATIONAL SPIRITS
 	QNG_idea_arrow_incident
@@ -212,16 +214,22 @@ set_popularities = {
 	recruit_character = QNG_Guangxu_Emperor
 	recruit_character = QNG_Zeng_Guofan
 	recruit_character = QNG_ronglu
+	recruit_character = QNG_zhu_hongzhang
+	recruit_character = QNG_bao_chao
+	recruit_character = QNG_guanwen
+	recruit_character = QNG_luo_bingzhang
+	recruit_character = QNG_zhang_guoliang
 	
 	#Advisors
 	recruit_character = QNG_weng_tonghe
-	recruit_character = QNG_keying
 	recruit_character = QNG_yixuan_princ_chun #yixuan was 17 but eh let's allow him to stay
 	#recruit_character = QNG_duan yixuan was literally 1 year old in 1857
 	recruit_character = QNG_shushun
 	recruit_character = QNG_prince_gong
 	recruit_character = QNG_prosper_giquel
 	recruit_character = QNG_john_fryer
+	recruit_character = QNG_cixi 
+
 	
 	#Theorists
 	recruit_character = QNG_li_hongzhang
@@ -244,17 +252,17 @@ set_popularities = {
   add_ideas = { 
     #POLITICS 
 		  
-    hos_is_leader
+    #hos_is_leader
     pre_industrial_era
     agrarian
-    no_heir
-    absolute_monarchy
+    #no_heir
+    #absolute_monarchy
 	law_pre_industrial_army_chinese
 
     civilian_economy
     limited_exports
-    two_percent
-    normal_taxes
+    army_spending_level_2
+    taxation_level_3
 	cl_legal
 
     #stagnation_growth
@@ -263,17 +271,17 @@ set_popularities = {
     slavery
     absolutism
 
-    no_constitution
+    #no_constitution
     no_elections
 	#religion_confucian
     privileged_education
     state_religion
 
-    hc_no_healthcare
-    law_police_force
-    inframain_no_subsidies_infrastructure
-    navinfra_no_naval_infrastructure
-    sfund_private_ventures_only
+    social_spending_level_1
+    law_spending_level_4
+    road_spending_level_1
+    navy_spending_level_1
+    research_spending_level_1
 
     #NATIONAL SPIRITS
 	QNG_idea_arrow_incident

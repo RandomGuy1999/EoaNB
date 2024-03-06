@@ -3016,9 +3016,9 @@ afr_rrp_foreign_diplomacy = {
 		ai_will_do = { factor = 1 }
 		available = {
 			has_country_flag = ACS_affiliate
-			NOT = {
-				has_idea = no_constitution
-			}
+			#NOT = {
+			#	has_idea = no_constitution
+			#}
 			OR = {
 				country_exists = CSA
 				country_exists = USA
@@ -3085,19 +3085,19 @@ afr_rrp_foreign_diplomacy = {
 				remove_idea = no_elections
 				add_idea = limited_elections
 			}
-			swap_ideas = {
-				remove_idea = absolute_monarchy
-				add_idea = presidential_republic
-			}
+			#swap_ideas = {
+			#	remove_idea = absolute_monarchy
+			#	add_idea = presidential_republic
+			#}
 			hidden_effect = {
 				swap_ideas = {
 					remove_idea = state_religion
 					add_idea = secular_state
 				}
-				swap_ideas = {
-					remove_idea = nonfamily_heir
-					add_idea = non_monarchical_system
-				}
+				#swap_ideas = {
+					#remove_idea = nonfamily_heir
+					#add_idea = non_monarchical_system
+				#}
 			}
 		}
 	}
@@ -3112,9 +3112,9 @@ afr_rrp_foreign_diplomacy = {
 				num_of_civilian_factories > 2
 				has_completed_focus = LIB_gem_of_africa
 			}
-			NOT = {
-				has_idea = no_constitution
-			}
+			#NOT = {
+			#	has_idea = no_constitution
+			#}
 			NOT = {
 				has_idea = no_elections
 			}
@@ -3126,7 +3126,7 @@ afr_rrp_foreign_diplomacy = {
 		visible = {
 			AND = {
 				has_country_flag = ACS_affiliate
-				has_idea = presidential_republic
+				#has_idea = presidential_republic
 				NOT = {
 					has_country_flag = ACS_colony
 				}
@@ -3214,10 +3214,6 @@ afr_rrp_growing_regional_industry = {
 					NOT = {	is_subject_of = TRV }
 					NOT = {	is_subject_of = OFS }
 					if = {
-						limit = { is_subject_of = SNG }
-						SNG = { NOT = { is_subject_of = FRA } }
-					}
-					if = {
 						limit = { is_subject_of = ALG }
 						ALG = { NOT = { is_subject_of = FRA } }
 					}
@@ -3263,10 +3259,6 @@ afr_rrp_growing_regional_industry = {
 					NOT = {	is_subject_of = BEL }
 					NOT = {	is_subject_of = TRV }
 					NOT = {	is_subject_of = OFS }
-					if = {
-						limit = { is_subject_of = SNG }
-						SNG = { NOT = { is_subject_of = FRA } }
-					}
 					if = {
 						limit = { is_subject_of = ALG }
 						ALG = { NOT = { is_subject_of = FRA } }
@@ -3368,10 +3360,6 @@ afr_rrp_growing_regional_industry = {
 					NOT = {	is_subject_of = BEL }
 					NOT = {	is_subject_of = TRV }
 					NOT = {	is_subject_of = OFS }
-					if = {
-						limit = { is_subject_of = SNG }
-						SNG = { NOT = { is_subject_of = FRA } }
-					}
 					if = {
 						limit = { is_subject_of = ALG }
 						ALG = { NOT = { is_subject_of = FRA } }

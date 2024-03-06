@@ -256,6 +256,9 @@ KDE_bi_yearly_event_fire_1858 = {
 		country_event = { id = finland.15 days = 273 }
 		country_event = { id = finland.16 days = 120 }
 	}
+	OFS = {
+		country_event = { id = boer_states.20 days = 161 } # 1858.6.11
+	}
 }
 
 # Events fired in between 1 Jan. 1860 and 31 Dec. 1861
@@ -465,6 +468,9 @@ KDE_bi_yearly_event_fire_1860 = {
 	PIE = {
 		country_event = { id = risorgimento.274 days = 226 } #1860.08.15
 	}
+	OFS = {
+		country_event = { id = boer_states.37 days = 38 } # 1860.2.8
+	}
 }
 
 KDE_bi_yearly_event_fire_1862 = {
@@ -562,6 +568,9 @@ KDE_bi_yearly_event_fire_1862 = {
 		country_event = { id = brazil.40 days = 332 } # 1862.11.29
 		country_event = { id = brazil.43 days = 554 } # 1863.7.9
 		country_event = { id = britain.201 days = 663 } # 1863.10.26
+	}
+	SAF = {
+		country_event = { id = britishafrica.39 days = 14 } # 1862.1.15
 	}
 	BRA = {
 		country_event = { id = brazil.29 days = 57 } # 1862.2.27
@@ -879,6 +888,9 @@ KDE_bi_yearly_event_fire_1864 = {
 	ROM = {
 		country_event = { id = rom_wallachia.18 days = 439 random_days = 4 } # 1865.03.16
 	}
+	OFS = {
+		country_event = { id = boer_states.27 days = 661 } # 1865.10.24
+	}
 }
 
 KDE_bi_yearly_event_fire_1866 = {
@@ -1179,6 +1191,10 @@ KDE_bi_yearly_event_fire_1870 = {
 		country_event = { id = britain.60 days = 275 } # 1870.10.3
 		country_event = { id = britain.187 days = 250 } # 1870.9.8
 	}
+	SAF = {
+		country_event = { id = britishafrica.40 days = 139 } # 1870.5.20
+		country_event = { id = britishafrica.41 days = 364 } # 1870.12.31
+	}
 	AUS = {
 		country_event = { id = austria.37 days = 299 } # 1870.10.27
 		country_event = { id = advisor_death.23 days = 461 hours = 8 } # 1871.4.7
@@ -1202,6 +1218,9 @@ KDE_bi_yearly_event_fire_1870 = {
 	}
 	JAP = {
 		country_event = { id = JAP_imperial.22 days = 716 } # 1871.12.18
+	}
+	OFS = {
+		country_event = { id = boer_states.32 days = 299 } # 1870.10.27
 	}
 }
 
@@ -1496,6 +1515,9 @@ KDE_bi_yearly_event_fire_1882 = {
 	QNL = {
 		country_event = { id = britishoceania.87 days = 443 } # 1883.3.20
 	}
+	EGY = {
+		country_event = { id = afr_EGY_vic.321 days = 7 } # 1882.1.8
+	}
 }
 
 KDE_bi_yearly_event_fire_1884 = {
@@ -1511,6 +1533,9 @@ KDE_bi_yearly_event_fire_1884 = {
 		country_event = { id = britishafrica.4 days = 395 } # 1885.1.31
 		country_event = { id = britain.63 days = 571	} # 1885.7.25
 		country_event = { id = britishmalaya.17 days = 52 } # 1884.2.23
+	}
+	SAF = {
+		country_event = { id = britishafrica.46 days = 52 } # 1884.2.23
 	}
 	PRS = {
 		country_event = { id = prussia.31 days = 414 } # 1885.2.19

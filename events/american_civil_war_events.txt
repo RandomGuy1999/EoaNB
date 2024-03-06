@@ -10000,19 +10000,19 @@ country_event = {
 						producer = USA
 					}
 					add_ideas = {
-						hos_is_leader
+						#hos_is_leader
 						victorian_era
 						law_victorian_army
 						industrializing
-						non_monarchical_system
-						presidential_republic
+						#non_monarchical_system
+						#presidential_republic
 
 						civilian_economy
 						export_focus
-						two_percent
+						army_spending_level_2
 						normal_taxes
 						cl_restricted
-						twelve_hour_work_day
+						#twelve_hour_work_day
 
 						#stagnation_growth
 						border_control
@@ -10020,7 +10020,7 @@ country_event = {
 						racial_laws
 						universal_male_suffrage
 
-						constitution_adopted
+						#constitution_adopted
 						free_elections
 
 						privileged_education
@@ -12621,18 +12621,18 @@ news_event = {
 			}
 			white_peace = CAL
 		}
-		swap_ideas = {
-			remove_idea = non_monarchical_system
-			add_idea = no_heir
-		}
-		swap_ideas = {
-			remove_idea = presidential_republic
-			add_idea = absolute_monarchy
-		}
-		swap_ideas = {
-			remove_idea = constitution_adopted
-			add_idea = human_rights
-		}
+		#swap_ideas = {
+		#	remove_idea = non_monarchical_system
+		#	add_idea = no_heir
+		#}
+		#swap_ideas = {
+		#	remove_idea = presidential_republic
+		#	add_idea = absolute_monarchy
+		#}
+		#swap_ideas = {
+		#	remove_idea = constitution_adopted
+		#	add_idea = human_rights
+		#}
 		swap_ideas = {
 			remove_idea = free_elections
 			add_idea = no_elections
@@ -12650,8 +12650,8 @@ news_event = {
 			add_idea = pp_limited_party_freedom
 		}
 		swap_ideas = {
-			remove_idea = law_police_force
-			add_idea = law_military_police_force
+			remove_idea = law_spending_level_5
+			add_idea = law_spending_level_3
 		}
 	}
 	option = {

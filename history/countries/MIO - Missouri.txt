@@ -11,20 +11,20 @@
 
 	add_ideas = {
 		#POLITICS
-			hos_is_leader
+			#hos_is_leader
 			victorian_era
 			law_victorian_army
 			agrarian
-			non_monarchical_system
-			presidential_republic
+			#non_monarchical_system
+			#presidential_republic
 
 			#Economic
 				civilian_economy
 				export_focus
-				two_percent
-				normal_taxes
+				army_spending_level_2
+				taxation_level_3
 				cl_legal
-				unlimited_work_day
+				
 
 			#Population
 				#stagnation_growth
@@ -33,7 +33,7 @@
 				usa_slavery_law
 				universal_male_suffrage
 
-				constitution_adopted
+				#constitution_adopted
 				free_elections
 
 			#Culture

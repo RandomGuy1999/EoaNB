@@ -474,7 +474,7 @@ focus_tree = {
 			add_tech_bonus = { bonus = 0.25 uses = 1 category = economics_tech }
 			if = {
 				limit = {
-					has_idea = sfund_private_ventures_only
+					has_idea = research_spending_level_1
 				}
 				unlock_decision_tooltip = FIN_decision_bank_of_finland
 			}
@@ -742,7 +742,7 @@ focus_tree = {
 			focus = FIN_new_technical_school
 		}
 		completion_reward = {
-			swap_ideas = { remove_idea = navinfra_no_naval_infrastructure add_idea = navinfra_low_naval_infrastructure }
+			swap_ideas = { remove_idea = navy_spending_level_1 add_idea = navy_spending_level_2 }
 		}
 	}
 			
@@ -1015,7 +1015,7 @@ focus_tree = {
 			focus = FIN_sawmill_industry
 		}
 		completion_reward = { 
-		    effect_decrease_workhours = yes
+		    #effect_decrease_workhours = yes
 		}
 	}
 			
@@ -1061,7 +1061,7 @@ focus_tree = {
 			focus = FIN_slowly_industralization
 		}
 		completion_reward = {
-			swap_ideas = { remove_idea = lp_land_estates add_idea = lp_land_purchase }
+			#swap_ideas = { remove_idea = lp_land_estates add_idea = lp_land_purchase }
 		}
 	}
 			

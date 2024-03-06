@@ -10,18 +10,18 @@
 	add_ideas = {
 		#STATE OF COUNTRY
 		HSD_Ludwig_III
-		no_heir
+		#no_heir
 		agrarian
 		victorian_era
 		law_victorian_army
 		#religion_protestant
 
 		#GOVERNMENTAL POLICIES
-		constitutional_monarchy
-		constitution_adopted
+		#constitutional_monarchy
+		#constitution_adopted
 		no_elections
-		no_separation
-		federal_control
+		#no_separation
+		#federal_control
 
 		#CULTURE AND EDUCATION
 		open_schools
@@ -33,10 +33,10 @@
 
 		#ECONOMY
 		limited_exports
-		normal_taxes
+		taxation_level_3
 		cl_legal
-		fourteen_hour_work_day
-		lp_land_purchase
+		
+		
 		civilian_economy
 
 		#DEMOGRAPHICS
@@ -48,17 +48,17 @@
 		pp_ban_extremist_parties
 
 		#BUDGET
-		hc_no_healthcare
-		law_police_force
-		inframain_no_subsidies_infrastructure
-		navinfra_no_naval_infrastructure
-		three_percent
-		sfund_private_ventures_only
+		social_spending_level_1
+		law_spending_level_4
+		road_spending_level_1
+		navy_spending_level_1
+		army_spending_level_3
+		research_spending_level_1
 
 		#NATIONAL SPIRITS
-		GER_general_idea_ger_confed
-		PRS_Zollverein
-		BAD_currency_reform
+		GEC_idea_german_confederation
+		GEC_idea_zollverein_1
+		GEC_idea_vienna_monetary_treaty
 		GEC_idea_weakened_zunftwesen
 		NA_B_early_scale_railways
 	}
@@ -209,9 +209,9 @@
 		agrarian
 		
 		#NATIONAL SPIRITS
-		GER_general_idea_ger_confed
-		PRS_Zollverein
-		BAD_currency_reform
+		GEC_idea_german_confederation
+		GEC_idea_zollverein_1
+		GEC_idea_vienna_monetary_treaty
 		GEC_idea_weakened_zunftwesen		#weakened step by step since 1820, abolished in 1866
 		NA_B_early_scale_railways
 	}
@@ -232,8 +232,8 @@
 
 		#NATIONAL SPIRITS
 		GC_idea_schutz_und_trutz
-		PRS_Zollverein_2
-		BAD_currency_reform
+		GEC_idea_zollverein_3
+		GEC_idea_vienna_monetary_treaty
 		GEC_idea_gewerbeordnung
 		NA_B_early_scale_railways
 	}

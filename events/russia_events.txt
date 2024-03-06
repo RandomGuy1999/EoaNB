@@ -473,7 +473,7 @@ country_event = {
 				limit = {
 					power_balance_value = {
    					id = RUS_Balance_of_Power_Russian_Establishment
-					value < 0.5
+					value < 0.4
 					}
 				}
 				country_event = { 
@@ -544,7 +544,7 @@ country_event = {
 			limit = {
 				power_balance_value = {
    				id = RUS_Balance_of_Power_Russian_Establishment
-				value < 0.5
+				value < 0.4
 				}
 			}
 			country_event = { 
@@ -709,7 +709,7 @@ country_event = {
 		}
 		add_power_balance_value = {
 			id = RUS_Balance_of_Power_Russian_Establishment
-			value = -0.1
+			value = -0.15
 		}
 		deactivate_advisor = RUS_alexander_golovnin
 			add_advisor_role = {
@@ -740,7 +740,7 @@ country_event = {
 		decrease_ps_by_one = yes
 		add_power_balance_value = {
 			id = RUS_Balance_of_Power_Russian_Establishment
-			value = 0.1
+			value = 0.15
 		}
 		complete_national_focus = RUS_vic_further_reforms
 	}
@@ -981,7 +981,7 @@ country_event = {
 			limit = {
 				power_balance_value = {
    				id = RUS_Balance_of_Power_Russian_Establishment
-				value < 0.5
+				value < 0.4
 				}
 			}
 			custom_effect_tooltip = eoanb_tt_RUS_zasulich_case_outcome_a_tooltip
@@ -1024,7 +1024,7 @@ country_event = {
 			limit = {
 				power_balance_value = {
    				id = RUS_Balance_of_Power_Russian_Establishment
-				value < 0.5
+				value < 0.4
 				}
 			}
 			custom_effect_tooltip = eoanb_tt_RUS_terror_a_tooltip
@@ -1065,7 +1065,7 @@ country_event = {
 			limit = {
 				power_balance_value = {
    				id = RUS_Balance_of_Power_Russian_Establishment
-				value < 0.5
+				value < 0.4
 				}
 			}
 			custom_effect_tooltip = eoanb_tt_RUS_terror_a_tooltip
@@ -2423,7 +2423,7 @@ country_event = {
 	is_triggered_only = yes
 		
 	trigger = {
-		has_idea = lp_serfdom
+		#has_idea = lp_serfdom
 		13 = { is_owned_and_controlled_by = RUS }
 	}
 		
@@ -2881,7 +2881,7 @@ country_event = {
 		}
 		add_power_balance_value = {
 			id = RUS_Balance_of_Power_Russian_Establishment
-			value = 0.05
+			value = 0.1
 		}
 		add_popularity = {
 			ideology = anarchism 
@@ -3025,7 +3025,7 @@ country_event = {
 		}
 		add_power_balance_value = {
 			id = RUS_Balance_of_Power_Russian_Establishment
-			value = 0.02
+			value = 0.03
 		}
 	}
 } 
@@ -3361,11 +3361,11 @@ country_event = {
 		name = rossiya.270.a
 		if = {
 			limit = {
-				has_idea = hc_no_healthcare
+				has_idea = social_spending_level_1
 			}
 			swap_ideas = {
-				remove_idea = hc_no_healthcare
-				add_idea = hc_low_healthcare
+				remove_idea = social_spending_level_1
+				add_idea = social_spending_level_2
 			}
 		}
 		else_if = {
@@ -3426,7 +3426,7 @@ country_event = {
 		}
 		add_power_balance_value = {
 			id = RUS_Balance_of_Power_Russian_Establishment
-			value = 0.05
+			value = 0.1
 		}
 	}
 }
@@ -3787,32 +3787,32 @@ country_event = {
 	option = {
 		name = rossiya.257.a
 		if = {
-			limit = { has_idea = very_high_taxes }
+			limit = { has_idea = taxation_level_5 }
 			add_political_power = 50
 		}
 		if = {
-			limit = { has_idea = high_taxes }
+			limit = { has_idea = taxation_level_4 }
 			add_political_power = 20
 		}
 		if = {
-			limit = { has_idea = normal_taxes }
+			limit = { has_idea = taxation_level_3 }
 			swap_ideas = {
-				remove_idea = normal_taxes
-				add_idea = high_taxes
+				remove_idea = taxation_level_3
+				add_idea = taxation_level_4
 			}
 		}
 		if = {
-			limit = { has_idea = low_taxes }
+			limit = { has_idea = taxation_level_2 }
 			swap_ideas = {
-				remove_idea = low_taxes
-				add_idea = high_taxes
+				remove_idea = taxation_level_2
+				add_idea = taxation_level_4
 			}
 		}
 		if = {
-			limit = { has_idea = very_low_taxes }
+			limit = { has_idea = taxation_level_1 }
 			swap_ideas = {
-				remove_idea = very_low_taxes
-				add_idea = high_taxes
+				remove_idea = taxation_level_1
+				add_idea = taxation_level_4
 			}
 		}
 	}
@@ -3981,8 +3981,8 @@ country_event = {
 	option = {
 		name = rossiya.273.a
 		swap_ideas = {
-				remove_idea = sfund_private_ventures_only
-				add_idea = sfund_limited_state_sponsorship
+				remove_idea = research_spending_level_1
+				add_idea = research_spending_level_2
 			}
 	}
 }
@@ -4114,7 +4114,7 @@ country_event = {
 			}
 		add_power_balance_value = {
 			id = RUS_Balance_of_Power_Russian_Establishment
-			value = 0.05
+			value = 0.1
 		}
 		country_event = { 
 			id = rossiya.281
@@ -6825,7 +6825,7 @@ country_event = {
 		name = rossiya.508.a
 		hidden_effect = {
 			add_ideas = RUS_idea_russian_technical_society
-			swap_ideas = { remove_idea = sfund_private_ventures_only add_idea = sfund_limited_state_sponsorship } 
+			swap_ideas = { remove_idea = research_spending_level_1 add_idea = research_spending_level_2 } 
 			set_temp_variable = { eoanb_prestige_change = 5 }
 			eoanb_change_prestige_score = yes
 		}
@@ -7210,29 +7210,29 @@ country_event = {
 	}
 }
 
-#New Censorship Law
-country_event = {
-	id = rossiya.573
-	hidden = yes
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		set_variable = { finished@token:RUS_decision_new_censorship_law = 1}
-	}
-}
-
-#Further Soften Censorship Law
-country_event = {
-	id = rossiya.574
-	hidden = yes
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		set_variable = { finished@token:RUS_decision_further_soften_censorship_law = 1}
-	}
-}
+##New Censorship Law
+#country_event = {
+#	id = rossiya.573
+#	hidden = yes
+#	
+#	is_triggered_only = yes
+#	
+#	immediate = {
+#		set_variable = { finished@token:RUS_decision_new_censorship_law = 1}
+#	}
+#}
+#
+##Further Soften Censorship Law
+#country_event = {
+#	id = rossiya.574
+#	hidden = yes
+#	
+#	is_triggered_only = yes
+#	
+#	immediate = {
+#		set_variable = { finished@token:RUS_decision_further_soften_censorship_law = 1}
+#	}
+#}
 
 #Censorship Counter-Reform
 country_event = {
@@ -7919,9 +7919,9 @@ country_event = {
 	option = {
 		name = rossiya.629.a
 		complete_national_focus = RUS_vic_Emancipation_of_Serfs
-		swap_ideas = { 
-				remove_idea = lp_serfdom 
-				add_idea = lp_land_purchase }
+		#swap_ideas = { 
+				#remove_idea = lp_serfdom 
+				#add_idea = lp_land_purchase }
 		ai_chance = { base = 100 }
 		if = {
 			limit = {
@@ -8153,7 +8153,7 @@ country_event = {
 		}
 		add_power_balance_value = {
 				id = RUS_Balance_of_Power_Russian_Establishment
-				value = 0.05
+				value = 0.15
 			}
 		set_temp_variable = { pr_decision_token = token:RUS_decision_establish_main_buyback_institution } 
 		set_temp_variable = { pr_decision_lp_cost = 50 } 
@@ -8234,9 +8234,92 @@ country_event = {
 		custom_effect_tooltip = eoanb_tt_RUS_peasant_counter_revolutionary_tooltip
 			effect_tooltip = {}
 		add_stability = 0.2
-		swap_ideas = { 
-				remove_idea = lp_land_purchase 
-				add_idea = lp_peasant_holdings }
+		#swap_ideas = { 
+			#	remove_idea = lp_land_purchase 
+				#add_idea = lp_peasant_holdings }
+		#}
+		add_power_balance_value = {
+			id = RUS_Balance_of_Power_Russian_Establishment
+			value = 0.05
+		}
+	}
+}
+
+### BoP on_activation events:
+
+#Worsening Conservative Backlash
+country_event = {
+	id = rossiya.642
+	title = rossiya.642.t
+	desc = rossiya.642.d
+	picture = GFX_report_event_non_supportive_autocracy
+	
+	is_triggered_only = yes
+
+	option = {
+		name = rossiya.642.a
+		add_popularity = {
+			ideology = autocracy
+			popularity = -0.03
+		}
+		custom_effect_tooltip = eoanb_tt_RUS_conservative_backlash
+	}
+}
+
+#Worsening Reformist Backlash
+country_event = {
+	id = rossiya.643
+	title = rossiya.643.t
+	desc = rossiya.643.d
+	picture = GFX_report_event_public_supports_reform
+	
+	is_triggered_only = yes
+
+	option = {
+		name = rossiya.643.a
+		add_popularity = {
+			ideology = autocracy
+			popularity = -0.03
+		}
+		custom_effect_tooltip = eoanb_tt_RUS_progressive_backlash
+	}
+}
+
+#Society Sees our Policies as True Reformist
+country_event = {
+	id = rossiya.644
+	title = rossiya.644.t
+	desc = rossiya.644.d
+	picture = GFX_report_event_public_supports_reform
+	
+	is_triggered_only = yes
+
+	option = {
+		name = rossiya.644.a
+		add_popularity = {
+			ideology = autocracy
+			popularity = 0.03
+		}
+		custom_effect_tooltip = eoanb_tt_RUS_progressive_confidence
+	}
+}
+
+#Society Sees our Policies as Reactionary
+country_event = {
+	id = rossiya.645
+	title = rossiya.645.t
+	desc = rossiya.645.d
+	picture = GFX_report_event_non_supportive_autocracy
+	
+	is_triggered_only = yes
+
+	option = {
+		name = rossiya.645.a
+		add_popularity = {
+			ideology = autocracy
+			popularity = 0.03
+		}
+		custom_effect_tooltip = eoanb_tt_RUS_conservative_confidence
 	}
 }
 
@@ -8280,7 +8363,7 @@ country_event = {
 			limit = {
 				power_balance_value = {
    				id = RUS_Balance_of_Power_Russian_Establishment
-				value < 0.5
+				value < 0.4
 				}
 			}
 			custom_effect_tooltip = eoanb_tt_RUS_senate_revision_a_tooltip
@@ -8385,10 +8468,10 @@ country_event = {
 			effect_tooltip = {
 		}
 		complete_national_focus = RUS_vic_Loris_Melikov_Constitution
-		swap_ideas = {
-			remove_idea = human_rights
-			add_idea = limited_constitution
-		}
+		#swap_ideas = {
+		#	remove_idea = human_rights
+		#	add_idea = limited_constitution
+		#}
 		swap_ideas = {
 			remove_idea = parliamentary_suffrage
 			add_idea = property_owners_suffrage
@@ -8419,10 +8502,10 @@ country_event = {
 			effect_tooltip = {
 		}
 		complete_national_focus = RUS_vic_Loris_Melikov_Constitution
-		swap_ideas = {
-			remove_idea = human_rights
-			add_idea = limited_constitution
-		}
+		#swap_ideas = {
+		#	remove_idea = human_rights
+		#	add_idea = limited_constitution
+		#}
 		swap_ideas = {
 			remove_idea = parliamentary_suffrage
 			add_idea = property_owners_suffrage

@@ -35,7 +35,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		completion_reward = {
-			country_event={id= boer_states.90}
+			country_event={id= boer_states.5}
 		}
 		prerequisite = {
 			focus = TRV_focus_political_reforms
@@ -115,7 +115,7 @@ focus_tree = {
 		y = 3
 		completion_reward = {
 			add_ideas={
-				trv_idea_god_fairing_people
+				TRV_idea_god_fairing_people
 			}
 		}
 		prerequisite = {
@@ -260,7 +260,7 @@ focus_tree = {
 		x = 8
 		y = 3
 		completion_reward = {
-			country_event={id=boer_states.120}
+			country_event={id=boer_states.9}
 		}
 		prerequisite = {
 			focus = TRV_focus_pro_dutch_policies
@@ -278,10 +278,10 @@ focus_tree = {
 		x = 5
 		y = 5
 		completion_reward = {
-			swap_ideas={
-				add_idea = limited_constitution
-				remove_idea = no_constitution
-			}
+			#swap_ideas={
+			#	add_idea = limited_constitution
+			#	remove_idea = no_constitution
+			#}
 		}
 		prerequisite = {
 			focus = TRV_focus_imergration_reforms
@@ -437,10 +437,10 @@ focus_tree = {
 			has_war = no
 		}
 		completion_reward = {
-			swap_ideas={
-				add_idea = limited_constitution
-				remove_idea = no_constitution
-			}
+			#swap_ideas={
+			#	add_idea = limited_constitution
+			#	remove_idea = no_constitution
+			#}
 		}
 	}
 	focus = {
@@ -501,8 +501,8 @@ focus_tree = {
 		y = 5
 		completion_reward = {
 			swap_ideas={
-				add_idea = normal_taxes
-				remove_idea = low_taxes
+				add_idea = taxation_level_3
+				remove_idea = taxation_level_2
 			}
 		}
 	}
@@ -832,7 +832,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		completion_reward = {
-			remove_ideas={trv_idea_occupied_swazi_territory}
+			remove_ideas={TRV_idea_occupied_swazi_territory}
 			SWZ={remove_ideas={SWZ_idea_bigger_than_it_looks}}
 		}
 		prerequisite = {
@@ -1842,6 +1842,93 @@ focus_tree = {
 			swap_ideas = {
 				add_idea = afr_ofs_gold_mines_2
 				remove_idea = afr_ofs_gold_mines_1
+			}
+		}
+	}
+	###########################
+	### CIVIL WAR RECORVERY ###
+	###########################
+
+	focus = {
+		id = TRV_focus_civil_war
+		icon = GFX_Focus_divide_africa
+		cost = 70
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_country_flag = TRV_civil_War
+			has_civil_war = no
+		}
+		x = 5
+		y = 6
+		completion_reward = {
+			swap_ideas = {
+				add_idea = afr_ofs_gold_mines_2
+				remove_idea = afr_ofs_gold_mines_1
+			}
+		}
+	}
+	focus = {
+		id = TRV_focus_eco_afternath
+		icon = GFX_Focus_economic_crisis
+		cost = 70
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = TRV_focus_civil_war
+		}
+		available = {
+			has_idea = TRV_idea_economic_aftermath
+		}
+		x = 4
+		y = 7
+		completion_reward = {
+			remove_ideas = TRV_idea_economic_aftermath
+		}
+	}
+	focus = {
+		id = TRV_focus_pol_afternath
+		icon = GFX_focus_politics_government_chaos
+		cost = 70
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = TRV_focus_civil_war
+		}
+		available = {
+			has_idea = TRV_idea_political_aftermath
+		}
+		x = 6
+		y = 7
+		completion_reward = {
+			remove_ideas = TRV_idea_political_aftermath
+		}
+	}
+	focus = {
+		id = TRV_focus_recover_civil_war
+		icon = GFX_Focus_Welfare
+		cost = 70
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = TRV_focus_pol_afternath
+			focus = TRV_focus_eco_afternath
+		}
+		x = 5
+		y = 8
+		completion_reward = {
+			add_political_power = 200
+			add_stability = 0.5
+			hidden_effect = {
+				clr_country_flag = TRV_civil_War
 			}
 		}
 	}

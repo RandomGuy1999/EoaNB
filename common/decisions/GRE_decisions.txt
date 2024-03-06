@@ -266,7 +266,7 @@ GRE_decision_category_obtain_foreign_equipment = {
 		}
 
 		visible = {
-			has_completed_focus = GRE_prussian_rifles
+			has_completed_focus = GRE_prussian_technology_share
 			country_exists = PRS
 		}
 
@@ -314,7 +314,7 @@ GRE_decision_category_obtain_foreign_equipment = {
 		}
 
 		visible = {
-			has_completed_focus = GRE_french_rifles
+			has_completed_focus = GRE_french_import
 			country_exists = FRA
 		}
 
@@ -484,6 +484,52 @@ GRE_decision_category_obtain_foreign_equipment = {
 			}
 	    }
        
+		ai_will_do = {
+			base = 500
+		}
+
+		cancel_trigger = {
+			NOT = { debt_not_bankrupt_trigger = yes }
+		}
+	}
+
+	## Buy french cannons
+	GRE_decision_buy_uniforms = {
+
+		icon = artillery
+		
+		#allowed = { tag = GRE }
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+			debt_not_bankrupt_trigger = yes
+		}
+
+		visible = {
+			has_completed_focus = GRE_uniforms_change
+		}
+
+		fire_only_once = yes
+		
+		cost = 75
+		
+		days_remove = 180
+			
+		modifier = {
+			consumer_goods_expected_value = 0.1
+		}
+		
+		complete_effect = {
+			debt_level_increase_by_1 = yes
+		}
+		
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = uniform_equipment
+				amount = 2000
+			}
+		}
+		
 		ai_will_do = {
 			base = 500
 		}
@@ -2154,7 +2200,7 @@ GRE_decision_category_industry = {
 		remove_effect = {
 			debt_level_decrease_by_5 = yes
 			add_stability = 0.05
-			swap_ideas = { remove_idea = sfund_private_ventures_only add_idea = sfund_limited_state_sponsorship }
+			swap_ideas = { remove_idea = research_spending_level_1 add_idea = research_spending_level_2 }
 			hidden_effect = {
 				clr_country_flag = SAX_financial_investment_ongoing_flag
 			}
@@ -2440,7 +2486,7 @@ GRE_decision_category_industry = {
 			has_completed_focus = GRE_expand_the_laurion_mines
 			debt_not_bankrupt_trigger = yes
 			controls_state = 1251
-			has_idea = constitutional_monarchy
+			#has_idea = constitutional_monarchy
 			date > 1867.1.1
 		}
 
@@ -2635,7 +2681,7 @@ GRE_decision_category_debt_management = {
 		available = {
 			has_active_mission = GRE_looming_debt
 			NOT = {
-				has_idea = one_percent
+				has_idea = army_spending_level_1
 			}
 		}
 
@@ -2667,7 +2713,7 @@ GRE_decision_category_debt_management = {
 		available = {
 			has_active_mission = GRE_looming_debt
 			NOT = {
-				has_idea = hc_no_healthcare
+				has_idea = social_spending_level_1
 			}
 		}
 

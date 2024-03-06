@@ -27,12 +27,30 @@ ideas = {
 		        }
 	        }
 		}
+
+		# BREMEN, HAMBURG, LÜBECK #
+
+		GEC_idea_legacy_of_the_hanseatic_league = {
+			allowed = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = hanseaten
+			
+			modifier = {
+				trade_opinion_factor = 0.1
+				political_power_gain = 0.05
+				industrial_capacity_dockyard = 0.1
+			}
+		}
 		
 		### SHARED SPIRITS ###
 		
 		# GENERAL #
 		
-		GER_general_idea_ger_confed = {
+		GEC_idea_german_confederation = {
 			allowed = {
 				always = yes
 			}
@@ -45,20 +63,162 @@ ideas = {
 				generate_wargoal_tension = 0.5
 			}
 		}
-		
-		GEC_idea_hanseaten = {
+
+		GEC_idea_vienna_monetary_treaty = { 
 			allowed = {
 				always = yes
 			}
 			
-			removal_cost = -1
-			
-			picture = hanseaten
-			
+			picture = wiener_munzvertrag
+		
 			modifier = {
+				political_power_factor = -0.05
+				trade_opinion_factor = 0.1
+				trade_laws_cost_factor = -0.05
+				min_export = 0.1
+				consumer_goods_expected_value = -0.05
+				tax_efficiency_factor = 0.05
+				hidden_modifier = {
+					tax_efficiency_factor_from_ideas = 0.05
+				}
+			}
+		}
+
+		# ZOLLVEREIN #
+
+		GEC_idea_zollverein_1 = {
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = GER_zollverein
+
+			modifier = {
+				industrial_capacity_factory = 0.05
+				consumer_goods_expected_value = -0.03
+				production_speed_infrastructure_factor = 0.05
+				political_power_factor = -0.05
+				trade_laws_cost_factor = 0.2
 				trade_opinion_factor = 0.05
-				political_power_gain = 0.05
-				industrial_capacity_dockyard = 0.1
+				min_export = 0.05
+				consumer_goods_income_factor = 0.05
+				hidden_modifier = {
+					consumer_goods_income_factor_from_ideas = 0.05
+				}
+			}
+		}
+		
+		GEC_idea_zollverein_2 = {
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = GER_zollverein
+
+			modifier = {
+				industrial_capacity_factory = 0.075
+				consumer_goods_expected_value = -0.05
+				production_speed_infrastructure_factor = 0.075
+				political_power_factor = -0.1
+				trade_laws_cost_factor = 0.15
+				trade_opinion_factor = 0.1
+				min_export = 0.1
+				consumer_goods_income_factor = 0.075
+				hidden_modifier = {
+					consumer_goods_income_factor_from_ideas = 0.075
+				}
+			}
+		}
+		
+		GEC_idea_zollverein_3 = {
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = GER_zollverein
+
+			modifier = {
+				industrial_capacity_factory = 0.1
+				consumer_goods_expected_value = -0.08
+				production_speed_infrastructure_factor = 0.1
+				political_power_factor = -0.15
+				trade_laws_cost_factor = 0.1
+				trade_opinion_factor = 0.15
+				min_export = 0.15
+				consumer_goods_income_factor = 0.1
+				hidden_modifier = {
+					consumer_goods_income_factor_from_ideas = 0.1
+				}
+			}
+		}
+		
+		GEC_idea_zollverein_associate = {
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = GER_zollverein
+
+			modifier = {
+				industrial_capacity_factory = 0.025
+				consumer_goods_expected_value = -0.02
+				production_speed_infrastructure_factor = 0.025
+				political_power_factor = -0.1
+				trade_laws_cost_factor = 0.15
+				trade_opinion_factor = 0.1
+				min_export = 0.05
+				consumer_goods_income_factor = 0.03
+				hidden_modifier = {
+					consumer_goods_income_factor_from_ideas = 0.03
+				}
+			}
+		}
+		
+		GEC_idea_zollverein_foreign_treaties_1 = {
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = GER_zollverein
+
+			modifier = {
+				industrial_capacity_factory = 0.01
+				industrial_capacity_dockyard = 0.01
+				consumer_goods_expected_value = -0.02
+				political_power_factor = -0.02
+				trade_laws_cost_factor = 0.15
+				trade_opinion_factor = 0.05
+				min_export = 0.05
+			}
+		}
+		
+		GEC_idea_zollverein_foreign_treaties_2 = {
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = GER_zollverein
+
+			modifier = {
+				industrial_capacity_factory = 0.02
+				industrial_capacity_dockyard = 0.02
+				consumer_goods_expected_value = -0.04
+				political_power_factor = -0.04
+				trade_laws_cost_factor = 0.3
+				trade_opinion_factor = 0.1
+				min_export = 0.1
 			}
 		}
 		
@@ -192,7 +352,7 @@ ideas = {
 			
 			removal_cost = -1
 			
-			picture = free_trade
+			picture = GENERIC_Free_Trade
 			
 			modifier = {
 				consumer_goods_expected_value = -0.03
@@ -543,8 +703,11 @@ ideas = {
 			modifier = {
 				drift_defence_factor = 0.25
 				political_power_factor = 0.05
-				consumer_goods_expected_value = 0.02
+				law_spending_cost_factor = 0.025
 				custom_modifier_tooltip = GEC_idea_polizeiverein_modifier_tt
+				hidden_modifier = {
+					law_spending_cost_factor_from_ideas = 0.02
+				}
 			}
 		}
 
@@ -560,9 +723,12 @@ ideas = {
 			modifier = {
 				drift_defence_factor = 0.3
 				political_power_factor = 0.1
-				consumer_goods_expected_value = 0.03
+				law_spending_cost_factor = 0.05
 				operative_slot = 1
 				custom_modifier_tooltip = GEC_idea_polizeiverein_modifier_tt
+				hidden_modifier = {
+					law_spending_cost_factor_from_ideas = 0.02
+				}
 			}
 		}
 		
@@ -578,8 +744,11 @@ ideas = {
 			modifier = {
 				drift_defence_factor = 0.2
 				political_power_factor = 0.02
-				consumer_goods_expected_value = 0.01
+				law_spending_cost_factor = 0.02
 				custom_modifier_tooltip = GEC_idea_polizeiverein_modifier_tt
+				hidden_modifier = {
+					law_spending_cost_factor_from_ideas = 0.02
+				}
 			}
 		}
 		

@@ -17,21 +17,34 @@
 
 	add_to_variable = { prestige_score = 90 }
 
+	### Economy
+    add_ideas = generic_unemployment_idea
+    set_variable = { unemployment_value_modifier = 0.1 }
+    set_variable = { current_unemployment = 0.05 }
+    clamp_variable = {
+        var = current_unemployment
+        min = 0
+        max = 1
+    }
+    update_unemployment_modifier = yes
+    add_to_variable = { money = 27 }
+	set_variable = { current_loans_sum = 192 }
+
 	add_ideas = {
 		#POLITICS
 		AUS_Franz_Joseph_I
-		has_heir
+		#has_heir
 		agrarian
 		victorian_era
 		law_victorian_army
 		#religion_catholic
 
 		#GOVERNMENTAL POLICIES
-		absolute_monarchy
-		no_constitution
+		#absolute_monarchy
+		#no_constitution
 		no_elections
-		no_separation
-		federal_control
+		#no_separation
+		#federal_control
 
 		#CULTURE AND EDUCATION
 		open_schools
@@ -43,10 +56,10 @@
 
 		#ECONOMY
 		limited_exports
-		normal_taxes
+		taxation_level_3
 		cl_restricted
-		unlimited_work_day
-		lp_land_purchase
+		
+		
 		civilian_economy
 
 		#DEMOGRAPHICS
@@ -58,16 +71,16 @@
 		pp_underground_parties
 
 		#BUDGET
-		hc_no_healthcare
-		law_police_force
-		inframain_basic_maintenance_infrastructure
-		navinfra_decent_naval_infrastructure
-		five_percent
-		sfund_private_ventures_only
+		social_spending_level_1
+		law_spending_level_4
+		road_spending_level_2
+		navy_spending_level_3
+		army_spending_level_4
+		research_spending_level_1
 
 		#NATIONAL SPIRITS
-		GER_general_idea_ger_confed
-		BAD_currency_reform
+		GEC_idea_german_confederation
+		GEC_idea_vienna_monetary_treaty
 		GEC_idea_polizeiverein_leader_1
 		egy_vic_debt
 		AUS_idea_klerikalabsolutist
@@ -636,18 +649,18 @@
 	add_ideas = {
 		#POLITICS
 		AUS_Franz_Joseph_I
-		has_heir
+		#has_heir
 		agrarian
 		victorian_era
 		law_victorian_army
 		#religion_catholic
 
 		#GOVERNMENTAL POLICIES
-		absolute_monarchy
-		no_constitution
+		#absolute_monarchy
+		#no_constitution
 		no_elections
-		no_separation
-		federal_control
+		#no_separation
+		#federal_control
 
 		#CULTURE AND EDUCATION
 		open_schools
@@ -659,10 +672,10 @@
 
 		#ECONOMY
 		limited_exports
-		normal_taxes
+		taxation_level_3
 		cl_restricted
-		unlimited_work_day
-		lp_land_purchase
+		
+		
 		civilian_economy
 
 		#DEMOGRAPHICS
@@ -674,15 +687,15 @@
 		pp_underground_parties
 
 		#BUDGET
-		hc_no_healthcare
-		law_police_force
-		inframain_basic_maintenance_infrastructure
-		navinfra_decent_naval_infrastructure
-		five_percent
-		sfund_private_ventures_only
+		social_spending_level_1
+		law_spending_level_4
+		road_spending_level_2
+		navy_spending_level_3
+		army_spending_level_4
+		research_spending_level_1
 
 		#NATIONAL SPIRITS
-		BAD_currency_reform
+		GEC_idea_vienna_monetary_treaty
 		GEC_idea_polizeiverein_leader_1
 		egy_vic_debt
 		AUS_idea_klerikalabsolutist

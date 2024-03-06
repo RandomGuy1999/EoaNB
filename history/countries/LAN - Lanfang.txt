@@ -9,19 +9,19 @@
 	add_ideas = {
 		#POLITICS
 
-		hos_is_leader
+		#hos_is_leader
 		pre_industrial_era
 		agrarian
-		non_monarchical_system
-		kongsi_federation
+		#non_monarchical_system
+		#kongsi_federation
     law_pre_industrial_army_chinese
 
 		civilian_economy
 		export_focus
-		one_percent
-		very_low_taxes
+		army_spending_level_1
+		taxation_level_2
     cl_illegal
-    lp_collectivization
+    
 
 		#stagnation_growth
 		border_control
@@ -29,17 +29,17 @@
 		racial_laws
 		universal_suffrage
 
-		constitution_adopted
+		#constitution_adopted
 		free_elections
 	  	#religion_confucian
 		open_schools
 		state_religion
 
-		hc_no_healthcare
-		law_police_force
-		inframain_no_subsidies_infrastructure
-		navinfra_no_naval_infrastructure
-		sfund_private_ventures_only
+		social_spending_level_1
+		law_spending_level_4
+		road_spending_level_1
+		navy_spending_level_1
+		research_spending_level_1
 
 		#NATIONAL SPIRITS
 			Oceania_small_kingdom

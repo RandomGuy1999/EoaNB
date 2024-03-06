@@ -17,16 +17,16 @@
 	add_ideas = {
 		#POLITICS
 
-		hos_is_leader
+		#hos_is_leader
 		victorian_era
 		agrarian
-		non_monarchical_system
-		presidential_republic
+		#non_monarchical_system
+		#presidential_republic
 
 		civilian_economy
 		free_trade
-		two_percent
-		normal_taxes
+		army_spending_level_2
+		taxation_level_3
 		cl_legal
 
 		#stagnation_growth
@@ -34,7 +34,7 @@
 		limited_conscription
 		slavery_all_but_name
 
-		limited_constitution
+		#limited_constitution
 		free_elections
 		foa_free_assembly
 		pp_open_politics
@@ -42,11 +42,11 @@
 		open_schools
 		secular_state
 
-		 hc_no_healthcare
-		law_police_force
-		inframain_no_subsidies_infrastructure
-		navinfra_no_naval_infrastructure
-		sfund_private_ventures_only
+		 social_spending_level_1
+		law_spending_level_4
+		road_spending_level_1
+		navy_spending_level_1
+		research_spending_level_1
 
 		#NATIONAL SPIRITS
 			MEX_idea_military_privileges

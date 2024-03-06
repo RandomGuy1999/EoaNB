@@ -889,12 +889,6 @@ PRS_decision_landsturm_regiments:0 "Landsturmregimente"
 PRS_decision_landsturm_regiments_desc:0 "We are losing the war in Southern Germany, so we will draft some new regiments to aid us."
 PRS_decision_landsturm_regiments_effect_tt:0 "We will receive three Landsturm regiments in Berlin."
 
-#Economic Decisions
-PRS_mission_eighteenseventhreecrisis:0 "1873 Gold Crash Crises"
-PRS_mission_eighteenseventhreecrisis_desc:0 ""
-PRS_decision_westfalen_coal:0 "Expand the Westfalen Coal Mining Industry"
-PRS_decision_westfalen_coal_desc:0 "The state of Westfalen has quite a bit of coal hidden underneath its surface - we should fund mining operations there."
-
 #Zollverein
 PRS_decision_category_zollverein:0 "Zollverein Administration"
 PRS_decision_category_zollverein_desc:0 "The §YGerman Customs Union§!, also known as the §Y'Zollverein'§!, is an economic association of around thirty German countries aiming to reduce tariffs, boost trade and improve Germany's competitiveness on the international market. With the notable exceptions of the §Y[AUS.GetName]§! and §Y[LIE.GetName]§!, almost all members of the §YGerman Confederation§! are part of it. The §YZollverein§! has had a significant impact on the economical development of its members and will most likely continue to do so, but with a few tweaks here and there the union's beneficial effect could be even greater."
@@ -970,6 +964,8 @@ PRS_decision_volkerschlachtdenkmal_desc:0 ""
 #Prussian Industry
 PRS_decision_category_industrialisation:0 "Prussian Industrialization"
 PRS_decision_category_industrialisation_desc:0 "§Y[PRS.GetNameDef]§! is rapidly industrializing, there is no doubt about it, but our competitors in Europe and overseas are not standing idly by either. Although we generally support the §Yfreedom of private enterprise§!, we need to find a way to promote businesses and ventures that have the potential to greatly enhance our country's economic power. Some §Yentrepreneurs§! have already caught the public's eye and it might be favorable to support them through different administrative channels. We could also invest in our country's §Yinfrastructure§! to support domestic commerce and mobility."
+PRS_decision_westfalen_coal:0 "Expand the Westfalen Coal Mining Industry"
+PRS_decision_westfalen_coal_desc:0 "The state of Westfalen has quite a bit of coal hidden underneath its surface - we should fund mining operations there."
 PRS_decision_expand_berlin_stock_exchange:0 "Expand Berliner Börse"
 PRS_decision_expand_berlin_stock_exchange_desc:0 ""
 PRS_decision_prussian_consortium:0 "Establish Preußen-Konsortium"
@@ -1352,32 +1348,6 @@ PRS_decision_force_free_trade:0 "Endorse Freedom of Trade"
 PRS_decision_force_free_trade_desc:0 ""
 PRS_liberalization_in_progress_flag:0 " §GLiberalization Measure in Progress§!"
 
-#German Unification
-GER_decision_category_unite_liberal_republic:0 "Unification of Germany (Liberal Republic)"
-GER_decision_category_unite_liberal_republic_desc:0 ""
-GER_decision_unite_liberal_republic:0 "Unite the German States!"
-GER_decision_unite_liberal_republic_desc:0 "We shall unite the German States under one banner, with ideals of liberalism and freedom!"
-GER_decision_unite_liberal_republic_trigger_tt:0 "§Y[Root.GetNameDef]§! is a republic and owns most of the important German States, and either §Y[8.GetName]§! or §Y[28.GetName]§! or both."
-GER_decision_unite_liberal_republic_effect_tt:0 "§GWe will unite Germany as a liberal republic!§!\n\n"
-GER_decision_category_unite_liberal_monarchy:0 "Unification of Germany (Liberal Monarchy)"
-GER_decision_category_unite_liberal_monarchy_desc:0 ""
-GER_decision_unite_liberal_monarchy:0 "Unite the German States!"
-GER_decision_unite_liberal_monarchy_desc:0 "We shall unite the German States under one emperor, with ideals of liberalism and freedom!"
-GER_decision_unite_liberal_monarchy_trigger_tt:0 "§Y[Root.GetNameDef]§! is a monarchy and owns most of the important German States, and either §Y[8.GetName]§! or §Y[28.GetName]§! or both."
-GER_decision_unite_liberal_monarchy_effect_tt:0 "§GWe will unite Germany as a liberal monarchy!§!\n\n"
-GER_decision_category_unite_bismarck:0 "Unification of Germany (Bismarck)"
-GER_decision_category_unite_bismarck_desc:0 ""
-GER_decision_unite_bismarck:0 "Unite the German States!"
-GER_decision_unite_bismarck_desc:0 "We shall unite the German States under one banner, the way Bismarck proposed it - as an authoritarian empire!"
-GER_decision_unite_bismarck_trigger_tt:0 "§Y[Root.GetNameDef]§! owns most of the important German States, and either §Y[8.GetName]§! or §Y[28.GetName]§! or both."
-GER_decision_unite_bismarck_effect_tt:0 "§GWe will unite Germany as an authoritarian empire!§!\n\n"
-GER_decision_category_unite_socialist:0 "Unification of Germany (Socialist)"
-GER_decision_category_unite_socialist_desc:0 ""
-GER_decision_unite_socialist:0 "Unite the German States!"
-GER_decision_unite_socialist_desc:0 "We shall unite the German states under one banner, with ideals of socialism!"
-GER_decision_unite_socialist_trigger_tt:0 "§Y[Root.GetNameDef]§! owns most of the important German States."
-GER_decision_unite_socialist_effect_tt:0 "§GWe will unite Germany as a socialist state!§!\n\n"
-
 #Integrating Political Decisions after 7WW Tie
 eoanb_om_PRS_annex_NGC_subject:0 "Subject Integration"
 eoanb_tt_decision_PRS_annex_SCH:0 "§Y[SCH.GetNameDef]§! will be annexed by §Y[PRS.GetNameDef]§! and lose its cores."
@@ -1558,7 +1528,6 @@ PRS_focus_war_ports_royal_dockyards_trigger_tt:0 "Requires national spirit §YMa
 PRS_focus_war_ports_royal_dockyards_effect_tt:0 "§GThis will unlock §Ydecisions§! and §Ymissions§! to improve our naval infrastructure in key locations. Depending on our success, we will gain a stronger §Ynational spirit§! for our navy.§!"
 PRS_focus_military_supremacy:0 "Militärvormacht"
 PRS_focus_military_supremacy_desc:0 "Our military is truly the pride of our nation."
-PRS_focus_military_supremacy_effect_tt:0 "Unlocks the §YAn Army with a State§! law for military spendage.§!"
 
 #Prussian Constitutional Crisis - HISTORICAL (different outcomes)
 PRS_focus_constitution_crisis:0 "Preußischer Verfassungskonflikt"
@@ -1688,6 +1657,8 @@ PRS_focus_advance_focus_desc:0 "The past decades have been a struggle for Prussi
 PRS_focus_advance_focus_trigger_tt:0 "§YGermany§! must be united."
 PRS_focus_advance_focus_effect_tt:0 "§GThis focus unlocks the§! §YGerman Focus Tree§!§G!§!\n\nDepending on the direction in which the §Y[PRS.GetName]§! has been steered, the new focus tree will be §Yhistorical§!, §Yliberal§! or §Ysocialist§!.\n\n§RAttention! Currently only the historically unified German Empire has a developed focus tree after unification.§!"
 
+prussia.917.d: "[?ENG]"
+
 #Colonies - ALT-HISTORY
 PRS_focus_colonial_politics_branch:0 "Prussian Colonial Ambition"
 PRS_focus_colonial_politics_branch_desc:0 "We need a colonial Empire too!"
@@ -1788,20 +1759,6 @@ PRS_focus_unfinished_warning_effect_tt:0 "§RWARNING: Selecting this may lead yo
 
 
 ### IDEAS ###
-#Zollverein
-PRS_Zollverein:0 "Zollverein"
-PRS_Zollverein_desc:0 "This country is a member of the Zollverein."
-PRS_Zollverein_1:0 "Reconstitutioning Zollverein"
-PRS_Zollverein_1_desc:0 "This country is a member of the Zollverein."
-PRS_Zollverein_2:0 "Reconstituted Zollverein"
-PRS_Zollverein_2_desc:0 "This country is a member of the Zollverein."
-PRS_Zollverein_associate:0 "Zollverein Associate"
-PRS_Zollverein_associate_desc:0 "This country is an associate of the Zollverein."
-PRS_Zollverein_foreign_treaties_1:0 "Zollverein Foreign Trade Treaties"
-PRS_Zollverein_foreign_treaties_1_desc:0 "The Zollverein has secured a small number of trade treaties with foreign countries. This will boost our economy."
-PRS_Zollverein_foreign_treaties_2:0 "Zollverein Foreign Trade Treaties"
-PRS_Zollverein_foreign_treaties_2_desc:0 "The Zollverein has secured a decent number of trade treaties with foreign countries. This will significantly boost our economy."
-
 #Railroads
 PRS_Rail_Focus_1:0 "Preußische Staatseisenbahnen"
 PRS_Rail_Focus_1_desc:0 "The state finances an expansion and a nationalization of the railway network."
@@ -1827,8 +1784,8 @@ PRS_trade_and_economic_law_3:0 "Preußische Handels- und Wirtschaftsgesetze"
 PRS_trade_and_economic_law_3_desc:0 "We have to reform our trade and economic legislation to better fit the needs of our growing commerce and industry. Maybe the legislation we adopt will help unifying the fragmented German codes of law."
 PRS_trade_and_economic_law_4:0 "Preußische Handels- und Wirtschaftsgesetze"
 PRS_trade_and_economic_law_4_desc:0 "We have to reform our trade and economic legislation to better fit the needs of our growing commerce and industry. Maybe the legislation we adopt will help unifying the fragmented German codes of law."
-PRS_idea_well_oiled_economy:0 "Well-Oiled Economy"
-PRS_idea_well_oiled_economy_desc:0 "The [ROOT.GetAdjective] Economy is running like a well-oiled machine."
+PRS_idea_gruenderzeit:0 "Gründerzeit"
+PRS_idea_gruenderzeit_desc:0 "Our country is experiencing a significant economic boom."
 PRS_idea_research_investments:0 "Increased Research Funding"
 PRS_idea_research_investments_desc:0 "[PRS.GetNameDef] is investing massively into research spending due to a recent economic boom."
 PRS_idea_trade_with_france:0 "Trade Treaty with France"
@@ -2181,8 +2138,8 @@ PRS_decision_support_augustenburg_flag:0 " §GPrussia supports Duke Friedrich VI
 PRS_decision_cooperate_with_austria_flag:0 " §GPrussia cooperates with Austria in the matter of Danish misconduct in Schleswig-Holstein.§!"
 PRS_denmark_sues_for_peace_flag:0 "Denmark has had to sue for peace."
 PRS_signs_of_war_GC_flag:0 "§RIt seems the die is cast. There will be war within the German Confederation.§!"
-PRS_zollverein_trade_treaty_negotiating_ngc_flag:0 " §YZollverein - North German Trade Treaty Negotiation in Progress.§!"
-PRS_zollverein_trade_treaty_negotiating_flag:0 " §YZollverein - Trade Treaty Negotiation in Progress.§!"
+zollverein_trade_treaty_negotiating_ngc_flag:0 " §YZollverein - North German Trade Treaty Negotiation in Progress.§!"
+zollverein_trade_treaty_negotiating_flag:0 " §YZollverein - Trade Treaty Negotiation in Progress.§!"
 nation_is_in_zollverein:0 "This country is part of the Zollverein."
 PRS_compromise_successful:0 "§YKing Friedrich III has agreed to the proposed compromise before the situation escalated.§!"
 PRS_new_prime_minister_flag:0 "§YA new Prime Minister has been appointed.§!"

@@ -558,8 +558,8 @@ DEN_decision_category_military  = {
 				has_idea = extensive_conscription
 			}
 			OR = {
-				has_idea = three_percent
-				has_idea = five_percent
+				has_idea = army_spending_level_3
+				has_idea = army_spending_level_4
 			}
 		}
 		
@@ -981,9 +981,9 @@ DEN_decision_category_military  = {
 		visible = {
 			has_active_mission = DEN_mission_thestrups_army_reforms
 			OR = {
-				has_idea = one_percent
-				has_idea = two_percent
-				has_idea = three_percent
+				has_idea = army_spending_level_1
+				has_idea = army_spending_level_2
+				has_idea = army_spending_level_3
 			}
 		}
 
@@ -1493,9 +1493,9 @@ DEN_decision_category_military  = {
 		visible = {
 			has_completed_focus = DEN_focus_increase_navy_budget
 			OR = {
-				has_idea = navinfra_no_naval_infrastructure
-				has_idea = navinfra_low_naval_infrastructure
-				has_idea = navinfra_decent_naval_infrastructure
+				has_idea = navy_spending_level_1
+				has_idea = navy_spending_level_2
+				has_idea = navy_spending_level_3
 			}
 		}
 
@@ -3260,8 +3260,8 @@ DEN_decision_category_economy = {
 			has_tech = standardized_gauge
 			#traffic signals removed
 			OR = {
-				has_idea = inframain_well_maintaned_infrastructure
-				has_idea = inframain_steady_network_expansion
+				has_idea = road_spending_level_3
+				has_idea = road_spending_level_4
 			}
 			has_idea = DEN_idea_danske_statsbaner
 		}
@@ -3382,7 +3382,7 @@ DEN_decision_category_economy = {
 			#	type = industrial_complex
 			#	value = 1		
 			#}
-			NOT = { has_idea = inframain_no_subsidies_infrastructure }
+			NOT = { has_idea = road_spending_level_1 }
 		}
 		
 		activation = { always = no }

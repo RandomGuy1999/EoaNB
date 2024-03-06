@@ -18,17 +18,30 @@
 
 	set_variable = { debt_level = 5 }
 
+	### Economy
+    add_ideas = generic_unemployment_idea
+    set_variable = { unemployment_value_modifier = 0.1 }
+    set_variable = { current_unemployment = 0.05 }
+    clamp_variable = {
+        var = current_unemployment
+        min = 0
+        max = 1
+    }
+    update_unemployment_modifier = yes
+    add_to_variable = { money = 4 }
+	set_variable = { current_loans_sum = 6 }
+
 	add_ideas = {
 	
 		#GOVERNMENT
-		constitutional_monarchy
-		limited_constitution
+		#constitutional_monarchy
+		#limited_constitution
 		limited_elections
-		limited_independence 
+		#limited_independence 
 		
 		#STATE OF COUNTRY
-		hos_is_leader
-		weak_heir
+		BRA_Pedro_II 
+		#weak_heir
 		victorian_era
 		law_victorian_army
 		industrializing
@@ -36,10 +49,21 @@
 		#ECONOMIC POLICIES
 		export_focus
 		civilian_economy
-		normal_taxes
+		taxation_level_3
 		cl_legal
-		unlimited_work_day
-		lp_land_purchase
+		
+		### Economy
+		#add_ideas = generic_unemployment_idea
+		#set_variable = { unemployment_value_modifier = 0.1 }
+		#set_variable = { current_unemployment = 0.22 }
+		#clamp_variable = {
+		#	var = current_unemployment
+		#	min = 0
+		#	max = 1
+		#}
+		#update_unemployment_modifier = yes
+		#add_to_variable = { money = 70 }
+
 		
 		#INDIVIDUAL LIBERTS
 		#stagnation_growth
@@ -51,12 +75,12 @@
 		#religion_catholic
 		
 		#INTERNAL BUDGET LAWS
-		hc_no_healthcare
-		law_police_force
-		inframain_no_subsidies_infrastructure
-		navinfra_no_naval_infrastructure
-		sfund_private_ventures_only
-		two_percent
+		social_spending_level_1
+		law_spending_level_4
+		road_spending_level_1
+		navy_spending_level_1
+		research_spending_level_1
+		army_spending_level_2
 		
 		#POLITICAL LIBERTS
 		privileged_education
@@ -203,7 +227,7 @@
 	}
 
 	set_politics = {
-		ruling_party = autocracy
+		ruling_party = traditional_conservatism	 #autocracy
 	}
 	
 	#DIPLOMACY
@@ -224,14 +248,14 @@
 		add_opinion_modifier = { target = POR modifier = BRA_friendship_treaty }
 		
 	set_popularities = {
-		autocracy = 82
-		traditional_conservatism = 10
+		autocracy = 0	#82
+		traditional_conservatism = 64	#10
 		radical_democracy = 0
-		centrism = 6
+		centrism = 36	#6
 		ideology_social_liberalism = 0
 		anarchism = 0
 		ideology_radical_socialism = 0
-		social_egalitarianism = 2
+		social_egalitarianism = 0	#2
 		chauvinist_populism = 0
 		fundamentalism = 0
 	}
@@ -511,4 +535,6 @@
 			set_naval_oob = "BRA_1857_naval_legacy"
 		}
 	}
+	
+	502 = { add_dynamic_modifier = { modifier = BRA_Livestock_Ranch_Modifier } }
 }

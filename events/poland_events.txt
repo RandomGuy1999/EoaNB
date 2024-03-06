@@ -500,18 +500,18 @@ country_event = {
 					long_name = POL_vic_Wielopolski
 					name = POL_vic_Wielopolski
 				}
-				swap_ideas = {
-					add_idea = no_heir
-					remove_idea = non_monarchical_system
-				}
-				swap_ideas = {
-					add_idea = RUS_Alexander_II
-					remove_idea = hos_is_leader
-				}
-				swap_ideas = {
-					add_idea = constitutional_monarchy
-					remove_idea = parliamentary_republic
-				}
+				#swap_ideas = {
+				#	add_idea = no_heir
+				#	remove_idea = non_monarchical_system
+				#}
+				#swap_ideas = {
+				#	add_idea = RUS_Alexander_II
+				#	remove_idea = hos_is_leader
+				#}
+				#swap_ideas = {
+				#	add_idea = constitutional_monarchy
+				#	remove_idea = parliamentary_republic
+				#}
 				swap_ideas = {
 					add_idea = no_elections
 					remove_idea = free_elections
@@ -3154,14 +3154,14 @@ country_event = {
 				long_name = POL_vic_Czartoryski_King
 				name = POL_vic_Czartoryski_King
 			}
-			swap_ideas = {
-				add_idea = has_heir
-				remove_idea = no_heir
-			}
-			swap_ideas = {
-				add_idea = constitutional_monarchy
-				remove_idea = parliamentary_monarchy
-			}
+			#swap_ideas = {
+			#	add_idea = has_heir
+			#	remove_idea = no_heir
+			#}
+			#swap_ideas = {
+			#	add_idea = constitutional_monarchy
+			#	remove_idea = parliamentary_monarchy
+			#}
 		}
 	}
 
@@ -3194,14 +3194,14 @@ country_event = {
 				long_name = POL_vic_Wettin_King
 				name = POL_vic_Wettin_King
 			}
-			swap_ideas = {
-				add_idea = has_heir
-				remove_idea = no_heir
-			}
-			swap_ideas = {
-				add_idea = constitutional_monarchy
-				remove_idea = parliamentary_monarchy
-			}
+			#swap_ideas = {
+			#	add_idea = has_heir
+			#	remove_idea = no_heir
+			#}
+			#swap_ideas = {
+			#	add_idea = constitutional_monarchy
+			#	remove_idea = parliamentary_monarchy
+			#}
 		}
 	}
 
@@ -3234,14 +3234,14 @@ country_event = {
 				long_name = POL_vic_Habsburg_King
 				name = POL_vic_Habsburg_King
 			}
-			swap_ideas = {
-				add_idea = has_heir
-				remove_idea = no_heir
-			}
-			swap_ideas = {
-				add_idea = constitutional_monarchy
-				remove_idea = parliamentary_monarchy
-			}
+			#swap_ideas = {
+			#	add_idea = has_heir
+			#	remove_idea = no_heir
+			#}
+			#swap_ideas = {
+			#	add_idea = constitutional_monarchy
+			#	remove_idea = parliamentary_monarchy
+			#}
 		}
 	}
 
@@ -3274,10 +3274,10 @@ country_event = {
 				long_name = POL_vic_Napoleon_King
 				name = POL_vic_Napoleon_King
 			}
-			swap_ideas = {
-				add_idea = has_heir
-				remove_idea = no_heir
-			}
+			#swap_ideas = {
+			#	add_idea = has_heir
+			#	remove_idea = no_heir
+			#}
 		}
 	}
 
@@ -3335,14 +3335,14 @@ country_event = {
 				long_name = POL_vic_Czartoryski_King
 				name = POL_vic_Czartoryski_King
 			}
-			swap_ideas = {
-				add_idea = has_heir
-				remove_idea = no_heir
-			}
-			swap_ideas = {
-				add_idea = constitutional_monarchy
-				remove_idea = parliamentary_monarchy
-			}
+			#swap_ideas = {
+			#	add_idea = has_heir
+			#	remove_idea = no_heir
+			#}
+			#swap_ideas = {
+			#	add_idea = constitutional_monarchy
+			#	remove_idea = parliamentary_monarchy
+			#}
 		}
 	}
 
@@ -3400,14 +3400,14 @@ country_event = {
 				long_name = POL_vic_Czartoryski_King
 				name = POL_vic_Czartoryski_King
 			}
-			swap_ideas = {
-				add_idea = has_heir
-				remove_idea = no_heir
-			}
-			swap_ideas = {
-				add_idea = constitutional_monarchy
-				remove_idea = parliamentary_monarchy
-			}
+			#swap_ideas = {
+			#	add_idea = has_heir
+			#	remove_idea = no_heir
+			#}
+			#swap_ideas = {
+			#	add_idea = constitutional_monarchy
+			#	remove_idea = parliamentary_monarchy
+			#}
 		}
 	}
 
@@ -3440,14 +3440,14 @@ country_event = {
 				long_name = POL_vic_Wettin_King
 				name = POL_vic_Wettin_King
 			}
-			swap_ideas = {
-				add_idea = has_heir
-				remove_idea = no_heir
-			}
-			swap_ideas = {
-				add_idea = constitutional_monarchy
-				remove_idea = parliamentary_monarchy
-			}
+			#swap_ideas = {
+			#	add_idea = has_heir
+			#	remove_idea = no_heir
+			#}
+			#swap_ideas = {
+			#	add_idea = constitutional_monarchy
+			#	remove_idea = parliamentary_monarchy
+			#}
 		}
 	}
 
@@ -3480,14 +3480,14 @@ country_event = {
 				long_name = POL_vic_Habsburg_King
 				name = POL_vic_Habsburg_King
 			}
-			swap_ideas = {
-				add_idea = has_heir
-				remove_idea = no_heir
-			}
-			swap_ideas = {
-				add_idea = constitutional_monarchy
-				remove_idea = parliamentary_monarchy
-			}
+			#swap_ideas = {
+			#	add_idea = has_heir
+			#	remove_idea = no_heir
+			#}
+			#swap_ideas = {
+			#	add_idea = constitutional_monarchy
+			#	remove_idea = parliamentary_monarchy
+			#}
 		}
 	}
 
@@ -3545,14 +3545,14 @@ country_event = {
 				long_name = POL_vic_Czartoryski_King
 				name = POL_vic_Czartoryski_King
 			}
-			swap_ideas = {
-				add_idea = has_heir
-				remove_idea = no_heir
-			}
-			swap_ideas = {
-				add_idea = constitutional_monarchy
-				remove_idea = parliamentary_monarchy
-			}
+			#swap_ideas = {
+			#	add_idea = has_heir
+			#	remove_idea = no_heir
+			#}
+			#swap_ideas = {
+			#	add_idea = constitutional_monarchy
+			#	remove_idea = parliamentary_monarchy
+			#}
 		}
 	}
 
@@ -3585,14 +3585,14 @@ country_event = {
 				long_name = POL_vic_Wettin_King
 				name = POL_vic_Wettin_King
 			}
-			swap_ideas = {
-				add_idea = has_heir
-				remove_idea = no_heir
-			}
-			swap_ideas = {
-				add_idea = constitutional_monarchy
-				remove_idea = parliamentary_monarchy
-			}
+			#swap_ideas = {
+			#	add_idea = has_heir
+			#	remove_idea = no_heir
+			#}
+			#swap_ideas = {
+			#	add_idea = constitutional_monarchy
+			#	remove_idea = parliamentary_monarchy
+			#}
 		}
 	}
 
@@ -3625,10 +3625,10 @@ country_event = {
 				long_name = POL_vic_Napoleon_King
 				name = POL_vic_Napoleon_King
 			}
-			swap_ideas = {
-				add_idea = has_heir
-				remove_idea = no_heir
-			}
+			#swap_ideas = {
+			#	add_idea = has_heir
+			#	remove_idea = no_heir
+			#}
 		}
 	}
 
@@ -3686,14 +3686,14 @@ country_event = {
 				long_name = POL_vic_Czartoryski_King
 				name = POL_vic_Czartoryski_King
 			}
-			swap_ideas = {
-				add_idea = has_heir
-				remove_idea = no_heir
-			}
-			swap_ideas = {
-				add_idea = constitutional_monarchy
-				remove_idea = parliamentary_monarchy
-			}
+			#swap_ideas = {
+			#	add_idea = has_heir
+			#	remove_idea = no_heir
+			#}
+			#swap_ideas = {
+			#	add_idea = constitutional_monarchy
+			#	remove_idea = parliamentary_monarchy
+			#}
 		}
 	}
 
@@ -3726,14 +3726,14 @@ country_event = {
 				long_name = POL_vic_Habsburg_King
 				name = POL_vic_Habsburg_King
 			}
-			swap_ideas = {
-				add_idea = has_heir
-				remove_idea = no_heir
-			}
-			swap_ideas = {
-				add_idea = constitutional_monarchy
-				remove_idea = parliamentary_monarchy
-			}
+			#swap_ideas = {
+			#	add_idea = has_heir
+			#	remove_idea = no_heir
+			#}
+			#swap_ideas = {
+			#	add_idea = constitutional_monarchy
+			#	remove_idea = parliamentary_monarchy
+			#}
 		}
 	}
 
@@ -3766,10 +3766,10 @@ country_event = {
 				long_name = POL_vic_Napoleon_King
 				name = POL_vic_Napoleon_King
 			}
-			swap_ideas = {
-				add_idea = has_heir
-				remove_idea = no_heir
-			}
+			#swap_ideas = {
+			#	add_idea = has_heir
+			#	remove_idea = no_heir
+			#}
 		}
 	}
 
@@ -3827,14 +3827,14 @@ country_event = {
 				long_name = POL_vic_Czartoryski_King
 				name = POL_vic_Czartoryski_King
 			}
-			swap_ideas = {
-				add_idea = has_heir
-				remove_idea = no_heir
-			}
-			swap_ideas = {
-				add_idea = constitutional_monarchy
-				remove_idea = parliamentary_monarchy
-			}
+			#swap_ideas = {
+			#	add_idea = has_heir
+			#	remove_idea = no_heir
+			#}
+			#swap_ideas = {
+			#	add_idea = constitutional_monarchy
+			#	remove_idea = parliamentary_monarchy
+			#}
 		}
 	}
 
@@ -3867,14 +3867,14 @@ country_event = {
 				long_name = POL_vic_Wettin_King
 				name = POL_vic_Wettin_King
 			}
-			swap_ideas = {
-				add_idea = has_heir
-				remove_idea = no_heir
-			}
-			swap_ideas = {
-				add_idea = constitutional_monarchy
-				remove_idea = parliamentary_monarchy
-			}
+			#swap_ideas = {
+			#	add_idea = has_heir
+			#	remove_idea = no_heir
+			#}
+			#swap_ideas = {
+			#	add_idea = constitutional_monarchy
+			#	remove_idea = parliamentary_monarchy
+			#}
 		}
 	}
 
@@ -3932,14 +3932,14 @@ country_event = {
 				long_name = POL_vic_Czartoryski_King
 				name = POL_vic_Czartoryski_King
 			}
-			swap_ideas = {
-				add_idea = has_heir
-				remove_idea = no_heir
-			}
-			swap_ideas = {
-				add_idea = constitutional_monarchy
-				remove_idea = parliamentary_monarchy
-			}
+			#swap_ideas = {
+			#	add_idea = has_heir
+			#	remove_idea = no_heir
+			#}
+			#swap_ideas = {
+			#	add_idea = constitutional_monarchy
+			#	remove_idea = parliamentary_monarchy
+			#}
 		}
 	}
 
@@ -3972,14 +3972,14 @@ country_event = {
 				long_name = POL_vic_Habsburg_King
 				name = POL_vic_Habsburg_King
 			}
-			swap_ideas = {
-				add_idea = has_heir
-				remove_idea = no_heir
-			}
-			swap_ideas = {
-				add_idea = constitutional_monarchy
-				remove_idea = parliamentary_monarchy
-			}
+			#swap_ideas = {
+			#	add_idea = has_heir
+			#	remove_idea = no_heir
+			#}
+			#swap_ideas = {
+			#	add_idea = constitutional_monarchy
+			#	remove_idea = parliamentary_monarchy
+			#}
 		}
 	}
 
@@ -4037,14 +4037,14 @@ country_event = {
 				long_name = POL_vic_Czartoryski_King
 				name = POL_vic_Czartoryski_King
 			}
-			swap_ideas = {
-				add_idea = has_heir
-				remove_idea = no_heir
-			}
-			swap_ideas = {
-				add_idea = constitutional_monarchy
-				remove_idea = parliamentary_monarchy
-			}
+			#swap_ideas = {
+			#	add_idea = has_heir
+			#	remove_idea = no_heir
+			#}
+			#swap_ideas = {
+			#	add_idea = constitutional_monarchy
+			#	remove_idea = parliamentary_monarchy
+			#}
 		}
 	}
 
@@ -4077,10 +4077,10 @@ country_event = {
 				long_name = POL_vic_Napoleon_King
 				name = POL_vic_Napoleon_King
 			}
-			swap_ideas = {
-				add_idea = has_heir
-				remove_idea = no_heir
-			}
+			#swap_ideas = {
+			#	add_idea = has_heir
+			#	remove_idea = no_heir
+			#}
 		}
 	}
 
@@ -4101,10 +4101,10 @@ country_event = {
 		name = poland.86.a # Full Constitution
 		ai_chance = { factor = 65 }
 		POL = {
-			swap_ideas = {
-				add_idea = constitution_adopted
-				remove_idea = no_constitution
-			}
+			#swap_ideas = {
+			#	add_idea = constitution_adopted
+			#	remove_idea = no_constitution
+			#}
 		}
 		complete_national_focus = POL_vic_Pacta_Conventa
 	}
@@ -4114,10 +4114,10 @@ country_event = {
 		ai_chance = { factor = 35 }
 		add_political_power = -25
 		POL = {
-			swap_ideas = {
-				add_idea = limited_constitution
-				remove_idea = no_constitution
-			}
+			#swap_ideas = {
+			#	add_idea = limited_constitution
+			#	remove_idea = no_constitution
+			#}
 		}
 		complete_national_focus = POL_vic_Pacta_Conventa
 	}
@@ -4500,7 +4500,7 @@ country_event = { # The Work Day Laws Debate
 				}
 			}
 		}
-		add_ideas = unlimited_work_day
+		#add_ideas = unlimited_work_day
 	}
 
 	option = {
@@ -4519,7 +4519,7 @@ country_event = { # The Work Day Laws Debate
 				}
 			}
 		}
-		add_ideas = fourteen_hour_work_day
+		#add_ideas = fourteen_hour_work_day
 	}
 }
 
@@ -4867,7 +4867,7 @@ country_event = { # NAP - PRS/GER
 			modifier = {
 				factor = 2 # 2/3
 				POL = {
-					has_idea = PRS_Zollverein
+					has_idea = GEC_idea_zollverein_1
 				}
 			}
 			# Together: 4/5
@@ -5188,7 +5188,7 @@ country_event = { # Joining The Zollverein
 		POL = {
 			add_opinion_modifier = { target = ROOT modifier = eoanb_om_RUS_increase_small }
 			reverse_add_opinion_modifier = { target = ROOT modifier = eoanb_om_RUS_increase_small }
-			add_ideas = PRS_Zollverein
+			add_ideas = GEC_idea_zollverein_1
 		}
 		hidden_effect = {
 			POL = {
@@ -5233,7 +5233,7 @@ country_event = { # POL - PRS Agreed
 			POL = {
 				add_opinion_modifier = { target = PRS modifier = eoanb_om_RUS_increase_small }
 				reverse_add_opinion_modifier = { target = PRS modifier = eoanb_om_RUS_increase_small }
-				add_ideas = PRS_Zollverein
+				add_ideas = GEC_idea_zollverein_1
 			}
 		}
 	}
@@ -5275,7 +5275,7 @@ country_event = { # Alliance With Prussia
 			modifier = {
 				factor = 4 # 12/19
 				POL = {
-					has_idea = PRS_Zollverein
+					has_idea = GEC_idea_zollverein_1
 				}
 			}
 			modifier = {

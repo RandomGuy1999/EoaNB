@@ -780,6 +780,12 @@ defined_text = {
 			}
 		localization_key = montenegro_ottomans_neogotiations_t
 	}
+	text = {
+		trigger = {
+		has_global_flag = MNT_war_1858
+			}
+		localization_key = montenegro_war_1858_t
+		}
 }
 
 defined_text = {
@@ -854,11 +860,145 @@ defined_text = {
 			}
 		localization_key = montenegro_ottomans_neogotiations_desc
 		}
+	text = {
+		trigger = {
+		has_global_flag = MNT_war_1858
+			}
+		localization_key = montenegro_war_1858_desc
+		}
 	}
+	
 	defined_text = {
 	name = wiew_stats
 	text = {
 		localization_key = stats
+	}
+}
+	defined_text = {
+	name = MNT_lives
+	text = {
+	trigger = {
+		check_variable = {
+		var = MNT.available_lives
+		value = 1
+		compare = equals
+				}
+		}
+	localization_key = one_live_MNT
+	}
+	text = {
+	trigger = {
+		check_variable = {
+		var = MNT.available_lives
+		value = 2
+		compare = equals
+				}
+		}
+	localization_key = two_lives_MNT
+	}
+	text = {
+	trigger = {
+		check_variable = {
+		var = MNT.available_lives
+		value = 3
+		compare = equals
+				}
+		}
+	localization_key = three_lives_MNT
+	}
+	text = {
+	trigger = {
+		check_variable = {
+		var = MNT.available_lives
+		value = 4
+		compare = equals
+				}
+		}
+	localization_key = four_lives_MNT
+	}
+	text = {
+	trigger = {
+		check_variable = {
+		var = MNT.available_lives
+		value = 5
+		compare = equals
+				}
+		}
+	localization_key = five_lives_MNT
+	}
+	text = {
+	trigger = {
+		check_variable = {
+		var = MNT.available_lives
+		value = 6
+		compare = equals
+				}
+		}
+	localization_key = six_lives_MNT
+	}
+}
+
+	defined_text = {
+	name = OTO_lives
+	text = {
+	trigger = {
+		check_variable = {
+		var = OTO.available_lives
+		value = 1
+		compare = equals
+				}
+		}
+	localization_key = one_live_OTO
+	}
+	text = {
+	trigger = {
+		check_variable = {
+		var = OTO.available_lives
+		value = 2
+		compare = equals
+				}
+		}
+	localization_key = two_lives_OTO
+	}
+	text = {
+	trigger = {
+		check_variable = {
+		var = OTO.available_lives
+		value = 3
+		compare = equals
+				}
+		}
+	localization_key = three_lives_OTO
+	}
+	text = {
+	trigger = {
+		check_variable = {
+		var = OTO.available_lives
+		value = 4
+		compare = equals
+				}
+		}
+	localization_key = four_lives_OTO
+	}
+	text = {
+	trigger = {
+		check_variable = {
+		var = OTO.available_lives
+		value = 5
+		compare = equals
+				}
+		}
+	localization_key = five_lives_OTO
+	}
+	text = {
+	trigger = {
+		check_variable = {
+		var = OTO.available_lives
+		value = 6
+		compare = equals
+				}
+		}
+	localization_key = six_lives_OTO
 	}
 }
 
@@ -1067,7 +1207,7 @@ defined_text = {
 		trigger = {
 			MNT = { has_completed_focus = MNT_focus_negotiations_with_the_ottomans_n }
 			has_global_flag = montenegro_ottomans_neogotiations
-			NOT = { OR = { has_global_flag = have_outer_montengro has_global_flag = not_gained_outer_montenegro } }
+			NOT = { OR = { has_global_flag = have_outer_montenegro has_global_flag = not_gained_outer_montenegro } }
 		}
 		localization_key = MNT_outer_montenegro_not_bought
 	}
@@ -1075,7 +1215,7 @@ defined_text = {
 		trigger = {
 			MNT = { has_completed_focus = MNT_focus_negotiations_with_the_ottomans_n }
 			has_global_flag = montenegro_ottomans_neogotiations
-			has_global_flag = have_outer_montengro
+			has_global_flag = have_outer_montenegro
 			}
 		localization_key = MNT_outer_montenegro_bought
 		}
@@ -1302,3 +1442,386 @@ defined_text = {
 		localization_key = debt_repayment_M
 	}
 }
+
+##########################
+#### MNT OTO war 1858 ####
+##########################
+
+	defined_text = {
+	name = opponent_country
+	text = {
+		trigger = {
+			tag = OTO
+		}
+			localization_key = it_is_montenegro
+		}
+		text = {
+			trigger = {
+				tag = MNT
+			}
+			localization_key = it_is_ottoman_empire
+		}
+	}
+
+	defined_text = {
+	name = opponent_country
+	text = {
+		trigger = {
+			tag = OTO
+		}
+		localization_key = it_is_montenegro
+	}
+	text = {
+		trigger = {
+			tag = MNT
+		}
+		localization_key = it_is_ottoman_empire
+	}
+}
+
+	defined_text = {
+	name = who_win_war
+	text = {
+		trigger = {
+			has_global_flag = RUS_win_grahovac
+		}
+		localization_key = russia_win
+	}
+	text = {
+		trigger = {
+			has_global_flag = FRA_win_grahovac
+		}
+		localization_key = france_win
+	}
+}
+
+	defined_text = {
+		name = who_make_diplomatic_presure
+		text = {
+			trigger = {
+				tag = OTO
+			}
+			localization_key = pressure_on_OTO
+		}
+			
+		text = {
+			trigger = {
+				tag = MNT
+			}
+			localization_key = pressure_on_MNT
+		}
+	}
+
+	defined_text = {
+		name = who_make_diplomatic_pressure_OTO
+			text = {
+			trigger = {
+				has_global_flag = FRA_make_diplomatic_pressure_OTO
+				has_global_flag = RUS_make_diplomatic_pressure_OTO
+			}
+			localization_key = FRA_RUS_make_pressure
+		}
+		text = {
+			trigger = {
+				has_global_flag = FRA_make_diplomatic_pressure_OTO
+			}
+			localization_key = FRA_make_pressure
+		}
+		text = {
+			trigger = {
+				has_global_flag = RUS_make_diplomatic_pressure_OTO
+			}
+			localization_key = RUS_make_pressure
+		}
+		text = {
+			trigger = {
+				has_global_flag = AUS_make_diplomatic_pressure_OTO
+			}
+			localization_key = AUS_make_pressure
+		}
+	}
+	
+	defined_text = {
+		name = who_make_diplomatic_pressure_MNT
+		text = {
+			trigger = {
+				has_global_flag = FRA_make_diplomatic_pressure_MNT
+			}
+			localization_key = FRA_make_pressure
+		}
+		text = {
+			trigger = {
+				has_global_flag = RUS_make_diplomatic_pressure_MNT
+			}
+			localization_key = RUS_make_pressure
+		}
+		text = {
+			trigger = {
+				has_global_flag = AUS_make_diplomatic_pressure_MNT
+			}
+			localization_key = AUS_make_pressure
+		}
+	}
+	
+	defined_text = {
+		name = divisions_in_montenegro_region
+		text = {
+			trigger = {
+				OTO = {
+					num_divisions_in_states = {
+						count = 1
+						states = { 1204 1202 225 1205 966 942 }
+					}
+				}
+			}
+			localization_key = MNT_divisions_in_montenegro_region_1
+		}
+		text = {
+			trigger = {
+				OTO = {
+					num_divisions_in_states = {
+						count = 2
+						states = { 1204 1202 225 1205 966 942 }
+					}
+				}
+			}
+			localization_key = MNT_divisions_in_montenegro_region_2
+		}
+		text = {
+			trigger = {
+				OTO = {
+					num_divisions_in_states = {
+						count = 3
+						states = { 1204 1202 225 1205 966 942 }
+					}
+				}
+			}
+			localization_key = MNT_divisions_in_montenegro_region_3
+		}
+		text = {
+			trigger = {
+				OTO = {
+					num_divisions_in_states = {
+						count = 4
+						states = { 1204 1202 225 1205 966 942 }
+					}
+				}
+			}
+			localization_key = MNT_divisions_in_montenegro_region_4
+		}
+		text = {
+			trigger = {
+				OTO = {
+					num_divisions_in_states = {
+						count = 5
+						states = { 1204 1202 225 1205 966 942 }
+					}
+				}
+			}
+			localization_key = MNT_divisions_in_montenegro_region_5
+		}
+		text = {
+			trigger = {
+				OTO = {
+					num_divisions_in_states = {
+						count = 6
+						states = { 1204 1202 225 1205 966 942 }
+					}
+				}
+			}
+			localization_key = MNT_divisions_in_montenegro_region_6
+		}
+		text = {
+			trigger = {
+				OTO = {
+					num_divisions_in_states = {
+						count = 7
+						states = { 1204 1202 225 1205 966 942 }
+					}
+				}
+			}
+			localization_key = MNT_divisions_in_montenegro_region_7
+		}
+		text = {
+			trigger = {
+				OTO = {
+					num_divisions_in_states = {
+						count = 8
+						states = { 1204 1202 225 1205 966 942 }
+					}
+				}
+			}
+			localization_key = MNT_divisions_in_montenegro_region_8
+		}
+		text = {
+			trigger = {
+				OTO = {
+					num_divisions_in_states = {
+						count = 9
+						states = { 1204 1202 225 1205 966 942 }
+					}
+				}
+			}
+			localization_key = MNT_divisions_in_montenegro_region_9
+		}
+		text = {
+			trigger = {
+				OTO = {
+					num_divisions_in_states = {
+						count = 10
+						states = { 1204 1202 225 1205 966 942 }
+					}
+				}
+			}
+			localization_key = MNT_divisions_in_montenegro_region_10
+		}
+		text = {
+			trigger = {
+				OTO = {
+					num_divisions_in_states = {
+						count = 11
+						states = { 1204 1202 225 1205 966 942 }
+					}
+				}
+			}
+			localization_key = MNT_divisions_in_montenegro_region_11
+		}
+		text = {
+			trigger = {
+				OTO = {
+					num_divisions_in_states = {
+						count = 12
+						states = { 1204 1202 225 1205 966 942 }
+					}
+				}	
+			}
+			localization_key = MNT_divisions_in_montenegro_region_12
+		}
+		text = {
+			trigger = {
+				OTO = {
+					num_divisions_in_states = {
+						count = 13
+						states = { 1204 1202 225 1205 966 942 }
+					}
+				}
+			}
+			localization_key = MNT_divisions_in_montenegro_region_13
+		}
+		text = {
+			trigger = {
+				OTO = {
+					num_divisions_in_states = {
+						count = 14
+						states = { 1204 1202 225 1205 966 942 }
+					}
+				}
+			}
+			localization_key = MNT_divisions_in_montenegro_region_14
+		}
+		text = {
+			trigger = {
+				OTO = {
+					num_divisions_in_states = {
+						count = 15
+						states = { 1204 1202 225 1205 966 942 }
+					}
+				}
+			}
+			localization_key = MNT_divisions_in_montenegro_region_15
+		}
+		text = {
+			trigger = {
+				OTO = {
+					num_divisions_in_states = {
+						count = 16
+						states = { 1204 1202 225 1205 966 942 }
+					}
+				}
+			}
+			localization_key = MNT_divisions_in_montenegro_region_16
+		}
+		text = {
+			trigger = {
+				num_divisions_in_states = {
+					count > 16
+					states = { 1204 1202 225 1205 966 942 }
+				}
+			}
+			localization_key = MNT_divisions_in_montenegro_region_16_over
+		}
+	}
+	
+	defined_text = {
+		name = divisions_limit
+		text = {
+			trigger = {
+					check_variable = {
+						var = OTO.OTO_max_limit
+						value = -1
+						compare = equals
+					}
+			}
+			localization_key = max_limit_7
+		}
+		text = {
+			trigger = {
+					check_variable = {
+						var = OTO.OTO_max_limit
+						value = 0
+						compare = equals
+					}
+			}
+			localization_key = max_limit_8
+		}
+		text = {
+			trigger = {
+					check_variable = {
+						var = OTO.OTO_max_limit
+						value = 1
+						compare = equals
+					}
+			}
+			localization_key = max_limit_10
+		}
+		text = {
+			trigger = {
+					check_variable = {
+						var = OTO.OTO_max_limit
+						value = 2
+						compare = equals
+					}
+			}
+			localization_key = max_limit_12
+		}
+		text = {
+			trigger = {
+					check_variable = {
+						var = OTO.OTO_max_limit
+						value = 3
+						compare = equals
+					}
+			}
+			localization_key = max_limit_14
+		}
+		text = {
+			trigger = {
+					check_variable = {
+						var = OTO.OTO_max_limit
+						value = 3
+						compare = equals
+					}
+			}
+			localization_key = max_limit_14
+		}
+		text = {
+			trigger = {
+					check_variable = {
+						var = OTO.OTO_max_limit
+						value = 4
+						compare = equals
+					}
+			}
+			localization_key = max_limit_16
+		}
+	}

@@ -287,7 +287,7 @@ focus_tree = {
 		completion_reward = {
 			unlock_decision_category_tooltip = PRS_decision_category_zollverein
 			hidden_effect = {
-				set_variable = { var = PRS_zollverein_associates value = 0 }
+				set_variable = { var = var_zollverein_associates value = 0 }
 			}
 		}
 	}
@@ -868,7 +868,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_timed_idea = {
-				idea = PRS_idea_well_oiled_economy
+				idea = PRS_idea_gruenderzeit
 				days = 1825
 			}
 			add_timed_idea = {
@@ -1688,12 +1688,9 @@ focus_tree = {
 		prerequisite = { focus = PRS_focus_royal_dockyards }
 
 		completion_reward = {
-			custom_effect_tooltip = PRS_focus_military_supremacy_effect_tt
-			if = {
-				limit = {
-					is_ai = yes
-				}
-				add_ideas = prussian_military_spendage
+			swap_ideas = {
+				remove_idea = law_victorian_army
+				add_idea = law_victorian_army_prussia
 			}
 		}
 	}
@@ -1912,24 +1909,24 @@ focus_tree = {
 				}
 			}
 			PRS = {
-				if = {
-					limit = {
-						has_idea = no_constitution
-					}
-					swap_ideas = { remove_idea = no_constitution add_idea = constitution_adopted }
-				}
-				else_if = {
-					limit = {
-						has_idea = human_rights
-					}
-					swap_ideas = { remove_idea = human_rights add_idea = constitution_adopted }
-				}
-				else_if = {
-					limit = {
-						has_idea = limited_constitution
-					}
-					swap_ideas = { remove_idea = limited_constitution add_idea = constitution_adopted }
-				}
+				#if = {
+				#	limit = {
+				#		has_idea = no_constitution
+				#	}
+				#	swap_ideas = { remove_idea = no_constitution add_idea = constitution_adopted }
+				#}
+				#else_if = {
+				#	limit = {
+				#		has_idea = human_rights
+				#	}
+				#	swap_ideas = { remove_idea = human_rights add_idea = constitution_adopted }
+				#}
+				#else_if = {
+				#	limit = {
+				#		has_idea = limited_constitution
+				#	}
+				#	swap_ideas = { remove_idea = limited_constitution add_idea = constitution_adopted }
+				#}
 			}
 			PRS = {
 				if = {
@@ -1980,21 +1977,21 @@ focus_tree = {
 					}
 					if = {
 						limit = {
-							has_idea = normal_taxes
+							has_idea = taxation_level_3
 						}
-						swap_ideas = { remove_idea = normal_taxes add_idea = high_taxes }
+						swap_ideas = { remove_idea = taxation_level_3 add_idea = taxation_level_4 }
 					}
 					else_if = {
 						limit = {
-							has_idea = low_taxes
+							has_idea = taxation_level_2
 						}
-						swap_ideas = { remove_idea = low_taxes add_idea = normal_taxes }
+						swap_ideas = { remove_idea = taxation_level_2 add_idea = taxation_level_3 }
 					}
 					else_if = {
 						limit = {
-							has_idea = very_low_taxes
+							has_idea = taxation_level_1
 						}
-						swap_ideas = { remove_idea = very_low_taxes add_idea = normal_taxes }
+						swap_ideas = { remove_idea = taxation_level_1 add_idea = taxation_level_3 }
 					}
 				}
 			}
@@ -2110,9 +2107,9 @@ focus_tree = {
 		completion_reward = {
 			every_country = {
 				limit = {
-					has_idea = PRS_Zollverein
+					has_idea = GEC_idea_zollverein_1
 				} 
-				swap_ideas = { remove_idea = PRS_Zollverein add_idea = PRS_Zollverein_1 }
+				swap_ideas = { remove_idea = GEC_idea_zollverein_1 add_idea = GEC_idea_zollverein_2 }
 			}
 			unlock_decision_tooltip = PRS_decision_zollverein_reconstitution
 			if = {
@@ -2163,7 +2160,7 @@ focus_tree = {
 			has_idea = PRS_idea_ngc_industry_3
 			has_idea = PRS_idea_ngc_judiciary_3
 			has_idea = PRS_idea_foreign_ministry_1
-			has_idea = PRS_Zollverein_2
+			has_idea = GEC_idea_zollverein_3
 		}
 		ai_will_do = { base = 1000 }
 		
@@ -2244,7 +2241,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = PRS_focus_dissolve_parliament_effect_tt
 			decrease_ps_by_one = yes
-			swap_ideas = { remove_idea = constitutional_monarchy add_idea = absolute_monarchy }
+			#swap_ideas = { remove_idea = constitutional_monarchy add_idea = absolute_monarchy }
 			hidden_effect = {
 				country_event = { days = 1 id = prussia.221 }
 				set_variable = { var = PRS_election_campaign_success value = 0 }
@@ -2968,7 +2965,7 @@ focus_tree = {
 				limit = {
 					OR = {
 						AND = {
-							has_idea = GER_general_idea_ger_confed
+							has_idea = GEC_idea_german_confederation
 							NOT = { tag = AUS }
 							NOT = { tag = BAV }
 							NOT = { tag = LIE }
@@ -3370,12 +3367,12 @@ focus_tree = {
 			add_political_power = 100
 			remove_ideas = PRS_idea_constitutional_crisis_4
 			add_popularity = { ideology = centrism popularity = -0.1 }
-			if = {
-				limit = {
-					has_idea = absolute_monarchy
-				}
-				swap_ideas = { remove_idea = absolute_monarchy add_idea = constitutional_monarchy }
-			}
+			#if = {
+			#	limit = {
+			#		has_idea = absolute_monarchy
+			#	}
+			#	swap_ideas = { remove_idea = absolute_monarchy add_idea = constitutional_monarchy }
+			#}
 			hidden_effect = {
 				country_event = { days = 7 id = prussia.235 }
 				clear_variable = political_legitimacy_equilibrium_custom
@@ -3925,7 +3922,8 @@ focus_tree = {
 							has_cosmetic_tag = PRS_GER_bismarck_national
 						}
 					}
-					load_focus_tree = german_empire_focus
+					load_focus_tree = german_empire_historical_focus
+					complete_national_focus = GER_focus_historical_gruenderjahre
 				}
 				else_if = {
 					limit = {
@@ -3946,7 +3944,8 @@ focus_tree = {
 					#load_focus_tree = germany_socialist_focus
 				}
 				else = {
-					load_focus_tree = german_empire_focus
+					load_focus_tree = german_empire_historical_focus
+					complete_national_focus = GER_focus_historical_gruenderjahre
 				}
 				PRS = {
 					if = {

@@ -42,8 +42,11 @@ MNT_decision_category_clans = {
 	}
 
 		visible = {
-		has_completed_focus = MNT_focus_prepare_the_clans_for_conflict
-		is_debug = yes
+			OR = {
+				has_completed_focus = MNT_focus_guerrilla_war_easy_mechanic
+				has_completed_focus = MNT_focus_prepare_the_clans_for_conflict
+				}
+			is_debug = yes
 		}
 
 		fire_only_once = yes
@@ -56,6 +59,7 @@ MNT_decision_category_clans = {
         } 
 		
         complete_effect = {
+				
 		        hidden_effect = {
                 add_command_power = -15
 				}
@@ -274,8 +278,11 @@ MNT_decision_category_clans = {
 	}
 
 		visible = {
-		has_completed_focus = MNT_focus_prepare_the_clans_for_conflict
-		is_debug = yes
+			OR = {
+				has_completed_focus = MNT_focus_guerrilla_war_easy_mechanic
+				has_completed_focus = MNT_focus_prepare_the_clans_for_conflict
+				}
+			is_debug = yes
 		}
 
 		fire_only_once = yes
@@ -300,7 +307,7 @@ MNT_decision_category_clans = {
 		
         remove_effect = {
 		#chain of events
-		#country_event = montenegro.XYZ
+		#country_event = montenegro.
         }
        
 		ai_will_do = {
@@ -1669,21 +1676,21 @@ MNT_decision_category_economy = {
         remove_effect = {
 			if = {  
 				limit = { 
-					has_idea = inframain_no_subsidies_infrastructure 
+					has_idea = road_spending_level_1 
 				} 
-				swap_ideas = { remove_idea = inframain_no_subsidies_infrastructure add_idea = inframain_basic_maintenance_infrastructure }
+				swap_ideas = { remove_idea = road_spending_level_1 add_idea = road_spending_level_2 }
 			}
 			else_if = {
 				limit = {
-					has_idea = inframain_basic_maintenance_infrastructure
+					has_idea = road_spending_level_2
 				}
-				swap_ideas = { remove_idea = inframain_basic_maintenance_infrastructure add_idea = inframain_well_maintaned_infrastructure } 
+				swap_ideas = { remove_idea = road_spending_level_2 add_idea = road_spending_level_3 } 
 			}
 			else_if = {
 				limit = {
-					has_idea = inframain_well_maintaned_infrastructure
+					has_idea = road_spending_level_3
 				}
-				swap_ideas = { remove_idea = inframain_well_maintaned_infrastructure add_idea = inframain_steady_network_expansion } 
+				swap_ideas = { remove_idea = road_spending_level_3 add_idea = road_spending_level_4 } 
 			}
 			if = {  
 				limit = { 
@@ -2257,7 +2264,7 @@ MNT_decision_category_army = {
 		#allowed = { tag = MNT }
 
 		available = {
-		has_completed_focus = MNT_focus_new_uniforms
+			has_completed_focus = MNT_focus_new_uniforms
 	    }
 
 		visible = {
@@ -2271,14 +2278,14 @@ MNT_decision_category_army = {
         days_remove = 70
          
         modifier = {
-        production_speed_buildings_factor = -0.1
+			production_speed_buildings_factor = -0.1
         }
 		
 		complete_effect = {
 		}
        
         remove_effect = {
-        add_tech_bonus = { bonus = 1.25 uses = 1 category = tech_category_uniforms }
+			add_tech_bonus = { bonus = 1.25 uses = 1 category = tech_category_uniforms }
 	 	}
        
 		ai_will_do = {
@@ -2289,293 +2296,6 @@ MNT_decision_category_army = {
 
 
 
-MNT_decision_category_negotiation_with_ottomans = {
-
-
-
-	
-    MNT_decision_resources_back = {
-
-		icon = generic_political_discourse
-
-		available = {
-			has_completed_focus = MNT_focus_negotiations_with_the_ottomans
-		}
-
-		visible = {
-		has_active_mission = MNT_negotiations_tttomans_timer
-		OR = { NOT = {has_completed_focus = MNT_focus_strike_a_deal_with_the_ottomans} NOT = {has_completed_focus = MNT_focus_the_mostar_convention} NOT = {has_completed_focus = MNT_focus_strike_a_deal_with_the_ottomans} }
-		}
-
-		fire_only_once = yes
-		cost = 15
-        days_remove = 15
-         
-        modifier = {
-            
-        } 
-		
-        complete_effect = {
-			OTO ={
-				country_event = montenegro.37
-			}
-		}
-		
-        remove_effect = {
-            OTO = { remove_resource_rights = 942 }
-        }
-       
-		ai_will_do = {
-			base = 1000
-		}
-	}
-	
-	MNT_to_ask_the_Ottomans_to_release_our_territory = {
-
-		icon = generic_political_discourse
-
-		available = {
-			has_completed_focus = MNT_focus_negotiations_with_the_ottomans
-		}
-
-		visible = {
-		has_active_mission = MNT_negotiations_tttomans_timer
-		OR = { NOT = {has_completed_focus = MNT_focus_strike_a_deal_with_the_ottomans} NOT = {has_completed_focus = MNT_focus_the_mostar_convention} NOT = {has_completed_focus = MNT_focus_strike_a_deal_with_the_ottomans} }
-		}
-
-		fire_only_once = yes
-		cost = 10
-        days_remove = 15
-         
-        modifier = {
-            
-        }  
-		
-		complete_effect = {
-			OTO ={
-				country_event = montenegro.39
-			}
-		}
-		
-        remove_effect = {
-			add_state_core = 942
-        }
-       
-		ai_will_do = {
-			base = 1000
-		}
-	}
-	
-	
-	MNT_arms_import = {
-
-		icon = generic_political_discourse
-
-		available = {
-			has_completed_focus = MNT_focus_negotiations_with_the_ottomans
-		}
-
-		visible = {
-		has_active_mission = MNT_negotiations_tttomans_timer
-		OR = { NOT = {has_completed_focus = MNT_focus_strike_a_deal_with_the_ottomans} NOT = {has_completed_focus = MNT_focus_the_mostar_convention} NOT = {has_completed_focus = MNT_focus_strike_a_deal_with_the_ottomans} }
-		}
-
-		fire_only_once = yes
-		cost = 10
-        days_remove = 15
-         
-        modifier = {
-            
-        }  
-		
-		complete_effect = {
-			OTO ={
-				country_event = montenegro.41
-			}
-		}
-		
-        remove_effect = {
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = 200
-				producer = MNT
-            }
-		}
-       
-		ai_will_do = {
-			base = 1000
-		}
-	}
-	
-	MNT_the_status_of_our_army = {
-
-		icon = generic_political_discourse
-
-		available = {
-			has_completed_focus = MNT_focus_negotiations_with_the_ottomans
-		}
-
-		visible = {
-		has_active_mission = MNT_negotiations_tttomans_timer
-		OR = { NOT = {has_completed_focus = MNT_focus_strike_a_deal_with_the_ottomans} NOT = {has_completed_focus = MNT_focus_the_mostar_convention} NOT = {has_completed_focus = MNT_focus_strike_a_deal_with_the_ottomans} }
-		}
-
-		fire_only_once = yes
-		cost = 10
-        days_remove = 15
-         
-        modifier = {
-            
-        }  
-		
-		complete_effect = {
-			OTO ={
-				country_event = montenegro.43
-			}
-		}
-		
-        remove_effect = {
-			add_manpower = 300
-        }
-       
-		ai_will_do = {
-			base = 1000
-		}
-	}
-	
-	MNT_negotiations_tttomans_timer = {
-
-        icon = generic_political_discourse
-
-        allowed = {
-
-        }
-
-        available = {
-            has_idea = MNT_negotiations_with_the_Ottoman_Empire_Success
-        }
-
-        activation = {
-            always = no
-        }
-
-        is_good = yes
-
-        days_mission_timeout = 200
-
-        timeout_effect = {
-			OTO = {	end_puppet = MNT }
-            if = {
-                limit = { 
-                    has_idea = MNT_negotiations_with_the_Ottoman_Empire_Failure
-                } 
-                country_event = { id = montenegro.109 days = 3 }
-            }
-            else_if = {
-                limit = { 
-                    has_idea = MNT_negotiations_with_the_Ottoman_Empire_Unacceptable
-                } 
-                country_event={ id = montenegro.109 days = 3 }
-            }
-            else_if = {
-                limit = { 
-                    has_idea = MNT_negotiations_with_the_Ottoman_Empire_Compromise
-                } 
-                country_event={ id = montenegro.110 days = 3 }
-            }
-        }
-		
-        complete_effect = {
-            complete_national_focus = MNT_focus_recognize_our_status_under_the_ottomans
-        }
-    }
-	
-	
-	MNT_integration_of_the_new_territory = {
-
-		icon = generic_political_discourse
-
-		available = {
-			has_completed_focus = MNT_focus_strike_a_deal_with_the_ottomans
-		}
-
-		visible = {
-			controls_state = 1204
-			has_completed_focus = MNT_focus_strike_a_deal_with_the_ottomans
-		}
-
-		fire_only_once = yes
-		cost = 10
-        days_remove = 90
-         
-        modifier = {
-            
-        }   
-		
-        complete_effect = {
-		1204 = { set_demilitarized_zone = no }
-		}
-		
-        remove_effect = {
-		add_manpower = 400
-		if = {
-            limit = {
-				NOT = { 942 = { is_core_of = MNT }}
-            }
-		add_state_core = 942
-			}
-        }
-       
-		ai_will_do = {
-			base = 1000
-		}
-	}
-	
-	MNT_integration_of_the_new_territory1 = {
-
-		icon = generic_political_discourse
-
-		available = {
-
-		}
-
-		visible = {
-			controls_state = 1204
-			has_completed_focus = MNT_focus_recognize_our_status_under_the_ottomans
-		}
-
-		fire_only_once = yes
-		cost = 10
-        days_remove = 90
-         
-        modifier = {
-            
-        } 
-		
-		complete_effect = {
-		1204 = { set_demilitarized_zone = no }
-			add_manpower = 400
-		}
-		
-        remove_effect = {
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = 100
-				producer = MNT
-			}
-			if = {
-            limit = {
-				NOT = { 942 = { is_core_of = MNT }}
-            }
-		add_state_core = 942
-				}
-        }
-       
-		ai_will_do = {
-			base = 1000
-		}
-	}
-}
 
 MNT_decision_category_Herzegovinian_uprising_1857	= {
 
@@ -2592,7 +2312,10 @@ MNT_decision_category_Herzegovinian_uprising_1857	= {
 		}
 
 		visible = {
-		NOT = { has_global_flag = montenegro_ottomans_neogotiations } 
+			OR = {
+				herzegovina_uprising = yes
+				montenegro_revolt = yes
+			}
 		}
 		
 		fire_only_once = yes
@@ -2604,16 +2327,16 @@ MNT_decision_category_Herzegovinian_uprising_1857	= {
         }        
        
 		complete_effect = {
-		set_country_flag = SER_support_herzegovina_uprising
+			set_country_flag = SER_support_herzegovina_uprising
 		}
 	   
         remove_effect = {
-		custom_effect_tooltip = matamovic_join_vukalovic
-		add_to_variable = {
-		var = MNT.herzegovina_rebels
-		value = 200
-		tooltip = add_200_rebels
-        }
+			custom_effect_tooltip = matamovic_join_vukalovic
+			add_to_variable = {
+				var = MNT.herzegovina_rebels
+				value = 200
+				tooltip = add_200_rebels
+			}
         }
        
 		ai_will_do = {
@@ -2621,30 +2344,31 @@ MNT_decision_category_Herzegovinian_uprising_1857	= {
 		}
 	}
 	
-	
-	
-MNT_send_volunteers_to_the_herzegovina = {
+	MNT_send_volunteers_to_the_herzegovina = {
 
 		icon = feudal_warriors
 		
 		allowed = {
-		OR = {
-		tag = MNT
-		tag = SER
+			OR = {
+				tag = MNT
+				tag = SER
 			}
 		}
 
 		available = {
-		has_equipment = {
-		infantry_equipment > 50
-		}
+			has_equipment = {
+				infantry_equipment > 50
+			}
 		}
 
 		visible = {
-			NOT = { has_global_flag = montenegro_ottomans_neogotiations } 
 			OR = {
-			has_completed_focus = MNT_focus_guerrilla_war
-			has_country_flag = SER_support_herzegovina_uprising
+				herzegovina_uprising = yes
+				montenegro_revolt = yes
+			} 
+				OR = {
+					has_completed_focus = MNT_focus_guerrilla_war
+					has_country_flag = SER_support_herzegovina_uprising
 			}
 		}
 
@@ -2658,19 +2382,19 @@ MNT_send_volunteers_to_the_herzegovina = {
         }        
        
 		complete_effect = {
-		942 = { add_manpower  = -200 }
-		add_equipment_to_stockpile = {
-		type = infantry_equipment
-		amount = -50
+			942 = { add_manpower  = -200 }
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -50
 			}
 		}
 	   
         remove_effect = {
-		add_to_variable = {
-		var = herzegovina_rebels
-		value = 200
-		tooltip = add_200_rebels
-        }
+			add_to_variable = {
+				var = herzegovina_rebels
+				value = 200
+				tooltip = add_200_rebels
+			}
 		}
        
 		ai_will_do = {
@@ -2689,16 +2413,19 @@ MNT_send_volunteers_to_the_herzegovina = {
 		}
 
 		available = {
-		has_equipment = {
-		infantry_equipment > 50
-		}
+			has_equipment = {
+				infantry_equipment > 50
+			}
 		}
 
 		visible = {
-			NOT = { has_global_flag = montenegro_ottomans_neogotiations } 
 			OR = {
-			has_completed_focus = MNT_focus_guerrilla_war
-			has_country_flag = SER_support_herzegovina_uprising
+				herzegovina_uprising = yes
+				montenegro_revolt = yes
+			} 
+			OR = {
+				has_completed_focus = MNT_focus_guerrilla_war
+				has_country_flag = SER_support_herzegovina_uprising
 			}
 		}
 		
@@ -2784,9 +2511,9 @@ MNT_send_volunteers_to_the_herzegovina = {
 		icon = feudal_warriors
 		
 		allowed = {
-		OR = {
-		tag = MNT
-		tag = SER
+			OR = {
+				tag = MNT
+				tag = SER
 			}
 		}
 
@@ -2795,10 +2522,13 @@ MNT_send_volunteers_to_the_herzegovina = {
 		}
 
 		visible = {
-			NOT = { has_global_flag = montenegro_ottomans_neogotiations } 
 			OR = {
-			has_completed_focus = MNT_focus_guerrilla_war
-			has_country_flag = SER_support_herzegovina_uprising
+				herzegovina_uprising = yes
+				montenegro_revolt = yes
+			}
+			OR = {
+				has_completed_focus = MNT_focus_guerrilla_war
+				has_country_flag = SER_support_herzegovina_uprising
 			}
 		}
 		
@@ -2816,19 +2546,19 @@ MNT_send_volunteers_to_the_herzegovina = {
 
 	   
         remove_effect = {
-		random_list = {
-		50 = {	
-		custom_effect_tooltip = growth_increase_by_1
-		add_to_variable = {
-		var = herzegovina_growth
-		value = -1
+			random_list = {
+				50 = {	
+					custom_effect_tooltip = growth_increase_by_1
+					add_to_variable = {
+						var = herzegovina_growth
+					value = -1
+					}
 				}
-			}
-		50 = {
-		custom_effect_tooltip = 50_rebels_died		
-		add_to_variable = {
-		var = herzegovina_rebels
-		value = -50
+			50 = {
+				custom_effect_tooltip = 50_rebels_died		
+				add_to_variable = {
+					var = herzegovina_rebels
+					value = -50
 				}
 			}
 		}
@@ -2843,23 +2573,26 @@ MNT_send_volunteers_to_the_herzegovina = {
 		icon = feudal_warriors
 		
 		allowed = {
-		OR = {
-		tag = MNT
-		tag = SER
+			OR = {
+				tag = MNT
+				tag = SER
 			}
 		}
 
 		available = {
-		has_equipment = {
-		infantry_equipment > 50
-		}
+			has_equipment = {
+			infantry_equipment > 50
+			}
 		}
 
 		visible = {
-			NOT = { has_global_flag = montenegro_ottomans_neogotiations } 
 			OR = {
-			has_completed_focus = MNT_focus_guerrilla_war
-			has_country_flag = SER_support_herzegovina_uprising
+				herzegovina_uprising = yes
+				montenegro_revolt = yes
+			}
+			OR = {
+				has_completed_focus = MNT_focus_guerrilla_war
+				has_country_flag = SER_support_herzegovina_uprising
 			}
 		}
 		
@@ -2994,7 +2727,7 @@ MNT_send_volunteers_to_the_herzegovina = {
 		compare = less_than_or_equals
 			}
 		}
-		country_event = OTO_battleofgrahovac.15
+		country_event = OTO_battleofgrahovac.17
         add_stability = -0.03   
         }
 	if = {
@@ -3012,8 +2745,7 @@ MNT_send_volunteers_to_the_herzegovina = {
 					}
 				}
 			}	
-		country_event = OTO_battleofgrahovac.17
-		}
+		country_event = OTO_battleofgrahovac.18		}
 	}
 }
 	
@@ -3049,59 +2781,58 @@ MNT_send_volunteers_to_the_herzegovina = {
 		country_event = { id = OTO_battleofgrahovac.11 }
 		if = { 
 			limit = { 
-		check_variable = {
-		var = MNT.herzegovina_intesity
-		value = 5
-		compare = greater_than_or_equals
-			}
-		}
-		set_country_flag = OTO_total_loss
-		}
+				check_variable = {
+				var = MNT.herzegovina_intesity
+				value = 17
+			compare = greater_than_or_equals
+            }
+        }
+			set_country_flag = OTO_adventage
+        }
 		else_if = { 
-		limit = { 
-		check_variable = {
-		var = MNT.herzegovina_intesity
-		value = 7
-		compare = greater_than_or_equals
-			}
-		}
-		set_country_flag = OTO_loss
-		}
+			limit = { 
+				check_variable = {
+				var = MNT.herzegovina_intesity
+				value = 13
+			compare = greater_than_or_equals
+            }
+        }
+			set_country_flag = OTO_equilibrium
+        }
+        else_if = { 
+			limit = { 
+				check_variable = {
+				var = MNT.herzegovina_intesity
+				value = 10
+			compare = greater_than_or_equals
+            }
+        }
+			set_country_flag = OTO_disadvantage
+        }
+        else_if = { 
+			limit = { 
+				check_variable = {
+				var = MNT.herzegovina_intesity
+				value = 7
+			compare = greater_than_or_equals
+            }
+        }
+			set_country_flag = OTO_loss
+        }
 		else_if = { 
-		limit = { 
-		check_variable = {
-		var = MNT.herzegovina_intesity
-		value = 10
-		compare = greater_than_or_equals
-			}
-		}
-		set_country_flag = OTO_disadvantage
-		}
-		else_if = { 
-		limit = { 
-		check_variable = {
-		var = MNT.herzegovina_intesity
-		value = 13
-		compare = greater_than_or_equals
-			}
-		}
-		set_country_flag = OTO_equilibrium
-		}
-		else_if = { 
-		limit = { 
-		check_variable = {
-		var = MNT.herzegovina_intesity
-		value = 17
-		compare = greater_than_or_equals
-			}
-		}
-		set_country_flag = OTO_adventage
-		}
+            limit = { 
+				check_variable = {
+				var = MNT.herzegovina_intesity
+				value = 5
+				compare = greater_than_or_equals
+            }
+        }
+        set_country_flag = OTO_total_loss
+        } 
 	}
 	
         complete_effect = {
-        add_stability = 0.01   
-		clr_country_flag = OTO_herzegovina_uprising_1857
+			add_stability = 0.01   
         }
 	}
 	
@@ -3110,21 +2841,22 @@ MNT_send_volunteers_to_the_herzegovina = {
 		icon = generic_political_discourse
 
 		available = {
-		army_manpower_in_state = {
-		amount > 10000
-		state = 1205
+			army_manpower_in_state = {
+			amount > 10000
+			state = 1205
 			}
-		has_country_flag = OTO_herzegovina_uprising_1857
 		has_active_mission = OTO_mission_herzegovina_uprising_1857_final
 		}
 
 		visible = {
-		NOT = { has_global_flag = montenegro_ottomans_neogotiations } 
-		has_country_flag = OTO_herzegovina_uprising_1857
+			OR = {
+				herzegovina_uprising = yes
+				montenegro_revolt = yes
+			}
 		}
 		
 		allowed = { 
-		tag = OTO
+			tag = OTO
 		}
 
 		fire_only_once = no
@@ -3172,8 +2904,10 @@ MNT_send_volunteers_to_the_herzegovina = {
 		}
 
 		visible = {
-		NOT = { has_global_flag = montenegro_ottomans_neogotiations } 
-		has_country_flag = OTO_herzegovina_uprising_1857
+			OR = {
+				herzegovina_uprising = yes
+				montenegro_revolt = yes
+			}
 		}
 		
 		allowed = { 
@@ -3232,8 +2966,10 @@ MNT_send_volunteers_to_the_herzegovina = {
 			}
 
 		visible = {
-		NOT = { has_global_flag = montenegro_ottomans_neogotiations } 
-		has_country_flag = OTO_herzegovina_uprising_1857
+			OR = {
+				herzegovina_uprising = yes
+				montenegro_revolt = yes
+			}
 		}
 		
 		allowed = { 
@@ -3389,8 +3125,7 @@ MNT_send_volunteers_to_the_herzegovina = {
 		}
 		
 		visible = {
-		OTO = { has_active_mission = OTO_mission_herzegovina_uprising_1857_final }
-		MNT = { has_completed_focus = MNT_focus_outbreak_of_the_pro_Montenegro_revolt }
+			montenegro_revolt = yes
 		}
 		
 		allowed = {
@@ -3431,9 +3166,10 @@ MNT_send_volunteers_to_the_herzegovina = {
 		}
 		
 		visible = {
-		tag = MNT
-		OTO = { has_active_mission = OTO_mission_herzegovina_uprising_1857_final }
-		MNT = { has_completed_focus = MNT_focus_outbreak_of_the_pro_Montenegro_revolt }
+			montenegro_revolt = yes
+			NOT = {
+				has_idea =  MNT_idea_withheld_taxes
+			}
 		}
 		
 		allowed = { 
@@ -3453,55 +3189,10 @@ MNT_send_volunteers_to_the_herzegovina = {
 	}
 		
 		remove_effect = {
-		OTO = {
-		country_event = OTO_battleofgrahovac.6
+			OTO = {
+				country_event = OTO_battleofgrahovac.6
 			}
-		custom_effect_tooltip = withhold_taxes
-		}
-			
-		ai_will_do = {
-			base = 1000
-			}
-		}
-		
-		MNT_spark_uprising_in_the_Grahovo_region = {
-
-		icon = generic_political_discourse
-
-		available = {
-		NOT = {
-		check_variable = {
-		var = grahovo_angry
-		value = 3
-		compare = greater_than
-				}
-			}
-		}
-		
-		visible = {
-		tag = MNT
-		OTO = { has_active_mission = OTO_mission_herzegovina_uprising_1857_final }
-		MNT = { has_completed_focus = MNT_focus_outbreak_of_the_pro_Montenegro_revolt }
-		}
-		
-		allowed = { 
-		tag = MNT
-		}
-		
-		fire_only_once = no
-		cost = 25
-        days_remove = 15
-         
-        modifier = {
-		political_power_gain = -0.5
-        }        
-       
-		complete_effect = {
-		custom_effect_tooltip = grahovo_become_angry_t
-	}
-		
-		remove_effect = {
-		grahovo_become_angry = yes
+			custom_effect_tooltip = withhold_taxes
 		}
 			
 		ai_will_do = {
@@ -3518,14 +3209,9 @@ MNT_send_volunteers_to_the_herzegovina = {
 		}
 		
 		visible = {
-		tag = OTO
-		OR = {
-		OTO = { has_active_mission = OTO_mission_herzegovina_uprising_1857_final }
-		MNT = { has_completed_focus = MNT_focus_outbreak_of_the_pro_Montenegro_revolt }
-		}
-		OR = {
-		MNT = { has_completed_focus = MNT_focus_negotiations_with_the_ottomans_n }
-		has_global_flag = montenegro_ottomans_neogotiations
+				OR = {
+					montenegro_revolt = yes
+					MNT_OTO_neogotiations = yes
 			}
 		}
 		
@@ -3564,14 +3250,9 @@ MNT_send_volunteers_to_the_herzegovina = {
 		}
 		
 		visible = {
-		tag = OTO
-		OR = {
-		OTO = { has_active_mission = OTO_mission_herzegovina_uprising_1857_final }
-		MNT = { has_completed_focus = MNT_focus_outbreak_of_the_pro_Montenegro_revolt }
-		}
-		OR = {
-		MNT = { has_completed_focus = MNT_focus_negotiations_with_the_ottomans_n }
-		has_global_flag = montenegro_ottomans_neogotiations
+			OR = {
+					montenegro_revolt = yes
+					MNT_OTO_neogotiations = yes
 			}
 		}
 		
@@ -3592,11 +3273,13 @@ MNT_send_volunteers_to_the_herzegovina = {
 	}
 		
 		remove_effect = {
+		225 = {
 		add_building_construction = {
 		type = bunker
 		level = 1
 		instant_build = yes
-		province = 2999
+		province = 9809
+			}
 		}
 			custom_effect_tooltip = OTO_gain_3_if_compl
 			add_to_variable = {
@@ -3630,18 +3313,26 @@ MNT_send_volunteers_to_the_herzegovina = {
 		}
 
         available = {
-		custom_trigger_tooltip = {
-		tooltip = independence_was_negotiated
-		OR = {
-		has_country_flag = have_indenpendence_montengro
-		has_country_flag = not_gained_independence
+			custom_trigger_tooltip = {
+				tooltip = independence_was_negotiated
+					OR = {
+						has_global_flag = have_indenpendence_montengro
+						has_global_flag = not_gained_independence
+					}	
 				}
-			}
 		custom_trigger_tooltip = {
 		tooltip = territory_was_negotiated
 		OR = {
-		has_country_flag = have_outer_montenegro
-		has_country_flag = not_gained_outer_montenegro
+		has_global_flag = have_outer_montenegro
+		has_global_flag = not_gained_outer_montenegro
+				}
+			}
+		custom_trigger_tooltip = {
+			tooltip = every_items_negotiated
+			check_variable = {
+			var = global.negotiatied_items
+			value = 6
+			compare = equals
 				}
 			}
 		}
@@ -3650,43 +3341,64 @@ MNT_send_volunteers_to_the_herzegovina = {
             always = no
         }
 		
-		selectable_mission = yes
         is_good = yes
 
         days_mission_timeout = 100
 		
 		cancel_trigger = {
 		MNT = { 
-		has_border_war = yes
+			has_border_war = yes
 			}
         }
         cancel_effect = {
-		clr_global_flag = montenegro_ottomans_neogotiations
-		MNT = {
-		country_event = OTO_battleofgrahovac.23
+			clr_global_flag = montenegro_ottomans_neogotiations
+			MNT = {
+				country_event = OTO_battleofgrahovac.23
 			}
-		OTO = {
-		country_event = OTO_battleofgrahovac.23
+			OTO = {
+				country_event = OTO_battleofgrahovac.23
 			}
         }
 
         timeout_effect = {
-		clr_global_flag = montenegro_ottomans_neogotiations
-		MNT = {
-		country_event = OTO_battleofgrahovac.23
+			clr_global_flag = montenegro_ottomans_neogotiations
+			if = {
+				limit = {
+					tag = MNT
+					}
+				mostar_negotiations_effect = yes
 			}
-		OTO = {
-		country_event = OTO_battleofgrahovac.23
+			else_if = {
+				limit = {
+					tag = OTO
+				}
+			effect_tooltip = {
+				mostar_negotiations_effect = yes
+				}
 			}
 		}
 	
 		complete_effect = {
-		clr_global_flag = montenegro_ottomans_neogotiations
-		MNT = {
-		country_event = OTO_battleofgrahovac.24
+			hidden_effect = {
+				if = { 
+					limit = {
+						tag = OTO
+					}
+					MNT = { remove_mission = OTO_mission_mostar_conference }
+				}
+			else_if = {
+				limit = {
+					tag = MNT
+					}
+					OTO = { remove_mission = OTO_mission_mostar_conference }
+				}
 			}
-		OTO = {
-		country_event = OTO_battleofgrahovac.24
+			clr_global_flag = montenegro_ottomans_neogotiations
+			MNT = {
+				country_event = OTO_battleofgrahovac.24
+			}
+			OTO = {
+				country_event = OTO_battleofgrahovac.24
 			}
 		}
 	}
@@ -3695,25 +3407,24 @@ MNT_send_volunteers_to_the_herzegovina = {
 		icon = generic_political_discourse
 
 		available = {
-		custom_trigger_tooltip = {
-		tooltip = has_another_neogotiation
-		NOT = { has_country_flag = has_negotiations }
+			custom_trigger_tooltip = {
+			tooltip = has_another_neogotiation
+			NOT = { has_country_flag = has_negotiations }
 		}
 		check_variable = {
-		var = MNT.MNT_neogotions
-		value = MNT.MNT_neogotions_indenpendence_price
-		compare = greater_than_or_equals
+			var = MNT.MNT_neogotions
+			value = MNT.MNT_neogotions_indenpendence_price
+			compare = greater_than_or_equals
 			}
 		}
 		
 		visible = {
-		NOT = { has_global_flag = not_gained_independence }
-			MNT = { has_completed_focus = MNT_focus_negotiations_with_the_ottomans_n }
-			has_global_flag = montenegro_ottomans_neogotiations
+			NOT = { has_global_flag = not_gained_independence }
+			MNT_OTO_neogotiations = yes
 		}
 		
 		allowed = { 
-		tag = MNT
+			tag = MNT
 		}
 		
 		fire_only_once = yes
@@ -3724,13 +3435,17 @@ MNT_send_volunteers_to_the_herzegovina = {
         }        
        
 		complete_effect = {
-		set_global_flag = have_indenpendence_montengro	
-		subtract_from_variable = {
-		var = MNT.MNT_neogotions
-		value = MNT.MNT_neogotions_indenpendence_price
-		tooltip = purchase_independence
-		}
-	}
+			set_global_flag = { 
+				flag = have_indenpendence_montengro	
+				value = 3
+			}
+			subtract_from_variable = {
+				var = MNT.MNT_neogotions
+				value = MNT.MNT_neogotions_indenpendence_price
+				tooltip = purchase_independence
+			}
+		increase_negotiated_items = yes
+	}	
 		
 		remove_effect = {
 		
@@ -3754,8 +3469,7 @@ MNT_send_volunteers_to_the_herzegovina = {
 		
 		visible = {
 			NOT = { has_global_flag = have_indenpendence_montengro }
-			MNT = { has_completed_focus = MNT_focus_negotiations_with_the_ottomans_n }
-			has_global_flag = montenegro_ottomans_neogotiations
+			MNT_OTO_neogotiations = yes
 		}
 		
 		allowed = { 
@@ -3764,13 +3478,14 @@ MNT_send_volunteers_to_the_herzegovina = {
 		
 		fire_only_once = yes
 		cost = 0
-		days_remove = 16
+		days_remove = 0
          
         modifier = {
 
         }        
        
 		complete_effect = {
+		increase_negotiated_items = yes
 		set_country_flag = has_negotiations
 		custom_effect_tooltip = MNT_gain_2
 		OTO = { 
@@ -3804,8 +3519,7 @@ MNT_send_volunteers_to_the_herzegovina = {
 		
 		visible = {
 			NOT = { has_global_flag = not_gained_outer_montenegro }
-			MNT = { has_completed_focus = MNT_focus_negotiations_with_the_ottomans_n }
-			has_global_flag = montenegro_ottomans_neogotiations
+			MNT_OTO_neogotiations = yes
 		}
 		
 		allowed = { 
@@ -3820,11 +3534,15 @@ MNT_send_volunteers_to_the_herzegovina = {
         }        
        
 		complete_effect = {
-		set_global_flag = have_outer_montenegro	
-		subtract_from_variable = {
-		var = MNT.MNT_neogotions
-		value = MNT.MNT_neogotions_new_territoy_price
-		tooltip = purchase_new_territory
+			increase_negotiated_items = yes
+			set_global_flag = { 
+				flag = have_outer_montenegro	
+				value = 2
+			}
+			subtract_from_variable = {
+			var = MNT.MNT_neogotions
+			value = MNT.MNT_neogotions_new_territoy_price
+			tooltip = purchase_new_territory
 		}
 	}
 		
@@ -3842,16 +3560,15 @@ MNT_send_volunteers_to_the_herzegovina = {
 		icon = generic_political_discourse
 
 		available = {
-		custom_trigger_tooltip = {
-		tooltip = has_another_neogotiation
-		NOT = { has_country_flag = has_negotiations }
+			custom_trigger_tooltip = {
+			tooltip = has_another_neogotiation
+			NOT = { has_country_flag = has_negotiations }
 			}
 		}
 		
 		visible = {
 			NOT = { has_global_flag = have_outer_montenegro }
-			MNT = { has_completed_focus = MNT_focus_negotiations_with_the_ottomans_n }
-			has_global_flag = montenegro_ottomans_neogotiations
+			MNT_OTO_neogotiations = yes
 		}
 		
 		allowed = { 
@@ -3860,22 +3577,25 @@ MNT_send_volunteers_to_the_herzegovina = {
 		
 		fire_only_once = yes
 		cost = 0
-		days_remove = 16
-         
+		days_remove = 0         
         modifier = {
 
         }        
-       
-		complete_effect = {
-		set_country_flag = has_negotiations
-		custom_effect_tooltip = MNT_gain_3
-		OTO = { 
-		country_event = OTO_battleofgrahovac.29
-		}
-	}
 		
 		remove_effect = {
+			
 		}
+       
+		complete_effect = {
+			increase_negotiated_items = yes
+			set_country_flag = has_negotiations
+			custom_effect_tooltip = MNT_gain_3
+			OTO = { 
+			country_event = OTO_battleofgrahovac.29
+			}
+		}
+		
+
 			
 		ai_will_do = {
 			base = 1000
@@ -3887,16 +3607,15 @@ MNT_send_volunteers_to_the_herzegovina = {
 		icon = generic_political_discourse
 
 		available = {
-		check_variable = {
-		var =  MNT.MNT_neogotions
-		value = MNT.MNT_neogotions_arms_import_price
-		compare = greater_than_or_equals
+			check_variable = {
+				var =  MNT.MNT_neogotions
+				value = MNT.MNT_neogotions_arms_import_price
+				compare = greater_than_or_equals
 			}
 		}
 		
 		visible = {
-			MNT = { has_completed_focus = MNT_focus_negotiations_with_the_ottomans_n }
-			has_global_flag = montenegro_ottomans_neogotiations
+			MNT_OTO_neogotiations = yes
 		}
 		
 		allowed = { 
@@ -3911,11 +3630,15 @@ MNT_send_volunteers_to_the_herzegovina = {
         }        
        
 		complete_effect = {
-		set_global_flag = have_arms_import	
-		subtract_from_variable = {
-		var = MNT.MNT_neogotions
-		value = MNT.MNT_neogotions_arms_import_price
-		tooltip = purchase_arms_import
+			increase_negotiated_items = yes	
+			set_global_flag = { 
+				flag = have_arms_import	
+				value = 1
+			}
+			subtract_from_variable = {
+				var = MNT.MNT_neogotions
+				value = MNT.MNT_neogotions_arms_import_price
+				tooltip = purchase_arms_import
 		}
 	}
 		
@@ -3927,6 +3650,1196 @@ MNT_send_volunteers_to_the_herzegovina = {
 			base = 1000
 			}
 		}
+			
+	MNT_OTO_mission_war_1858 = {
+	#noegotions
+
+        icon = generic_political_discourse
+
+        allowed = { 
+			OR = {
+				tag = OTO 
+				tag = MNT
+			}
+		}
+
+        available = {
+			NOT = {has_global_flag = MNT_war_1858}
+		}
+
+        activation = {
+            always = no
+        }
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1204
+				state = 1202
+				state = 225
+				state = 1205
+				state = 966
+				state = 942
+			}
+		}
+		
+		selectable_mission = no
+        is_good = yes
+
+        days_mission_timeout = 100
+		
+		cancel_trigger = {
+			OR = {
+			NOT = {has_global_flag = MNT_war_1858}
+			check_variable = {
+				var = OTO.available_lives
+				value = 0
+				compare = less_than_or_equals
+				}
+			check_variable = {
+				var = MNT.available_lives
+				value = 0
+				compare = less_than_or_equals
+				}
+			}
+		}
+        cancel_effect = {
+			clr_global_flag = MNT_war_1858
+			if = { 
+				limit = { 
+					tag = MNT 
+				} 
+				if  = {
+					limit = {
+						check_variable = {
+							var = OTO.available_lives
+							value = 0
+							compare = less_than_or_equals
+						}
+					}
+					MNT = { complete_national_focus = MNT_focus_strike_a_deal_with_the_ottomans_n }
+				}
+				if  = {
+					limit = {
+						check_variable = {
+							var = MNT.available_lives
+							value = 0
+							compare = less_than_or_equals
+						}
+					}
+					MNT = { complete_national_focus = MNT_focus_the_mostar_convention_n }
+				}
+			}
+        }
+
+        timeout_effect = {
+			#event
+			clr_global_flag = MNT_war_1858
+		}
+	
+		complete_effect = {
+			clr_global_flag = MNT_war_1858
+			#event
+			}
+		}
+		
+		
+		### Ottomans restriction ###
+		
+		
+		MNT_OTO_war_1858_time_to_withdraw_units = {
+
+        icon = generic_political_discourse
+
+        allowed = { 
+			tag = OTO 
+		}
+
+        available = {
+		
+		}
+		
+		visible = {
+		always = no
+		}
+
+        activation = {
+            always = no
+        }
+		
+		selectable_mission = no
+        is_good = no
+
+        days_mission_timeout = 20
+		
+		cancel_trigger = {
+			OR = {
+				has_active_mission = MNT_OTO_mission_war_1858
+				NOT = {
+					division_limit_WAR_1858 = yes
+				}
+			}
+		}
+		
+        cancel_effect = {
+
+        }
+
+        timeout_effect = {
+		if = {
+			limit = { 
+				OR = {
+					check_variable = { RUS.russia_support_to_MNT = 1 } 
+					check_variable = { RUS.russia_support_to_MNT = 2 }
+				}
+			}
+			RUS = {	country_event = OTO_battleofgrahovac.40 }
+			}
+		if = {
+			limit = {
+				OR = {
+					check_variable = { FRA.france_support_to_MNT = 1 }
+					check_variable = { FRA.france_support_to_MNT = 2 }
+				}
+			}
+			FRA = {	country_event = OTO_battleofgrahovac.40 }
+		}
+		if = {
+			limit = { 
+				OR = {
+					check_variable = { AUS.austria_support_to_MNT = 1 } 
+					check_variable = { AUS.austria_support_to_MNT = 2 }
+				}
+			}
+				AUS = {	country_event = OTO_battleofgrahovac.40 }
+			}
+		}
+	
+		complete_effect = {
+			#event
+		}
+	}
+		
+		####################################
+		###	foregin powers ( RUS , FRA ) ###
+		####################################
+		
+		MNT_RUS_send_army_closer_to_ottoman_empire = {
+
+		icon = generic_political_discourse
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = have_casus_beli_on_OTO
+				check_variable = {
+					var = casus_beli_on_OTO
+					value = 1
+					compare = greater_than_or_equals
+				}
+			}		
+		
+			num_divisions_in_states = {
+				count > 6
+				states = { 1119 }
+			}
+		}
+		
+		visible = {
+			MNT_OTO_war_1858 = yes
+		}
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1119
+			}
+		}
+		
+		allowed = { 
+			tag = RUS
+		}
+		
+		is_good = no
+		fire_only_once = no
+		cost = 0
+        days_remove = 16
+         
+        modifier = {
+		
+        }        
+       
+		complete_effect = {
+			add_named_threat = {
+				threat = 3
+				name = RUS_escalation_on_borders
+			}
+			#OTO = { country_event = }
+		}
+		
+		remove_effect = {
+			set_variable = {
+				var = RUS.preparation_to_war
+				value = 1
+				tooltip = russia_become_prepared
+			}
+			
+		}
+			
+		ai_will_do = {
+			base = 1000
+			}
+		}
+		
+		MNT_RUS_declare_war = {
+
+		icon = generic_political_discourse
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = have_casus_beli_on_OTO
+				check_variable = {
+					var = casus_beli_on_OTO
+					value = 1
+					compare = greater_than_or_equals
+				}
+			}
+		}
+		
+		visible = {
+			check_variable = { RUS.preparation_to_war = 1 }
+			MNT_OTO_war_1858 = yes
+		}
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1119
+			}
+		}
+		
+		allowed = { 
+			tag = RUS
+		}
+		
+		is_good = no
+		fire_only_once = no
+		cost = 0
+        days_remove = 16
+         
+        modifier = {
+		
+        }        
+       
+		complete_effect = {
+			clear_variable = casus_beli_on_OTO
+			clear_variable = RUS.preparation_to_war
+		}
+		
+		remove_effect = {
+			start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = 1119
+					num_provinces = 3
+					on_win = OTO_battleofgrahovac.41
+					on_lose = OTO_battleofgrahovac.42
+					on_cancel = OTO_battleofgrahovac.21
+				}	
+				defender = {
+				state = 1122
+					num_provinces = 2
+					on_win = OTO_battleofgrahovac.42
+					on_lose = OTO_battleofgrahovac.41
+					on_cancel = OTO_battleofgrahovac.21
+				}
+			}
+		}
+			
+		ai_will_do = {
+			base = 1000
+			}
+		}
+		
+		MNT_FRA_prepare_our_fleet_to_adriatic_sea = { 
+
+		icon = generic_political_discourse
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = have_casus_beli_on_OTO
+				check_variable = {
+					var = casus_beli_on_OTO
+					value = 1
+					compare = greater_than_or_equals
+				}
+			}
+			ships_in_state_ports = {
+				type = capital_ship
+				size > 8
+				state = 21
+			}
+		}
+		
+		visible = {
+			MNT_OTO_war_1858 = yes
+		}
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 21
+			}
+		}
+		
+		allowed = { 
+			tag = FRA
+		}
+		
+		is_good = no
+		fire_only_once = yes
+		cost = 0
+        days_remove = 16
+         
+        modifier = {
+		
+        }        
+       
+		complete_effect = {
+			add_named_threat = {
+				threat = 3
+				name = FRA_fleet_in_adriatic_sea
+			}
+			#OTO = { country_event = }
+		}
+		
+		remove_effect = {
+			set_variable = {
+				var = FRA.preparation_to_war
+				value = 1
+				tooltip = france_become_prepared
+			}
+		}
+			
+		ai_will_do = {
+			base = 1000
+			}
+		}
+		
+		MNT_FRA_invade_albania = {
+
+		icon = generic_political_discourse
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = have_casus_beli_on_OTO
+				check_variable = {
+					var = casus_beli_on_OTO
+					value = 1
+					compare = greater_than_or_equals
+				}
+			}
+			divisions_in_state = {
+				size > 4
+				state = 21
+			}
+			check_variable = { FRA.preparation_to_war = 1 }
+		}
+		
+		visible = {
+			MNT_OTO_war_1858 = yes
+		}
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 21
+			}
+			highlight_state_targets = {
+				state = 44
+			}
+		}
+		
+		allowed = { 
+			tag = FRA
+		}
+		
+		is_good = no
+		fire_only_once = no
+		cost = 0
+        days_remove = 8
+         
+        modifier = {
+		
+        }        
+       
+		complete_effect = {
+			clear_variable = FRA.preparation_to_war
+			clear_variable = casus_beli_on_OTO
+			FRA = { transfer_state = 44 }
+			21 = {
+				teleport_armies = {
+				to_state = 44
+				}
+			}
+		}
+		
+		remove_effect = {
+			start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = 44
+					num_provinces = 2
+					on_win = OTO_battleofgrahovac.41
+					on_lose = OTO_battleofgrahovac.42
+					on_cancel = OTO_battleofgrahovac.21
+				}	
+				defender = {
+				state = 1201
+					num_provinces = 3
+					on_win = OTO_battleofgrahovac.42
+					on_lose = OTO_battleofgrahovac.41
+					on_cancel = OTO_battleofgrahovac.21
+				}
+			}
+		}
+			
+		ai_will_do = {
+			base = 1000
+			}
+		}
+		
+		######################################
+		### MNT_OTO_war_decisions/missions ### 		
+		######################################
+		
+		
+		MNT_decision_start_grahovo_missions = {
+
+		icon = generic_political_discourse
+
+		available = {
+			MNT = { controls_province = 13779 }				
+		}
+		
+		visible = {
+			MNT_OTO_war_1858 = yes
+		}
+
+		highlight_states = {			
+			highlight_provinces = { 13379 }
+		}
+		
+		allowed = { 
+			tag = MNT
+		}
+		
+		is_good = no
+		fire_only_once = yes
+		cost = 0
+         
+        modifier = {
+		
+        }        
+       
+		complete_effect = {
+			activate_mission = MNT_keep_grahovo_mission
+		}
+			
+		ai_will_do = {
+			base = 1000
+			}
+		}
+		
+		MNT_keep_grahovo_mission = {#only if you select mirko petrovics njegos as general
+
+		icon = generic_political_discourse
+		
+		visible = {
+			#has_global_flag = ###
+			MNT_OTO_war_1858 = yes
+		}
+		
+		available = {
+			always = no
+		}
+		
+		highlight_states = {
+			highlight_state_targets = { state = 1204 }
+			highlight_provinces = { 13379 }
+		}
+		
+		allowed = { 
+			tag = MNT
+		}
+		
+		activation = {
+			always = no
+		}
+		
+		is_good = no
+		fire_only_once = yes
+		selectable_mission = no
+        days_mission_timeout = 20
+		
+		cancel_trigger = {
+			NOT = {
+				MNT = { controls_province = 13779 }
+			}
+		}
+		
+        cancel_effect = {
+				add_to_variable = {
+					var = MNT.available_lives
+					value = -2
+					tooltip = MNT_decrease_lives2
+				}
+        }
+
+        timeout_effect = {
+				add_to_variable = {
+					var = OTO.available_lives
+					value = -2
+					tooltip = OTO_decrease_lives2
+				}
+		}
+			
+		ai_will_do = {
+			base = 1000
+			}
+		}
+		
+		
+		MNT_decision_start_keep_scutari = {
+
+		icon = generic_political_discourse
+
+		available = {
+			MNT = { controls_province = 3896 }				
+		}
+		
+		visible = {
+			MNT_OTO_war_1858 = yes
+		}
+		
+		highlight_states = {	
+			highlight_state_targets = { state = 44 }
+			highlight_provinces = { 3896 }
+		}
+		
+		allowed = { 
+			tag = MNT
+		}
+
+		is_good = no
+		fire_only_once = yes
+		cost = 0
+         
+        modifier = {
+		
+        }        
+       
+		complete_effect = {
+			activate_mission = MNT_keep_scutari_mission
+		}
+			
+		ai_will_do = {
+			base = 1000
+			}
+		}
+		
+		MNT_keep_scutari_mission = {#only if you select marko miljanov as general
+
+		icon = generic_political_discourse
+		
+		visible = {
+			#has_global_flag = ###
+			MNT_OTO_war_1858 = yes
+		}
+		
+		highlight_states = {
+			highlight_provinces = { 3896 }
+		}
+		
+		allowed = { 
+			tag = MNT
+		}
+		
+		activation = {
+			always = no
+		}
+		
+		
+		is_good = no
+		fire_only_once = yes
+		selectable_mission = no
+        days_mission_timeout = 30
+		
+		cancel_trigger = {
+			NOT = {
+				MNT = { controls_province = 3896 }
+			}
+		}
+		
+        cancel_effect = {
+				add_to_variable = {
+					var = MNT.available_lives
+					value = -1
+					tooltip = MNT_decrease_lives
+				}
+        }
+
+        timeout_effect = {
+				add_to_variable = {
+					var = OTO.available_lives
+					value = -1
+					tooltip = OTO_decrease_lives
+				}
+			44 = {
+				create_unit = {
+					division = "name = \"Albania rebels\" division_template = \"clan rebels\" start_experience_factor = 0.5"
+					owner = MNT
+					allow_spawning_on_enemy_provs = yes
+					prioritize_location = 3896
+				}
+			}
+		}
+			
+		ai_will_do = {
+			base = 1000
+			}
+		}
+		
+		
+		MNT_decision_start_keep_herzegovina = {
+
+		icon = generic_political_discourse
+
+		available = {
+			MNT = { controls_province = 9894 }				
+		}
+		
+		visible = {
+			MNT_OTO_war_1858 = yes
+		}
+		
+		highlight_states = {	
+			highlight_provinces = { 9894 }
+		}
+		
+		allowed = { 
+			tag = MNT
+		}
+
+		is_good = no
+		fire_only_once = yes
+		cost = 0
+         
+        modifier = {
+		
+        }        
+       
+		complete_effect = {
+			activate_mission = MNT_keep_herzegovina_mission
+		}
+			
+		ai_will_do = {
+			base = 1000
+			}
+		}
+		
+		
+		MNT_keep_herzegovina_mission = {# only if you select petar popovic pecija as general
+
+		icon = generic_political_discourse
+		
+		visible = {
+			#has_global_flag = ###
+			MNT_OTO_war_1858 = yes
+		}
+		
+		available = {
+			always = no
+		}
+		
+		highlight_states = {
+			highlight_provinces = { 9894 }
+		}
+		
+		allowed = { 
+			tag = MNT
+		}
+		
+		activation = {
+			always = no
+		}
+		
+		is_good = no
+		fire_only_once = yes
+		selectable_mission = no
+        days_mission_timeout = 30
+		
+		cancel_trigger = {
+			NOT = {
+				MNT = { controls_province = 9894 }
+			}
+		}
+		
+        cancel_effect = {
+				add_to_variable = {
+					var = MNT.available_lives
+					value = -1
+					tooltip = MNT_decrease_lives
+				}
+        }
+
+        timeout_effect = {
+			add_to_variable = {
+				var = OTO.available_lives
+				value = -1
+				tooltip = OTO_decrease_lives
+			}
+			1205 = {
+				create_unit = {
+					division = "name = \"Herzegovina rebels\" division_template = \"clan rebels\" start_experience_factor = 0.5"
+					owner = MNT
+					allow_spawning_on_enemy_provs = yes
+					prioritize_location = 9894
+				}
+			}
+		}
+			
+		ai_will_do = {
+			base = 1000
+			}
+		}
+		
+		
+		MNT_decision_start_connection_with_serbia = {
+
+		icon = generic_political_discourse
+
+		available = {
+			MNT = { 
+				controls_state = 966 
+				divisions_in_state = {
+					size > 2
+					state = 966
+				}	
+			}				
+		}
+		
+		visible = {
+			MNT_OTO_war_1858 = yes
+		}
+		
+		highlight_states = {	
+			highlight_provinces = { 9894 }
+		}
+		
+		allowed = { 
+			tag = MNT
+		}
+
+		is_good = no
+		fire_only_once = yes
+		cost = 0
+         
+        modifier = {
+		
+        }        
+       
+		complete_effect = {
+			activate_mission = MNT_keep_herzegovina_mission
+		}
+			
+		ai_will_do = {
+			base = 1000
+			}
+		}
+		
+		MNT_connection_with_serbia = {
+
+		icon = generic_political_discourse
+		
+		visible = {
+			#has_global_flag = ###
+			MNT_OTO_war_1858 = yes
+		}
+		
+		available = {
+			always = no
+		}
+		
+		highlight_states = {
+			highlight_state_targets = { state = 966 }
+		}
+		
+		allowed = { 
+			tag = MNT
+		}
+		
+		activation = {
+			always = no
+		}
+		
+		is_good = no
+		fire_only_once = yes
+		selectable_mission = no
+        days_mission_timeout = 30
+		
+		cancel_trigger = {
+			OR = {
+				NOT = {
+					MNT = { controls_province = 9894 }
+				}
+				NOT = {
+					divisions_in_state = {
+						size > 2
+						state = 966
+					}	
+				}
+			}
+		}
+		
+        cancel_effect = {
+				add_to_variable = {
+					var = MNT.available_lives
+					value = -1
+					tooltip = MNT_decrease_lives
+				}
+        }
+
+        timeout_effect = {
+				add_to_variable = {
+					var = OTO.available_lives
+					value = -1
+					tooltip = OTO_decrease_lives
+				}
+		}
+			
+		ai_will_do = {
+			base = 1000
+			}
+		}
+		
+		MNT_deal_demage_to_ottomans = {
+
+		icon = generic_political_discourse
+
+		available = {
+			OTO = {
+				casualties_inflicted_by = {
+					opponent = MNT
+					thousands > 3
+				}
+			}
+		}
+		
+		visible = {
+			MNT_OTO_war_1858 = yes
+		}
+		
+		allowed = { 
+			tag = MNT
+		}
+		
+		fire_only_once = yes
+		cost = 0
+            
+       
+		complete_effect = {
+			add_to_variable = {
+				var = OTO.available_lives
+				value = -1
+				tooltip = OTO_decrease_lives
+			}
+		}
+		
+			
+		ai_will_do = {
+			base = 1000
+			}
+		}
+		
+		MNT_deliver_the_weapons_to_the_herzegovina = {
+
+		icon = generic_political_discourse
+
+		available = {
+			divisions_in_state = {
+				size > 1
+				state = 1205
+			}
+		}
+		
+		visible = {
+			NOT = { has_country_flag = new_uprising_in_herzegovina }
+			MNT_OTO_war_1858 = yes
+		}
+		
+		allowed = { 
+			tag = MNT
+		}
+		
+		fire_only_once = yes
+		cost = 0
+		custom_cost_trigger = {
+			has_equipment = {
+				infantry_equipment > 49
+			}
+		}
+		custom_cost_text = MNT_deliver_the_weapons_to_the_herzegovina_decision_cost
+            
+       
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -50
+				producer = MNT
+			}
+				
+			if = {
+				limit = {
+					controls_state = 1205
+				}
+				add_to_variable = {
+					var = herzegovina_equipment
+					value = 50
+					tooltip = add_50_infeq_to_HRZ
+				}
+			}
+			else = {
+				OTO = {
+					set_temp_variable = {
+						var = OTO_divisions_in_1205
+						value = 1205.num_armies_in_state 
+					}
+				}
+				set_temp_variable = {
+					var = MNT_divisions_in_1205
+					value = 1205.num_armies_in_state 
+				}
+				divide_temp_variable = { MNT_divisions_in_1205 = OTO.OTO_divisions_in_1205 }
+				multiply_temp_variable = { MNT_divisions_in_1205 = 50 }
+				if = {
+					limit = {
+						check_variable = {
+							var = MNT_divisions_in_1205
+							value = 50
+							compare = greater_than_or_equals
+						}
+					}
+					set_temp_variable = {
+						var = MNT_divisions_in_1205
+						value = 50
+					}
+				}
+				set_variable = {
+					var = herzegovina_equipment
+					value = MNT_divisions_in_1205
+					tooltip = add_x_infeq_to_HRZ
+				}
+			}
+		}
+		
+			
+		ai_will_do = {
+			base = 1000
+			}
+		}
+		
+		
+		MNT_to_start_a_new_uprising_in_Herzegovina = {
+
+		icon = generic_political_discourse
+
+		available = {
+			divisions_in_state = {
+				size > 1
+				state = 1205
+			}
+			
+		}
+		
+		visible = {
+			MNT_OTO_war_1858 = yes
+		}
+		
+		allowed = { 
+			tag = MNT
+		}
+		
+		fire_only_once = yes
+		cost = 30
+		custom_cost_trigger = {
+			check_variable = {
+				var = herzegovina_equipment
+				value = 200
+				compare = greater_than_or_equals
+			}
+		}
+		custom_cost_text = MNT_herzegovina_equipment_more_than_200
+            
+       
+		complete_effect = {
+			set_country_flag = new_uprising_in_herzegovina
+			clear_variable = herzegovina_equipment
+			add_to_variable = {
+				var = OTO.available_lives
+				value = -1
+				tooltip = OTO_decrease_lives
+			}
+			1205 = {
+				create_unit = {
+					division = "name = \"Herzegovina rebels\" division_template = \"clan rebels\" start_experience_factor = 0.5"
+					owner = MNT
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+			1205 = {
+				create_unit = {
+					division = "name = \"Herzegovina rebels\" division_template = \"clan rebels\" start_experience_factor = 0.5"
+					owner = MNT
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+			1205 = {
+				create_unit = {
+					division = "name = \"Herzegovina rebels\" division_template = \"clan rebels\" start_experience_factor = 0.5"
+					owner = MNT
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+		}
+		
+			
+		ai_will_do = {
+			base = 1000
+			}
+		}
+		
+		
+		OTO_keep_order_in_the_herzegovina = {
+
+		icon = generic_political_discourse
+
+		available = {
+			1205 = {
+				resistance < 30
+			}
+			divisions_in_state = {
+				size > 1
+				state = 1205
+			}
+		}
+		
+		visible = {
+			MNT_OTO_war_1858 = yes
+		}
+		
+		allowed = { 
+			tag = OTO
+		}
+		
+		fire_only_once = yes
+		cost = 30
+            
+       
+		complete_effect = {
+			add_to_variable = {
+				var = MNT.available_lives
+				value = -1
+				tooltip = MNT_decrease_lives
+			}
+		}
+		
+			
+		ai_will_do = {
+			base = 1000
+			}
+		}
+		
+		OTO_mission_secure_podgorica_western_sandjak = {
+
+		icon = generic_political_discourse
+
+		activation = {
+			custom_trigger_tooltip = {
+			tooltip = OTO_secure_podgorica
+			num_divisions_in_states = {
+				count > 5
+				states = { 1202 225 1204 }
+			}
+				controls_province = 13779
+				controls_province = 11858
+				controls_province = 9809
+				controls_province = 13775
+				controls_province = 13776
+				controls_province = 13777
+				controls_province = 13852
+				controls_state = 1202
+				controls_state = 225
+				controls_state = 1204
+			}
+		}
+		
+		visible = {
+			MNT_OTO_war_1858 = yes
+		}
+		
+		allowed = { 
+			tag = OTO
+		}
+		
+		fire_only_once = yes
+		selectable_mission = no
+        days_mission_timeout = 30
+		
+		cancel_trigger = {
+			NOT = {
+				custom_trigger_tooltip = {
+					tooltip = OTO_secure_podgorica
+					num_divisions_in_states = {
+						count > 5
+						states = { 1202 225 1204 }
+					}
+					controls_province = 13779
+					controls_province = 11858
+					controls_province = 9809
+					controls_province = 13775
+					controls_province = 13776
+					controls_province = 13777
+					controls_province = 13852
+					controls_state = 1202
+					controls_state = 225
+					controls_state = 1204
+				}
+			}
+		}
+		
+        cancel_effect = {
+			add_to_variable = {
+				var = OTO.available_lives
+				value = -1
+				tooltip = MNT_decrease_lives
+			}
+        }
+
+        timeout_effect = {
+			add_to_variable = {
+				var = OTO.available_lives
+				value = -1
+				tooltip = MNT_decrease_lives
+			}
+		}
+		
+			
+		ai_will_do = {
+			base = 1000
+			}
+		}
+		
+		
+		
+		
+		
+		
+		
 		############# OTO side ###########
 		
 		OTO_deport_Mirko_Petrovic_Njegos = {
@@ -3942,8 +4855,7 @@ MNT_send_volunteers_to_the_herzegovina = {
 		}
 		
 		visible = {
-			MNT = { has_completed_focus = MNT_focus_negotiations_with_the_ottomans_n }
-			has_global_flag = montenegro_ottomans_neogotiations
+			MNT_OTO_neogotiations = yes
 		}
 		
 		allowed = { 
@@ -3958,13 +4870,17 @@ MNT_send_volunteers_to_the_herzegovina = {
         }        
        
 		complete_effect = {
-		set_global_flag = deport_mirko_petrovic_njegos
-		subtract_from_variable = {
-		var = OTO.MNT_neogotions
-		value = OTO.MNT_neogotions_deport_mirko_petrovic_njegos
-		tooltip = deport_mirko_petrovic_njegos_t
+			increase_negotiated_items = yes
+			set_global_flag = {
+				flag = deport_mirko_petrovic_njegos
+				value = 0.0015
+			}
+			subtract_from_variable = {
+				var = OTO.MNT_neogotions
+				value = OTO.MNT_neogotions_deport_mirko_petrovic_njegos
+				tooltip = deport_mirko_petrovic_njegos_t
+			}
 		}
-	}
 		
 		remove_effect = {
 		
@@ -3980,16 +4896,15 @@ MNT_send_volunteers_to_the_herzegovina = {
 		icon = generic_political_discourse
 
 		available = {
-		check_variable = {
-		var =  OTO.MNT_neogotions
-		value = OTO.MNT_neogotions_protect_muslim_landlords
-		compare = greater_than_or_equals
+			check_variable = {
+			var =  OTO.MNT_neogotions
+			value = OTO.MNT_neogotions_protect_muslim_landlords
+			compare = greater_than_or_equals
 			}
 		}
 		
 		visible = {
-			MNT = { has_completed_focus = MNT_focus_negotiations_with_the_ottomans_n }
-			has_global_flag = montenegro_ottomans_neogotiations
+			MNT_OTO_neogotiations = yes
 		}
 		
 		allowed = { 
@@ -4004,11 +4919,15 @@ MNT_send_volunteers_to_the_herzegovina = {
         }        
        
 		complete_effect = {
-		set_global_flag = 	protect_muslim_landlords
+			increase_negotiated_items = yes
+			set_global_flag = {
+				flag = protect_muslim_landlords
+				value = 0.002
+			}
 		subtract_from_variable = {
-		var = OTO.MNT_neogotions
-		value = OTO.MNT_neogotions_protect_muslim_landlords
-		tooltip = protect_muslim_landlords_t
+			var = OTO.MNT_neogotions
+			value = OTO.MNT_neogotions_protect_muslim_landlords
+			tooltip = protect_muslim_landlords_t
 		}
 	}
 		
@@ -4026,16 +4945,15 @@ MNT_send_volunteers_to_the_herzegovina = {
 		icon = generic_political_discourse
 
 		available = {
-		check_variable = {
-		var =  OTO.MNT_neogotions
-		value = OTO.MNT_neogotions_demand_debt_repayment
-		compare = greater_than_or_equals
+			check_variable = {
+				var =  OTO.MNT_neogotions
+				value = OTO.MNT_neogotions_demand_debt_repayment
+				compare = greater_than_or_equals
 			}
 		}
 		
 		visible = {
-			MNT = { has_completed_focus = MNT_focus_negotiations_with_the_ottomans_n }
-			has_global_flag = montenegro_ottomans_neogotiations
+			MNT_OTO_neogotiations = yes
 		}
 		
 		allowed = { 
@@ -4050,13 +4968,17 @@ MNT_send_volunteers_to_the_herzegovina = {
         }        
        
 		complete_effect = {
-		set_global_flag = demanded_debt_repayment
-		subtract_from_variable = {
-		var = OTO.MNT_neogotions
-		value = OTO.MNT_neogotions_demand_debt_repayment
-		tooltip = demand_debt_repayment_t
+			increase_negotiated_items = yes
+			set_global_flag = {
+				flag = demanded_debt_repayment
+				value = 0.002
+			}
+			subtract_from_variable = {
+				var = OTO.MNT_neogotions
+				value = OTO.MNT_neogotions_demand_debt_repayment
+				tooltip = demand_debt_repayment_t
+			}
 		}
-	}
 		
 		remove_effect = {
 		

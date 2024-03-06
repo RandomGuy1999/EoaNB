@@ -177,7 +177,7 @@ political_actions = {
 	PRS_decision_second_eisenach = {
 		icon = generic_nationalism
 		available = {
-			has_idea = GER_general_idea_ger_confed
+			has_idea = GEC_idea_german_confederation
 		}
 		visible = {
 			has_idea = PRS_german_national_movement
@@ -1193,98 +1193,6 @@ political_actions = {
 	}
 }
 
-eoanb_category_economic = {
-	PRS_mission_eighteenseventhreecrisis = {
-		ai_will_do = {
-			base = 100
-		}
-		icon = money
-		available = {
-			PRS_trigger_formed_germany = yes
-			has_completed_focus = GER_focus_historical_fight_crisis
-			OR = {
-				has_completed_focus = GER_focus_historical_protective_tariffs
-				has_completed_focus = GER_focus_historical_balanced_tarriffs
-				has_completed_focus = GER_focus_historical_lower_tarriffs
-			}
-		}
-		allowed = {
-			tag = PRS
-		}
-		activation = {
-			PRS_is_in_1873_crisis = yes
-		}
-		priority = 50
-		selectable_mission = no
-		is_good = no
-		fire_only_once = no
-		days_mission_timeout = 720
-		complete_effect = {
-			PRS = {
-				country_event = {
-					id = eighteenseventhreecrisis.3
-				}
-			}
-			hidden_effect = {
-				PRS = {
-					country_event = {
-						id = eighteenseventhreecrisis.2
-						days = 20
-					}
-				}
-			}
-		}
-		timeout_effect = {
-			hidden_effect = {
-				activate_mission = PRS_mission_eighteenseventhreecrisis
-			}
-		}
-	}
-	#Fund Coal Mining in Westfalen
-	PRS_decision_westfalen_coal = {
-		icon = coal
-		allowed = { tag = PRS }
-		available = {
-			has_tech = machine_tools_1
-		}
-		visible = {
-			PRS = {
-				has_full_control_of_state = 57
-			}
-			NOT = {
-				57 = {
-					has_resources_amount = {
-						resource = coal
-						amount > 15
-						state = 57
-					}
-				}
-			}
-			OR = {
-				has_idea = victorian_era
-				has_idea = machine_era
-			}
-		}
-		fire_only_once = no
-		days_re_enable = 730
-		cost = 25
-		days_remove = 180
-		modifier = {
-			consumer_goods_expected_value = 0.01
-		}
-		remove_effect = {
-			add_resource = {
-				type = coal
-				amount = 2
-				state = 57
-			}
-		}
-		ai_will_do = {
-			base = 1
-		}
-	}
-}
-
 PRS_decision_category_zollverein = {
 	#Zollverein Invite Schleswig-Holstein
 	PRS_decision_zollverein_add_SCH = {
@@ -1304,7 +1212,7 @@ PRS_decision_category_zollverein = {
 				}
 			}
 			NOT = {
-				has_country_flag = PRS_zollverein_trade_treaty_negotiating_ngc_flag
+				has_country_flag = zollverein_trade_treaty_negotiating_ngc_flag
 			}
 		}
 		visible = {
@@ -1331,7 +1239,7 @@ PRS_decision_category_zollverein = {
 		days_remove = 60
 		complete_effect = {
 			hidden_effect = {
-				set_country_flag = PRS_zollverein_trade_treaty_negotiating_ngc_flag
+				set_country_flag = zollverein_trade_treaty_negotiating_ngc_flag
 			}
 		}
 		remove_effect = {
@@ -1364,7 +1272,7 @@ PRS_decision_category_zollverein = {
 				}
 			}
 			NOT = {
-				has_country_flag = PRS_zollverein_trade_treaty_negotiating_ngc_flag
+				has_country_flag = zollverein_trade_treaty_negotiating_ngc_flag
 			}
 		}
 		visible = {
@@ -1391,7 +1299,7 @@ PRS_decision_category_zollverein = {
 		days_remove = 60
 		complete_effect = {
 			hidden_effect = {
-				set_country_flag = PRS_zollverein_trade_treaty_negotiating_ngc_flag
+				set_country_flag = zollverein_trade_treaty_negotiating_ngc_flag
 			}
 		}
 		remove_effect = {
@@ -1424,7 +1332,7 @@ PRS_decision_category_zollverein = {
 				}
 			}
 			NOT = {
-				has_country_flag = PRS_zollverein_trade_treaty_negotiating_ngc_flag
+				has_country_flag = zollverein_trade_treaty_negotiating_ngc_flag
 			}
 		}
 		visible = {
@@ -1444,7 +1352,7 @@ PRS_decision_category_zollverein = {
 		days_remove = 60
 		complete_effect = {
 			hidden_effect = {
-				set_country_flag = PRS_zollverein_trade_treaty_negotiating_ngc_flag
+				set_country_flag = zollverein_trade_treaty_negotiating_ngc_flag
 			}
 		}
 		remove_effect = {
@@ -1477,7 +1385,7 @@ PRS_decision_category_zollverein = {
 				}
 			}
 			NOT = {
-				has_country_flag = PRS_zollverein_trade_treaty_negotiating_flag
+				has_country_flag = zollverein_trade_treaty_negotiating_flag
 			}
 		}
 		visible = {
@@ -1492,7 +1400,7 @@ PRS_decision_category_zollverein = {
 				nation_is_in_zollverein = no
 			}
 			NOT = {
-				has_idea = PRS_Zollverein_foreign_treaties_2
+				has_idea = GEC_idea_zollverein_foreign_treaties_2
 			}
 		}
 		fire_only_once = yes
@@ -1500,7 +1408,7 @@ PRS_decision_category_zollverein = {
 		days_remove = 60
 		complete_effect = {
 			hidden_effect = {
-				set_country_flag = PRS_zollverein_trade_treaty_negotiating_flag
+				set_country_flag = zollverein_trade_treaty_negotiating_flag
 			}
 		}
 		remove_effect = {
@@ -1542,7 +1450,7 @@ PRS_decision_category_zollverein = {
 				}
 			}
 			NOT = {
-				has_country_flag = PRS_zollverein_trade_treaty_negotiating_flag
+				has_country_flag = zollverein_trade_treaty_negotiating_flag
 			}
 		}
 		visible = {
@@ -1557,7 +1465,7 @@ PRS_decision_category_zollverein = {
 				nation_is_in_zollverein = no
 			}
 			NOT = {
-				has_idea = PRS_Zollverein_foreign_treaties_2
+				has_idea = GEC_idea_zollverein_foreign_treaties_2
 			}
 		}
 		fire_only_once = yes
@@ -1565,7 +1473,7 @@ PRS_decision_category_zollverein = {
 		days_remove = 60
 		complete_effect = {
 			hidden_effect = {
-				set_country_flag = PRS_zollverein_trade_treaty_negotiating_flag
+				set_country_flag = zollverein_trade_treaty_negotiating_flag
 			}
 		}
 		remove_effect = {
@@ -1607,7 +1515,7 @@ PRS_decision_category_zollverein = {
 				}
 			}
 			NOT = {
-				has_country_flag = PRS_zollverein_trade_treaty_negotiating_flag
+				has_country_flag = zollverein_trade_treaty_negotiating_flag
 			}
 		}
 		visible = {
@@ -1622,7 +1530,7 @@ PRS_decision_category_zollverein = {
 				nation_is_in_zollverein = no
 			}
 			NOT = {
-				has_idea = PRS_Zollverein_foreign_treaties_2
+				has_idea = GEC_idea_zollverein_foreign_treaties_2
 			}
 		}
 		fire_only_once = yes
@@ -1630,7 +1538,7 @@ PRS_decision_category_zollverein = {
 		days_remove = 60
 		complete_effect = {
 			hidden_effect = {
-				set_country_flag = PRS_zollverein_trade_treaty_negotiating_flag
+				set_country_flag = zollverein_trade_treaty_negotiating_flag
 			}
 		}
 		remove_effect = {
@@ -1673,7 +1581,7 @@ PRS_decision_category_zollverein = {
 				}
 			}
 			NOT = {
-				has_country_flag = PRS_zollverein_trade_treaty_negotiating_flag
+				has_country_flag = zollverein_trade_treaty_negotiating_flag
 			}
 		}
 		visible = {
@@ -1688,7 +1596,7 @@ PRS_decision_category_zollverein = {
 				nation_is_in_zollverein = no
 			}
 			NOT = {
-				has_idea = PRS_Zollverein_foreign_treaties_2
+				has_idea = GEC_idea_zollverein_foreign_treaties_2
 			}
 		}
 		fire_only_once = yes
@@ -1696,7 +1604,7 @@ PRS_decision_category_zollverein = {
 		days_remove = 60
 		complete_effect = {
 			hidden_effect = {
-				set_country_flag = PRS_zollverein_trade_treaty_negotiating_flag
+				set_country_flag = zollverein_trade_treaty_negotiating_flag
 			}
 		}
 		remove_effect = {
@@ -1738,7 +1646,7 @@ PRS_decision_category_zollverein = {
 				}
 			}
 			NOT = {
-				has_country_flag = PRS_zollverein_trade_treaty_negotiating_flag
+				has_country_flag = zollverein_trade_treaty_negotiating_flag
 			}
 		}
 		visible = {
@@ -1753,7 +1661,7 @@ PRS_decision_category_zollverein = {
 				nation_is_in_zollverein = no
 			}
 			NOT = {
-				has_idea = PRS_Zollverein_foreign_treaties_2
+				has_idea = GEC_idea_zollverein_foreign_treaties_2
 			}
 		}
 		fire_only_once = yes
@@ -1761,7 +1669,7 @@ PRS_decision_category_zollverein = {
 		days_remove = 60
 		complete_effect = {
 			hidden_effect = {
-				set_country_flag = PRS_zollverein_trade_treaty_negotiating_flag
+				set_country_flag = zollverein_trade_treaty_negotiating_flag
 			}
 		}
 		remove_effect = {
@@ -1803,7 +1711,7 @@ PRS_decision_category_zollverein = {
 				}
 			}
 			NOT = {
-				has_country_flag = PRS_zollverein_trade_treaty_negotiating_flag
+				has_country_flag = zollverein_trade_treaty_negotiating_flag
 			}
 		}
 		visible = {
@@ -1818,7 +1726,7 @@ PRS_decision_category_zollverein = {
 				nation_is_in_zollverein = no
 			}
 			NOT = {
-				has_idea = PRS_Zollverein_foreign_treaties_2
+				has_idea = GEC_idea_zollverein_foreign_treaties_2
 			}
 		}
 		fire_only_once = yes
@@ -1826,7 +1734,7 @@ PRS_decision_category_zollverein = {
 		days_remove = 60
 		complete_effect = {
 			hidden_effect = {
-				set_country_flag = PRS_zollverein_trade_treaty_negotiating_flag
+				set_country_flag = zollverein_trade_treaty_negotiating_flag
 			}
 		}
 		remove_effect = {
@@ -1868,7 +1776,7 @@ PRS_decision_category_zollverein = {
 				}
 			}
 			NOT = {
-				has_country_flag = PRS_zollverein_trade_treaty_negotiating_flag
+				has_country_flag = zollverein_trade_treaty_negotiating_flag
 			}
 		}
 		visible = {
@@ -1885,7 +1793,7 @@ PRS_decision_category_zollverein = {
 				nation_is_in_zollverein = no
 			}
 			NOT = {
-				has_idea = PRS_Zollverein_foreign_treaties_2
+				has_idea = GEC_idea_zollverein_foreign_treaties_2
 			}
 		}
 		fire_only_once = yes
@@ -1893,7 +1801,7 @@ PRS_decision_category_zollverein = {
 		days_remove = 60
 		complete_effect = {
 			hidden_effect = {
-				set_country_flag = PRS_zollverein_trade_treaty_negotiating_flag
+				set_country_flag = zollverein_trade_treaty_negotiating_flag
 			}
 		}
 		remove_effect = {
@@ -1935,7 +1843,7 @@ PRS_decision_category_zollverein = {
 				}
 			}
 			NOT = {
-				has_country_flag = PRS_zollverein_trade_treaty_negotiating_flag
+				has_country_flag = zollverein_trade_treaty_negotiating_flag
 			}
 		}
 		visible = {
@@ -1952,7 +1860,7 @@ PRS_decision_category_zollverein = {
 				nation_is_in_zollverein = no
 			}
 			NOT = {
-				has_idea = PRS_Zollverein_foreign_treaties_2
+				has_idea = GEC_idea_zollverein_foreign_treaties_2
 			}
 		}
 		fire_only_once = yes
@@ -1960,7 +1868,7 @@ PRS_decision_category_zollverein = {
 		days_remove = 60
 		complete_effect = {
 			hidden_effect = {
-				set_country_flag = PRS_zollverein_trade_treaty_negotiating_flag
+				set_country_flag = zollverein_trade_treaty_negotiating_flag
 			}
 		}
 		remove_effect = {
@@ -2002,7 +1910,7 @@ PRS_decision_category_zollverein = {
 				}
 			}
 			NOT = {
-				has_country_flag = PRS_zollverein_trade_treaty_negotiating_flag
+				has_country_flag = zollverein_trade_treaty_negotiating_flag
 			}
 		}
 		visible = {
@@ -2019,7 +1927,7 @@ PRS_decision_category_zollverein = {
 				nation_is_in_zollverein = no
 			}
 			NOT = {
-				has_idea = PRS_Zollverein_foreign_treaties_2
+				has_idea = GEC_idea_zollverein_foreign_treaties_2
 			}
 		}
 		fire_only_once = yes
@@ -2027,7 +1935,7 @@ PRS_decision_category_zollverein = {
 		days_remove = 60
 		complete_effect = {
 			hidden_effect = {
-				set_country_flag = PRS_zollverein_trade_treaty_negotiating_flag
+				set_country_flag = zollverein_trade_treaty_negotiating_flag
 			}
 		}
 		remove_effect = {
@@ -2069,7 +1977,7 @@ PRS_decision_category_zollverein = {
 				}
 			}
 			NOT = {
-				has_country_flag = PRS_zollverein_trade_treaty_negotiating_flag
+				has_country_flag = zollverein_trade_treaty_negotiating_flag
 			}
 		}
 		visible = {
@@ -2086,7 +1994,7 @@ PRS_decision_category_zollverein = {
 				nation_is_in_zollverein = no
 			}
 			NOT = {
-				has_idea = PRS_Zollverein_foreign_treaties_2
+				has_idea = GEC_idea_zollverein_foreign_treaties_2
 			}
 		}
 		fire_only_once = yes
@@ -2094,7 +2002,7 @@ PRS_decision_category_zollverein = {
 		days_remove = 60
 		complete_effect = {
 			hidden_effect = {
-				set_country_flag = PRS_zollverein_trade_treaty_negotiating_flag
+				set_country_flag = zollverein_trade_treaty_negotiating_flag
 			}
 		}
 		remove_effect = {
@@ -2236,11 +2144,11 @@ PRS_decision_category_zollverein = {
 		remove_effect = {
 			every_country = {
 				limit = {
-					has_idea = PRS_Zollverein_1
+					has_idea = GEC_idea_zollverein_2
 				}
 				swap_ideas = {
-					remove_idea = PRS_Zollverein_1
-					add_idea = PRS_Zollverein_2
+					remove_idea = GEC_idea_zollverein_2
+					add_idea = GEC_idea_zollverein_3
 				}
 			}
 			hidden_effect = {
@@ -2667,6 +2575,68 @@ PRS_decision_category_projects = {
 }
 
 PRS_decision_category_industrialisation = {
+	#Fund Coal Mining in Westfalen
+	PRS_decision_westfalen_coal = {
+		icon = coal
+		allowed = { tag = PRS }
+		available = {
+			NOT = {
+				has_idea = bankruptcy
+			}
+			has_tech = machine_tools_1
+		}
+		visible = {
+			PRS = {
+				has_full_control_of_state = 57
+			}
+			check_variable = {
+				money > 0
+			}
+			NOT = {
+				57 = {
+					has_resources_amount = {
+						resource = coal
+						amount > 15
+						state = 57
+					}
+				}
+			}
+			OR = {
+				has_idea = victorian_era
+				has_idea = machine_era
+			}
+		}
+		fire_only_once = no
+		days_re_enable = 730
+		cost = 0
+		days_remove = 180
+		custom_cost_trigger = {
+			set_temp_variable = {
+				amount_of_money_to_check = 5
+			}
+		}
+		custom_cost_text = CREATE_PUBLIC_WORKS_CUSTOM_COST_TEXT
+		modifier = {
+		}
+		complete_effect = {
+			set_temp_variable = { money_to_gain = -5 }
+			add_money_with_tooltip_effect = yes
+		}
+		remove_effect = {
+			set_temp_variable = {
+				unemployment_value = -0.001
+			}
+			add_unemployment_effect = yes
+			add_resource = {
+				type = coal
+				amount = 2
+				state = 57
+			}
+		}
+		ai_will_do = {
+			base = 1
+		}
+	}
 	#Expand Berliner Börse
 	PRS_decision_expand_berlin_stock_exchange = {
 		icon = generic_construction
@@ -6220,20 +6190,20 @@ PRS_decision_category_navy_expansion = {
 			add_ideas = PRS_idea_navy_ministry_1
 			if = {
 				limit = {
-					has_idea = navinfra_no_naval_infrastructure
+					has_idea = navy_spending_level_1
 				}
 				swap_ideas = {
-					remove_idea = navinfra_no_naval_infrastructure
-					add_idea = navinfra_low_naval_infrastructure
+					remove_idea = navy_spending_level_1
+					add_idea = navy_spending_level_2
 				}
 			}
 			else_if = {
 				limit = {
-					has_idea = navinfra_low_naval_infrastructure
+					has_idea = navy_spending_level_2
 				}
 				swap_ideas = {
-					remove_idea = navinfra_low_naval_infrastructure
-					add_idea = navinfra_decent_naval_infrastructure
+					remove_idea = navy_spending_level_2
+					add_idea = navy_spending_level_3
 				}
 			}
 			PRS = {
@@ -6279,20 +6249,20 @@ PRS_decision_category_navy_expansion = {
 			}
 			if = {
 				limit = {
-					has_idea = navinfra_no_naval_infrastructure
+					has_idea = navy_spending_level_1
 				}
 				swap_ideas = {
-					remove_idea = navinfra_no_naval_infrastructure
-					add_idea = navinfra_low_naval_infrastructure
+					remove_idea = navy_spending_level_1
+					add_idea = navy_spending_level_2
 				}
 			}
 			else_if = {
 				limit = {
-					has_idea = navinfra_low_naval_infrastructure
+					has_idea = navy_spending_level_2
 				}
 				swap_ideas = {
-					remove_idea = navinfra_low_naval_infrastructure
-					add_idea = navinfra_decent_naval_infrastructure
+					remove_idea = navy_spending_level_2
+					add_idea = navy_spending_level_3
 				}
 			}
 			hidden_effect = {
@@ -6870,7 +6840,7 @@ PRS_decision_category_sh_question = {
 			add_war_support = -0.05
 			every_other_country = {
 				limit = {
-					has_idea = GER_general_idea_ger_confed
+					has_idea = GEC_idea_german_confederation
 					NOT = {
 						tag = AUS
 					}
@@ -6931,7 +6901,7 @@ PRS_decision_category_sh_question = {
 			add_war_support = 0.05
 			every_other_country = {
 				limit = {
-					has_idea = GER_general_idea_ger_confed
+					has_idea = GEC_idea_german_confederation
 					NOT = {
 						tag = AUS
 					}
@@ -7137,7 +7107,7 @@ PRS_decision_category_sh_question = {
 					}
 					every_country = {
 						limit = {
-							has_idea = GER_general_idea_ger_confed
+							has_idea = GEC_idea_german_confederation
 							NOT = {
 								tag = PRS
 							}
@@ -7411,7 +7381,7 @@ PRS_decision_category_sh_question = {
 							tag = AUS
 							tag = PRS
 							tag = DEN
-							has_idea = GER_general_idea_ger_confed
+							has_idea = GEC_idea_german_confederation
 						}
 					}
 					country_event = secschwar.32
@@ -7454,7 +7424,7 @@ PRS_decision_category_sh_question = {
 							tag = AUS
 							tag = PRS
 							tag = DEN
-							has_idea = GER_general_idea_ger_confed
+							has_idea = GEC_idea_german_confederation
 						}
 					}
 					country_event = secschwar.63
@@ -7702,7 +7672,7 @@ PRS_decision_category_sh_question = {
 			}
 			every_other_country = {
 				limit = {
-					has_idea = GER_general_idea_ger_confed
+					has_idea = GEC_idea_german_confederation
 					NOT = {
 						tag = PRS
 					}
@@ -8165,7 +8135,7 @@ PRS_decision_category_german_war = {
 				}
 				has_war_support > 0.45
 			}
-			has_idea = GER_general_idea_ger_confed
+			has_idea = GEC_idea_german_confederation
 			date > 1866.4.1
 		}
 		visible = {
@@ -8425,14 +8395,14 @@ PRS_decision_category_german_war = {
 					if = {
 						limit = {
 							NOT = {
-								has_idea = GER_general_idea_ger_confed
+								has_idea = GEC_idea_german_confederation
 							}
 						}
-						add_ideas = GER_general_idea_ger_confed
+						add_ideas = GEC_idea_german_confederation
 					}
 					every_country = {
 						limit = {
-							has_idea = GER_general_idea_ger_confed
+							has_idea = GEC_idea_german_confederation
 							NOT = {
 								tag = AUS
 							}
@@ -10276,7 +10246,7 @@ PRS_decision_category_Friedrich_III = {
 				}
 				every_other_country = {
 					limit = {
-						has_idea = GER_general_idea_ger_confed
+						has_idea = GEC_idea_german_confederation
 						NOT = {
 							tag = LUX
 						}
@@ -10367,11 +10337,11 @@ PRS_decision_category_liberalization = {
 					has_government = centrism
 				}
 				has_idea = PRS_idea_rule_of_law
-				has_idea = constitution_adopted
-				OR = {
-					has_idea = constitutional_monarchy
-					has_idea = parliamentary_monarchy
-				}
+				#has_idea = constitution_adopted
+				#OR = {
+					#has_idea = constitutional_monarchy
+					#has_idea = parliamentary_monarchy
+				#}
 				NOT = {
 					has_idea = PRS_idea_three_class_franchise
 				}
@@ -10385,15 +10355,15 @@ PRS_decision_category_liberalization = {
 			}
 			else = {
 				has_idea = PRS_idea_prussian_constitutionalism
-				OR = {
-					has_idea = limited_constitution
-					has_idea = human_rights
-					has_idea = constitution_adopted
-				}
-				OR = {
-					has_idea = constitutional_monarchy
-					has_idea = parliamentary_monarchy
-				}
+				#OR = {
+				#	has_idea = limited_constitution
+				#	has_idea = human_rights
+				#	has_idea = constitution_adopted
+				#}
+				#OR = {
+					#has_idea = constitutional_monarchy
+					#has_idea = parliamentary_monarchy
+				#}
 				NOT = {
 					has_idea = PRS_idea_three_class_franchise
 				}
@@ -10554,17 +10524,17 @@ PRS_decision_category_liberalization = {
 					NOT = {
 						has_idea = PRS_idea_rule_of_law
 					}
-					NOT = {
-						has_idea = constitution_adopted
-					}
-					AND = {
-						NOT = {
-							has_idea = constitutional_monarchy
-						}
-						NOT = {
-							has_idea = parliamentary_monarchy
-						}
-					}
+					#NOT = {
+					#	has_idea = constitution_adopted
+					#}
+					#AND = {
+					#	NOT = {
+					#		has_idea = constitutional_monarchy
+					#	}
+					#	NOT = {
+					#		has_idea = parliamentary_monarchy
+					#	}
+					#}
 				}
 			}
 			else = {
@@ -10572,25 +10542,25 @@ PRS_decision_category_liberalization = {
 					NOT = {
 						has_idea = PRS_idea_prussian_constitutionalism
 					}
-					AND = {
-						NOT = {
-							has_idea = limited_constitution
-						}
-						NOT = {
-							has_idea = human_rights
-						}
-						NOT = {
-							has_idea = constitution_adopted
-						}
-					}
-					AND = {
-						NOT = {
-							has_idea = constitutional_monarchy
-						}
-						NOT = {
-							has_idea = parliamentary_monarchy
-						}
-					}
+					#AND = {
+					#	NOT = {
+					#		has_idea = limited_constitution
+					#	}
+					#	NOT = {
+					#		has_idea = human_rights
+					#	}
+					#	NOT = {
+					#		has_idea = constitution_adopted
+					#	}
+					#}
+					#AND = {
+					#	NOT = {
+					#		has_idea = constitutional_monarchy
+					#	}
+					#	NOT = {
+					#		has_idea = parliamentary_monarchy
+					#	}
+					#}
 				}
 			}
 		}

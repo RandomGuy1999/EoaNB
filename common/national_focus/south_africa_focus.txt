@@ -134,7 +134,7 @@ focus_tree = {
 		prerequisite = { focus = SAF_focus_calm_conservatives }
 		
 		completion_reward = {
-			
+			country_event = britishafrica.38
 		}
 	}
 
@@ -208,7 +208,7 @@ focus_tree = {
 
 	focus = {
 		id = SAF_focus_OFS_talks
-		icon = GFX_Focus_Diplomatic_OFS
+		icon = GFX_Focus_Diplomatic_Ally_OFS
 		x = -1
 		y = 5
 		cost = 70
@@ -227,22 +227,13 @@ focus_tree = {
 		prerequisite = { focus = SAF_focus_need_federation }
 		
 		completion_reward = {
-			OFS = {
-				add_opinion_modifier = {
-					target = SAF
-					modifier = large_increase
-				}
-			}
-			add_opinion_modifier = {
-				target = OFS
-				modifier = large_increase
-			}
+			unlock_decision_tooltip = SAF_decision_OFS_confed_talks
 		}
 	}
 
 	focus = {
 		id = SAF_focus_TRV_talks
-		icon = GFX_Focus_Diplomatic_TRV
+		icon = GFX_Focus_Diplomatic_Ally_TRV
 		x = 1
 		y = 5
 		cost = 70
@@ -261,16 +252,7 @@ focus_tree = {
 		prerequisite = { focus = SAF_focus_need_federation }
 		
 		completion_reward = {
-			TRV = {
-				add_opinion_modifier = {
-					target = SAF
-					modifier = large_increase
-				}
-			}
-			add_opinion_modifier = {
-				target = TRV
-				modifier = large_increase
-			}
+			unlock_decision_tooltip = SAF_decision_TRV_confed_talks
 		}
 	}
 
@@ -290,6 +272,8 @@ focus_tree = {
 			has_country_leader = {	
 				character = NZL_george_edward_grey 
 			}
+			has_country_flag = SAF_OFS_confed
+			has_country_flag = SAF_TRV_confed
 		}
 
 		prerequisite = { focus = SAF_focus_OFS_talks }
@@ -297,7 +281,7 @@ focus_tree = {
 		
 		completion_reward = {
 			ENG = {
-				#country_event = {}
+				country_event = britishafrica.35
 			}
 		}
 	}
@@ -329,7 +313,7 @@ focus_tree = {
 		icon = GFX_focus_boer_diplo
 		x = 0
 		y = 1
-		cost = 70
+		cost = 14
 		available_if_capitulated = no   
 		ai_will_do = {
 			factor = 2
@@ -340,6 +324,7 @@ focus_tree = {
 			has_country_leader = {	
 				character = SAF_Philip_Edmond_Wodehouse
 			}
+			always = no
 		}
 
 		prerequisite = { focus = SAF_focus_philip_wodehouse }
@@ -396,8 +381,8 @@ focus_tree = {
 		prerequisite = { focus = SAF_focus_arbitrate_OFS_SOT }
 		
 		completion_reward = {
+			add_political_power = 25
 			add_stability = -0.05
-			#country_event = 
 		}
 	}
 
@@ -591,10 +576,28 @@ focus_tree = {
 			add_political_power = -100
 			add_stability = 0.1
 			ENG = {
-				set_autonomy = {
-					target = SAF
-					autonomy_state = autonomy_british_self_gov
+				if = {
+					limit = {
+						OR = {
+							has_dlc = "Together for Victory"
+							has_dlc = "Waking the Tiger"
+							has_dlc = "Death or Dishonor"
+						}
+					}
+					set_autonomy = {
+						target = OFS
+						autonomous_state = autonomy_british_self_gov
+						freedom_level = 0.2
+					}
 				}
+				else = {
+					add_political_power = 150
+					add_stability = 0.1
+				}
+			}
+			country_event = {
+				id = britishafrica.42
+				days = 14
 			}
 		}
 	}
@@ -644,11 +647,14 @@ focus_tree = {
 		}
 
 		available = {
-			has_completed_focus = SAF_focus_self_gov
+			has_country_flag = SAF_first_election
 		}
 
 		completion_reward = {
 			add_political_power = 25
+			hidden_effect = {
+				clr_country_flag = SAF_first_election
+			}
 		}
 	}
 
@@ -669,7 +675,13 @@ focus_tree = {
 		prerequisite = { focus = SAF_focus_first_pm }
 
 		completion_reward = {
-			#add_ideas =
+			add_ideas = SAF_idea_reorg_state
+			hidden_effect = {
+				country_event = {
+					id = britishafrica.43
+					days = 25
+				}
+			}
 		}
 	}
 
@@ -691,6 +703,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = -100
+			add_stability = 0.05
 		}
 	}
 
@@ -711,7 +724,7 @@ focus_tree = {
 		prerequisite = { focus = SAF_focus_reorg_state }
 
 		completion_reward = {
-			add_political_power = -150
+			add_political_power = -250
 		}
 	}
 
@@ -732,7 +745,7 @@ focus_tree = {
 		prerequisite = { focus = SAF_focus_reorg_state }
 
 		completion_reward = {
-			
+			activate_decision = SAF_mission_invest_infra
 		}
 	}
 
@@ -755,7 +768,7 @@ focus_tree = {
 		prerequisite = { focus = SAF_focus_invest_infra }
 
 		completion_reward = {
-			#remove_ideas = 
+			remove_ideas = SAF_idea_reorg_state
 		}
 	}
 
@@ -776,7 +789,7 @@ focus_tree = {
 		prerequisite = { focus = SAF_focus_eco_recovers }
 
 		completion_reward = {
-			
+			unlock_decision_tooltip = SAF_mission_university_good_hope
 		}
 	}
 
@@ -797,7 +810,7 @@ focus_tree = {
 		prerequisite = { focus = SAF_focus_eco_recovers }
 
 		completion_reward = {
-			#add_ideas = 
+			add_ideas = SAF_idea_imperial_interference
 		}
 	}
 
@@ -814,6 +827,10 @@ focus_tree = {
 			factor = 100 
 		}
 		relative_position_id = SAF_focus_first_pm
+
+		available = {
+			always = no
+		}
 
 		prerequisite = { focus = SAF_focus_uni_good_hope }
 		prerequisite = { focus = SAF_focus_imperial_interference }
@@ -1712,42 +1729,42 @@ focus_tree = {
 			add_popularity = { ideology = social_egalitarianism popularity = 0.05 }
 			decrease_ps_by_one = yes
 			add_ideas = CAN_idea_Productivity_First
-			if = {
-				limit = {
-					has_idea = fourteen_hour_work_day
-				}
-				swap_ideas = {
-					remove_idea = fourteen_hour_work_day
-					add_idea = unlimited_work_day
-				}
-			}	
-			if = {
-				limit = {
-					has_idea = twelve_hour_work_day
-				}
-				swap_ideas = {
-					remove_idea = twelve_hour_work_day
-					add_idea = fourteen_hour_work_day
-				}
-			}
-			if = {
-				limit = {
-					has_idea = ten_hour_work_day
-				}
-				swap_ideas = {
-					remove_idea = ten_hour_work_day
-					add_idea = twelve_hour_work_day
-				}
-			}
-			if = {
-				limit = {
-					has_idea = eight_hour_work_day
-				}
-				swap_ideas = {
-					remove_idea = eight_hour_work_day
-					add_idea = ten_hour_work_day
-				}
-			}
+			#if = {
+			#	limit = {
+			#		has_idea = fourteen_hour_work_day
+			#	}
+			#	swap_ideas = {
+			#		remove_idea = fourteen_hour_work_day
+			#		add_idea = unlimited_work_day
+			#	}
+			#}	
+			#if = {
+			#	limit = {
+			#		has_idea = twelve_hour_work_day
+			#	}
+			#	swap_ideas = {
+			#		remove_idea = twelve_hour_work_day
+			#		add_idea = fourteen_hour_work_day
+			#	}
+			#}
+			#if = {
+			#	limit = {
+			#		has_idea = ten_hour_work_day
+			#	}
+			#	swap_ideas = {
+			#		remove_idea = ten_hour_work_day
+			#		add_idea = twelve_hour_work_day
+			#	}
+			#}
+			#if = {
+			#	limit = {
+			#		has_idea = eight_hour_work_day
+			#	}
+			#	swap_ideas = {
+			#		remove_idea = eight_hour_work_day
+			#		add_idea = ten_hour_work_day
+			#	}
+			#}
 		}
 	}
 
@@ -1770,33 +1787,33 @@ focus_tree = {
 		completion_reward = {
 		add_popularity = { ideology = centrism popularity = 0.05 }
 		add_popularity = { ideology = traditional_conservatism popularity = 0.05 }
-			if = {
-				limit = {
-					has_idea = unlimited_work_day
-				}
-				swap_ideas = {
-					remove_idea = unlimited_work_day
-					add_idea = ten_hour_work_day
-				}
-			}
-			if = {
-				limit = {
-					has_idea = fourteen_hour_work_day
-				}
-				swap_ideas = {
-					remove_idea = fourteen_hour_work_day
-					add_idea = ten_hour_work_day
-				}
-			}
-			if = {
-				limit = {
-					has_idea = twelve_hour_work_day
-				}
-				swap_ideas = {
-					remove_idea = twelve_hour_work_day
-					add_idea = ten_hour_work_day
-				}
-			}
+			#if = {
+			#	limit = {
+			#		has_idea = unlimited_work_day
+			#	}
+			#	swap_ideas = {
+			#		remove_idea = unlimited_work_day
+			#		add_idea = ten_hour_work_day
+			#	}
+			#}
+			#if = {
+			#	limit = {
+			#		has_idea = fourteen_hour_work_day
+			#	}
+			#	swap_ideas = {
+			#		remove_idea = fourteen_hour_work_day
+			#		add_idea = ten_hour_work_day
+			#	}
+			#}
+			#if = {
+			#	limit = {
+			#		has_idea = twelve_hour_work_day
+			#	}
+			#	swap_ideas = {
+			#		remove_idea = twelve_hour_work_day
+			#		add_idea = ten_hour_work_day
+			#	}
+			#}
 		}
 	}
 

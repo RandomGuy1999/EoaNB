@@ -592,6 +592,20 @@ leader_traits = {
 			factor = 1
 		}
 	}
+
+	eoanb_fra_governor_algeria = {
+		random = no
+
+		political_power_factor = 0.01
+		production_speed_farm_factor = 0.05
+		non_core_manpower = 0.02
+		resistance_damage_to_garrison = -0.05 
+
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	
 
 	# HEAD OF STATE TRAITS
@@ -1262,6 +1276,43 @@ leader_traits = {
 		
 		consumer_goods_expected_value = -0.02
 		monthly_population = -0.02
+
+		ai_will_do = { factor = 1 }
+	}
+
+	GRE_trait_emmanuel_han = {
+		random = no
+		
+		army_org_factor = 0.025
+		max_dig_in_factor = -0.1
+
+		ai_will_do = { factor = 1 }
+	}
+
+	GRE_trait_leonidas_smolents = {
+		random = no
+
+		experience_gain_army = 0.05
+
+		ai_will_do = { factor = 1 }
+	}
+
+	GRE_trait_Christodoulos_Hatzipetros = {
+		random = no
+
+		coordination_bonus = -0.1
+		experience_loss_factor = -0.15
+		land_night_attack = 0.15
+
+		ai_will_do = { factor = 1 }
+	}
+
+	GRE_trait_Dimitrios_Skalistiris = {
+		random = no
+
+		production_speed_infrastructure_factor = 0.05	
+		production_speed_supply_node_factor = 0.05	
+		production_speed_arms_factory_factor = -0.1
 
 		ai_will_do = { factor = 1 }
 	}
@@ -2754,6 +2805,7 @@ leader_traits = {
 		stability_factor = -0.01
 		consumer_goods_expected_value = -0.05
 		production_speed_buildings_factor = 0.1
+		power_balance_weekly = 0.001
 
 		ai_will_do = { factor = 10 }
 	}
@@ -2792,10 +2844,11 @@ leader_traits = {
 		ai_will_do = { factor = 10 }
 	}
 	
-	QNG_trait_Keying = {
+	QNG_trait_cixi = {
 		random = no
-		improve_relations_maintain_cost_factor = 0.1
-		opinion_gain_monthly_factor = 0.05
+		political_power_gain = -0.25
+		political_advisor_cost_factor = 1.5
+		power_balance_weekly = -0.005
 		
 		ai_will_do = { factor = 10 }
 	}

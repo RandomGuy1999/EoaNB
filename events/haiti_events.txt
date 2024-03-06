@@ -202,15 +202,15 @@ country_event = {
 						  
 					add_ideas = {
 
-						hos_is_leader
+						#hos_is_leader
 						pre_industrial_era
 						agrarian
-						no_heir
-						semi_presidential_republic
+						#no_heir
+						#semi_presidential_republic
 
 						civilian_economy
 						limited_exports
-						two_percent
+						army_spending_level_2
 						normal_taxes
 						cl_legal
 
@@ -220,18 +220,18 @@ country_event = {
 						segregation
 						absolutism
 
-						limited_constitution
+						#limited_constitution
 						no_elections
 
 						privileged_education
 						state_religion
 						#religion_catholic
 
-						hc_no_healthcare
-						law_police_force
-						inframain_no_subsidies_infrastructure
-						navinfra_no_naval_infrastructure
-						sfund_private_ventures_only
+						social_spending_level_1
+						law_spending_level_5
+						road_spending_level_1
+						navy_spending_level_1
+						research_spending_level_1
 					}
 				}
 			}
@@ -323,15 +323,15 @@ country_event = {
 					#POLITICS 
 					add_ideas = {
 
-						hos_is_leader
+						#hos_is_leader
 						pre_industrial_era
 						agrarian
-						no_heir
-						semi_presidential_republic
+						#no_heir
+						#semi_presidential_republic
 
 						civilian_economy
 						limited_exports
-						two_percent
+						army_spending_level_2
 						normal_taxes
 						cl_legal
 
@@ -341,18 +341,18 @@ country_event = {
 						segregation
 						absolutism
 
-						limited_constitution
+						#limited_constitution
 						no_elections
 
 						privileged_education
 						state_religion
 						#religion_catholic
 
-						hc_no_healthcare
-						law_police_force
-						inframain_no_subsidies_infrastructure
-						navinfra_no_naval_infrastructure
-						sfund_private_ventures_only
+						social_spending_level_1
+						law_spending_level_5
+						road_spending_level_1
+						navy_spending_level_1
+						research_spending_level_1
 					}
 				}
 		}
@@ -737,15 +737,15 @@ country_event = {
 					#POLITICS 
 						  
 					add_ideas = {				
-						hos_is_leader
+						#hos_is_leader
 						pre_industrial_era
 						agrarian
-						weak_heir
-						absolute_monarchy
+						#weak_heir
+						#absolute_monarchy
 				
 						civilian_economy
 						limited_exports
-						two_percent
+						army_spending_level_2
 						normal_taxes
 						cl_legal
 				
@@ -755,18 +755,18 @@ country_event = {
 						segregation
 						absolutism
 				
-						limited_constitution
+						#limited_constitution
 						no_elections
 				
 						privileged_education
 						state_religion
 						#religion_catholic
 				
-						hc_no_healthcare
-						law_police_force
-						inframain_no_subsidies_infrastructure
-						navinfra_no_naval_infrastructure
-						sfund_private_ventures_only
+						social_spending_level_1
+						law_spending_level_5
+						road_spending_level_1
+						navy_spending_level_1
+						research_spending_level_1
 					}
 				}
 			}
@@ -837,15 +837,15 @@ country_event = {
 					#POLITICS 
 						  
 					add_ideas = {				
-						hos_is_leader
+						#hos_is_leader
 						pre_industrial_era
 						agrarian
-						weak_heir
-						absolute_monarchy
+						#weak_heir
+						#absolute_monarchy
 				
 						civilian_economy
 						limited_exports
-						two_percent
+						army_spending_level_2
 						normal_taxes
 						cl_legal
 				
@@ -855,18 +855,18 @@ country_event = {
 						segregation
 						absolutism
 				
-						limited_constitution
+						#limited_constitution
 						no_elections
 				
 						privileged_education
 						state_religion
 						#religion_catholic
 				
-						hc_no_healthcare
-						law_police_force
-						inframain_no_subsidies_infrastructure
-						navinfra_no_naval_infrastructure
-						sfund_private_ventures_only
+						social_spending_level_1
+						law_spending_level_5
+						road_spending_level_1
+						navy_spending_level_1
+						research_spending_level_1
 					}
 				}
 			}
@@ -1101,15 +1101,15 @@ country_event = {
 					#POLITICS 
 						  
 					add_ideas = {				
-						hos_is_leader
+						#hos_is_leader
 						pre_industrial_era
 						agrarian
-						weak_heir
-						semi_presidential_republic
+						#weak_heir
+						#semi_presidential_republic
 				
 						civilian_economy
 						limited_exports
-						two_percent
+						army_spending_level_2
 						normal_taxes
 						cl_legal
 				
@@ -1119,18 +1119,18 @@ country_event = {
 						segregation
 						absolutism
 				
-						limited_constitution
+						#limited_constitution
 						no_elections
 				
 						privileged_education
 						state_religion
 						#religion_catholic
 				
-						hc_no_healthcare
-						law_police_force
-						inframain_no_subsidies_infrastructure
-						navinfra_no_naval_infrastructure
-						sfund_private_ventures_only
+						social_spending_level_1
+						law_spending_level_5
+						road_spending_level_1
+						navy_spending_level_1
+						research_spending_level_1
 					}
 				}
 			}
@@ -1215,15 +1215,15 @@ country_event = {
 					#POLITICS 
 						  
 					add_ideas = {				
-						hos_is_leader
+						#hos_is_leader
 						pre_industrial_era
 						agrarian
-						weak_heir
-						absolute_monarchy
+						#weak_heir
+						#absolute_monarchy
 				
 						civilian_economy
 						limited_exports
-						two_percent
+						army_spending_level_2
 						normal_taxes
 						cl_legal
 				
@@ -1233,18 +1233,18 @@ country_event = {
 						segregation
 						absolutism
 				
-						limited_constitution
+						#limited_constitution
 						no_elections
 				
 						privileged_education
 						state_religion
 						#religion_catholic
 				
-						hc_no_healthcare
-						law_police_force
-						inframain_no_subsidies_infrastructure
-						navinfra_no_naval_infrastructure
-						sfund_private_ventures_only
+						social_spending_level_1
+						law_spending_level_5
+						road_spending_level_1
+						navy_spending_level_1
+						research_spending_level_1
 					}
 				}
 			}

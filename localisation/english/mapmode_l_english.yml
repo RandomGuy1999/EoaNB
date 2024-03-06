@@ -74,3 +74,16 @@
  religion_map_mode_tooltip_delayed: "Religion breakdown of §Y[FROM.GetName]§!:\n[FROM.GetReligionMapmodeMaj] Religion§!: [FROM.GetReligionMapmodeName] -- [?FROM.state_religion_array_num^0|1%]"
  culture_map_mode_majority: "§YMajority"
  culture_map_mode_plurality: "§YPlurality"
+
+ ### RELATIONS ###
+
+ MAPMODE_OPINION_MAP_MODE: "§Y$MAPMODE_OPINION_MAP_MODE_NAME$§! map mode"
+ MAPMODE_OPINION_MAP_MODE_NAME: "Opinion"
+ MAPMODE_OPINION_MAP_MODE_DESCRIPTION: "Shows other countries' opinion of us."
+ empty: ""
+ opinion_map_mode_tooltip: "§Y[FROM.controller.GetNameWithFlag]§!"
+ opinion_map_mode_tooltip_delayed: "[FROM.GetOpinionMapModeTooltip]"
+
+ opinion_map_mode_tooltip_delayed2: "ROOT is [ROOT.GetName]\nFROM is [FROM.GetName]\nFROM.FROM is [FROM.FROM.GetName]"
+
+ opinion_map_mode_tooltip_delayed_desc: "Their opinion of us: [?FROM.controller:opinion@ROOT|+=0]\nOur opinion of them: [?ROOT.opinion@FROM.controller|+=0]"

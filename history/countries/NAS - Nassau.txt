@@ -7,21 +7,34 @@
 
 	set_research_slots = 2
 
+	### Economy
+    add_ideas = generic_unemployment_idea
+    set_variable = { unemployment_value_modifier = 0.1 }
+    set_variable = { current_unemployment = 0.05 }
+    clamp_variable = {
+        var = current_unemployment
+        min = 0
+        max = 1
+    }
+    update_unemployment_modifier = yes
+    add_to_variable = { money = 1 }
+	set_variable = { current_loans_sum = 1 }
+
 	add_ideas = {
 		#STATE OF COUNTRY
 		NAS_Adolph_I
-		has_heir
+		#has_heir
 		agrarian
 		victorian_era
 		law_victorian_army
 		#religion_protestant
 
 		#GOVERNMENTAL POLICIES
-		constitutional_monarchy
-		human_rights
+		#constitutional_monarchy
+		#human_rights
 		no_elections
-		no_separation
-		federal_control
+		#no_separation
+		#federal_control
 
 		#CULTURE AND EDUCATION
 		privileged_education
@@ -33,10 +46,10 @@
 
 		#ECONOMY
 		limited_exports
-		normal_taxes
+		taxation_level_3
 		cl_legal
-		fourteen_hour_work_day
-		lp_land_purchase
+		
+		
 		civilian_economy
 
 		#DEMOGRAPHICS
@@ -48,17 +61,17 @@
 		pp_ban_extremist_parties
 
 		#BUDGET
-		hc_no_healthcare
-		law_police_force
-		inframain_no_subsidies_infrastructure
-		navinfra_no_naval_infrastructure
-		two_percent
-		sfund_private_ventures_only
+		social_spending_level_1
+		law_spending_level_4
+		road_spending_level_1
+		navy_spending_level_1
+		army_spending_level_2
+		research_spending_level_1
 
 		#NATIONAL SPIRITS
-		GER_general_idea_ger_confed
-		PRS_Zollverein
-		BAD_currency_reform
+		GEC_idea_german_confederation
+		GEC_idea_zollverein_1
+		GEC_idea_vienna_monetary_treaty
 		GEC_idea_weakened_zunftwesen		#abolished in 1819, revoked in weakened form in 1848, abolished 1860
 		NA_B_early_scale_railways
 	}

@@ -31,17 +31,30 @@
 
 	set_research_slots = 3
 
+	### Economy
+    add_ideas = generic_unemployment_idea
+    set_variable = { unemployment_value_modifier = 0.1 }
+    set_variable = { current_unemployment = 0.05 }
+    clamp_variable = {
+        var = current_unemployment
+        min = 0
+        max = 1
+    }
+    update_unemployment_modifier = yes
+    add_to_variable = { money = 35 }
+	set_variable = { current_loans_sum = 138 }
+
 	add_ideas = {
 		#POLITICS
 
-		hos_is_leader
+		#hos_is_leader
 		victorian_era
 		law_victorian_army
 		agrarian
-		has_heir
+		#has_heir
 
-		absolute_monarchy
-		no_constitution
+		#absolute_monarchy
+		#no_constitution
 		no_elections
 
 		state_controlled_press
@@ -49,10 +62,10 @@
 
 		civilian_economy
 		limited_exports
-		five_percent
-		normal_taxes
+		army_spending_level_4
+		taxation_level_1
 		cl_legal
-		lp_serfdom
+		
 
 		#stagnation_growth
 		border_control
@@ -64,11 +77,11 @@
 		state_religion
 		#religion_orthodox
 
-		hc_no_healthcare
-		law_police_force
-		inframain_basic_maintenance_infrastructure
-		navinfra_low_naval_infrastructure
-		sfund_private_ventures_only
+		social_spending_level_1
+		law_spending_level_4
+		road_spending_level_2
+		navy_spending_level_2
+		research_spending_level_1
 
 		#NATIONAL SPIRITS
 		RUS_idea_russian_corruption1

@@ -798,7 +798,7 @@ focus_tree = {
 			add_tech_bonus = { bonus = 1 uses = 1 category = process_engineering_tech }
 			add_tech_bonus = { bonus = 1 uses = 2 category = electronics_devices_tech }
 			add_timed_idea = {
-				idea = PRS_idea_well_oiled_economy
+				idea = DEN_idea_well_oiled_economy
 				days = 730
 			}
 		}
@@ -2230,9 +2230,9 @@ focus_tree = {
 				limit = {
 					has_active_mission = DEN_mission_thestrups_army_reforms
 					OR = {
-						has_idea = one_percent
-						has_idea = two_percent
-						has_idea = three_percent
+						has_idea = army_spending_level_1
+						has_idea = army_spending_level_2
+						has_idea = army_spending_level_3
 					}
 				}
 				unlock_decision_tooltip = DEN_decision_increase_army_budget
@@ -2506,9 +2506,9 @@ focus_tree = {
 			if = {
 				limit = {
 					OR = {
-						has_idea = navinfra_no_naval_infrastructure
-						has_idea = navinfra_low_naval_infrastructure
-						has_idea = navinfra_decent_naval_infrastructure
+						has_idea = navy_spending_level_1
+						has_idea = navy_spending_level_2
+						has_idea = navy_spending_level_3
 					}
 				}
 				unlock_decision_tooltip = DEN_decision_increase_navy_budget

@@ -442,7 +442,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = NOR_focus_det_store_hamskiftet
 		cost = 35
-		icon = GFX_Focus_Agriculture
+		icon = GFX_Focus_Agriculture_wheat
 		prerequisite = { focus = NOR_focus_det_store_hamskiftet }
 
 		ai_will_do = {
@@ -1225,7 +1225,7 @@ focus_tree = {
 
 			add_country_leader_role = {
 				character = NOR_transitional_government
-				promote_leader = yes 
+				promote_leader = yes
 
 				country_leader = {
 					ideology = conserv
@@ -1307,7 +1307,7 @@ focus_tree = {
 
 			add_country_leader_role = {
 				character = NOR_transitional_government
-				promote_leader = yes 
+				promote_leader = yes
 
 				country_leader = {
 					ideology = conserv
@@ -1711,7 +1711,7 @@ focus_tree = {
 
 			add_country_leader_role = {
 				character = NOR_frederik_stang
-				promote_leader = yes 
+				promote_leader = yes
 
 				country_leader = {
 					expire = 1884.06.08

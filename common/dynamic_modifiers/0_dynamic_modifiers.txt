@@ -678,6 +678,28 @@ light_famine = {
 	resistance_growth = 0.01
 }
 
+#beiyang stuff for QNG 
+prioritizing_the_beiyang_fleet = {
+	enable = { always = yes }
+
+	#icon = "GFX_modifiers_sabotaged_resource"
+	
+	state_production_speed_dockyard_factor = 0.15
+	state_production_speed_naval_base_factor = 0.25
+	#state_production_naval_fort_factor = 0.25    There is no naval fort or this is wrong
+}
+
+#Chinese concession of Incheon  
+chinese_concession_of_incheon = {
+	enable = { always = yes }
+
+	#icon = "GFX_modifiers_sabotaged_resource"
+	
+	state_production_speed_buildings_factor = -0.25
+	monthly_population = 0.25
+	state_resources_factor = -0.3
+}
+
 
 #Brazil Dynamic Modifiers
 dynmod_BRA_railways_by_slaves = {
@@ -862,6 +884,16 @@ dynmod_BRA_huge_sugar_mills={
 	weekly_manpower = 56
 	local_building_slots_factor = 0.1
 	state_production_speed_buildings_factor = 0.1
+}
+
+BRA_Livestock_Ranch_Modifier = {
+	enable = { always = yes }
+	icon = "GFX_idea_BRA_dynamic_cattle"
+    local_supplies = 0.05 #tração animal
+    local_monthly_manpower_modifier = 20 #carne
+    temporary_state_resource_fabric = 2 #couro
+    state_production_speed_farm_factor = 0.05 #fertilizante
+    money_income = 3 #dinheiro por rancho
 }
 
 dynmod_BRA_cocoa={

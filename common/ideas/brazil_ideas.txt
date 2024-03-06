@@ -716,7 +716,7 @@ ideas = {
 				original_tag =  BRA
 			}
 			removal_cost = -1
-			picture = normal_taxes
+			picture = taxation_level_3
 			modifier = {
 				consumer_goods_expected_value = -0.01
 			}
@@ -727,7 +727,7 @@ ideas = {
 				original_tag = BRA
 			}
 			removal_cost = -1
-			picture = high_taxes
+			picture = taxation_level_4
 			modifier = {
 				consumer_goods_expected_value = -0.015
 			}
@@ -738,7 +738,7 @@ ideas = {
 				original_tag = BRA
 			}
 			removal_cost = -1
-			picture = very_high_taxes
+			picture = taxation_level_5
 			modifier = {
 				consumer_goods_expected_value = -0.02
 			}
@@ -923,7 +923,7 @@ ideas = {
 			allowed = {
 				original_tag = BRA
 			}
-			picture = two_percent
+			picture = army_spending_level_2
 			modifier = {
 				conscription = 0.010
 				mobilization_speed = 0.025
@@ -966,7 +966,7 @@ ideas = {
 		}
 		
 		BRA_1857_taxes_act = {
-			picture = low_taxes
+			picture = taxation_level_2
 			allowed = {
 				original_tag = BRA
 			}
@@ -1069,7 +1069,7 @@ ideas = {
 		}
 		
 		BRA_1858_alves_branco_law = {
-			picture = high_taxes
+			picture = taxation_level_4
 			allowed = {
 				original_tag = BRA
 			}
@@ -2372,6 +2372,15 @@ ideas = {
 				trade_opinion_factor = 0.1
 				consumer_goods_expected_value = -0.1
 				industrial_capacity_dockyard = 0.05
+			}
+		}
+		
+		BRA_idea_conservative_divided = {
+			picture = GFX_idea_generic_assembly_tensions
+			allowed = { original_tag = BRA }
+			modifier = {
+				traditional_conservatism_drift = -0.001
+				radical_democracy_drift = 0.001
 			}
 		}
 	}

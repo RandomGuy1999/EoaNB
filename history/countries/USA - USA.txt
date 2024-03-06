@@ -78,21 +78,35 @@
 		}
 		### CORES ###
 	}
+
+	### Economy
+    add_ideas = generic_unemployment_idea
+    set_variable = { unemployment_value_modifier = 0.1 }
+    set_variable = { current_unemployment = 0.04 }
+    clamp_variable = {
+        var = current_unemployment
+        min = 0
+        max = 1
+    }
+    update_unemployment_modifier = yes
+    add_to_variable = { money = 15 }
+	set_variable = { current_loans_sum = 11 }
+
 	# Laws
 	add_ideas = {
 		#State of the Country
-		hos_is_leader
-		non_monarchical_system
+		#hos_is_leader
+		#non_monarchical_system
 		industrializing
 		victorian_era
 		law_victorian_army
 
 		#Matters of Constitution
-		presidential_republic
-		constitution_adopted
+		#presidential_republic
+		#constitution_adopted
 		free_elections
-		balanced_powers
-		federalist
+		#balanced_powers
+		#federalist
 
 		#Political Liberties
 		open_schools
@@ -111,19 +125,19 @@
 
 		#Economic Policies
 		free_trade
-		very_low_taxes
+		taxation_level_2
 		cl_legal
-		unlimited_work_day
-		lp_land_purchase
+		
+		
 		civilian_economy
 
 		#Internal Budget Laws
-		hc_no_healthcare
-		law_police_force
-		inframain_no_subsidies_infrastructure
-		navinfra_good_naval_infrastructure
-		five_percent
-		sfund_private_ventures_only
+		social_spending_level_1
+		law_spending_level_4
+		road_spending_level_1
+		navy_spending_level_4
+		army_spending_level_4
+		research_spending_level_1
 
 		### National Spirits
 
@@ -880,22 +894,22 @@
 	# Laws
 	add_ideas = {
 		#POLITICS
-		hos_is_leader
+		#hos_is_leader
 		victorian_era
 		law_victorian_army
 		industrializing
-		non_monarchical_system
-		presidential_republic
-		balanced_powers
-		federalist
+		#non_monarchical_system
+		#presidential_republic
+		#balanced_powers
+		#federalist
 
 		#Economic
 		civilian_economy
 		export_focus
-		two_percent
-		normal_taxes
+		army_spending_level_2
+		taxation_level_3
 		cl_legal
-		unlimited_work_day
+		
 
 		#Population
 		#stagnation_growth
@@ -904,7 +918,7 @@
 		usa_slavery_law
 		universal_male_suffrage
 
-		constitution_adopted
+		#constitution_adopted
 		free_elections
 
 		#Culture

@@ -40,12 +40,12 @@ bookmarks = {
 			ideas = {
 				FRA_idea_authoritarian_empire
 				FRA_idea_republican_spirit
-				FRA_idea_amateur_tacticians
+				FRA_idea_aftermath_crimean_war
 			}
 			focuses = {
-				#FRA_keep_authoritarian_empire
-				#FRA_proclaim_liberal_empire
-				FRA_continue_haussmann_renovations
+				FRA_legislative_election_1857
+				FRA_complete_paris_revival
+				FRA_the_kabylia_campaign
 			}
 		}
 		"USA" = {
@@ -81,8 +81,8 @@ bookmarks = {
 			history = "PRS_END_OF_NEW_BEG_DESC"
 			ideology = traditional_conservatism
 			ideas = {
-				GER_general_idea_ger_confed
-				PRS_Zollverein
+				GEC_idea_german_confederation
+				GEC_idea_zollverein_1
 				PRS_legacy_clausewitz
 			}
 			focuses = {
@@ -288,8 +288,8 @@ bookmarks = {
 			ideology = autocracy
 			minor = yes
 			ideas = {
-				GER_general_idea_ger_confed
-				PRS_Zollverein
+				GEC_idea_german_confederation
+				GEC_idea_zollverein_1
 				BAV_russiancampaign
 			}
 			focuses = {
@@ -434,7 +434,7 @@ bookmarks = {
 				MNT_Aftermath_of_assasination_attempt
 			}
 			focuses = {
-				MNT_focus_defend_the_nation
+				#MNT_focus_defend_the_nation   This focus was removed
 				MNT_focus_into_the_new_age
 				MNT_focus_the_reign_of_danilo
 			}
@@ -494,7 +494,7 @@ bookmarks = {
 				QNG_idea_devastation_first_opium_war
 			}
 			focuses = {
-				QNG_focus_reorganise_the_banner_armies
+				QNG_focus_prepare_for_the_opium_war
 				QNG_focus_xianfengs_decade_of_reigning
 				QNG_focus_self_strenthening_movement
 			}
