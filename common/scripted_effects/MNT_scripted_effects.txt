@@ -734,14 +734,19 @@
 			}			
 		}
 		
-		MNT_OTO_mission_war_1858_cancel_effect = {
-			if = {
-				limit = {
-					MNT = { has_capitulated = yes }
+		MNT_OTO_mission_war_1858_cancel_effect_OTO_conquer_942 = {
+			MNT = {
+				white_peace = {
+				tag = OTO
+				message = MNT_OTO_1858_war_end
 				}
-				MNT = {transfer_state = 42}
-				MNT = { complete_national_focus = MNT_focus_strike_a_deal_with_the_ottomans_n }
 			}
+			MNT = {transfer_state = 942}
+			MNT = { complete_national_focus = MNT_focus_the_mostar_convention_n }
+			clr_global_flag = MNT_war_1858
+		}
+		
+		MNT_OTO_mission_war_1858_cancel_effect = {
 			clr_global_flag = MNT_war_1858
 			if = { 
 				limit = { 
@@ -785,5 +790,66 @@
 				tag = OTO
 				message = MNT_OTO_1858_war_end
 				}
+			}
+		}
+		OTO_MNT_mission_war_1858_timeout_effect = {
+			MNT = { complete_national_focus = MNT_focus_recognize_our_status_under_the_ottomans_n }				
+			custom_effect_tooltip = MNT_will_lose
+			clr_global_flag = MNT_war_1858
+			MNT = {
+				white_peace = {
+				tag = OTO
+				message = MNT_OTO_1858_war_end
+				}
+			}
+		}
+		
+
+
+		number_of_OTO_supportest = {
+			if = {
+				limit = {
+					check_variable = { FRA.support_side = 2 }
+				}
+				add_to_temp_variable = { eoanb_prestige_change = 2 } 
+				custom_effect_tooltip = add_two_prestige_beacuse_france_support_you
+			}
+			if = {
+				limit = {
+					check_variable = { RUS.support_side = 2 }
+				}
+				add_to_temp_variable = { eoanb_prestige_change = 2 } 
+				custom_effect_tooltip = add_two_prestige_beacuse_russia_support_you
+			}
+			if = {
+				limit = {
+					check_variable = { AUS.support_side = 2 }
+				}
+				add_to_temp_variable = { eoanb_prestige_change = 2 } 
+				custom_effect_tooltip = add_two_prestige_beacuse_austria_support_you
+			}
+		}
+		
+		number_of_MNT_supportest = {
+			if = {
+				limit = {
+					check_variable = { FRA.support_side = 1 }
+				}
+				add_to_temp_variable = { eoanb_prestige_change = 2 } 
+				custom_effect_tooltip = add_two_prestige_beacuse_france_support_you
+			}
+			if = {
+				limit = {
+					check_variable = { RUS.support_side = 1 }
+				}
+				add_to_temp_variable = { eoanb_prestige_change = 2 } 
+				custom_effect_tooltip = add_two_prestige_beacuse_russia_support_you
+			}
+			if = {
+				limit = {
+					check_variable = { AUS.support_side = 1 }
+				}
+				add_to_temp_variable = { eoanb_prestige_change = 2 } 
+				custom_effect_tooltip = add_two_prestige_beacuse_austria_support_you
 			}
 		}

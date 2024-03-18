@@ -5724,7 +5724,8 @@ focus_tree = {
 			base = 100
 		}
 		completion_reward = {
-		
+			MNT = { transfer_state = 1204 }
+			1204 = {set_demilitarized_zone = yes }
 		}
 	}
 	#The Mostar Convention
@@ -5751,7 +5752,11 @@ focus_tree = {
 			base = 100
 		}
 		completion_reward = {
-
+			OTO = {
+				puppet = MNT
+			}
+			add_war_support = -0.025
+			add_ideas = MNT_Mostar_Convention
 		}
 	}
 		#failure of the revolt
@@ -5787,6 +5792,16 @@ focus_tree = {
 		MNT = {
 			activate_mission = MNT_OTO_mission_war_1858
 		}
+		OTO = {
+			end_puppet = MNT
+		}
+		MNT = {
+			declare_war_on = {
+				target = OTO
+				type = annex_everything
+			}
+		}
+		
 		if = {
 			limit = { 
 				has_border_war = yes
@@ -5896,7 +5911,7 @@ focus_tree = {
 				add_resistance = 30
 				}
 			OTO = {
-				country_event = montenegro.51
+				country_event = montenegro.51 days = 16
 			}
 			unlock_decision_tooltip = MNT_decision_partial_mobilization_of_the_clan_army
 			unlock_decision_tooltip = MNT_decision_mobilize_the_clan_army
@@ -5923,9 +5938,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			OTO = {
-				country_event = montenegro.40
+				end_puppet = MNT
+				country_event = montenegro.40 days = 10
 			}
-			OTO = {	end_puppet = MNT }
 		}
 	}
 	#Path of peace
@@ -5939,6 +5954,12 @@ focus_tree = {
 		search_filters = {
 			#
 		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = GENERIC_Triggered_By_Event_tt
+				always = no
+			}
+		}
 		prerequisite = {
 		focus = MNT_focus_negotiations_with_the_ottomans_n_easy_mechanic
 		}
@@ -5946,6 +5967,7 @@ focus_tree = {
 			base = 100
 		}
 		completion_reward = {
+			complete_national_focus =  MNT_focus_recognize_our_status_under_the_ottomans_easy_mechanic
 		}
 	}
 	#Path of war
@@ -5958,6 +5980,12 @@ focus_tree = {
 		cost = 70
 		search_filters = {
 			#
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = GENERIC_Triggered_By_Event_tt
+				always = no
+			}
 		}
 		prerequisite = {
 			focus = MNT_focus_negotiations_with_the_ottomans_n_easy_mechanic
@@ -6010,14 +6038,6 @@ focus_tree = {
 			}
 			add_war_support = 0.025
 			add_stability = 0.025
-			if = {
-				limit = {
-					OR = {
-						controls_state = 1204
-						controls_state = 225
-					}
-				}
-			}
 		}
 	}
 	#Strike a Deal with the Ottomans
@@ -6072,13 +6092,8 @@ focus_tree = {
 			}
 			add_war_support = 0.025
 			add_stability = 0.025
-			if = {
-				limit = {
-					OR = {
-						controls_state = 1204
-						controls_state = 225
-					}
-				}
+			MNT = {
+				transfer_state = 1204
 			}
 		}
 	}
