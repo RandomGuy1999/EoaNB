@@ -476,6 +476,7 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 100
 			add_tech_bonus = { bonus = 0.5 uses = 1 category = mechanical_engineering_tech }
+			unlock_decision_tooltip = PRS_decision_stettin_sewerage_system
 		}
 	}
 	
@@ -514,6 +515,7 @@ focus_tree = {
 			}
 			add_tech_bonus = { bonus = 0.25 uses = 1 category = mechanical_engineering_tech }
 			activate_mission_tooltip = PRS_mission_hobrecht_plan
+			unlock_decision_tooltip = PRS_decision_berlin_urbanization
 			hidden_effect = {
 				activate_mission = PRS_mission_hobrecht_plan
 			}
@@ -540,6 +542,7 @@ focus_tree = {
 
 		completion_reward = {
 			activate_mission_tooltip = PRS_mission_ruhr_urbanization
+			unlock_decision_tooltip = PRS_decision_ruhr_urbanization
 			hidden_effect = {
 				activate_mission = PRS_mission_ruhr_urbanization
 			}
@@ -566,6 +569,7 @@ focus_tree = {
 
 		completion_reward = {
 			activate_mission_tooltip = PRS_mission_silesian_urbanization
+			unlock_decision_tooltip = PRS_decision_silesian_urbanization
 			hidden_effect = {
 				activate_mission = PRS_mission_silesian_urbanization
 			}
@@ -588,6 +592,7 @@ focus_tree = {
 		prerequisite = { focus = PRS_focus_encourage_silesian_urbanization }
 
 		completion_reward = {
+			unlock_decision_tooltip = PRS_decision_berlin_sewerage_system
 			unlock_decision_tooltip = PRS_decision_establish_sewerage_standards
 			add_tech_bonus = { bonus = 0.5 uses = 1 category = health_tech }
 		}
@@ -1500,6 +1505,9 @@ focus_tree = {
 
 		completion_reward = {
 			activate_mission_tooltip = PRS_mission_hagens_expansion_plan
+			unlock_decision_tooltip = PRS_decision_invest_into_jade_bight_port
+			unlock_decision_tooltip = PRS_decision_invest_into_jade_bight_dockyard
+			unlock_decision_tooltip = PRS_decision_invest_into_jade_bight_settlement
 			hidden_effect = {
 				activate_mission = PRS_mission_hagens_expansion_plan
 			}
@@ -2332,7 +2340,7 @@ focus_tree = {
 			unlock_decision_tooltip = PRS_decision_heeresreform_army_logistics
 			unlock_decision_tooltip = PRS_decision_heeresreform_new_tactics
 			unlock_decision_tooltip = PRS_decision_heeresreform_war_games
-			unlock_decision_tooltip = PRS_decision_heeresreform_no_noble_privilege
+			unlock_decision_tooltip = PRS_decision_heeresreform_end_noble_privileges
 			#set_party_name = { ideology = centrism long_name = PRS_centrism_republic_party_long name = PRS_centrism_republic_party }
 			#set_politics = { ruling_party = centrism elections_allowed = no }
 			#set_cosmetic_tag = PRS_cosmetic_republic

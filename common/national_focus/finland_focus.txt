@@ -22,7 +22,7 @@ focus_tree = {
 		icon = GFX_Focus_Continent_West_Europe
 		x = 3
 		y = 0
-		cost = 50
+		cost = 70
 
 		ai_will_do = { base = 80 }
 		completion_reward = {
@@ -36,7 +36,7 @@ focus_tree = {
 		relative_position_id = FIN_the_porvoo_diet
 		x = 0
 		y = 1
-		cost = 50
+		cost = 70
 
 		ai_will_do = { base = 80 }
 		prerequisite = {
@@ -46,19 +46,19 @@ focus_tree = {
 			country_event = finlandfocus.13
 		}
 	}
-	
+	#The Emperor opened the session of the four Estates on 18 September 1863 at the Imperial Palace in Helsinki @Skoodge
 	focus = {
 		id = FIN_the_diet_of_1863
 		icon = GFX_focus_FIN_diet_1863
 		relative_position_id = FIN_the_january_comitee
 		x = 0
 		y = 1
-		cost = 50
+		cost = 70
 
 		ai_will_do = { base = 80 }
 		
 		available = {
-			date > 1863.3.1
+			date > 1863.9.18
 		}
 		
 		prerequisite = {
@@ -75,7 +75,7 @@ focus_tree = {
 		relative_position_id = FIN_the_diet_of_1863
 		x = 0
 		y = 1
-		cost = 50
+		cost = 70
 
 		ai_will_do = {
 			factor = 30
@@ -98,7 +98,7 @@ focus_tree = {
 		relative_position_id = FIN_kielireskripti
 		x = -1
 		y = 1
-		cost = 50
+		cost = 70
 
 		ai_will_do = {
 			factor = 30
@@ -124,7 +124,7 @@ focus_tree = {
 		relative_position_id = FIN_support_fennomans
 		x = 0
 		y = 1
-		cost = 50
+		cost = 70
 
 		ai_will_do = {
 			factor = 30
@@ -150,15 +150,8 @@ focus_tree = {
 		relative_position_id = FIN_flag_discussion
 		x = 0
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_flag_discussion
 		}
@@ -174,7 +167,7 @@ focus_tree = {
 		relative_position_id = FIN_support_fennomans
 		x = 0
 		y = 3
-		cost = 50
+		cost = 70
 
 		ai_will_do = {
 			factor = 30
@@ -200,7 +193,7 @@ focus_tree = {
 		relative_position_id = FIN_kielireskripti
 		x = 1
 		y = 1
-		cost = 50
+		cost = 70
 
 		ai_will_do = {
 			factor = 40
@@ -226,7 +219,7 @@ focus_tree = {
 		relative_position_id = FIN_the_diet_of_1863
 		x = 1
 		y = 3
-		cost = 50
+		cost = 70
 
 		ai_will_do = {
 			factor = 40
@@ -252,7 +245,7 @@ focus_tree = {
 		relative_position_id = FIN_flag_svecomans
 		x = 0
 		y = 1
-		cost = 50
+		cost = 70
 
 		ai_will_do = {
 			factor = 40
@@ -276,7 +269,7 @@ focus_tree = {
 		relative_position_id = FIN_svecomans_pol
 		x = 0
 		y = 1
-		cost = 50
+		cost = 70
 
 		ai_will_do = {
 			factor = 40
@@ -301,15 +294,8 @@ focus_tree = {
 		relative_position_id = FIN_karelianism
 		x = 1
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_karelianism focus = FIN_swedish_heritage
 		}
@@ -317,22 +303,19 @@ focus_tree = {
 			country_event = finlandfocus.19
 		}
 	}
-		
+	#The diet convened again in January 1867, where it established an act on the working order of the diet	@Skoodge
 	focus = {
 		id = FIN_second_diet
 		icon = GFX_focus_FIN_diet_1863
 		relative_position_id = FIN_finnishing_reforms
 		x = 0
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
+		available = {
+			date > 1867.1.1
+		}
+
 		prerequisite = {
 			focus = FIN_finnishing_reforms
 		}
@@ -347,15 +330,8 @@ focus_tree = {
 		relative_position_id = FIN_second_diet
 		x = 0
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_second_diet
 		}
@@ -373,15 +349,8 @@ focus_tree = {
 		relative_position_id = FIN_monetary_reforms
 		x = -2
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_monetary_reforms
 		}
@@ -396,15 +365,8 @@ focus_tree = {
 		relative_position_id = FIN_inspecting_economy
 		x = 0
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_inspecting_economy
 		}
@@ -435,15 +397,8 @@ focus_tree = {
 		relative_position_id = FIN_monetary_reforms
 		x = 0
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_monetary_reforms
 		}
@@ -458,15 +413,8 @@ focus_tree = {
 		relative_position_id = FIN_own_currency
 		x = 0
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_own_currency
 		}
@@ -491,7 +439,7 @@ focus_tree = {
 		relative_position_id = FIN_finnish_banks
 		x = -1
 		y = 1
-		cost = 50
+		cost = 70
 		
 		mutually_exclusive = { focus = FIN_kultamarkka }
 
@@ -516,7 +464,7 @@ focus_tree = {
 		relative_position_id = FIN_finnish_banks
 		x = 1
 		y = 1
-		cost = 50
+		cost = 70
 		
 		mutually_exclusive = { focus = FIN_hopeamarkka }
 
@@ -542,15 +490,8 @@ focus_tree = {
 		relative_position_id = FIN_monetary_reforms
 		x = 2
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_monetary_reforms
 		}
@@ -565,15 +506,8 @@ focus_tree = {
 		relative_position_id = FIN_voting_rights
 		x = 0
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_voting_rights
 		}
@@ -588,15 +522,8 @@ focus_tree = {
 		relative_position_id = FIN_hopeamarkka
 		x = 1
 		y = 1
-		cost = 50
+		cost = 70
 
-		ai_will_do = {
-			factor = 0
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}
 		prerequisite = {
 			focus = FIN_encourage_investment
 		}
@@ -616,15 +543,8 @@ focus_tree = {
 		icon = GFX_goal_generic_positive_trade_relations
 		x = 19
 		y = 0
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		completion_reward = {
 			country_event = {
                 id = finlandfocus.1
@@ -638,15 +558,8 @@ focus_tree = {
 		relative_position_id = FIN_status_of_economy
 		x = -7
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_status_of_economy
 		}
@@ -661,15 +574,8 @@ focus_tree = {
 		relative_position_id = FIN_new_technical_school
 		x = -1
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_new_technical_school
 		}
@@ -693,15 +599,8 @@ focus_tree = {
 		relative_position_id = FIN_engineering_programmes
 		x = 0
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_engineering_programmes
 		}
@@ -730,15 +629,8 @@ focus_tree = {
 		relative_position_id = FIN_new_technical_school
 		x = 1
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_new_technical_school
 		}
@@ -753,15 +645,8 @@ focus_tree = {
 		relative_position_id = FIN_trade_fleets
 		x = 0
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_trade_fleets
 		}
@@ -776,15 +661,8 @@ focus_tree = {
 		relative_position_id = FIN_buy_transport_tech
 		x = 1
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_buy_transport_tech
 		}
@@ -802,15 +680,8 @@ focus_tree = {
 		relative_position_id = FIN_status_of_economy
 		x = -2
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_status_of_economy
 		}
@@ -827,15 +698,8 @@ focus_tree = {
 		relative_position_id = FIN_question_of_industralization
 		x = -1
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_question_of_industralization
 		}
@@ -853,15 +717,8 @@ focus_tree = {
 		relative_position_id = FIN_question_of_industralization
 		x = 1
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_question_of_industralization
 		}
@@ -879,15 +736,8 @@ focus_tree = {
 		relative_position_id = FIN_rapid_industralization
 		x = -1
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_rapid_industralization
 		}
@@ -902,15 +752,8 @@ focus_tree = {
 		relative_position_id = FIN_power_for_factories
 		x = 0
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_power_for_factories
 		}
@@ -939,7 +782,7 @@ focus_tree = {
 		relative_position_id = FIN_textile_industry
 		x = 0
 		y = 1
-		cost = 50
+		cost = 70
 		
 		available = { 
 		    PRS = { 
@@ -956,13 +799,6 @@ focus_tree = {
 				}
 			}
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_textile_industry
 		}
@@ -978,15 +814,8 @@ focus_tree = {
 		relative_position_id = FIN_rapid_industralization
 		x = 1
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_rapid_industralization
 			focus = FIN_slowly_industralization
@@ -1003,15 +832,8 @@ focus_tree = {
 		relative_position_id = FIN_sawmill_industry
 		x = 0
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_sawmill_industry
 		}
@@ -1026,15 +848,8 @@ focus_tree = {
 		relative_position_id = FIN_abolishtion_of_job_regulation
 		x = 0
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_abolishtion_of_job_regulation
 		}
@@ -1051,13 +866,6 @@ focus_tree = {
 		y = 1
 		cost = 0
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_slowly_industralization
 		}
@@ -1072,15 +880,8 @@ focus_tree = {
 		relative_position_id = FIN_new_agriculture_laws
 		x = 0
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_new_agriculture_laws
 		}
@@ -1101,15 +902,8 @@ focus_tree = {
 		relative_position_id = FIN_fight_with_hunger
 		x = 0
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_fight_with_hunger
 		}
@@ -1125,15 +919,8 @@ focus_tree = {
 		relative_position_id = FIN_foreign_investors
 		x = 0
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_foreign_investors
 		}
@@ -1152,15 +939,8 @@ focus_tree = {
 		relative_position_id = FIN_new_custom_policy
 		x = 0
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_new_custom_policy
 		}
@@ -1193,7 +973,7 @@ focus_tree = {
 		relative_position_id = FIN_search_for_russian_investor
 		x = 0
 		y = 1
-		cost = 50
+		cost = 70
 
 		ai_will_do = {
 			factor = 30
@@ -1220,15 +1000,8 @@ focus_tree = {
 		relative_position_id = FIN_modernisation_of_ironwork_factories
 		x = 0
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_modernisation_of_ironwork_factories
 		}
@@ -1245,15 +1018,8 @@ focus_tree = {
 		relative_position_id = FIN_dockyard_industry
 		x = 0
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_dockyard_industry
 		}
@@ -1268,15 +1034,8 @@ focus_tree = {
 		relative_position_id = FIN_fiskari_industry
 		x = 0
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_fiskari_industry
 		}
@@ -1292,20 +1051,13 @@ focus_tree = {
 		relative_position_id = FIN_tamflet_company
 		x = 2
 		y = 1
-		cost = 50
+		cost = 70
 		
 		available = {
 			has_completed_focus = FIN_hameenlinna_helsinki_line
 			has_completed_focus = FIN_martime_trade
 		}
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_tamflet_company
 			focus = FIN_mekaniska_verkstads
@@ -1322,15 +1074,8 @@ focus_tree = {
 		relative_position_id = FIN_status_of_economy
 		x = 5
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_status_of_economy
 		}
@@ -1345,15 +1090,8 @@ focus_tree = {
 		relative_position_id = FIN_establishment_finnish_railways_board
 		x = -2
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_establishment_finnish_railways_board
 		}
@@ -1375,15 +1113,8 @@ focus_tree = {
 		relative_position_id = FIN_encourage_domestic_train
 		x = -1
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_encourage_domestic_train
 		}
@@ -1398,15 +1129,8 @@ focus_tree = {
 		relative_position_id = FIN_hanko_hyvinkaa_railway
 		x = 0
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_hanko_hyvinkaa_railway
 		}
@@ -1421,15 +1145,8 @@ focus_tree = {
 		relative_position_id = FIN_establishment_finnish_railways_board
 		x = 2
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_establishment_finnish_railways_board
 		}
@@ -1444,15 +1161,8 @@ focus_tree = {
 		relative_position_id = FIN_encourage_domestic_train
 		x = 2
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_encourage_domestic_train
 		}
@@ -1477,7 +1187,7 @@ focus_tree = {
 		relative_position_id = FIN_railway_start
 		x = -1
 		y = 1
-		cost = 50
+		cost = 70
 
 		ai_will_do = {
 			factor = 30
@@ -1503,7 +1213,7 @@ focus_tree = {
 		relative_position_id = FIN_railway_start
 		x = 1
 		y = 1
-		cost = 50
+		cost = 70
 
 		ai_will_do = {
 			factor = 30
@@ -1529,15 +1239,8 @@ focus_tree = {
 		relative_position_id = FIN_establish_suomen
 		x = 1
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_establish_suomen
 		}
@@ -1552,15 +1255,8 @@ focus_tree = {
 		relative_position_id = FIN_riihimaki_saint_petersburg_railway
 		x = 0
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_riihimaki_saint_petersburg_railway
 		}
@@ -1575,15 +1271,8 @@ focus_tree = {
 		relative_position_id = FIN_tampere_helsinki_railway
 		x = 3
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_tampere_helsinki_railway
 		}
@@ -1605,15 +1294,8 @@ focus_tree = {
 
 		x = 33
 		y = 0
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		completion_reward = {
 			army_experience = 40
 		}
@@ -1625,15 +1307,8 @@ focus_tree = {
 		relative_position_id = FIN_crimea_war_lesson
 		x = -1
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_crimea_war_lesson
 		}
@@ -1654,7 +1329,7 @@ focus_tree = {
 		relative_position_id = FIN_future_of_army
 		x = -1
 		y = 1
-		cost = 50
+		cost = 70
 
 		ai_will_do = {
 			factor = 30
@@ -1680,7 +1355,7 @@ focus_tree = {
 		relative_position_id = FIN_future_of_army
 		x = 2
 		y = 1
-		cost = 50
+		cost = 70
 
 		ai_will_do = {
 			factor = 30
@@ -1711,15 +1386,8 @@ focus_tree = {
 		relative_position_id = FIN_hire_foreign_instructors
 		x = -1
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_hire_foreign_instructors
 		}
@@ -1742,15 +1410,8 @@ focus_tree = {
 		relative_position_id = FIN_hire_foreign_instructors
 		x = 1
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_hire_foreign_instructors
 		}
@@ -1773,15 +1434,8 @@ focus_tree = {
 		relative_position_id = FIN_learn_from_prussians
 		x = 0
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_learn_from_prussians
 		}
@@ -1796,15 +1450,8 @@ focus_tree = {
 		relative_position_id = FIN_prussian_discipline
 		x = 0
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_prussian_discipline
 		}
@@ -1820,15 +1467,8 @@ focus_tree = {
 		relative_position_id = FIN_swedish_instructors
 		x = 0
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_swedish_instructors
 		}
@@ -1843,15 +1483,8 @@ focus_tree = {
 		relative_position_id = FIN_heritage_of_hakkapelitas
 		x = 0
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_heritage_of_hakkapelitas
 		}
@@ -1867,15 +1500,8 @@ focus_tree = {
 		relative_position_id = FIN_purchase_dreyse_rifles
 		x = 1
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_purchase_dreyse_rifles
 			focus = FIN_common_manouvers
@@ -1894,15 +1520,8 @@ focus_tree = {
 		relative_position_id = FIN_help_from_russia
 		x = 0
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_help_from_russia
 		}
@@ -1917,15 +1536,8 @@ focus_tree = {
 		relative_position_id = FIN_guard_rifle_battalion
 		x = 0
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_guard_rifle_battalion
 		}
@@ -1944,15 +1556,8 @@ focus_tree = {
 		relative_position_id = FIN_grenadier_sharpshooters
 		x = 0
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_grenadier_sharpshooters
 		}
@@ -1967,15 +1572,8 @@ focus_tree = {
 		relative_position_id = FIN_helsinki_junker_school
 		x = 0
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_helsinki_junker_school
 		}
@@ -1990,15 +1588,8 @@ focus_tree = {
 		relative_position_id = FIN_crimea_war_lesson
 		x = 3
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_crimea_war_lesson
 		}
@@ -2029,15 +1620,7 @@ focus_tree = {
 		relative_position_id = FIN_suomen_meriekipassi
 		x = 0
 		y = 1
-		cost = 50
-
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
+		cost = 70
 		
 		prerequisite = {
 			focus = FIN_suomen_meriekipassi
@@ -2061,15 +1644,8 @@ focus_tree = {
 		relative_position_id = FIN_expansion_of_fortresss_sveaborg
 		x = 0
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_expansion_of_fortresss_sveaborg
 		}
@@ -2085,15 +1661,8 @@ focus_tree = {
 		relative_position_id = FIN_gamla_warfsbolaget_i_abo
 		x = 0
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_gamla_warfsbolaget_i_abo
 		}
@@ -2107,16 +1676,8 @@ focus_tree = {
 		icon = GFX_Focus_banks
 		x = 12
 		y = 10
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
-		
 		available = { 
 			custom_trigger_tooltip = {
 				tooltip = FIN_great_famine_trigger_tt
@@ -2139,15 +1700,8 @@ focus_tree = {
 		relative_position_id = FIN_rotschild_loan
 		x = 0
 		y = 1
-		cost = 100
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_rotschild_loan
 		}
@@ -2162,15 +1716,8 @@ focus_tree = {
 		relative_position_id = FIN_famine_public_railway
 		x = -2
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_famine_public_railway
 		}
@@ -2186,15 +1733,8 @@ focus_tree = {
 		relative_position_id = FIN_famine_public_railway
 		x = 0
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		available = {
 			has_completed_focus = FIN_own_currency
 		}
@@ -2212,15 +1752,8 @@ focus_tree = {
 		relative_position_id = FIN_famine_public_railway
 		x = 2
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_famine_public_railway
 		}
@@ -2235,15 +1768,8 @@ focus_tree = {
 		relative_position_id = FIN_emergency_use_markka
 		x = 0
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_pettu_bread
 		}
@@ -2277,15 +1803,8 @@ focus_tree = {
 		relative_position_id = FIN_recover_famine_year
 		x = 0
 		y = 1
-		cost = 50
+		cost = 70
 
-		#ai_will_do = {
-		#	factor = 0
-		#	modifier = {
-		#		factor = 0
-		#		is_historical_focus_on = yes
-		#	}
-		#}
 		prerequisite = {
 			focus = FIN_recover_famine_year
 		}

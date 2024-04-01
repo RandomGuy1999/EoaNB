@@ -2585,7 +2585,7 @@ PRS_decision_category_industrialisation = {
 		}
 		remove_effect = {
 			set_temp_variable = {
-				unemployment_value = -0.001
+				unemployment_value = -0.0005
 			}
 			add_unemployment_effect = yes
 			add_resource = {
@@ -3656,7 +3656,7 @@ PRS_decision_category_industrialisation = {
 					}
 				}
 				set_temp_variable = {
-					unemployment_value = -0.001
+					unemployment_value = -0.0005
 				}
 				add_unemployment_effect = yes
 			}
@@ -3711,7 +3711,7 @@ PRS_decision_category_industrialisation = {
 				category = trains_tech
 			}
 			set_temp_variable = {
-				unemployment_value = -0.001
+				unemployment_value = -0.0005
 			}
 			add_unemployment_effect = yes
 			set_temp_variable = {
@@ -3767,7 +3767,7 @@ PRS_decision_category_industrialisation = {
 				category = artillery
 			}
 			set_temp_variable = {
-				unemployment_value = -0.001
+				unemployment_value = -0.0005
 			}
 			add_unemployment_effect = yes
 			set_temp_variable = {
@@ -3820,7 +3820,7 @@ PRS_decision_category_industrialisation = {
 				category = electronics_devices_tech
 			}
 			set_temp_variable = {
-				unemployment_value = -0.001
+				unemployment_value = -0.0005
 			}
 			add_unemployment_effect = yes
 			set_temp_variable = {
@@ -3868,12 +3868,12 @@ PRS_decision_category_industrialisation = {
 			}
 			add_stability = 0.02
 			add_tech_bonus = {
-				bonus = 0.5
+				bonus = 0.25
 				uses = 1
 				category = naval_equipment
 			}
 			set_temp_variable = {
-				unemployment_value = -0.001
+				unemployment_value = -0.0005
 			}
 			add_unemployment_effect = yes
 			set_temp_variable = {
@@ -3886,11 +3886,17 @@ PRS_decision_category_industrialisation = {
 			base = 1
 		}
 	}
+	#Complete the Move of the Royal Arsenal
 	PRS_decision_spandau_arsenal = {
 		icon = generic_industry
 		#allowed = { tag = PRS }
 		available = {
-			num_of_civilian_factories_available_for_projects > 1
+			available = {
+				set_temp_variable = {
+					amount_of_money_to_check = 0.5
+				}
+				has_specific_amount_of_money_with_inflation_included = yes
+			}
 			has_completed_focus = PRS_focus_spandau_arsenal
 		}
 		visible = {
@@ -3902,12 +3908,16 @@ PRS_decision_category_industrialisation = {
 			}
 		}
 		fire_only_once = yes
-		cost = 50
-		modifier = {
-			civilian_factory_use = 1
+		custom_cost_trigger = {
+			set_temp_variable = {
+				amount_of_money_to_check = 0.5
+			}
 		}
+		custom_cost_text = CREATE_PUBLIC_WORKS_CUSTOM_COST_TEXT
 		days_remove = 365
 		complete_effect = {
+			set_temp_variable = { money_to_gain = -0.5 }
+			add_money_with_tooltip_effect = yes
 		}
 		remove_effect = {
 			951 = {
@@ -3927,15 +3937,26 @@ PRS_decision_category_industrialisation = {
 				}
 			}
 			add_stability = 0.02
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = infantry_equipment
+			}
+			set_temp_variable = {
+				unemployment_value = -0.0005
+			}
+			add_unemployment_effect = yes
 			set_temp_variable = {
 				eoanb_prestige_change = 1
 			}
 			eoanb_change_prestige_score = yes
+			EOANBSYS_institutions_innovative_add_one = yes
 		}
 		ai_will_do = {
 			base = 1000
 		}
 	}
+	#Support Dreyse Gewehrfabrik
 	PRS_mission_dreyse_mill = {
 		icon = generic_industry
 		allowed = { always = no }
@@ -3969,6 +3990,15 @@ PRS_decision_category_industrialisation = {
 				add_extra_state_shared_building_slots = 2
 			}
 			add_stability = 0.02
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = infantry_equipment
+			}
+			set_temp_variable = {
+				unemployment_value = -0.0005
+			}
+			add_unemployment_effect = yes
 			set_temp_variable = {
 				eoanb_prestige_change = 2
 			}
@@ -3979,6 +4009,7 @@ PRS_decision_category_industrialisation = {
 			base = 100
 		}
 	}
+	#Support Suhler Gewehrfabriken
 	PRS_mission_suhl_mills = {
 		icon = generic_industry
 		allowed = { always = no }
@@ -4010,8 +4041,23 @@ PRS_decision_category_industrialisation = {
 		complete_effect = {
 			948 = {
 				add_extra_state_shared_building_slots = 2
+				set_state_category = city
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
 			}
 			add_stability = 0.02
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = infantry_equipment
+			}
+			set_temp_variable = {
+				unemployment_value = -0.0005
+			}
+			add_unemployment_effect = yes
 			set_temp_variable = {
 				eoanb_prestige_change = 2
 			}
@@ -4022,6 +4068,7 @@ PRS_decision_category_industrialisation = {
 			base = 1
 		}
 	}
+	#Königlich Preußische Gewehrfabrik Erfurt
 	PRS_mission_factories_erfurt = {
 		icon = generic_industry
 		allowed = { always = no }
@@ -4055,6 +4102,15 @@ PRS_decision_category_industrialisation = {
 				add_extra_state_shared_building_slots = 2
 			}
 			add_stability = 0.02
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = infantry_equipment
+			}
+			set_temp_variable = {
+				unemployment_value = -0.0005
+			}
+			add_unemployment_effect = yes
 			set_temp_variable = {
 				eoanb_prestige_change = 2
 			}
@@ -4068,6 +4124,52 @@ PRS_decision_category_industrialisation = {
 }
 
 PRS_decision_category_urbanization = {
+	#Construct a Sewerage System in Stettin (cost was around 300,000 Thaler)
+	PRS_decision_stettin_sewerage_system = {
+		icon = canal
+		#allowed = { tag = PRS }
+		available = {
+			set_temp_variable = {
+				amount_of_money_to_check = 1
+			}
+			has_specific_amount_of_money_with_inflation_included = yes
+			has_character = PRS_james_hobrecht
+		}
+		visible = {
+			has_completed_focus = PRS_focus_prussian_urbanization
+			owns_state = 62
+			62 = {
+				infrastructure < 10
+			}
+		}
+		fire_only_once = yes
+		custom_cost_trigger = {
+			set_temp_variable = {
+				amount_of_money_to_check = 1
+			}
+		}
+		custom_cost_text = CREATE_PUBLIC_WORKS_CUSTOM_COST_TEXT
+		days_remove = 900
+		complete_effect = {
+			set_temp_variable = { money_to_gain = -1 }
+			add_money_with_tooltip_effect = yes
+		}
+		remove_effect = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			set_temp_variable = {
+				eoanb_prestige_change = 1
+			}
+			eoanb_change_prestige_score = yes
+			EOANBSYS_institutions_innovative_add_one = yes
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
 	#Hobrecht-Plan
 	PRS_mission_hobrecht_plan = {
 		icon = hol_draw_up_staff_plans
@@ -4075,7 +4177,7 @@ PRS_decision_category_urbanization = {
 		available = {
 			951 = {
 				state_population > 1000000
-				#infrastructure > 8
+				#infrastructure > 7
 			}
 		}
 		activation = { always = no }
@@ -4194,6 +4296,62 @@ PRS_decision_category_urbanization = {
 					add_manpower = -2500
 				}
 			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	#Construct a Sewerage System in Berlin
+	PRS_decision_berlin_sewerage_system = {
+		icon = canal
+		#allowed = { tag = PRS }
+		available = {
+			set_temp_variable = {
+				amount_of_money_to_check = 3
+			}
+			has_specific_amount_of_money_with_inflation_included = yes
+			has_completed_focus = PRS_focus_establish_sewerage_standards
+			has_character = PRS_james_hobrecht
+		}
+		visible = {
+			has_completed_focus = PRS_focus_prussian_urbanization
+			owns_state = 951
+			951 = {
+				infrastructure < 10
+			}
+		}
+		fire_only_once = yes
+		custom_cost_trigger = {
+			set_temp_variable = {
+				amount_of_money_to_check = 3
+			}
+		}
+		custom_cost_text = CREATE_PUBLIC_WORKS_CUSTOM_COST_TEXT
+		days_remove = 1200
+		complete_effect = {
+			set_temp_variable = { money_to_gain = -3 }
+			add_money_with_tooltip_effect = yes
+		}
+		remove_effect = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = health_tech
+			}
+			set_temp_variable = {
+				unemployment_value = -0.0005
+			}
+			add_unemployment_effect = yes
+			set_temp_variable = {
+				eoanb_prestige_change = 1
+			}
+			eoanb_change_prestige_score = yes
+			EOANBSYS_institutions_innovative_add_one = yes
 		}
 		ai_will_do = {
 			base = 100
@@ -4479,18 +4637,26 @@ PRS_decision_category_urbanization = {
 		icon = generic_construction
 		#allowed = { tag = PRS }
 		available = {
-			num_of_civilian_factories_available_for_projects > 1
-		}
-		visible = {
+			set_temp_variable = {
+				amount_of_money_to_check = 0.25
+			}
+			has_specific_amount_of_money_with_inflation_included = yes
 			has_completed_focus = PRS_focus_establish_sewerage_standards
 		}
-		fire_only_once = yes
-		cost = 25
-		days_remove = 365
-		modifier = {
-			civilian_factory_use = 1
+		visible = {
+			has_completed_focus = PRS_focus_prussian_urbanization
 		}
+		fire_only_once = yes
+		custom_cost_trigger = {
+			set_temp_variable = {
+				amount_of_money_to_check = 0.25
+			}
+		}
+		custom_cost_text = CREATE_PUBLIC_WORKS_CUSTOM_COST_TEXT
+		days_remove = 365
 		complete_effect = {
+			set_temp_variable = { money_to_gain = -0.25 }
+			add_money_with_tooltip_effect = yes
 		}
 		remove_effect = {
 			951 = {
@@ -4519,6 +4685,7 @@ PRS_decision_category_urbanization = {
 }
 
 PRS_decision_category_heeresreform = {
+	#Army Expansion by Decree
 	PRS_mission_parliamentary_reform_bill = {
 		icon = generic_military
 		allowed = { always = no }
@@ -4563,6 +4730,7 @@ PRS_decision_category_heeresreform = {
 			base = 1000
 		}
 	}
+	#Army Expansion by Decree
 	PRS_mission_roons_reform_bill = {
 		icon = generic_military
 		allowed = { always = no }
@@ -4607,6 +4775,7 @@ PRS_decision_category_heeresreform = {
 			base = 1000
 		}
 	}
+	#Appoint von Roon as War Minister
 	PRS_decision_roon_war_minister = {
 		icon = generic_army_support
 		#allowed = { tag = PRS }
@@ -4643,6 +4812,7 @@ PRS_decision_category_heeresreform = {
 			base = 1000
 		}
 	}
+	#Appoint von Moltke as Army Chief
 	PRS_decision_moltke_army_chief = {
 		icon = generic_army_support
 		#allowed = { tag = PRS }
@@ -4679,6 +4849,7 @@ PRS_decision_category_heeresreform = {
 			base = 1000
 		}
 	}
+	#Plan Army Reform
 	PRS_decision_plan_army_reform = {
 		icon = generic_prepare_civil_war
 		#allowed = { tag = PRS }
@@ -4693,7 +4864,10 @@ PRS_decision_category_heeresreform = {
 					}
 				}
 			}
-			num_of_civilian_factories_available_for_projects > 0
+			set_temp_variable = {
+				amount_of_money_to_check = 0.25
+			}
+			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		visible = {
 			has_completed_focus = PRS_focus_king_army_prs
@@ -4702,16 +4876,17 @@ PRS_decision_category_heeresreform = {
 			}
 		}
 		fire_only_once = yes
-		cost = 0
 		custom_cost_trigger = {
+			set_temp_variable = {
+				amount_of_money_to_check = 0.25
+			}
 			command_power > 49.99
 		}
-		custom_cost_text = eoanb_command_power_50
-		modifier = {
-			civilian_factory_use = 1
-		}
+		custom_cost_text = eoanb_money_and_command_power_50
 		days_remove = 150
 		complete_effect = {
+			set_temp_variable = { money_to_gain = -0.25 }
+			add_money_with_tooltip_effect = yes
 			add_command_power = -50
 		}
 		remove_effect = {
@@ -4726,6 +4901,7 @@ PRS_decision_category_heeresreform = {
 			base = 1000
 		}
 	}
+	#Heeresreform - Krupp Artillery
 	PRS_decision_heeresreform_krupp_guns = {
 		icon = artillery
 		#allowed = { tag = PRS }
@@ -4733,6 +4909,10 @@ PRS_decision_category_heeresreform = {
 			NOT = {
 				has_country_flag = PRS_heeresreform_measure_in_progress
 			}
+			set_temp_variable = {
+				amount_of_money_to_check = 0.5
+			}
+			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		visible = {
 			OR = {
@@ -4743,15 +4923,17 @@ PRS_decision_category_heeresreform = {
 		}
 		fire_only_once = yes
 		custom_cost_trigger = {
+			set_temp_variable = {
+				amount_of_money_to_check = 0.5
+			}
 			command_power > 99.9
 			has_army_experience > 24.9
 		}
-		custom_cost_text = eoanb_command_power_100_army_experience_25
-		modifier = {
-			civilian_factory_use = 1
-		}
+		custom_cost_text = eoanb_money_and_command_power_100_army_experience_25
 		days_remove = 180
 		complete_effect = {
+			set_temp_variable = { money_to_gain = -0.5 }
+			add_money_with_tooltip_effect = yes
 			add_command_power = -100
 			army_experience = -25
 			hidden_effect = {
@@ -4759,13 +4941,17 @@ PRS_decision_category_heeresreform = {
 			}
 		}
 		remove_effect = {
-			PRS = {
-				add_tech_bonus = {
-					bonus = 0.75
-					uses = 1
-					category = artillery
-				}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = artillery
 			}
+			add_tech_bonus = {
+				ahead_reduction = 0.75
+				uses = 1
+				category = artillery
+			}
+			add_equipment_to_stockpile = { type = rifled_cannon_equipment_2 amount = 24 producer = PRS }
 			hidden_effect = {
 				set_country_flag = PRS_heeresreform_krupp
 				clr_country_flag = PRS_heeresreform_measure_in_progress
@@ -4775,6 +4961,7 @@ PRS_decision_category_heeresreform = {
 			base = 1000
 		}
 	}
+	#Heeresreform - Improve Officer Training
 	PRS_decision_heeresreform_improve_officer_training = {
 		icon = eng_trade_unions_support
 		#allowed = { tag = PRS }
@@ -4782,6 +4969,10 @@ PRS_decision_category_heeresreform = {
 			NOT = {
 				has_country_flag = PRS_heeresreform_measure_in_progress
 			}
+			set_temp_variable = {
+				amount_of_money_to_check = 0.5
+			}
+			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		visible = {
 			OR = {
@@ -4792,15 +4983,17 @@ PRS_decision_category_heeresreform = {
 		}
 		fire_only_once = yes
 		custom_cost_trigger = {
+			set_temp_variable = {
+				amount_of_money_to_check = 0.5
+			}
 			command_power > 99.9
 			has_army_experience > 24.9
 		}
-		custom_cost_text = eoanb_command_power_100_army_experience_25
-		modifier = {
-			civilian_factory_use = 1
-		}
+		custom_cost_text = eoanb_money_and_command_power_100_army_experience_25
 		days_remove = 180
 		complete_effect = {
+			set_temp_variable = { money_to_gain = -0.5 }
+			add_money_with_tooltip_effect = yes
 			add_command_power = -100
 			army_experience = -25
 			hidden_effect = {
@@ -4808,9 +5001,7 @@ PRS_decision_category_heeresreform = {
 			}
 		}
 		remove_effect = {
-			PRS = {
-				add_ideas = PRS_auftragstaktik
-			}
+			add_ideas = PRS_auftragstaktik
 			hidden_effect = {
 				set_country_flag = PRS_heeresreform_officer
 				clr_country_flag = PRS_heeresreform_measure_in_progress
@@ -4820,6 +5011,7 @@ PRS_decision_category_heeresreform = {
 			base = 1000
 		}
 	}
+	#Heeresreform - Army Logistics
 	PRS_decision_heeresreform_army_logistics = {
 		icon = ger_military_buildup
 		#allowed = { tag = PRS }
@@ -4827,6 +5019,10 @@ PRS_decision_category_heeresreform = {
 			NOT = {
 				has_country_flag = PRS_heeresreform_measure_in_progress
 			}
+			set_temp_variable = {
+				amount_of_money_to_check = 0.5
+			}
+			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		visible = {
 			OR = {
@@ -4837,15 +5033,17 @@ PRS_decision_category_heeresreform = {
 		}
 		fire_only_once = yes
 		custom_cost_trigger = {
+			set_temp_variable = {
+				amount_of_money_to_check = 0.5
+			}
 			command_power > 99.9
 			has_army_experience > 24.9
 		}
-		custom_cost_text = eoanb_command_power_100_army_experience_25
-		modifier = {
-			civilian_factory_use = 1
-		}
+		custom_cost_text = eoanb_money_and_command_power_100_army_experience_25
 		days_remove = 180
 		complete_effect = {
+			set_temp_variable = { money_to_gain = -0.5 }
+			add_money_with_tooltip_effect = yes
 			add_command_power = -100
 			army_experience = -25
 			hidden_effect = {
@@ -4853,17 +5051,15 @@ PRS_decision_category_heeresreform = {
 			}
 		}
 		remove_effect = {
-			PRS = {
-				add_tech_bonus = {
-					bonus = 0.5
-					uses = 1
-					category = humanities_tech
-				}
-				add_tech_bonus = {
-					bonus = 0.5
-					uses = 1
-					category = biochemistry_tech
-				}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = humanities_tech
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = biochemistry_tech
 			}
 			hidden_effect = {
 				set_country_flag = PRS_heeresreform_logistics
@@ -4874,6 +5070,7 @@ PRS_decision_category_heeresreform = {
 			base = 1000
 		}
 	}
+	#Heeresreform - New Tactics
 	PRS_decision_heeresreform_new_tactics = {
 		icon = hol_draw_up_staff_plans
 		#allowed = { tag = PRS }
@@ -4881,6 +5078,10 @@ PRS_decision_category_heeresreform = {
 			NOT = {
 				has_country_flag = PRS_heeresreform_measure_in_progress
 			}
+			set_temp_variable = {
+				amount_of_money_to_check = 0.5
+			}
+			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		visible = {
 			OR = {
@@ -4891,15 +5092,17 @@ PRS_decision_category_heeresreform = {
 		}
 		fire_only_once = yes
 		custom_cost_trigger = {
+			set_temp_variable = {
+				amount_of_money_to_check = 0.5
+			}
 			command_power > 99.9
 			has_army_experience > 24.9
 		}
-		custom_cost_text = eoanb_command_power_100_army_experience_25
-		modifier = {
-			civilian_factory_use = 1
-		}
+		custom_cost_text = eoanb_money_and_command_power_100_army_experience_25
 		days_remove = 180
 		complete_effect = {
+			set_temp_variable = { money_to_gain = -0.5 }
+			add_money_with_tooltip_effect = yes
 			add_command_power = -100
 			army_experience = -25
 			hidden_effect = {
@@ -4907,12 +5110,10 @@ PRS_decision_category_heeresreform = {
 			}
 		}
 		remove_effect = {
-			PRS = {
-				add_doctrine_cost_reduction = {
-					cost_reduction = 0.75
-					uses = 1
-					category = doctrine_victorian_innovative_tech
-				}
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.75
+				uses = 1
+				category = doctrine_victorian_innovative_tech
 			}
 			hidden_effect = {
 				set_country_flag = PRS_heeresreform_tactics
@@ -4923,6 +5124,7 @@ PRS_decision_category_heeresreform = {
 			base = 1000
 		}
 	}
+	#Heeresreform - War Games
 	PRS_decision_heeresreform_war_games = {
 		icon = generic_prepare_civil_war
 		#allowed = { tag = PRS }
@@ -4930,6 +5132,10 @@ PRS_decision_category_heeresreform = {
 			NOT = {
 				has_country_flag = PRS_heeresreform_measure_in_progress
 			}
+			set_temp_variable = {
+				amount_of_money_to_check = 0.5
+			}
+			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		visible = {
 			OR = {
@@ -4940,15 +5146,17 @@ PRS_decision_category_heeresreform = {
 		}
 		fire_only_once = yes
 		custom_cost_trigger = {
+			set_temp_variable = {
+				amount_of_money_to_check = 0.5
+			}
 			command_power > 99.9
 			has_army_experience > 24.9
 		}
-		custom_cost_text = eoanb_command_power_100_army_experience_25
-		modifier = {
-			civilian_factory_use = 1
-		}
+		custom_cost_text = eoanb_money_and_command_power_100_army_experience_25
 		days_remove = 180
 		complete_effect = {
+			set_temp_variable = { money_to_gain = -0.5 }
+			add_money_with_tooltip_effect = yes
 			add_command_power = -100
 			army_experience = -25
 			hidden_effect = {
@@ -4970,13 +5178,18 @@ PRS_decision_category_heeresreform = {
 			base = 500
 		}
 	}
-	PRS_decision_heeresreform_no_noble_privilege = {
+	#Heeresreform - End Noble Privileges
+	PRS_decision_heeresreform_end_noble_privileges = {
 		icon = generic_civil_support
 		#allowed = { tag = PRS }
 		available = {
 			NOT = {
 				has_country_flag = PRS_heeresreform_measure_in_progress
 			}
+			set_temp_variable = {
+				amount_of_money_to_check = 0.5
+			}
+			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		visible = {
 			has_completed_focus = PRS_focus_king_deposed
@@ -4984,15 +5197,17 @@ PRS_decision_category_heeresreform = {
 		}
 		fire_only_once = yes
 		custom_cost_trigger = {
+			set_temp_variable = {
+				amount_of_money_to_check = 0.5
+			}
 			command_power > 99.9
 			has_army_experience > 24.9
 		}
-		custom_cost_text = eoanb_command_power_100_army_experience_25
-		modifier = {
-			civilian_factory_use = 1
-		}
+		custom_cost_text = eoanb_money_and_command_power_100_army_experience_25
 		days_remove = 180
 		complete_effect = {
+			set_temp_variable = { money_to_gain = -0.5 }
+			add_money_with_tooltip_effect = yes
 			add_command_power = -100
 			army_experience = -25
 			hidden_effect = {
@@ -5027,6 +5242,7 @@ PRS_decision_category_heeresreform = {
 			base = 1000
 		}
 	}
+	#Heeresreform - Strenghten the Generalstab
 	PRS_decision_heeresreform_strenghten_generalstab = {
 		icon = generic_army_support
 		#allowed = { tag = PRS }
@@ -5034,6 +5250,10 @@ PRS_decision_category_heeresreform = {
 			NOT = {
 				has_country_flag = PRS_heeresreform_measure_in_progress
 			}
+			set_temp_variable = {
+				amount_of_money_to_check = 0.5
+			}
+			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		visible = {
 			OR = {
@@ -5043,15 +5263,17 @@ PRS_decision_category_heeresreform = {
 		}
 		fire_only_once = yes
 		custom_cost_trigger = {
+			set_temp_variable = {
+				amount_of_money_to_check = 0.5
+			}
 			command_power > 99.9
 			has_army_experience > 24.9
 		}
-		custom_cost_text = eoanb_command_power_100_army_experience_25
-		modifier = {
-			civilian_factory_use = 1
-		}
+		custom_cost_text = eoanb_money_and_command_power_100_army_experience_25
 		days_remove = 180
 		complete_effect = {
+			set_temp_variable = { money_to_gain = -0.5 }
+			add_money_with_tooltip_effect = yes
 			add_command_power = -100
 			army_experience = -25
 			hidden_effect = {
@@ -5089,6 +5311,7 @@ PRS_decision_category_heeresreform = {
 }
 
 PRS_decision_category_constitutional_crisis = {
+	#Deliver 'Blut-und-Eisen'-Speech to the Budget Commission
 	PRS_decision_deliver_blut_und_eisen_speech = {
 		icon = generic_speech
 		#allowed = { tag = PRS }
@@ -5125,6 +5348,7 @@ PRS_decision_category_constitutional_crisis = {
 			base = 1000
 		}
 	}
+	#Bismarck's Cabinet
 	PRS_decision_bismarck_cabinet = {
 		icon = generic_decision
 		#allowed = { tag = PRS }
@@ -5170,6 +5394,7 @@ PRS_decision_category_constitutional_crisis = {
 }
 
 PRS_decision_category_election_campaign = {
+	#Rally Support
 	PRS_mission_rally_support = {
 		icon = generic_political_rally
 		allowed = { always = no }
@@ -5236,6 +5461,7 @@ PRS_decision_category_election_campaign = {
 			base = 1000
 		}
 	}
+	#Gerrymandering
 	PRS_decision_gerrymandering = {
 		icon = generic_political_discourse
 		#allowed = { tag = PRS }
@@ -5243,6 +5469,10 @@ PRS_decision_category_election_campaign = {
 			NOT = {
 				has_country_flag = PRS_electoral_corruption_in_progress_flag
 			}
+			set_temp_variable = {
+				amount_of_money_to_check = 0.05
+			}
+			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		visible = {
 			#has_completed_focus = PRS_focus_dissolve_parliament
@@ -5255,12 +5485,19 @@ PRS_decision_category_election_campaign = {
 			}
 		}
 		fire_only_once = yes
-		cost = 0
+		custom_cost_trigger = {
+			set_temp_variable = {
+				amount_of_money_to_check = 0.05
+			}
+		}
+		custom_cost_text = CREATE_PUBLIC_WORKS_CUSTOM_COST_TEXT
 		days_remove = 14
 		complete_effect = {
 			custom_effect_tooltip = PRS_decision_election_campaign_effect_tt
 			set_country_flag = PRS_electoral_corruption_in_progress_flag
-			add_political_power = -20
+			add_political_power = -50
+			set_temp_variable = { money_to_gain = -0.05 }
+			add_money_with_tooltip_effect = yes
 		}
 		remove_effect = {
 			clr_country_flag = PRS_electoral_corruption_in_progress_flag
@@ -5291,6 +5528,7 @@ PRS_decision_category_election_campaign = {
 			base = 1000
 		}
 	}
+	#Canvassing
 	PRS_decision_canvassing = {
 		icon = generic_political_discourse
 		#allowed = { tag = PRS }
@@ -5298,6 +5536,10 @@ PRS_decision_category_election_campaign = {
 			NOT = {
 				has_country_flag = PRS_electoral_corruption_in_progress_flag
 			}
+			set_temp_variable = {
+				amount_of_money_to_check = 0.25
+			}
+			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		visible = {
 			#has_completed_focus = PRS_focus_dissolve_parliament
@@ -5310,12 +5552,19 @@ PRS_decision_category_election_campaign = {
 			}
 		}
 		fire_only_once = yes
-		cost = 0
+		custom_cost_trigger = {
+			set_temp_variable = {
+				amount_of_money_to_check = 0.25
+			}
+		}
+		custom_cost_text = CREATE_PUBLIC_WORKS_CUSTOM_COST_TEXT
 		days_remove = 14
 		complete_effect = {
 			custom_effect_tooltip = PRS_decision_election_campaign_effect_tt
 			set_country_flag = PRS_electoral_corruption_in_progress_flag
 			add_political_power = -20
+			set_temp_variable = { money_to_gain = -0.25 }
+			add_money_with_tooltip_effect = yes
 		}
 		remove_effect = {
 			clr_country_flag = PRS_electoral_corruption_in_progress_flag
@@ -5346,6 +5595,7 @@ PRS_decision_category_election_campaign = {
 			base = 1000
 		}
 	}
+	#Launch Smear Campaign against Political Adversaries
 	PRS_decision_smear_campaign = {
 		icon = generic_political_discourse
 		#allowed = { tag = PRS }
@@ -5353,6 +5603,10 @@ PRS_decision_category_election_campaign = {
 			NOT = {
 				has_country_flag = PRS_electoral_corruption_in_progress_flag
 			}
+			set_temp_variable = {
+				amount_of_money_to_check = 0.1
+			}
+			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		visible = {
 			#has_completed_focus = PRS_focus_dissolve_parliament
@@ -5365,12 +5619,19 @@ PRS_decision_category_election_campaign = {
 			}
 		}
 		fire_only_once = yes
-		cost = 0
+		custom_cost_trigger = {
+			set_temp_variable = {
+				amount_of_money_to_check = 0.1
+			}
+		}
+		custom_cost_text = CREATE_PUBLIC_WORKS_CUSTOM_COST_TEXT
 		days_remove = 14
 		complete_effect = {
 			custom_effect_tooltip = PRS_decision_election_campaign_effect_tt
 			set_country_flag = PRS_electoral_corruption_in_progress_flag
-			add_political_power = -20
+			add_political_power = -30
+			set_temp_variable = { money_to_gain = -0.1 }
+			add_money_with_tooltip_effect = yes
 		}
 		remove_effect = {
 			clr_country_flag = PRS_electoral_corruption_in_progress_flag
@@ -5401,6 +5662,7 @@ PRS_decision_category_election_campaign = {
 			base = 100
 		}
 	}
+	#Collaborate with other Parties
 	PRS_decision_collaborate_with_other_parties = {
 		icon = generic_political_discourse
 		#allowed = { tag = PRS }
@@ -5408,6 +5670,10 @@ PRS_decision_category_election_campaign = {
 			NOT = {
 				has_country_flag = PRS_electoral_corruption_in_progress_flag
 			}
+			set_temp_variable = {
+				amount_of_money_to_check = 0.05
+			}
+			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		visible = {
 			#has_completed_focus = PRS_focus_dissolve_parliament
@@ -5420,12 +5686,19 @@ PRS_decision_category_election_campaign = {
 			}
 		}
 		fire_only_once = yes
-		cost = 0
+		custom_cost_trigger = {
+			set_temp_variable = {
+				amount_of_money_to_check = 0.05
+			}
+		}
+		custom_cost_text = CREATE_PUBLIC_WORKS_CUSTOM_COST_TEXT
 		days_remove = 14
 		complete_effect = {
 			custom_effect_tooltip = PRS_decision_election_campaign_effect_tt
 			set_country_flag = PRS_electoral_corruption_in_progress_flag
-			add_political_power = -20
+			add_political_power = -10
+			set_temp_variable = { money_to_gain = -0.05 }
+			add_money_with_tooltip_effect = yes
 		}
 		remove_effect = {
 			clr_country_flag = PRS_electoral_corruption_in_progress_flag
@@ -5456,13 +5729,18 @@ PRS_decision_category_election_campaign = {
 			base = 100
 		}
 	}
-	PRS_decision_invent_administrative_barriers = {
+	#Impose Administrative Barriers for Undesired Voters
+	PRS_decision_impose_administrative_barriers = {
 		icon = generic_political_discourse
 		#allowed = { tag = PRS }
 		available = {
 			NOT = {
 				has_country_flag = PRS_electoral_corruption_in_progress_flag
 			}
+			set_temp_variable = {
+				amount_of_money_to_check = 0.1
+			}
+			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		visible = {
 			#has_completed_focus = PRS_focus_dissolve_parliament
@@ -5475,12 +5753,19 @@ PRS_decision_category_election_campaign = {
 			}
 		}
 		fire_only_once = yes
-		cost = 0
+		custom_cost_trigger = {
+			set_temp_variable = {
+				amount_of_money_to_check = 0.1
+			}
+		}
+		custom_cost_text = CREATE_PUBLIC_WORKS_CUSTOM_COST_TEXT
 		days_remove = 14
 		complete_effect = {
 			custom_effect_tooltip = PRS_decision_election_campaign_effect_tt
 			set_country_flag = PRS_electoral_corruption_in_progress_flag
-			add_political_power = -20
+			add_political_power = -30
+			set_temp_variable = { money_to_gain = -0.1 }
+			add_money_with_tooltip_effect = yes
 		}
 		remove_effect = {
 			clr_country_flag = PRS_electoral_corruption_in_progress_flag
@@ -5585,6 +5870,9 @@ PRS_decision_category_navy_expansion = {
 			1060 = {
 				naval_base > 1
 			}
+			1060 = {
+				state_population > 10000
+			}
 		}
 		activation = { always = no }
 		priority = 49
@@ -5615,12 +5903,12 @@ PRS_decision_category_navy_expansion = {
 				set_state_category = town
 			}
 			1060 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 			}
 			1060 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -5641,6 +5929,185 @@ PRS_decision_category_navy_expansion = {
 		}
 		ai_will_do = {
 			base = 100
+		}
+	}
+	#Invest into Jade Bight Port Infrastructure
+	PRS_decision_invest_into_jade_bight_port = {
+		icon = naval_base
+		#allowed = { tag = PRS }
+		available = {
+			NOT = {
+				has_country_flag = PRS_jade_bight_expansion_in_progress
+			}
+			set_temp_variable = {
+				amount_of_money_to_check = 0.5
+			}
+			has_specific_amount_of_money_with_inflation_included = yes
+		}
+		visible = {
+			has_active_mission = PRS_mission_hagens_expansion_plan
+			owns_state = 1060
+			1060 = {
+				naval_base < 2
+			}
+		}
+		fire_only_once = no
+		custom_cost_trigger = {
+			set_temp_variable = {
+				amount_of_money_to_check = 0.5
+			}
+			has_navy_experience > 24.9
+		}
+		custom_cost_text = eoanb_money_and_navy_experience_25
+		days_remove = 365
+		complete_effect = {
+			set_temp_variable = { money_to_gain = -0.5 }
+			add_money_with_tooltip_effect = yes
+			navy_experience = -25
+			hidden_effect = {
+				set_country_flag = PRS_jade_bight_expansion_in_progress
+			}
+		}
+		remove_effect = {
+			1060 = {
+				add_building_construction = {
+					type = naval_base
+					level = 1
+					instant_build = yes
+					province = 13562
+				}
+			}
+			set_temp_variable = {
+				unemployment_value = -0.0005
+			}
+			add_unemployment_effect = yes
+			hidden_effect = {
+				clr_country_flag = PRS_jade_bight_expansion_in_progress
+			}
+		}
+		ai_will_do = {
+			base = 1000
+		}
+	}
+	#Invest into Jade Bight Dockyard Infrastructure
+	PRS_decision_invest_into_jade_bight_dockyard = {
+		icon = generic_construction
+		#allowed = { tag = PRS }
+		available = {
+			NOT = {
+				has_country_flag = PRS_jade_bight_expansion_in_progress
+			}
+			set_temp_variable = {
+				amount_of_money_to_check = 2.5
+			}
+			has_specific_amount_of_money_with_inflation_included = yes
+		}
+		visible = {
+			has_active_mission = PRS_mission_hagens_expansion_plan
+			owns_state = 1060
+			1060 = {
+				dockyard < 1
+			}
+		}
+		fire_only_once = yes
+		custom_cost_trigger = {
+			set_temp_variable = {
+				amount_of_money_to_check = 2.5
+			}
+			has_navy_experience > 49.9
+		}
+		custom_cost_text = eoanb_money_and_navy_experience_50
+		days_remove = 730
+		complete_effect = {
+			set_temp_variable = { money_to_gain = -2.5 }
+			add_money_with_tooltip_effect = yes
+			navy_experience = -50
+			hidden_effect = {
+				set_country_flag = PRS_jade_bight_expansion_in_progress
+			}
+		}
+		remove_effect = {
+			1060 = {
+				add_extra_state_shared_building_slots = 1
+			}
+			1060 = {
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			set_temp_variable = {
+				unemployment_value = -0.0005
+			}
+			add_unemployment_effect = yes
+			hidden_effect = {
+				clr_country_flag = PRS_jade_bight_expansion_in_progress
+			}
+		}
+		ai_will_do = {
+			base = 1000
+		}
+	}
+	#Invest into Jade Bight Settlement
+	PRS_decision_invest_into_jade_bight_settlement = {
+		icon = generic_construction
+		#allowed = { tag = PRS }
+		available = {
+			NOT = {
+				has_country_flag = PRS_jade_bight_expansion_in_progress
+			}
+			set_temp_variable = {
+				amount_of_money_to_check = 1
+			}
+			has_specific_amount_of_money_with_inflation_included = yes
+		}
+		visible = {
+			has_active_mission = PRS_mission_hagens_expansion_plan
+			owns_state = 1060
+			1060 = {
+				state_population < 10000
+			}
+		}
+		fire_only_once = yes
+		custom_cost_trigger = {
+			set_temp_variable = {
+				amount_of_money_to_check = 1
+			}
+		}
+		custom_cost_text = CREATE_PUBLIC_WORKS_CUSTOM_COST_TEXT
+		days_remove = 365
+		complete_effect = {
+			set_temp_variable = { money_to_gain = -1 }
+			add_money_with_tooltip_effect = yes
+			hidden_effect = {
+				set_country_flag = PRS_jade_bight_expansion_in_progress
+			}
+		}
+		remove_effect = {
+			1060 = {
+				add_manpower = 7500
+			}
+			1060 = {
+				add_extra_state_shared_building_slots = 1
+			}
+			1060 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			set_temp_variable = {
+				unemployment_value = -0.0005
+			}
+			add_unemployment_effect = yes
+			hidden_effect = {
+				clr_country_flag = PRS_jade_bight_expansion_in_progress
+			}
+		}
+		ai_will_do = {
+			base = 1000
 		}
 	}
 	#Establish a High Seas Fleet
@@ -5797,7 +6264,6 @@ PRS_decision_category_navy_expansion = {
 		icon = generic_naval
 		#allowed = { tag = PRS }
 		available = {
-			num_of_civilian_factories_available_for_projects > 5
 			NOT = {
 				has_country_flag = PRS_ordered_ships_domestically_flag
 			}
@@ -5809,6 +6275,10 @@ PRS_decision_category_navy_expansion = {
 					has_tech = tech_naval_mtg_1860_gunboat
 				}
 			}
+			set_temp_variable = {
+				amount_of_money_to_check = 2.5
+			}
+			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		visible = {
 			has_country_flag = PRS_issue_bonds_for_navy
@@ -5817,13 +6287,19 @@ PRS_decision_category_navy_expansion = {
 			}
 		}
 		fire_only_once = yes
-		cost = 50
-		modifier = {
-			civilian_factory_use = 5
+		custom_cost_trigger = {
+			set_temp_variable = {
+				amount_of_money_to_check = 2.5
+			}
+			has_navy_experience > 49.9
 		}
+		custom_cost_text = eoanb_money_and_navy_experience_50
 		days_remove = 180
 		complete_effect = {
 			set_country_flag = PRS_ordered_ships_domestically_flag
+			set_temp_variable = { money_to_gain = -2.5 }
+			add_money_with_tooltip_effect = yes
+			navy_experience = -50
 		}
 		remove_effect = {
 			PRS = {
@@ -5841,7 +6317,6 @@ PRS_decision_category_navy_expansion = {
 		icon = generic_naval
 		#allowed = { tag = PRS }
 		available = {
-			num_of_civilian_factories_available_for_projects > 3
 			NOT = {
 				has_country_flag = PRS_ordered_ships_domestically_flag
 			}
@@ -5853,6 +6328,10 @@ PRS_decision_category_navy_expansion = {
 					has_tech = tech_naval_mtg_1860_gunboat
 				}
 			}
+			set_temp_variable = {
+				amount_of_money_to_check = 1.5
+			}
+			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		visible = {
 			has_country_flag = PRS_issue_bonds_for_navy
@@ -5861,13 +6340,19 @@ PRS_decision_category_navy_expansion = {
 			}
 		}
 		fire_only_once = yes
-		cost = 50
-		modifier = {
-			civilian_factory_use = 3
+		custom_cost_trigger = {
+			set_temp_variable = {
+				amount_of_money_to_check = 1.5
+			}
+			has_navy_experience > 49.9
 		}
+		custom_cost_text = eoanb_money_and_navy_experience_50
 		days_remove = 180
 		complete_effect = {
 			set_country_flag = PRS_ordered_ships_domestically_flag
+			set_temp_variable = { money_to_gain = -1.5 }
+			add_money_with_tooltip_effect = yes
+			navy_experience = -50
 		}
 		remove_effect = {
 			PRS = {

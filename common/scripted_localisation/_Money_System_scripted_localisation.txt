@@ -3,18 +3,89 @@ defined_text = {
 
 	text = {
 		trigger = {
-			OR = {
-				check_variable = { money > 1000 }
-				check_variable = { money < -1000 }
+			AND = {
+				check_variable = { money > -1 }
+				check_variable = { money < 1 }
 			}
 		}
-		localization_key = "[?money|2*]"
+		localization_key = "[?money|2]K"
+	}
+	text = {
+		trigger = {
+			check_variable = { money > 999 }
+			set_temp_variable = { invest_temp = money }
+			divide_temp_variable = { invest_temp = 1000 }
+		}
+		localization_key = "[?invest_temp|2]B"
 	}
 	text = {
 		trigger = {
 			always = yes
 		}
-		localization_key = "[?money|2]"
+		localization_key = "[?money|2]M"
+	}
+}
+defined_text = {
+	name = GetCurrentIncomeValueShort
+
+	text = {
+		trigger = {
+			OR = {
+				check_variable = { total_income_temp > 1000 }
+				check_variable = { total_income_temp < -1000 }
+			}
+		}
+		localization_key = "[?total_income_temp|2+=*]"
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = "[?total_income_temp|2+=]"
+	}
+}
+defined_text = {
+	name = GetCurrentExcomeValueShort
+
+	text = {
+		trigger = {
+			OR = {
+				check_variable = { total_expenses_temp > 1000 }
+				check_variable = { total_expenses_temp < -1000 }
+			}
+		}
+		localization_key = "[?total_expenses_temp|2+=*]"
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = "[?total_expenses_temp|2+=]"
+	}
+}
+defined_text = {
+	name = GetCurrentSIUnit
+
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { money > -1 }
+				check_variable = { money < 1 }
+			}
+		}
+		localization_key = "K"
+	}
+	text = {
+		trigger = {
+			check_variable = { money > 999 }
+		}
+		localization_key = "B"
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = "M"
 	}
 }
 
@@ -449,12 +520,6 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_idea = law_spending_level_1
-		}
-		localization_key = law_spending_level_1
-	}
-	text = {
-		trigger = {
 			has_idea = law_spending_level_2
 		}
 		localization_key = law_spending_level_2
@@ -470,6 +535,12 @@ defined_text = {
 			has_idea = law_spending_level_4
 		}
 		localization_key = law_spending_level_4
+	}
+	text = {
+		trigger = {
+			has_idea = law_spending_level_5
+		}
+		localization_key = law_spending_level_5
 	}
 
 	text = {
@@ -493,25 +564,25 @@ defined_text = {
 		trigger = {
 			check_variable = { law_spending_level = 2 }
 		}
-		localization_key = law_spending_level_1
+		localization_key = law_spending_level_2
 	}
 	text = {
 		trigger = {
 			check_variable = { law_spending_level = 3 }
 		}
-		localization_key = law_spending_level_2
+		localization_key = law_spending_level_3
 	}
 	text = {
 		trigger = {
 			check_variable = { law_spending_level = 4 }
 		}
-		localization_key = law_spending_level_3
+		localization_key = law_spending_level_4
 	}
 	text = {
 		trigger = {
 			check_variable = { law_spending_level = 5 }
 		}
-		localization_key = law_spending_level_4
+		localization_key = law_spending_level_5
 	}
 
 	text = {
@@ -1043,5 +1114,141 @@ defined_text = {
 			always = yes
 		}
 		localization_key = "[?unemployment_value_modifier_temp|2%=-]"
+	}
+}
+
+defined_text = {
+	name = GetCurrencyTextIcon
+	text = {
+		trigger = {
+			currency_uses_dollar = yes
+		}
+		localization_key = "currency_dollar_texticon"
+	}
+	text = {
+		trigger = {
+			currency_uses_pound = yes
+		}
+		localization_key = "currency_pound_texticon"
+	}
+	text = {
+		trigger = {
+			currency_uses_euro = yes
+		}
+		localization_key = "currency_euro_texticon"
+	}
+	text = {
+		trigger = {
+			currency_uses_franc = yes
+		}
+		localization_key = "currency_franc_texticon"
+	}
+	text = {
+		trigger = {
+			currency_uses_ruble = yes
+		}
+		localization_key = "currency_ruble_texticon"
+	}
+	text = {
+		trigger = {
+			currency_uses_rupee = yes
+		}
+		localization_key = "currency_rupee_texticon"
+	}
+	text = {
+		trigger = {
+			currency_uses_yen = yes
+		}
+		localization_key = "currency_yen_texticon"
+	}
+	text = {
+		trigger = {
+			currency_uses_lira = yes
+		}
+		localization_key = "currency_lira_texticon"
+	}
+	text = {
+		trigger = {
+			currency_uses_mark = yes
+		}
+		localization_key = "currency_mark_texticon"
+	}
+	text = {
+		trigger = {
+			currency_uses_real = yes
+		}
+		localization_key = "currency_real_texticon"
+	}
+	text = {
+		trigger = {
+			currency_uses_shekel = yes
+		}
+		localization_key = "currency_shekel_texticon"
+	}
+	text = {
+		trigger = {
+			currency_hegemon_pound = yes
+		}
+		localization_key = "currency_pound_texticon"
+	}
+	text = {
+		trigger = {
+			currency_hegemon_dollar = yes
+		}
+		localization_key = "currency_dollar_texticon"
+	}
+	text = {
+		trigger = {
+			currency_hegemon_euro = yes
+		}
+		localization_key = "currency_euro_texticon"
+	}
+	text = {
+		trigger = {
+			currency_hegemon_franc = yes
+		}
+		localization_key = "currency_franc_texticon"
+	}
+	text = {
+		trigger = {
+			currency_hegemon_ruble = yes
+		}
+		localization_key = "currency_ruble_texticon"
+	}
+	text = {
+		trigger = {
+			currency_hegemon_rupee = yes
+		}
+		localization_key = "currency_rupee_texticon"
+	}
+	text = {
+		trigger = {
+			currency_hegemon_yen = yes
+		}
+		localization_key = "currency_yen_texticon"
+	}
+	text = {
+		trigger = {
+			currency_hegemon_lira = yes
+		}
+		localization_key = "currency_lira_texticon"
+	}
+	text = {
+		trigger = {
+			currency_hegemon_mark = yes
+		}
+		localization_key = "currency_mark_texticon"
+	}
+	text = {
+		trigger = {
+			currency_hegemon_real = yes
+		}
+		localization_key = "currency_real_texticon"
+	}
+	text = {
+		trigger = {
+			currency_hegemon_shekel = yes
+		}
+		localization_key = "currency_shekel_texticon"
 	}
 }
