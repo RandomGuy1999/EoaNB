@@ -232,7 +232,7 @@
 		}
 		
 		completion_reward = {
-			##country_event = GREeconomy.12
+			country_event = GREeconomy.14
 		}
 	}
 	
@@ -296,7 +296,9 @@
 		}
 		
 		completion_reward = {
-
+			unlock_decision_tooltip = GRE_decision_national_library
+			unlock_decision_tooltip = GRE_decision_university_athens
+			unlock_decision_tooltip = GRE_decision_academy_athens
 		}
 	}
 	
@@ -323,7 +325,7 @@
 		}
 		
 		completion_reward = {
-			#country_event = GREeconomy.11
+			country_event = GREeconomy.13
 		}
 	}
 	
@@ -449,7 +451,7 @@
 		}
 		
 		completion_reward = {
-			#country_event = GREeconomy.13
+			country_event = GREeconomy.15
 		}
 	}
 	
@@ -2685,6 +2687,7 @@ shared_focus = {
 	}
 	
 	completion_reward = {
+		unlock_decision_tooltip = GRE_decision_contract_aristarchis
 	}
 }
 
@@ -2960,6 +2963,8 @@ shared_focus = {
 	}
 	
 	completion_reward = {
+		unlock_decision_tooltip = GRE_decision_military_hospital
+		country_event = GRE_Military.4
 	}
 }
 
@@ -3259,6 +3264,14 @@ shared_focus = {
 	}
 	
 	completion_reward = {
+		add_command_power = 10
+		army_experience = 50
+		add_war_support = 0.05
+		add_tech_bonus = {
+			bonus = 0.25
+			uses = 1
+			category = support_tech
+		}
 	}
 }
 

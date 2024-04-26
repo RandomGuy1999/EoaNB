@@ -1921,6 +1921,16 @@ leader_traits = {
 		ai_will_do = { factor = 1 }
 	}
 
+	### Luxembourg Advisor Traits ###
+	
+	LUX_trait_Jean_Jacques_Willmar = {
+		random = no
+		political_power_factor = 0.02
+		
+		
+		ai_will_do = { factor = 3 }
+	}
+
 	### Saxon Leader Traits ###
 
 	SAX_trait_Beust_Trias_Promoter = {
@@ -3607,6 +3617,41 @@ leader_traits = {
 		trait_chao_oun_kham = {
 		# siam unique
 		random = no
+	}
+
+	HAW_trait_foreign_affairs_minister = {
+		random = no
+		
+		war_support_factor = 0.2
+		production_speed_bunker_factor = 0.2
+	}
+	HAW_trait_interior_minister = {
+		random = no
+		
+		industrial_capacity_factory = 0.1
+	}
+	HAW_trait_finance_minister = {
+		random = no
+		
+		improve_relations_maintain_cost_factor = -0.1
+		opinion_gain_monthly_same_ideology_factor = 0.5
+	}
+	HAW_trait_chief_justice = {
+		random = no
+		
+		research_speed_factor = 0.05
+		political_power_factor = -0.05
+	}
+	HAW_trait_governor = {
+		random = no
+
+		stability_factor = -0.05
+		industrial_capacity_factory = 0.05
+	}
+	HAW_trait_kuhina_hui = {
+		random = no
+		
+		stability_factor = 0.1
 	}
 	
 	#BRA traits

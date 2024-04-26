@@ -1,7 +1,7 @@
 ﻿1857.1.1 = {
-	capital = 1282
+	capital = 1154
 
-	#oob = "CRW_1857"
+	#oob = "MSQ_1857"
 
 	set_convoys = 0
 
@@ -61,7 +61,7 @@
 
 	}
 
-	CRW = {
+	MSQ = {
 	set_country_flag = afr_prosperity_mechanic_nomadic_animal_husbandry_building_flag
 	set_country_flag = afr_nomadic_animal_husbandry_focus_horse
 	add_ideas={AF_T_Tribal_Army}
@@ -69,10 +69,6 @@
 	}
 
 	#Diplomacy
-	add_opinion_modifier = { target = UTA modifier = first_nations_colonial_encroacher_opinion_modifier }
-	add_opinion_modifier = { target = USA modifier = first_nations_colonial_encroacher_opinion_modifier }
-	give_military_access = USA
-	give_military_access = DAK
 
 	set_politics = {
 		ruling_party = fundamentalism
@@ -111,15 +107,4 @@ set_popularities = {
 	}
 
 	# POLITICAL LEADERS
-
-#create_country_leader = {
-#	name = "Awé Kúalawaachish"
-#	desc = ""
-#	picture = "Portrait_CRW_Sits_In_The_Middle_Of_The_Land.png"
-#	expire = "1953.3.1"
-#	ideology = shamanism
-#	traits = {
-#	}
-#}
-recruit_character = CRW_Sits_In_The_Middle_Of_The_Land
 }
