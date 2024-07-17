@@ -17,6 +17,10 @@ spriteTypes = {
 			name = "GFX_Portrait_SAF_John_Molteno"
 			texturefile = "gfx/leaders/SAF/Portrait_SAF_John_Molteno.png"
 		}
+		spriteType = {
+			name = "GFX_Portrait_SAF_Henry_Bartle_Frere"
+			texturefile = "gfx/leaders/SAF/Portrait_SAF_Henry_Bartle_Frere.png"
+		}
 	# Natal
 		spriteType = {
 			name = "GFX_Portrait_NAT_John_Scott"
@@ -35,6 +39,10 @@ spriteTypes = {
 		spriteType = {
 			name = "GFX_Portrait_OFS_Volksraad"
 			texturefile = "gfx/leaders/OFS/Portrait_OFS_Volksraad.dds"
+		}
+		spriteType = {
+			name = "GFX_Portrait_OFS_Pieter_Jeremias_Blignaut"
+			texturefile = "gfx/leaders/OFS/Portrait_OFS_Pieter_Jeremias_Blignaut.png"
 		}
 	# Transvaal
 		spriteType = {
@@ -56,6 +64,10 @@ spriteTypes = {
 		spriteType = {
 			name = "GFX_Portrait_TRV_Rensburg"
 			texturefile = "gfx/leaders/TRV/Portrait_TRV_Rensburg.png"
+		}
+		spriteType = {
+			name = "GFX_Portrait_TRV_shepstone"
+			texturefile = "gfx/leaders/TRV/Portrait_TRV_shepstone.png"
 		}
 
 }

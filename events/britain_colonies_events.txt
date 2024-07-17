@@ -319,15 +319,8 @@ add_namespace = britishindia
 			}
 			add_political_power = 50
 			custom_effect_tooltip = eoanb_tt_event_britishcanada_9_b
-			if = {
-				limit = { OR = {
-					has_dlc = "Together for Victory"
-					has_dlc = "Waking the Tiger"
-					has_dlc = "Death or Dishonor"
-				} }
-				hidden_effect = {
-					add_autonomy_score = { value = 50 }
-				}
+			hidden_effect = {
+				add_autonomy_score = { value = 50 }
 			}
 		}
 
@@ -432,18 +425,7 @@ add_namespace = britishindia
 			}
 			add_political_power = 100
 			hidden_effect = {
-				if = {
-						limit = {
-							OR = {
-								has_dlc = "Together for Victory"
-								has_dlc = "Waking the Tiger"
-								has_dlc = "Death or Dishonor"
-							} 
-						}
-					hidden_effect = {
-						add_autonomy_score = { value = -50 }
-					}
-				}
+				add_autonomy_score = { value = -50 }
 				CAN = {
 					country_event = {
 						id = britishcanada.13
@@ -468,18 +450,7 @@ add_namespace = britishindia
 			add_political_power = -100
 			hidden_effect = {
 				CAN = {
-					if = {
-						limit = {
-							OR = {
-								has_dlc = "Together for Victory"
-								has_dlc = "Waking the Tiger"
-								has_dlc = "Death or Dishonor"
-							} 
-						}
-						hidden_effect = {
-							add_autonomy_score = { value = 50 }
-						}
-					}
+					add_autonomy_score = { value = 50 }
 					country_event = {
 						id = britishcanada.12
 						days = 10
@@ -558,18 +529,7 @@ add_namespace = britishindia
 			add_political_power = -50
 			hidden_effect = {
 				CAN = {
-					if = {
-						limit = {
-							OR = {
-								has_dlc = "Together for Victory"
-								has_dlc = "Waking the Tiger"
-								has_dlc = "Death or Dishonor"
-							} 
-						}
-						hidden_effect = {
-							add_autonomy_score = { value = 50 }
-						}
-					}
+					add_autonomy_score = { value = 50 }
 					country_event = {
 						id = britishcanada.15
 						days = 10
@@ -592,17 +552,8 @@ add_namespace = britishindia
 			add_political_power = -100
 			hidden_effect = {
 				CAN = {
-					if = {
-						limit = {
-							OR = {
-								has_dlc = "Together for Victory"
-								has_dlc = "Waking the Tiger"
-								has_dlc = "Death or Dishonor"
-							} 
-						}
-						hidden_effect = {
-							add_autonomy_score = { value = -50 }
-						}
+					hidden_effect = {
+						add_autonomy_score = { value = -50 }
 					}
 					country_event = {
 						id = britishcanada.15
@@ -639,17 +590,8 @@ add_namespace = britishindia
 
 			hidden_effect = {
 				CAN = {
-					if = {
-						limit = {
-							OR = {
-								has_dlc = "Together for Victory"
-								has_dlc = "Waking the Tiger"
-								has_dlc = "Death or Dishonor"
-							} 
-						}
-						hidden_effect = {
-							add_autonomy_score = { value = 100 }
-						}
+					hidden_effect = {
+						add_autonomy_score = { value = 100 }
 					}
 					country_event = {
 						id = britishcanada.16
@@ -706,17 +648,8 @@ add_namespace = britishindia
 			add_political_power = 50
 			hidden_effect = {
 				CAN = {
-					if = {
-						limit = {
-							OR = {
-								has_dlc = "Together for Victory"
-								has_dlc = "Waking the Tiger"
-								has_dlc = "Death or Dishonor"
-							}
-						}
-						hidden_effect = {
-							add_autonomy_score = { value = 50 }
-						}
+					hidden_effect = {
+						add_autonomy_score = { value = 50 }
 					}
 					country_event = {
 						id = britishcanada.17
@@ -752,17 +685,8 @@ add_namespace = britishindia
 			add_political_power = -50
 			hidden_effect = {
 				CAN = {
-					if = {
-						limit = {
-							OR = {
-								has_dlc = "Together for Victory"
-								has_dlc = "Waking the Tiger"
-								has_dlc = "Death or Dishonor"
-							}
-						}
-						hidden_effect = {
-							add_autonomy_score = { value = 100 }
-						}
+					hidden_effect = {
+						add_autonomy_score = { value = 100 }
 					}
 					country_event = {
 						id = britishcanada.18
@@ -820,17 +744,8 @@ add_namespace = britishindia
 			add_political_power = 50
 			hidden_effect = {
 				CAN = {
-					if = {
-						limit = {
-							OR = {
-								has_dlc = "Together for Victory"
-								has_dlc = "Waking the Tiger"
-								has_dlc = "Death or Dishonor"
-							}
-						}
-						hidden_effect = {
-							add_autonomy_score = { value = 100 }
-						}
+					hidden_effect = {
+						add_autonomy_score = { value = 100 }
 					}
 					country_event = {
 						id = britishcanada.19
@@ -892,15 +807,8 @@ add_namespace = britishindia
 			add_political_power = -50
 			hidden_effect = {
 				CAN = {
-					if = {
-						limit = { OR = {
-							has_dlc = "Together for Victory"
-							has_dlc = "Waking the Tiger"
-							has_dlc = "Death or Dishonor"
-						} }
-						hidden_effect = {
-							add_autonomy_score = { value = 100 }
-						}
+					hidden_effect = {
+						add_autonomy_score = { value = 100 }
 					}
 					country_event = {
 						id = britishcanada.21
@@ -1157,34 +1065,20 @@ add_namespace = britishindia
 			name = britishcanada.28.a
 			ai_chance = { factor = 90 }
 			CAN = { add_stability = 0.05 }
-			if = {
-				limit = {
-					OR = {
-						has_dlc = "Together for Victory"
-						has_dlc = "Waking the Tiger"
-						has_dlc = "Death or Dishonor"
+			custom_effect_tooltip = canadian_unification_tt
+			hidden_effect = {
+				BCO = { 
+					country_event = {
+						id = britishcanada.10 
+						days = 10
 					}
 				}
-				custom_effect_tooltip = canadian_unification_tt
-				hidden_effect = {
-					BCO = { 
-						country_event = {
-							id = britishcanada.10 
-							days = 10
-						}
-					}
-					set_autonomy = {
-						target = CAN
-						autonomy_state = autonomy_british_dominion
-					}
-					CAN = { 
-						set_cosmetic_tag = CAN_confederation 
-					}
+				set_autonomy = {
+					target = CAN
+					autonomy_state = autonomy_british_dominion
 				}
-			}
-			else = {
-				hidden_effect = {
-					puppet = CAN
+				CAN = { 
+					set_cosmetic_tag = CAN_confederation 
 				}
 			}
 		}
@@ -1817,17 +1711,10 @@ add_namespace = britishindia
 				name = britishcanada.54.a			
 				ai_chance = { factor = 100 }	
 				set_cosmetic_tag = CAN_confederation
-				if = {
-					limit = { OR = {
-						has_dlc = "Together for Victory"
-						has_dlc = "Waking the Tiger"
-						has_dlc = "Death or Dishonor"
-					} }
-					ENG = {
-						set_autonomy = {
-							target = CAN
-							autonomy_state = autonomy_british_dominion
-						}
+				ENG = {
+					set_autonomy = {
+						target = CAN
+						autonomy_state = autonomy_british_dominion
 					}
 				}
 				
@@ -1867,17 +1754,10 @@ add_namespace = britishindia
 					ai_chance = {
 						factor = 100 }	
 				set_cosmetic_tag = CAN_confederation
-				if = {
-					limit = { OR = {
-						has_dlc = "Together for Victory"
-						has_dlc = "Waking the Tiger"
-						has_dlc = "Death or Dishonor"
-					} }
-					ENG = {
-						set_autonomy = {
-							target = CAN
-							autonomy_state = autonomy_dominion
-						}
+				ENG = {
+					set_autonomy = {
+						target = CAN
+						autonomy_state = autonomy_dominion
 					}
 				}
 				
@@ -2099,7 +1979,7 @@ add_namespace = britishindia
 						}
 					}
 					IRE = {
-					exists = NO
+					exists = no
 					}
 					#date > 1866.04.17	
 					}
@@ -2139,7 +2019,7 @@ add_namespace = britishindia
 				IF = {
 					limit = {
 					IRE = {
-					exists = NO
+					exists = no
 						}
 					}
 				CAN = {
@@ -5543,16 +5423,9 @@ add_namespace = britishindia
 			store_current_ideologies = yes
 			ENG={
 				country_event = {id = britishafrica.7 days = 30}
-				if = {
-					limit = { OR = {
-						has_dlc = "Together for Victory"
-						has_dlc = "Waking the Tiger"
-						has_dlc = "Death or Dishonor"
-					} }
-					set_autonomy = {
-						target = ROOT
-						autonomy_state = autonomy_imperial_protectorate
-					}
+				set_autonomy = {
+					target = ROOT
+					autonomy_state = autonomy_imperial_protectorate
 				}
 			}
 			load_prevous_ideologies = yes
@@ -7001,6 +6874,232 @@ add_namespace = britishindia
 		}
 	}
 
+	#ENG - ETH Revolt
+	country_event = {
+		id = britishafrica.57
+		title = britishafrica.57.t
+		desc = britishafrica.57.d
+			
+		fire_only_once = yes
+		is_triggered_only = yes
+		
+		option = { #Declare
+			name = britishafrica.57.a
+			ai_chance = { factor = 100 }
+			declare_war_on = {
+				target = ETH
+				type = puppet_wargoal_focus
+			}
+			activate_mission = ENG_defeat_ethopian_rebellion
+		}
+
+		option = { #Leave them be
+			name = britishafrica.57.c
+			ai_chance = { factor = 0 }
+			add_political_power = -200
+		}
+	}
+
+	#ZUL - SAF Ultimatum
+	country_event = {
+		id = britishafrica.58
+		title = britishafrica.58.t
+		desc = britishafrica.58.d
+			
+		fire_only_once = yes
+		is_triggered_only = yes
+		
+		option = {
+			name = britishafrica.58.a
+			ai_chance = { factor = 100 }
+			add_war_support = 0.2
+			add_political_power = 50
+			SAF = {
+				country_event = britishafrica.59
+			}
+		}
+	}
+
+	#SAF - ZUL Refuse Ultimatum
+	country_event = {
+		id = britishafrica.59
+		title = britishafrica.59.t
+		desc = britishafrica.59.d
+		picture = GFX_report_event_south_africa
+			
+		fire_only_once = yes
+		is_triggered_only = yes
+		
+		option = {
+			name = britishafrica.59.a
+			ai_chance = { factor = 100 }
+			declare_war_on = {
+				target = ZUL
+				type = annex_everything
+			}
+			NAT = {
+				declare_war_on = {
+					target = ZUL
+					type = annex_everything
+				}
+			}
+			hidden_effect = {
+				news_event = {
+					id = britishafrica.60
+					days = 14
+				}
+			}
+		}
+	}
+
+	#Battle of Isandlwana
+	news_event = {
+		id = britishafrica.60
+		title = britishafrica.60.t
+		desc = britishafrica.60.d
+		#picture = GFX_news_event_british_army1
+			
+		fire_only_once = yes
+		is_triggered_only = yes
+
+		trigger = {
+			SAF = {
+				has_war_with = ZUL
+			}
+			ZUL = {
+				surrender_progress < 0.5
+			}
+		}
+		
+		option = {
+			name = britishafrica.60.a
+			trigger = {
+				TAG = SAF
+			}
+			add_war_support = -0.2
+			add_political_power = -100
+			set_country_flag = SAF_isandlwana
+			add_manpower = -609
+			hidden_effect = {
+				news_event = {
+					id = britishafrica.61
+					days = 2
+				}
+			}
+		}
+
+		option = {
+			name = britishafrica.60.b
+			trigger = {
+				TAG = ENG
+			}
+			add_war_support = -0.3
+			add_political_power = -150
+			add_manpower = -779
+		}
+
+		option = {
+			name = britishafrica.60.c
+			trigger = {
+				NOT = {
+					TAG = SAF
+					TAG = ENG
+				}
+			}
+		}
+	}
+
+	#Battle of Rorkes Drift
+	news_event = {
+		id = britishafrica.61
+		title = britishafrica.61.t
+		desc = britishafrica.61.d
+		#picture = GFX_news_event_rorkes_drift
+			
+		fire_only_once = yes
+		is_triggered_only = yes
+		
+		option = {
+			name = britishafrica.60.a
+		}
+	}
+
+	#Drought Begins
+	country_event = {
+		id = britishafrica.62
+		title = britishafrica.62.t
+		desc = britishafrica.62.d
+		picture = GFX_report_event_south_africa
+			
+		fire_only_once = yes
+		is_triggered_only = yes
+		
+		option = {
+			name = britishafrica.62.a
+			ai_chance = { factor = 100 }
+			add_ideas = SAF_idea_drought
+		}
+	}
+
+	#Drought Ends
+	country_event = {
+		id = britishafrica.63
+		title = britishafrica.63.t
+		desc = britishafrica.63.d
+		picture = GFX_report_event_south_africa
+			
+		fire_only_once = yes
+		is_triggered_only = yes
+		
+		option = {
+			name = britishafrica.63.a
+			ai_chance = { factor = 100 }
+			remove_ideas = SAF_idea_drought
+		}
+	}
+
+	#Xhosa Disputes
+	country_event = {
+		id = britishafrica.64
+		title = britishafrica.64.t
+		desc = britishafrica.64.d
+		picture = GFX_report_event_south_africa
+			
+		fire_only_once = yes
+		is_triggered_only = yes
+		
+		option = {
+			name = britishafrica.64.a
+			ai_chance = { factor = 100 }
+			NAT = {
+				transfer_state = 1391
+			}
+			add_political_power = -50
+			hidden_effect = {
+				1391 = {
+					remove_claim_by = RHO
+				}
+			}
+		}
+	}
+
+	#Britain purusues confed
+	country_event = {
+		id = britishafrica.65
+		title = britishafrica.65.t
+		desc = britishafrica.65.d
+		picture = GFX_report_event_british_parliament
+			
+		fire_only_once = yes
+		is_triggered_only = yes
+		
+		option = {
+			name = britishafrica.65.a
+			ai_chance = { factor = 100 }
+			add_ideas = SAF_idea_confed_forced
+		}
+	}
+
 ########################################
 ########################################
 ########## C A R I B B E A N ###########
@@ -7015,7 +7114,9 @@ add_namespace = britishindia
 		is_triggered_only = yes
 		fire_only_once = yes
 		
-		immediate = { ROOT = { set_state_flag = ENG_morant_bay_trial } }
+		immediate = { 
+			689 = { set_state_flag = ENG_morant_bay_trial }
+		}
 		
 		option = {
 			name = britishcaribbean.2.a
@@ -7023,8 +7124,10 @@ add_namespace = britishindia
 				base = 25
 			}
 			hidden_effect = { 
-				689 = { state_event = { id = britishcaribbean.3 days = 1 trigger_for = controller } }
-				ROOT = { set_state_flag = ENG_morant_bay_trial_guilty }
+				689 = { 
+					state_event = { id = britishcaribbean.3 days = 1 trigger_for = controller }
+					set_state_flag = ENG_morant_bay_trial_guilty
+				}
 			}
 		}
 		
@@ -7039,11 +7142,12 @@ add_namespace = britishindia
 				}
 			}
 			hidden_effect = { 
-				689 = { state_event = { id = britishcaribbean.4 days = 1 trigger_for = controller } }
-				ROOT = { set_state_flag = ENG_morant_bay_trial_innocent }
+				689 = { 
+					state_event = { id = britishcaribbean.4 days = 1 trigger_for = controller }
+					set_state_flag = ENG_morant_bay_trial_innocent
+				}
 			}
 		}
-		
 	}
 
 	state_event = {
@@ -7417,15 +7521,8 @@ add_namespace = britishindia
 			hidden_effect = {
 				load_oob = NZL_ENG_reneforcements
 			}
-			if = {
-				limit = { OR = {
-					has_dlc = "Together for Victory"
-					has_dlc = "Waking the Tiger"
-					has_dlc = "Death or Dishonor"
-				} }
-				add_autonomy_score = {
-					value = -50
-				}
+			add_autonomy_score = {
+				value = -50
 			}
 		}
 	}
@@ -7439,15 +7536,8 @@ add_namespace = britishindia
 
 		option = {
 			name = britishoceania.3.a #how dare they
-			if = {
-				limit = { OR = {
-					has_dlc = "Together for Victory"
-					has_dlc = "Waking the Tiger"
-					has_dlc = "Death or Dishonor"
-				} }
-				add_autonomy_score = {
-					value = 75
-				}
+			add_autonomy_score = {
+				value = 75
 			}
 		}
 	}
@@ -7676,15 +7766,8 @@ add_namespace = britishindia
 			hidden_effect = {
 				load_oob = NZL_ENG_reneforcements_cannons
 			}
-			if = {
-				limit = { OR = {
-					has_dlc = "Together for Victory"
-					has_dlc = "Waking the Tiger"
-					has_dlc = "Death or Dishonor"
-				} }
-				add_autonomy_score = {
-					value = 75
-				}
+			add_autonomy_score = {
+				value = 75
 			}
 		}
 	}
@@ -7698,15 +7781,8 @@ add_namespace = britishindia
 
 		option = {
 			name = britishoceania.11.a #how dare they
-			if = {
-				limit = { OR = {
-					has_dlc = "Together for Victory"
-					has_dlc = "Waking the Tiger"
-					has_dlc = "Death or Dishonor"
-				} }
-				add_autonomy_score = {
-					value = -100
-				}
+			add_autonomy_score = {
+				value = -100
 			}
 		}
 	}
@@ -7957,15 +8033,8 @@ add_namespace = britishindia
 			}
 			add_political_power = 25
 			add_stability = -0.025
-			if = {
-				limit = { OR = {
-					has_dlc = "Together for Victory"
-					has_dlc = "Waking the Tiger"
-					has_dlc = "Death or Dishonor"
-				} }
-				add_autonomy_score = {
-					value = 250
-				}
+			add_autonomy_score = {
+				value = 250
 			}
 			FROM = {
 				country_event = {id = britishoceania.25}
@@ -7998,16 +8067,9 @@ add_namespace = britishindia
 			}
 			add_political_power = 50
 			add_stability = -0.05
-			if = {
-				limit = { OR = {
-					has_dlc = "Together for Victory"
-					has_dlc = "Waking the Tiger"
-					has_dlc = "Death or Dishonor"
-				} }
-				add_autonomy_score = {
-					value = 500
-					localization = KIN_deal_autonomy_grant
-				}
+			add_autonomy_score = {
+				value = 500
+				localization = KIN_deal_autonomy_grant
 			}
 			FROM= {
 				country_event = {id = britishoceania.25}
@@ -8928,14 +8990,9 @@ add_namespace = britishindia
 		#is_triggered_only = yes
 		trigger = {
 			has_war = yes
-			OR={#lost control of a major region
-				NOT={controls_state = 1080}
-				NOT={controls_state = 284}
-			}
 			OR={#taranaki is gone
 				TAA={
 					exists= yes
-					controls_state = 1078
 					has_war = yes
 				}
 				has_country_flag = nzl_maori_agatate_in_taranaki
@@ -8943,7 +9000,6 @@ add_namespace = britishindia
 			OR={#waikato is gone
 				KIN={
 					exists= yes
-					controls_state = 1077
 					has_war = yes
 				}
 				has_country_flag = nzl_maori_agatate_in_waikato
@@ -8952,13 +9008,12 @@ add_namespace = britishindia
 			OR={#bay of plenty is gone
 				PAI={
 					exists= yes
-					controls_state = 1079
 					has_war = yes
 				}
 				has_country_flag = nzl_maori_agatate_in_bay_of_plenty
 				has_country_flag = lost_east_cape_war
 			}
-			surrender_progress > 0.33#highish surrender
+			surrender_progress > 0.6#highish surrender
 			tag = NZL
 		}
 		immediate = {
@@ -9113,21 +9168,9 @@ add_namespace = britishindia
 					transfer_state = PREV
 				}
 			}
-			if = {
-				limit = {
-					OR = {
-						has_dlc = "Together for Victory"
-						has_dlc = "Waking the Tiger"
-						has_dlc = "Death or Dishonor"
-					}
-				}
-				set_autonomy = {
-					target = NZA
-					autonomy_state = autonomy_colony
-				}
-			}
-			else = {
-				puppet = NZA
+			set_autonomy = {
+				target = NZA
+				autonomy_state = autonomy_colony
 			}
 			hidden_effect={
 				NZA={
@@ -9882,21 +9925,9 @@ add_namespace = britishindia
 				add_state_core = 527
 			}
 			
-			if = {
-				limit = {
-					OR = {
-						has_dlc = "Together for Victory"
-						has_dlc = "Waking the Tiger"
-						has_dlc = "Death or Dishonor"
-					}
-				}
-				set_autonomy = {
-					target = QNL
-					autonomy_state = autonomy_british_self_gov
-				}
-			}
-			else = {
-				puppet = QNL
+			set_autonomy = {
+				target = QNL
+				autonomy_state = autonomy_british_self_gov
 			}
 			QNL={
 				set_political_party = {
@@ -10307,21 +10338,9 @@ add_namespace = britishindia
 					end_puppet = SGP
 				}
 				ENG = {
-					if = {
-						limit = {
-							OR = {
-								has_dlc = "Together for Victory"
-								has_dlc = "Waking the Tiger"
-								has_dlc = "Death or Dishonor"
-							}
-						}
-						set_autonomy = {
-							target = SGP
-							autonomy_state = autonomy_british_crown_colony
-						}
-					}
-					else = {
-						puppet = SGP
+					set_autonomy = {
+						target = SGP
+						autonomy_state = autonomy_british_crown_colony
 					}
 				}
 				SGP = {
@@ -10418,21 +10437,9 @@ add_namespace = britishindia
 				}
 				SGP = {
 					add_stability = 0.1
-					if = {
-						limit = {
-							OR = {
-								has_dlc = "Together for Victory"
-								has_dlc = "Waking the Tiger"
-								has_dlc = "Death or Dishonor"
-							}
-						}
-						set_autonomy = {
-							target = PRK
-							autonomy_state = autonomy_afr_colony
-						}
-					}
-					else = {
-						puppet = PRK
+					set_autonomy = {
+						target = PRK
+						autonomy_state = autonomy_afr_colony
 					}
 				}
 				country_event = { id = britishmalaya.9 days = 650 }
@@ -10466,21 +10473,9 @@ add_namespace = britishindia
 				}
 				SGP = {
 					add_stability = 0.1
-					if = {
-						limit = {
-							OR = {
-								has_dlc = "Together for Victory"
-								has_dlc = "Waking the Tiger"
-								has_dlc = "Death or Dishonor"
-							}
-						}
-						set_autonomy = {
-							target = SLG
-							autonomy_state = autonomy_afr_colony
-						}
-					}
-					else = {
-						puppet = SLG
+					set_autonomy = {
+						target = SLG
+						autonomy_state = autonomy_afr_colony
 					}
 				}
 			}
@@ -10513,21 +10508,9 @@ add_namespace = britishindia
 				}
 				SGP = {
 					add_stability = 0.1
-					if = {
-						limit = {
-							OR = {
-								has_dlc = "Together for Victory"
-								has_dlc = "Waking the Tiger"
-								has_dlc = "Death or Dishonor"
-							}
-						}
-						set_autonomy = {
-							target = PHG
-							autonomy_state = autonomy_afr_colony
-						}
-					}
-					else = {
-						puppet = PHG
+					set_autonomy = {
+						target = PHG
+						autonomy_state = autonomy_afr_colony
 					}
 				}
 			}
@@ -10572,21 +10555,9 @@ add_namespace = britishindia
 					}
 				}
 				ENG = {
-					if = {
-						limit = {
-							OR = {
-								has_dlc = "Together for Victory"
-								has_dlc = "Waking the Tiger"
-								has_dlc = "Death or Dishonor"
-							}
-						}
-						set_autonomy = {
-							target = SUL
-							autonomy_state = autonomy_afr_colonial_company
-						}
-					}
-					else = {
-						puppet = SUL
+					set_autonomy = {
+						target = SUL
+						autonomy_state = autonomy_afr_colonial_company
 					}
 				}
 				SUL = {
@@ -10633,21 +10604,9 @@ add_namespace = britishindia
 					add_ideas = AFR_british_colony
 				}
 				ENG = {
-					if = {
-						limit = {
-							OR = {
-								has_dlc = "Together for Victory"
-								has_dlc = "Waking the Tiger"
-								has_dlc = "Death or Dishonor"
-							}
-						}
-						set_autonomy = {
-							target = SRW
-							autonomy_state = autonomy_british_crown_colony
-						}
-					}
-					else = {
-						puppet = SRW
+					set_autonomy = {
+						target = SRW
+						autonomy_state = autonomy_british_crown_colony
 					}
 				}
 			}
@@ -10686,21 +10645,9 @@ add_namespace = britishindia
 					add_ideas = AFR_british_protectorate
 				}
 				ENG = {
-					if = {
-						limit = {
-							OR = {
-								has_dlc = "Together for Victory"
-								has_dlc = "Waking the Tiger"
-								has_dlc = "Death or Dishonor"
-							}
-						}
-						set_autonomy = {
-							target = SRW
-							autonomy_state = autonomy_afr_colony
-						}
-					}
-					else = {
-						puppet = SRW
+					set_autonomy = {
+						target = SRW
+						autonomy_state = autonomy_afr_colony
 					}
 				}
 				SRW = {
@@ -10749,21 +10696,9 @@ add_namespace = britishindia
 					add_ideas = AFR_british_protectorate
 				}
 				ENG = {
-					if = {
-						limit = {
-							OR = {
-								has_dlc = "Together for Victory"
-								has_dlc = "Waking the Tiger"
-								has_dlc = "Death or Dishonor"
-							}
-						}
-						set_autonomy = {
-							target = SRW
-							autonomy_state = autonomy_afr_colony
-						}
-					}
-					else = {
-						puppet = SRW
+					set_autonomy = {
+						target = SRW
+						autonomy_state = autonomy_afr_colony
 					}
 				}
 				SRW = {
@@ -10828,21 +10763,9 @@ add_namespace = britishindia
 					add_ideas = AFR_british_protectorate
 				}
 				ENG = {
-					if = {
-						limit = {
-							OR = {
-								has_dlc = "Together for Victory"
-								has_dlc = "Waking the Tiger"
-								has_dlc = "Death or Dishonor"
-							}
-						}
-						set_autonomy = {
-							target = BRU
-							autonomy_state = autonomy_afr_colony
-						}
-					}
-					else = {
-						puppet = BRU
+					set_autonomy = {
+						target = BRU
+						autonomy_state = autonomy_afr_colony
 					}
 				}
 				BRU = {
@@ -10883,21 +10806,9 @@ add_namespace = britishindia
 					add_ideas = AFR_british_protectorate
 				}
 				SGP = {
-					if = {
-						limit = {
-							OR = {
-								has_dlc = "Together for Victory"
-								has_dlc = "Waking the Tiger"
-								has_dlc = "Death or Dishonor"
-							}
-						}
-						set_autonomy = {
-							target = JOH
-							autonomy_state = autonomy_afr_colony
-						}
-					}
-					else = {
-						puppet = JOH
+					set_autonomy = {
+						target = JOH
+						autonomy_state = autonomy_afr_colony
 					}
 				}
 				JOH = {
@@ -11058,21 +10969,9 @@ add_namespace = britishindia
 				}
 				ENG = {
 					end_puppet = SUL
-					if = {
-						limit = {
-							OR = {
-								has_dlc = "Together for Victory"
-								has_dlc = "Waking the Tiger"
-								has_dlc = "Death or Dishonor"
-							}
-						}
-						set_autonomy = {
-							target = SUL
-							autonomy_state = autonomy_afr_colonial_company
-						}
-					}
-					else = {
-						puppet = SUL
+					set_autonomy = {
+						target = SUL
+						autonomy_state = autonomy_afr_colonial_company
 					}
 				}
 				SUL = {
@@ -11275,20 +11174,10 @@ add_namespace = britishindia
 			ai_chance = { factor = 100 }
 			custom_effect_tooltip = eoanb_tt_event_britishindia_2_a
 			hidden_effect = {
-				if = {
-					limit = {	OR = {
-						has_dlc = "Together for Victory"
-						has_dlc = "Waking the Tiger"
-						has_dlc = "Death or Dishonor"
-					} }
-					RAJ = {
-						add_autonomy_score = {
-							value = -100
-						}
+				RAJ = {
+					add_autonomy_score = {
+						value = -100
 					}
-				}
-				else = {
-					puppet = RAJ
 				}
 			}
 		}
@@ -11316,19 +11205,7 @@ add_namespace = britishindia
 			ai_chance = { factor = 3 }
 			declare_war_on = { target = ENG type = independence_wargoal }
 			hidden_effect = {
-				if = {
-					limit = {
-						OR = {
-							has_dlc = "Together for Victory"
-							has_dlc = "Waking the Tiger"
-							has_dlc = "Death or Dishonor"
-						}
-					}
-					ENG = { set_autonomy = { target = RAJ autonomy_state = autonomy_free } }
-					else = {
-						ENG = { end_puppet = RAJ }
-					}
-				}
+				ENG = { set_autonomy = { target = RAJ autonomy_state = autonomy_free } }
 			}
 		}
 
@@ -11346,19 +11223,7 @@ add_namespace = britishindia
 		option = {
 			name = britishindia.4.a
 			ai_chance = { factor = 100 }
-			if = {
-				limit = {
-					OR = {
-						has_dlc = "Together for Victory"
-						has_dlc = "Waking the Tiger"
-						has_dlc = "Death or Dishonor"
-					}
-				}
-				ENG = { set_autonomy = { target = RAJ autonomy_state = autonomy_free } }
-			}
-			else = {
-				ENG = { end_puppet = RAJ }
-			}
+			ENG = { set_autonomy = { target = RAJ autonomy_state = autonomy_free } }
 			add_opinion_modifier = { target = ENG modifier = eoanb_om_RAJ_ENG_friendly_release }
 			reverse_add_opinion_modifier = { target = ENG modifier = eoanb_om_RAJ_ENG_friendly_release }
 		}

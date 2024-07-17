@@ -3196,32 +3196,7 @@ focus_tree = {
 			add_political_power = -100
 			if = {
 				limit = {
-					AND = {
-						OR = {
-							has_dlc = "Together for Victory"
-							has_dlc = "Waking the Tiger"
-							has_dlc = "Death or Dishonor"
-						} 
-						NOT = { country_exists = ORO }
-						ETH = {
-							owns_state = 271
-						}
-					}
-				}
-				release_autonomy = {
-					target = ORO
-					autonomy_state = autonomy_eyalet
-					freedom_level = 0.5
-				}
-			}
-			if = {
-				limit = {
 					AND = { 
-						NOT = { OR = {
-							has_dlc = "Together for Victory"
-							has_dlc = "Waking the Tiger"
-							has_dlc = "Death or Dishonor"
-						} }
 						NOT = { country_exists = ORO }
 						ETH = {
 							owns_state = 271
@@ -3270,32 +3245,7 @@ focus_tree = {
 			add_political_power = -100
 			if = {
 				limit = {
-					AND = {
-						OR = {
-							has_dlc = "Together for Victory"
-							has_dlc = "Waking the Tiger"
-							has_dlc = "Death or Dishonor"
-						}
-						NOT = { country_exists = SID }
-						ETH = {
-							owns_state = 820
-						}
-					}
-				}
-				release_autonomy = {
-					target = SID
-					autonomy_state = autonomy_eyalet
-					freedom_level = 0.5
-				}
-			}
-			if = {
-				limit = {
 					AND = { 
-						NOT = { OR = {
-							has_dlc = "Together for Victory"
-							has_dlc = "Waking the Tiger"
-							has_dlc = "Death or Dishonor"
-						} }
 						NOT = { country_exists = SID }
 						ETH = {
 							owns_state = 820
@@ -3479,8 +3429,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
-			
+			add_political_power = -200
 		}
 	}
 
@@ -3499,7 +3448,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_stability = -0.1
 		}
 	}
 
@@ -3518,7 +3467,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_war_support = -0.1
 		}
 	}
 
@@ -3540,7 +3489,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_timed_idea = {
+				idea = ETH_idea_learn_uk
+				days = 670
+			}
 		}
 	}
 
@@ -3559,7 +3511,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			unlock_decision_tooltip = ETH_decision_new_industry
 		}
 	}
 
@@ -3578,7 +3530,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			unlock_decision_tooltip = ETH_decision_national_infrastructure
 		}
 	}
 
@@ -3597,7 +3549,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_tech_bonus = { bonus = 1 uses = 2 category = farming_tech }
 		}
 	}
 
@@ -3616,7 +3568,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_tech_bonus = { bonus = 0.6 uses = 3 category = mechanical_engineering_tech }
+			unlock_decision_tooltip = ETH_decision_new_machines
 		}
 	}
 
@@ -3635,7 +3588,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_ideas = CAN_idea_Exports_to_Britain
 		}
 	}
 
@@ -3654,7 +3607,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			army_experience = 100
 		}
 	}
 
@@ -3673,7 +3626,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			unlock_decision_tooltip = ETH_decision_modern_weapons
 		}
 	}
 
@@ -3692,7 +3645,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_doctrine_cost_reduction = { cost_reduction = 0.5 uses = 2 category = land_doctrine }
 		}
 	}
 
@@ -3711,7 +3664,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			unlock_decision_tooltip = ETH_decision_build_self_reliance
 		}
 	}
 
@@ -3730,7 +3683,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			unlock_decision_tooltip = ETH_decision_euro_style_army
 		}
 	}
 
@@ -3749,7 +3702,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_doctrine_cost_reduction = { cost_reduction = 0.5 uses = 1 category = humanities_tech }
 		}
 	}
 
@@ -3768,7 +3721,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_stability = 0.15
 		}
 	}
 
@@ -3787,7 +3740,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_political_power = 150
 		}
 	}
 
@@ -3806,7 +3759,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_doctrine_cost_reduction = { cost_reduction = 0.5 uses = 1 category = humanities_tech }
 		}
 	}
 
@@ -3825,7 +3778,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_political_power = 100
+			add_stability = 0.05
 		}
 	}
 
@@ -3850,7 +3804,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_war_support = 0.1
 		}
 	}
 
@@ -3875,7 +3829,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			create_wargoal = {
+			declare_war_on = {
 				type = annex_everything
 				target = MED
 			}
@@ -3903,7 +3857,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			create_wargoal = {
+			declare_war_on = {
 				type = annex_everything
 				target = AWS
 			}
@@ -3931,7 +3885,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			create_wargoal = {
+			declare_war_on = {
 				type = annex_everything
 				target = HRR
 			}
@@ -3959,7 +3913,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			create_wargoal = {
+			declare_war_on = {
 				type = annex_everything
 				target = SID
 			}
@@ -3987,7 +3941,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			create_wargoal = {
+			declare_war_on = {
 				type = annex_everything
 				target = ORO
 			}
@@ -4009,19 +3963,19 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			create_wargoal = {
+			declare_war_on = {
 				type = annex_everything
 				target = WSG
 			}
-			create_wargoal = {
+			declare_war_on = {
 				type = annex_everything
 				target = OGD
 			}
-			create_wargoal = {
+			declare_war_on = {
 				type = annex_everything
 				target = GLD
 			}
-			create_wargoal = {
+			declare_war_on = {
 				type = annex_everything
 				target = MAJ
 			}
@@ -4037,6 +3991,12 @@ focus_tree = {
 		relative_position_id = ETH_UK_focus_british_occupation
 		x = -1
 		y = 11
+
+		available = {
+			NOT ={
+				has_idea = ETH_idea_Alemayehu
+			}
+		}
 
 		prerequisite = {
 			focus = ETH_UK_focus_secure_somalia
@@ -4059,6 +4019,13 @@ focus_tree = {
 					freedom_level = 0.3
 				}
 			}
+			set_politics = {
+				ruling_party = autocracy
+			}
+			set_political_party = {
+				ideology = autocracy
+				popularity = 50
+			}
 		}
 	}
 
@@ -4072,6 +4039,12 @@ focus_tree = {
 		x = 1
 		y = 11
 
+		available = {
+			NOT ={
+				has_idea = ETH_idea_Alemayehu
+			}
+		}
+
 		prerequisite = {
 			focus = ETH_UK_focus_secure_somalia
 		}
@@ -4081,7 +4054,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			remove_ideas = AFR_british_protectorate
+			promote_character = ETH_Yohannes_IV
 		}
 	}
 }

@@ -147,6 +147,15 @@ GRE_decision_category_political_situation = {
 	}
 }
 
+GRE_decision_category_land_reform = {
+	icon = power_struggle
+	allowed = { tag = GRE }
+	visible_when_empty = yes
+	visible = {
+		
+	}
+}
+
 ### Montenegro ###
 
 MNT_decision_category_clans = {
@@ -597,6 +606,15 @@ RUS_BOP_category = {
 	}
 }
 
+#RUS_Poland_Situation_decision_category = {
+#	icon = generic
+#	allowed = { tag = RUS }
+#	priority = 10
+#	visible = {
+#		always = yes
+#	}
+#}
+
 
 ### Alyaska ###
 
@@ -728,4 +746,10 @@ SWE_decision_category_politics = {
 SWE_decision_category_military = {
 	icon = generic_monarchism
 	allowed = { tag = SWE }
+}
+
+### Ottoman ###
+OTO_decision_category_vilayet {
+	icon = generic_crisis
+	allowed = {tag = OTO}
 }
