@@ -838,6 +838,22 @@ country_event = {
 		}
 	}
 }
+	
+#Content End Event
+country_event = {
+	id = austria.50
+	title = austria.50.t
+	desc = austria.50.d
+		
+	fire_only_once = yes
+	is_triggered_only = yes
+
+
+	option = {
+		name = austria.50.a
+		
+	}
+}
 
 ##### RAILWAY EVENTS (austria.51-100) #####
 
@@ -6377,14 +6393,14 @@ country_event = {
 				create_country_leader = {
 					name = "Lajos Kossuth"
 					desc = "POLITICS_GENERIC_EOANB_DESC"
-					picture = "gfx/leaders/HUN/Portrait_HUN_Lajos_Kossuth.dds"
+					picture = "gfx/leaders/HUN/Portrait_HUN_Lajos_Kossuth.png"
 					expire = 2000.09.10
 					ideology = ideology_sub_social_liberal
 				}
 				create_country_leader = {
 					name = "Ferenc Deák"
 					desc = "POLITICS_GENERIC_EOANB_DESC"
-					picture = "gfx/leaders/HUN/Portrait_HUN_Ferenc_Deak.dds"
+					picture = "gfx/leaders/HUN/Portrait_HUN_Ferenc_Deak.png"
 					expire = 2000.09.10
 					ideology = conserv_liberal
 				}

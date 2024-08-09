@@ -143,11 +143,5 @@ set_popularities = {
 
   # POLITICAL LEADERS
 
-	create_country_leader = {
-		name = "Mohammed ibn Abdallah"
-		desc = "POLITICS_TEMP_DESC"
-		picture = "gfx/leaders/Arabia/generic_leader_sultan_12.png"
-		expire = 1891.12.31
-		ideology = islamist
-	}
+	recruit_character = ASS_character_mohammed_ibn_abdallah #Leader + General
 }

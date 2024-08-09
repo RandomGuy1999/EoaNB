@@ -93,18 +93,5 @@ set_popularities = {
 
 	# POLITICAL LEADERS
 
-	create_country_leader = {
-		name = "Al-Hajj Ahmad ag al-hajj Elbekri"
-		desc = "POLITICS_TEMP_DESC"
-		picture = "gfx/leaders/Arabia/Tuareg_Generic_3.png"
-		expire = 1891.12.31
-		ideology = despotism
-}
-	create_country_leader = {
-		name = "Al-Hajj Ahmad ag al-hajj Elbekri"
-		desc = "POLITICS_TEMP_DESC"
-		picture = "gfx/leaders/Arabia/Tuareg_Generic_3.png"
-		expire = 1891.12.31
-		ideology = islamist
-}
+	recruit_character = KAG_character_ahmad_elbekri #Leader + General
 }

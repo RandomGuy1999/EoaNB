@@ -108,7 +108,7 @@
 	set_technology = {
 		infantry_weapons = 1 
 		traditional_mixed_arms = 1
-		tech_infantry_percussion_cap = 1
+		 
 		tribal_carrier_birds = 1 
 		tribal_electrical_theory = 1
 		tribal_steel_tools = 1
@@ -185,10 +185,17 @@
 	# POLITICAL LEADERS
 	recruit_character = OTO_abdulmecid_I
 	recruit_character = OTO_Abdulaziz
-
+	recruit_character = OTO_Murad_V
+	recruit_character = OTO_character_iskender_pasha
 	recruit_character = OTO_character_omar_pasha
-
 	recruit_character = OTO_character_osman_pasha
+	recruit_character = OTO_character_damad_mehmed_pasha
+	recruit_character = OTO_character_muhaver_pasha
+	recruit_character = OTO_character_ahmed_vesim_pasha 
+	recruit_character = OTO_character_kibrisli_mehmed_emin
+	recruit_character = OTO_character_bozcaadali_hasan_pasha
+	recruit_character = OTO_character_woods_pasha
+	recruit_character = OTO_character_huseyin_husni_pasha
 
 	# create_corps_commander = {
 	# 	name = "Omar Pasha"
@@ -239,7 +246,6 @@
 	# 	logistics_skill = 1
 	# }
 
-	recruit_character = OTO_character_iskender_pasha
 
 	# create_corps_commander = {
 	# 	name = "İskender Pasha"
@@ -253,7 +259,6 @@
 	# 	logistics_skill = 1
 	# }
 
-	recruit_character = OTO_character_abdulkerim_nadir_pasha
 
 	# create_corps_commander = {
 	# 	name = "Abdülkerim Nadir Pasha"
@@ -570,7 +575,7 @@
 	set_technology = {
 		infantry_weapons = 1 
 		traditional_mixed_arms = 1
-		tech_infantry_percussion_cap = 1
+		 
 		tribal_carrier_birds = 1 
 		tribal_electrical_theory = 1
 		tribal_steel_tools = 1

@@ -357,12 +357,6 @@ FRA_SE_portrait_9_desc_text: "Jean-Baptiste Philibert\n Neutral Bonapartist"
  FRA_invest_ironclad_research_desc: ""
  FRA_steam_powered_ships_production: "Steam-Powered Ships Production"
  FRA_steam_powered_ships_production_desc: "While we were the first to build steam battleships in 1850, the other great nations of the world have begun to copy us. New designs are needed to retain our technological advantage."
- FRA_expand_colonial_infantry: "Expand our Colonial Infantry"
- FRA_expand_colonial_infantry_desc: ""
- FRA_reform_foreign_legion: "Reform our Foreign Legion"
- FRA_reform_foreign_legion_desc: ""
- FRA_colonial_regiments: "Oversea Colonial Regiments"
- FRA_colonial_regiments_desc: ""
  FRA_defy_british_navy: "Defy the British Navy"
  FRA_defy_british_navy_desc: ""
 
@@ -371,21 +365,21 @@ FRA_SE_portrait_9_desc_text: "Jean-Baptiste Philibert\n Neutral Bonapartist"
  FRA_french_colonial_empire_desc: "Justin Napoléon Samuel Prosper de Chasseloup-Laubat, 4th Marquis of Chasseloup-Laubat, is a highly influential deputy within France. The respect for his name comes not only from his family history but also from his long, and succesful, political career. Chasseloup-Labat has been an enthusiastic proponent of French colonial imperialism and longs to see France create her own empire."
  # Algeria and Middle East
  FRA_the_kabylia_campaign: "Stabilize the Algerian conquests"
- FRA_stabilize_algeria_desc: ""
+ FRA_the_kabylia_campaign_desc: "We have to continue military campaigns in Algeria to suppress resistance, while administrative reforms establish our governance there. Infrastructure projects, like railways and roads, improve communication and trade. European settlers will arrive, transforming demographics and agriculture. The French legal systems will replace local ones, ensuring uniformity. As Algeria has been a colony of us for several centuries now, this could mark a pivotal shift towards integrating Algeria into our colonial empire, demonstrating our commitment to civilizing mission and strategic dominance in North Africa."
  FRA_the_regime_du_sabre: "Régime du Sabre"
- FRA_the_regime_du_sabre_desc: "Régime du Sabre refers to remote indigenous communes within Algeria under direct military rule that have not been adequately pacified. Two other types of administration exist within Algeria; the full exercise communes where largely European communities are given self-governance and mixed communes, those which contain a large muslim population, which have a mix of elected and appointed officials joined by the representatives of the grands chefs or "Great Chieftians." The term Régime du Sabre has been used by critics of the colonial government as a whole."
+ FRA_the_regime_du_sabre_desc: "As we look to the future of our governance in Algeria, we propose the establishment of the Régime du Sabre, or Government by the Sword. This approach involves implementing a strict military rule to ensure stability and maintain French authority in the colony. Under this regime, our military leaders will take charge of both administration and security, allowing us to swiftly and effectively pacify the region and suppress any resistance. While some may view this method as harsh, it is necessary to bring order to Algeria and lay the groundwork for progress. Through the Régime du Sabre, we will modernize infrastructure, enhance public services, and integrate Algeria more closely with our nation. We aim to demonstrate our commitment to the civilizing mission, fostering development and prosperity in the territory. By adopting the Régime du Sabre, we ensure a disciplined, authoritative governance that will secure Algeria's future as a stable and integral part of the French Empire. This strong, decisive leadership is essential for addressing the challenges we face and achieving lasting peace and progress in the region."
  FRA_new_colonial_ministries: "Changes in the Ministry"
- FRA_new_colonial_ministries_desc: ""
+ FRA_new_colonial_ministries_desc: "The establishment of the Ministry of Algeria and the Colonies marks a significant change in Algerian governance, since we occupied the region. Prince Napoleon has been appointed as Minister, replacing the military governors. This new ministry aims to centralize and streamline the administration of our colonial territories. By having a dedicated ministerial oversight, we strive for more cohesive and efficient governance in Algeria. Prince Napoleon's leadership ensures that our policies and efforts align with our imperial goals. The Ministry of Algeria and the Colonies will enable better coordination of development projects, enhancement of public services, and implementation of reforms that stimulate economic growth and social stability. This transition reflects our commitment to a modern and progressive approach in managing our colonies. With Prince Napoleon's leadership, we anticipate strengthened ties between Algeria and France, paving the way for a more prosperous and stable future for the region. This strategic move underscores our dedication to effective and enlightened governance, ensuring that Algeria remains a vital and flourishing part of the French Empire."
  FRA_ALG_Development_of_Algeria: "Development of Algeria"
- FRA_ALG_Development_of_Algeria_desc: ""
+ FRA_ALG_Development_of_Algeria_desc: "The industrialization and economic improvement of Algeria are crucial goals for our administration. By investing in modern factories and industrial facilities, we aim to transform Algeria into a thriving economic hub. Expanding key industries will boost local production and create jobs, fostering economic diversification. To support this growth, we are introducing education and vocational training programs to equip the local workforce with essential skills. These efforts reflect our commitment to fostering economic growth and stability in Algeria. By modernizing the economy, we enhance the living standards of the local population and strengthen Algeria’s role within the French Empire. This comprehensive approach to industrialization and economic development will ensure that Algeria becomes a prosperous and important part of our colonial holdings, contributing significantly to the overall success and stability of the empire."
  FRA_ALG_The_Agricultural_Projects: "The Agricultural Projects"
- FRA_ALG_The_Agricultural_Projects_desc: ""
+ FRA_ALG_The_Agricultural_Projects_desc: "The advancement of agricultural projects in Algeria is a primary objective for our administration. By introducing modern farming techniques and investing in agricultural infrastructure, we aim to revolutionize Algeria’s agricultural sector. Expanding the cultivation of cash crops such as cotton, wheat, and olives will increase local production and export potential, driving economic growth. We are implementing irrigation systems and providing farmers with access to high-quality seeds and equipment to improve yields. Additionally, agricultural education programs are being established to train farmers in innovative practices and crop management. These initiatives demonstrate our commitment to enhancing agricultural productivity and stability in Algeria. By modernizing agriculture, we improve the livelihoods of rural communities and solidify Algeria’s economic contribution to the French Empire. This strategic approach to agricultural development will ensure that Algeria becomes a productive and valuable part of our colonial holdings, significantly boosting the overall prosperity and stability of the empire."
  FRA_ALG_administration_of_the_colony: "Administration of the Colony"
- FRA_ALG_administration_of_the_colony_desc: "Native Algerians are deemed French, so the rules and laws of France apply to them as well. We need to encourage the Algerians to apply for French citizenship, assimilating further their people into France."
+ FRA_ALG_administration_of_the_colony_desc: "We deliberate on the future of Algerian administration. One proposed plan advocates centralization, aiming to unify governance and improve coordination across the colony. Another favors decentralization, granting autonomy to address local needs and promote community participation in decision-making. These discussions are pivotal, defining our approach to governance and shaping our interactions with Algerian populations. Centralization promises uniformity and stronger control over policy implementation, ensuring efficient administration and strategic alignment with imperial objectives. Conversely, decentralization offers flexibility and responsiveness to diverse local conditions, fostering local governance and enhancing community engagement. The outcome of these deliberations will significantly impact our colonial policies, influencing our ability to maintain stability and advance our interests in North Africa. This critical juncture reflects our commitment to evolving and adapting our administrative strategies to effectively govern Algeria while navigating complex socio-political landscapes."
  FRA_ALG_assimilation_colonial_model_algeria: "Model of Assimilation"
- FRA_ALG_assimilation_colonial_model_algeria_desc: "Our Algerian colony is close to our shores, and therefore it is easier to influence their culture and language. The end goal in Algeria is assimilation, slowly transforming the natives into french citizens, a policy that has seen resistance among the Algerians, but is seen in Europe as a very liberal decision."
+ FRA_ALG_assimilation_colonial_model_algeria_desc: "We face crucial decisions regarding the administration of Algeria. Some advocate for assimilating Algeria and its people into French institutions, viewing it as an important part of our nation, as declared by us during our brief rule. Others argue for maintaining Algeria's autonomy, favoring a more independent colonial status that respects local governance and traditions. Another viewpoint proposes a structure akin to a French viceroyalty, balancing local autonomy with centralized oversight. These discussions highlight diverse visions for Algeria's future within our empire. The outcome will shape our colonial policies, influencing governance strategies and relationships with Algerian communities. Our commitment is to navigate these considerations while advancing imperial interests and ensuring stability in North Africa."
  FRA_ALG_The_Future_of_Algeria: "The Future of Algeria"
- FRA_ALG_The_Future_of_Algeria_desc: ""
+ FRA_ALG_The_Future_of_Algeria_desc: "We face a crucial decision regarding the governance of Algeria. One option proposes establishing a viceroyalty-style administration, granting the colony significant autonomy. This approach aims to balance local governance with centralized oversight, allowing Algeria to manage its affairs aligned with our policies. Alternatively, another proposal advocates creating a dedicated ministry to govern Algeria. This would streamline administration, centralize authority, and ensure uniformity in policy implementation across the colony. By establishing clear lines of command and coordination, this option seeks to enhance efficiency in managing Algerian affairs within the French Empire. These deliberations underscore our commitment to adapting our colonial governance to serve imperial interests while ensuring stability and increasing development in Algeria. The chosen path will shape our approach to governance and define our relationship with Algerian territories and populations"
 
 
  FRA_intervention_lebanon: "Intervention in Lebanon"
@@ -395,19 +389,25 @@ FRA_SE_portrait_9_desc_text: "Jean-Baptiste Philibert\n Neutral Bonapartist"
 
  # Africa
  FRA_french_senegal_developments: "Faidherbe's Developments of French Senegal"
- FRA_french_senegal_developments_desc: ""
+ FRA_french_senegal_developments_desc: "In order to secure our governance over Senegal, Faidherbe worked out a development plan. By establishing infrastructure and promoting agriculture, the plan aims to exploit Senegal's resources, particularly peanuts, for economic gain. The development also facilitates military and administrative control, ensuring stability and security in the region. Additionally, we can spread our culture and influence more easily, reinforcing our global standing and securing our status as a colonial power."
  FRA_forts_along_senegal_river: "Build Forts along the Senegal River"
- FRA_forts_along_senegal_river_desc: ""
+ FRA_forts_along_senegal_river_desc: "We plan to construct a series of forts along the Senegal River to solidify our control and protect our colonial interests. These forts could serve as military outposts to defend against local resistance and rival other colonial powers. Key locations, such as Saint-Louis and Podor, will become strategic points for trade and military operations. The fortifications will facilitate our expansion into the interior regions, ensuring safe passage for our traders and missionaries. This network of forts will be integral to our strategy of establishing a secure and profitable colony in West Africa."
  FRA_develop_port_dakar: "Develop the Port of Dakar"
- FRA_develop_port_dakar_desc: ""
+ FRA_develop_port_dakar_desc: "We decided to expand the port of Dakar which aims to strengthen our economic and military presence in West Africa. In order to have a big harbor for our African colonies, we have to transform the small harbor into a bustling port. Once finished, ships will arrive regularly, laden with goods, passengers, soldiers and weapons, while new infrastructure springs up along the coastline. We see this expansion as vital for controlling trade routes and accessing the rich resources of the interior. Local markets will thrive, and the city will grow rapidly. The project not only demonstrates French engineering prowess but also solidifies Dakar’s position as a key hub in our colonial network, reflecting our ambitions and influence in the region"
  FRA_infrastructure_developments: "Infrastructure Developments in the Interior"
- FRA_infrastructure_developments_desc: ""
+ FRA_infrastructure_developments_desc: "After expanding the port of Dakar, we focus on developing infrastructure in the interior of West Africa. We build railways and roads, connecting Dakar to key regions inland. Our engineers and workers are ready to tirelessly lay tracks and construct bridges, making the movement of goods and people more efficient. These new transportation networks will allow us to extract and export even more resources, such as minerals and agricultural products, with ease. Towns and cities along these routes flourish, benefiting from increased trade and communication. Our infrastructure development showcases our commitment to integrating and modernizing our colonies. It also strengthens our control over the region, promoting economic growth and asserting France’s dominance in West Africa."
  FRA_railways_and_telegraphs: "Install Railways and Telegraph Lines"
- FRA_railways_and_telegraphs_desc: ""
+ FRA_railways_and_telegraphs_desc: "To further increase our governance over Senegal, we can install railway and telegraph lines. These advancements will improve transportation and communication, fostering economic growth by facilitating the movement of goods, particularly peanuts, and connecting key areas like Dakar and Saint-Louis. The telegraph lines will ensure efficient administrative control and coordination across our territories, while railways stimulate the local economy and shorten travel times massively. By integrating these modern technologies, we will strengthen our colonial presence, promote trade, and ensure the efficient management of Senegal, making it a cornerstone of our West African empire."
  FRA_french_colonial_company_of_gabon: "Found the French Gabonese Establishment"
  FRA_french_colonial_company_of_gabon_desc: ""
  FRA_colonial_madagascar_consulate: "Madagascar Consulate"
  FRA_colonial_madagascar_consulate_desc: ""
+ FRA_expand_colonial_infantry: "Expand our Colonial Infantry"
+ FRA_expand_colonial_infantry_desc: "Driven by the ambitions of our empire and economic interests, we decided to expand our colonial infantry in Senegal. French troops, integral to colonial governance, establish control across Africa. Their presence secures trade routes, quells local resistance, and spreads French culture and influence. The formation of the "tirailleurs" regiments, composed of native soldiers led by French officers, exemplifies this strategy.The integration of diverse colonial subjects into the military fosters a sense of loyalty to our nation while solidifying our dominance."
+ FRA_reform_foreign_legion: "Reform our Foreign Legion"
+ FRA_reform_foreign_legion_desc: "The French Foreign Legion has to undergo significant reform, enhancing its effectiveness and prestige, to become a modern force again.We recognize the need for a disciplined, elite force to secure our growing empire. Louis Falherbe supports getting our colonial troops proper pay and housing too. But the reforms also focus on training, structure, and recruitment, attracting adventurers and ex-soldiers from across Europe. The Legion will adopt stricter regulations and modernize its tactics, making it a formidable force in colonial campaigns again. These changes bolster its reputation as a symbol of bravery and resilience. The reformed Legion will become pivotal in protecting our interests abroad, exemplifying our nation's military prowess and commitment to our imperial ambitions."
+ FRA_colonial_regiments: "Oversea Colonial Regiments"
+ FRA_colonial_regiments_desc: "Our colonial regiments play a crucial role in expanding and maintaining the empire. These troops, stationed across Africa and Asia, exemplify French military strength and adaptability. The regiments, including the famed "tirailleurs" and "zouaves," consist of both French soldiers and locally recruited forces, showcasing a blend of cultures and skills. They secure territories, protect trade routes, and enforce colonial rule, reinforcing our global influence. Their presence symbolizes French power and commitment to civilization missions, contributing to economic growth and strategic dominance in the ever-evolving imperial landscape." 
  # Asia
  FRA_french_indochina: "Colonize Indochina"
  FRA_french_indochina_desc: "The Vietnamese Emperor has approved the execution of two Spanish Catholic missionaries. It was not the first incident of this type but this time France has an army in China to protect our interests during the Second Opium War. It is an occasion for French and Spanish armies to do a punitive expedition."
@@ -736,7 +736,6 @@ FRA_SE_portrait_9_desc_text: "Jean-Baptiste Philibert\n Neutral Bonapartist"
  FRA_idea_profits_gold_rush: "Profits of the Gold Rush"
  FRA_idea_paris_revival: "The Paris Revival"
  FRA_idea_new_banks: "Opening of New Banks"
- FRA_idea_sovereignty_monaco_recognized: "Sovereignty of Monaco Recognized"
  FRA_idea_defensive_tactics: "Defensive Tactics"
  FRA_idea_niel_plan: "Niel Plan"
  FRA_idea_loi_duruy: "Duruy Law"
@@ -862,28 +861,6 @@ FRA_SE_portrait_9_desc_text: "Jean-Baptiste Philibert\n Neutral Bonapartist"
  nap_france.3701.t: "Results of the 1857 Legislative Elections"
  nap_france.3701.d: "The results are in, Charles de Morny won the election with a large majority. \n\nHowever, it would seem that the opposition, albeit insignificant, is growing in the major cities.\n\nHere are the results :\nCharles de Morny - Official candidate :                  §O97,53 %§!\nMichel Goudchaux - Candidate of the opposition : §t02,47 %§!"
  nap_france.3701.b: "Congratulation to Monsieur de Morny"
-
-  # Diplomatic Focuses Flavor Text
-
- new_nap_france_flavor.1.t: "Napoleon III and Victor Emmanuel II inaugurate a railway tunnel in Savoy"
- new_nap_france_flavor.1.d: "\n\nNapoleon, a former Carbonaro, always remained preoccupied with the question of Italian unity. On the other side of the Alps, Carvour, President of the Sardinian Council of Ministers, has tried to maintain good diplomatic relations with the Empire since the Sardinian participation in the Crimean War of 1853. It is clear that this invitation from Victor Emanuel II to the Emperor Napoleon illustrates this rapprochement, which could perhaps lead to a major change, one day, in Italy.\n\nBut today, there was no question of major upheaval in the history of Sardinia-Piedmont, but simply to lay the first stone of a railway bridge between the two nations, proof of the dynamism and modernity of our brilliant Empire."
- new_nap_france_flavor.1.a: "A united Italy ? This is pure fantasy."
-
- new_nap_france_flavor.2.t: "Queen Victoria received by Emperor Napoleon at Cherbourg"
- new_nap_france_flavor.2.d: "\n\nQueen Victoria and her husband were received for an official visit this week to the Cherbourg arsenal and its new extension, as well as the launch of the Napoleon-class 90-gun propeller vessel 'La Ville de Nantes'.\n\nThe diplomatic relations between the two nations, which are improving rapidly since Franco-British cooperation during the Crimean War, make us forget the centuries of rivalry between the French and the English.\n\nHowever, the visit did not go as planned . The Cherbourg base, which points in the direction of England, was perceived as a provocation by our counterparts across the Channel. The royal couple would even have left without attending the inauguration of the new French warship."
- new_nap_france_flavor.2.a: "Soon our fleet will be the best in the world!"
-
- new_nap_france_flavor.3.t: "test"
- new_nap_france_flavor.3.d: ""
- new_nap_france_flavor.3.a: ""
-
-  #Future of the Empire Block Localisation
-
- new_nap_france_flavor.4.t: "The Question of the Succession "
- new_nap_france_flavor.4.d: "The attack on the emperor brought to light the administrative weaknesses of the empire, especially with regard to his succession. If the legitimacy of the young prince Napoleon is not questioned by anyone, the question of the regency is however more complicated. To avoid an internal power struggle in the event of the Emperor's death, we must find an official solution to this issue."
- new_nap_france_flavor.4.a: "Empress Eugenie will be our regent."
- new_nap_france_flavor.4.b: "The Prince Jérome will be our regent"
- new_nap_france_flavor.4.c: "Let the senate organize the Regency Council"
 
   # News Text
 
@@ -1024,17 +1001,6 @@ FRA_SE_portrait_9_desc_text: "Jean-Baptiste Philibert\n Neutral Bonapartist"
  nap_france_flavor.35.a: "We hope that it won't influence him while commanding our forces"
 
   # Event Text
-
- nap_france.1.t: "The Future of our Empire"
- nap_france.1.d: "NEED UPDATE"
- nap_france.1.a: "NEED UPDATE"
- nap_france.1.b: "NEED UPDATE"
-
- nap_france.2.t: "Canton Cutting to Ensure the Security of the State"
- nap_france.2.d: "After the attack on the Emperor, ensuring the nation's security is now a priority. The metropolis will be divided into military regions and each will be led by a marshal whose mission will be to search for and arrest any anarchists or opponents of the regime."
- nap_france.2.a: "This plan seems flawless."
- nap_france.2.b: "Is this really needed?"
-
  nap_france.3.t: "The Expansion of the LGOC"
  nap_france.3.d: "The London General Omnibus Company is a franco-british company that provides transportation around the great city of London. Those iconic red chariots are becoming more and more popular, and the city is in need for more of these buses. The french has proposed an expansion of this company, what should we respond ?"
  nap_france.3.a: "Why, of course !"
@@ -1043,40 +1009,6 @@ FRA_SE_portrait_9_desc_text: "Jean-Baptiste Philibert\n Neutral Bonapartist"
  nap_france.4.t: "The Orsini Letter"
  nap_france.4.d: "A few days after the infamous Orsini affair that shook our country, the perpetrator Felice Orsini himself sent a letter to our Emperor, asking for his help in the reunification of Italy under one flag. People are suspicious of the authenticity of this letter though, as Napoleon III has wanted to intervene in Italy for a while now."
  nap_france.4.a: "There is nothing fishy about this letter !"
-
- nap_france.5.t: "The French Empire are supporting republican revolutionaries"
- nap_france.5.d: "Our spies scattered around the southern italian countryside seem to have caught some french diplomats meeting with known Carbonari revolutionaries. While the Carbonaris also believe in the ideal of a united Italy, they are not however for a sardinian hegemony, which might come as threathening for us, as we might need to fight them at some point of the Resorgimento."
- nap_france.5.a: "This is a serious offense !"
-
- nap_france.6.t: "The Carbonari leadership is ready to act"
- nap_france.6.d: "After days of planning and logistics, the Carbonari leaders have now notified us that they are ready to launch the revolt. They managed to rally under them the southern people, the people that are the most discontented with the Resorgimento, and they have pledged loyalty to their new leader."
- nap_france.6.a: "They are waiting for our signal"
-
- nap_france.7.t: "The Carbonari Revolt"
- nap_france.7.d: "In the southern tip of Italy, Carbonari revolutionaries have managed to seize territory, in what they call an anti-Sardinian counter-Resorgimento. Supported by the French, they officialy declared war on them, quickly followed by a reaction from the Kingdom of the Two-Sicilies, holder of the original land they claims."
- nap_france.7.a: "Italy is broken again"
-
- nap_france.8.t: "[FRA.GetLeader] invites our minister-president"
- nap_france.8.d: "The emperor of France, [FRA.GetLeader], invites us to a meeting in their nation, to discuss the matter of Europe following the Seven Weeks War. They say that we are at the same level as they are now, and that we are now at the center of European politics. Our imput seem very important for them, and while we have nothing to gain from the French, we also have nothing to lose having closer diplomatic relations with them."
- nap_france.8.a: "Accept the invitation"
- nap_france.8.b: "Decline the invitation"
-
- nap_france.9.t: "Prussia has accepted our invitation"
- nap_france.9.d: "The minister-president of Prussia, [PRS.GetLeader], has accepted out invitation to a meeting. The best place for it would be the home of the empress, in Biarritz, where the beauty of the land comes with the equal distance to both Berlin and Paris, being a perfect neutral ground to discuss important political matters."
- nap_france.9.a: "A Franco-Prussian friendship is on the way !"
-
- nap_france.10.t: "The Biarritz Meeting"
- nap_france.10.d: "The Empress Eugénie likes Biarritz and has built a palace on the beach to take holidays with her husband. Some members of the European royalty have also come to Biarritz like Queen Victoria. This year, the invited is Bismarck to talk with the Emperor about Prussian ambitions. Napoleon III thinks Prussia and Austria will go to war and weaken eachother. It could be an occasion for Italy to get Venetia and Napoleon III to become the mediator who once again redraws Europe, but without a fight. If it comes down to choosing between the 2 German powers, Prussia is a better choice because of the inefficient Austrian alliance during the time of Napoleon I. Bismarck wants to give Venetia to Italy and some territories to France in return for no alliance with Austria."
- nap_france.10.a: "Merveilleux !"
-
- nap_france.11.t: "The Biarritz Meeting"
- nap_france.11.d: "The Empress Eugénie likes Biarritz and has built a palace on the beach to take holidays with her husband. Some members of the European royalty have also come to Biarritz like Queen Victoria. This year, the invited is Bismarck to talk with the Emperor about Prussian ambitions. Even if France agrees on the resolution on the Denmark conflict with Austria, it stays a threat to go further in a German union under Prussia. Austria will be totally isolated if we ensure France will not help it and if Italy is with us. Napoleon III said it is possible if Venetia is given to Italian. But what he wants for him? Luxembourg? Belgium? Mayence? Vague promises of something should have convinced him."
- nap_france.11.a: "Wunderbar!"
-#note to self: try to decipher this and make it actually make sense -Esti
-
- nap_france.12.t: "The Aftermath of the Orsini Tragedy"
- nap_france.12.d: "After the tragedy that was the Orisini Attack, France is slowly but steadly rebuilding itself, as the political spheres are now stabilizing and as [FRA.GetLeader] has now secured power over the French Empire. Even if this situation is temporary until Napoleon III's son comes of age, there still is work to do to secure the future of the throne, as both republican and socialists gain more and more ground mocking the "still smoking throne of France"."
- nap_france.12.a: "France is rebuilding itself, slowly"
 
  nap_france.13.t: "The Savoy Rebellion"
  nap_france.13.d: "Savoy was promised to us after the treaty of Turin, and while Italy agreed to it, the Savoyards didn't. They proposed that they hold a referendum, that we obviously denied. After all, they are now officialy French, whether they like it or not. Well it turns out that they didn't, and have now declared their independence. The transfer of the land came with the condition of neutrality of the territory in european diplomacy, this allowed them to gain the support of the neighboring Switzerland and Italy that backs the treaty, saying that France has no right to impose rule over neutral land. But it's now too late, and independence, followed by war, has been declared."
@@ -1136,135 +1068,6 @@ FRA_SE_portrait_9_desc_text: "Jean-Baptiste Philibert\n Neutral Bonapartist"
  nap_france.105.a: "That may be problematic"
  nap_france.105.b: "Forbid them to come back"
 
- nap_france.106.t: "Protests in Paris"
- nap_france.106.d: "The debacle around the forced exile of the French socialist ambassador to the Internationale has come to a pinnacle, as socialist organizations around the capital move to the streets. In this city rebuilt by the Empire, people are shouting 'Tyrannie' and calling [FRA.GetLeader] a 'shameful Emperor'. This protest might escalate quickly, as more and more people join the protest, and action is demanded now!"
- nap_france.106.a: "Give them the right to come back"
- nap_france.106.b: "Crackdown on all socialists activities!"
-
- nap_france.107.t: "Strikes in the Nord Mining Bassin"
- nap_france.107.d: "After the recent suppression of socialism in our Empire, miners around the Nord Mining Bassin are organizing in protest. While it might be unrelated, socialism has a big impact in this region, as the poor working population is very high, working in hard conditions for, most of the time, a salary that would not allow a good life for an entire family."
- nap_france.107.a: "Negotiate with the strikers"
- nap_france.107.b: "Send in the army"
-
- nap_france.108.t: "Publication of the Blanquist Manifesto"
- nap_france.108.d: "Auguste Blanqui published today a book named 'Le Manifeste Blanquiste' or 'The Blanquist Manifesto'. In this book, Blanqui calls for action against the tyranny of Napoleon III, and the destruction of the reactionary Empire that he created. Heavily based on the Communist Manifesto of Karl Marx, this book seems to be widely distributed, of course in a non-legal manner, as the publication of non-approved books is forbidden. Following what has been seen recently in the Paris protest and in the Nord, a revolt might flare up soon, and we might not be prepared for it."
- nap_france.108.a: "A spectre is haunting the Empire"
-
- nap_france.109.t: "Red Evening"
- nap_france.109.d: "This evening is definitively red. Red like the flags in the barricades. Red like the furor of soldiers who attack the barricades. Red like the blood paid by both sides."
- nap_france.109.a: "A dark evening"
-
- nap_france.110.t: "Republican senators around the country join the revolt !"
- nap_france.110.d: "Republican senators feel 1848 is back with all these barricades in the streets. The political movement shouldn’t be restricted to the Socialists, the return of the Republic is the solution. The Emperor has kept power for far too long. The Republican senators, appointed for life by the Emperor, should be the new leaders."
- nap_france.110.a: "Who can trust the honor of a senator?"
-
- nap_france.111.t: "Protesters manage to storm in the Palais des Tuilleries!"
- nap_france.111.d: "Some protesters have left their barricades to attack the Palais des Tuilleries. It is no more 1848 but 1792. Whereas the guards have successfully pushed back the first assault, the number of defectors has increased and even some generals have doubts on the fact that the Emperor is on the good side of History. There is no time to lose, a decision must be made: capitulate or fight at any price."
- nap_france.111.a: "Step down, we shall abandon the failing empire"
- nap_france.111.b: "We will never give in"
-
- nap_france.112.t: "Napoleon III has been captured"
- nap_france.112.d: "Whereas the blood flows in the street, the Emperor Napoleon III is in bed suffering from a worsening illness. He can not stabilize the the situation, this time is over. Eugénie, a stranger like Marie-Antoinette doesn’t want to be beheaded and let her son starve to death like Louis XVII. She has accepted to not oppose the coup of the Marshal Randon who allows the Imperial family to leave Paris then France with their assets. An additional part of the army has defected. The rumors that the Marshal Randon is negotiating with the socialist leaders have increased."
- nap_france.112.a: "The Emperor, then the military, what will be left of the Empire?"
-
- nap_france.113.t: "The Rise of the French Socialist Republic"
- nap_france.113.d: "The French Socialist Republic is proclaimed. All the Eagles are removed. The Imperial family has gone into exile, maybe on an island, nobody knows. People in the streets are interested to know who will be the future President, King or Emperor. The count of Chambord, Henri V for some people, is trying to come back to France to be the new Louis XVIII. But France does not want changes to turn things back to before the Revolution."
- nap_france.113.a: "France need change, here it is!"
- nap_france.113.b: "Stay loyal to the Emperor"
-
- nap_france.114.t: "A Leader for our Nation"
- nap_france.114.d: "The Count of Chambord, Henri V for some people, has not succeeded to restore the French Monarchy. Republicans, Syndicalists, and Socialists have won against the Emperor, the Army, and the Monarchy. Who will lead the France now?"
- nap_france.114.a: "The radical republican, Jules Favre"
- nap_france.114.b: "The opportunistic syndicalist, Henri Tolain"
- nap_france.114.c: "The hardline socialist, Auguste Blanqui"
-
- nap_france.115.t: "Start of the Suez Canal construction"
- nap_france.115.d: "Ferdinand de Lesseps, former French diplomat, has obtained a concession from Sa'id Pasha, the Khedive of Egypt and Sudan, to create a company to construct a canal open to ships of all nations. The company is to operate the canal for 99 years from its opening. With a commission of 13 experts from 7 countries, the plan of the canal has been drawn and The Suez Canal Company created. The excavation can start."
- nap_france.115.a: "Progress will march forward!"
-
- nap_france.116.t: "Start of the El Qantara-Port-Saïd Section"
- nap_france.116.d: ""
- nap_france.116.a: "A straight line shouldn't take too long to dig"
-
- nap_france.117.t: "Completion of the El Qantara-Port-Saïd Section"
- nap_france.117.d: ""
- nap_france.117.a: "We're a third of the way!"
-
- nap_france.118.t: "Start of the Bitter Lake-El Qantara Section"
- nap_france.118.d: ""
- nap_france.118.a: "Some infrastructure is needed, no big deal"
-
- nap_france.119.t: "Completion of the Bitter Lake-El Qantara Section"
- nap_france.119.d: ""
- nap_france.119.a: "We're close to the Red Sea now!"
-
- nap_france.120.t: "Start of the Suez-Bitter Lake Section"
- nap_france.120.d: ""
- nap_france.120.a: "Should be relatively simple"
-
- nap_france.121.t: "Completion of the Suez Canal"
- nap_france.121.d: ""
- nap_france.121.a: "One of the greatest projects of the modern world!"
-
- nap_france.122.t: "Inauguration of the Suez Canal"
- nap_france.122.d: "After 10 years of work, the Suez Canal can be inaugurated. Fireworks are ready and Khedive Isma'il Pasha of Egypt and Sudan has prepared a banquet on his yacht. The royal guests are the French Empress Eugenie with the Imperial yacht L'Aigle, the Crown Prince of Prussia and Prince Louis of Hesse. A temporary mosque and church have been built for both religious ceremonies. L’Aigle was the first ship in the procession. A new ceremony is held in Suez and after that in Cairo and finally near the Pyramids with a new road built for this occasion."
- nap_france.122.a: "We can now forget about Cape Horn!"
-
- nap_france.123.t: "The Government imposes the Assimilation Model upon us"
- nap_france.123.d: "This new age of colonialism brings upon us new methods of efficiently ruling and stabilizing colionies, keeping them in our hands for longer without continuous conflicts. One of these methods is the idea of Colonial Assimilation.\n\nColonial assimilation is the slow process of transitioning from the local culture, to our great culture and customs, with the aim of transforming them into fully French citizens. Due to the wild promises of this policy, the French government has imposed this model on our colony, pointing out our recent conflicts with the Berbers and Kabyles. While this policy isn't popular among the colonial administration, we still hope that this will bare fruits."
- nap_france.123.a: "Fine"
-
- nap_france.124.t: "The Government forces us to give the citizenship to some natives"
- nap_france.124.d: "Our Assimilation model has been a relative success, but there's still high demand from the locals for equal treatment in out colony. As a way of proving their good faith, the French government has enacted a decree, stipulating that "all the colonised "indigenous" were under French jurisdiction, French nationals subjected to French laws". This was followed by a promise of citizenship for all Arab and Berber Algerians that abandoned their Muslim religion and culture. The local Jewish population was also given access to citizenship, following a recent letter signed by 10000 local Jews asking for the privilege.\n\nThis is a great step towards a fully French Algeria, and we are hoping that this will further stabilize the region."
- nap_france.124.a: "Fine"
-
- nap_france.125.t: "The Government calls us their model colony"
- nap_france.125.d: "With the great successes of governor Louis Faidherbe, both because of his miliatry campaigns against the locals and of the developments on the port of Dakar, the French government is more than pleased. The improvements of French Senegal is a testament to the great future colonial endeavours of the French Empire, on-par with our Algerian colony.\n\nThis is why the government of the French Empire has officially called French Senegal, "France's model colony", a model for all future African ventures we might open in the future. This has brought great honor to governor Faidherbe, who is already looking at even greater projects for Senegal."
- nap_france.125.a: "We truely are a model colony"
-
- nap_france.126.t: "Invite the Carbonari to the Continental System"
- nap_france.126.d: "The [FRA.GetName] invites us to join its Faction the Continental System in order to protect each others from expansionnist Prussia."
- nap_france.126.a: "Accept the offer"
- nap_france.126.b: "Refuse the offer"
-
- nap_france.127.t: "The Carbonaris joins the Continental System"
- nap_france.127.d: "The Carbonaris accepts to join the Continental System"
- nap_france.127.a: "Great"
-
- nap_france.128.t: "The Carbonaris refuses to join the Continental System"
- nap_france.128.d: "The Carbonaris refuses to join the Continental System"
- nap_france.128.a: "Saddening"
- nap_france.128.b: "Well we'll force them to agree"
-
- nap_france.129.t: "The French threatens war"
- nap_france.129.d: "After refusing to the French invitation to join the Continental System, [FRA.GetName] threaten us to war."
- nap_france.129.a: "We changed our minds"
- nap_france.129.b: "War it is"
-
- nap_france.130.t: "The French Empire crowns Napoleon-Giuseppe as our King"
- nap_france.130.d: "After reforming us as a Constituional Monarchy, the French Empire crowns Napoleon-Giuseppe as our King in presence of the Pope."
- nap_france.130.a: "Long live the King"
-
- nap_france.131.t: "A New Governor for our Colony"
- nap_france.131.d: "Patrice Mac-Mahon, Marshal and Duke of Magenta after his success in Italy comes back to Algeria to replace the Marshal Randon."
- nap_france.131.a: "We welcome our new governor."
-
- nap_france.132.t: "A New Governor for our Colony"
- nap_france.132.d: "Patrice Mac-Mahon, Marshal and Duke of Magenta, should come back to Italy. Antoine Philippe Guesviller who participated in the 1840 Algerian campaigns replaces him."
- nap_france.132.a: "We welcome our new governor."
-
- nap_france.133.t: "A New Governor for our Colony"
- nap_france.133.d: "Antoine Philippe Guesviller has successfully pushed back the Moroccan raiders. But Napoleon III has called Edmond-Charles de Martimprey to manage Algeria."
- nap_france.133.a: "We welcome our new governor."
-
- nap_france.134.t: "A New Governor for our Colony"
- nap_france.134.d: "The Ministry of Colonies and Algeria has disappeared. A new governor should be appointed. The marshal Aimable Pélissier, Duke of Malakoff after his exploits in the Crimean War, is the man for the situation. He was governor of Algeria in 1851 for 7 months. Edmond Charles de Martimprey will second him."
- nap_france.134.a: "We welcome our new governor"
-
- nap_france.135.t: "A New Governor for our Colony"
- nap_france.135.d: "Aimable Pélissier, Duke of Malakoff after his exploits in the Crimean War, is dead. Another marshal and Duke will replace him, Patrice Mac-Mahon, Duke of Magenta after his exploits in the Italian Campaign. "
- nap_france.135.a: "We welcome our new governor"
-
  nap_france.136.t: "The Siege of Fort Medina"
  nap_france.136.d: "News reached us today from our colony in Senegal of a siege of one of our forts. According to reports, Fort Medina on the bank of the Senegal River was besieged by Toucouleur forces starting in late April of this year. The fort's commander Paul Holle and a short garrison managed to hold off the attacks of the tribal armies. The siege finally broke when governor Louis Faidherbe arrived on a gunboat with reinforcements from the colonial capital. The governor is supposed to be signing an agreement with the leader of the Toucouleur army which should give our colony more breathing room along the Niger River. Many have noted that the bulk of our forces were composed of native soldiers who have proved themselves quite well in battle. Governor Faidherbe has already requested the expansion of the colonial forces in Senegal."
  nap_france.136.a: "We May Need to Focus our Attention on this Colony"
@@ -1294,14 +1097,6 @@ FRA_SE_portrait_9_desc_text: "Jean-Baptiste Philibert\n Neutral Bonapartist"
  nap_france.150.d: "After weeks of continuous conflict, the local high command of French Algeria has decided to abandon the colony to the Kabyle uprising. The reasons for such an abandonment are plenty, but they mainly pointed out the military unpreparedness of the Algerian garrisons, and the lack of response from the French Empire's government.\n\nThe Kabyles has won their independence it seems, and France has lost their colony."
  nap_france.150.a: "They won, the fighting must cease."
 
- nap_france.151.t: "Our commanders in Algeria abandon the colony"
- nap_france.151.d: "Astounding reports from Algiers has brought back the news of a toal abandonment of the French colony by the local military governor. In a letter sent last week, the Algerian governor has expressed his total disbelief when faced with a foe that both were numerically and technologically inferior, but who managed to completly surround and beat the local French forces.\n\nThe reaction of the Emperor is only outshined by the sheer shock of the French population, seeing their closest colony go in hands of local natives. The Kabyles are free, but for the French, some are already calling it "the beginning of the end" for the Empire."
- nap_france.151.a: "Merde!"
-
- nap_france.152.t: "The Kabyles are finally free"
- nap_france.152.d: "After weeks of tireless figths against the colonizer, they have abandoned our lands. It seems that we have now total control over the lands of Algeria, and that we have finally won our freedom from the oppressive French!"
- nap_france.152.a: "Ya hla!"
-
  nap_france.153.t: "General Randon Invades Kabylia"
  nap_france.153.d: "A fortified force of around 5,000 Kabyles have been holding out in the Kabylia region of our Algerian colony for some time now. We were informed today that General Randon, who took over the command of the troops in Algeria in May, had completed his preparations to finish off the last pocket of resistance in Algeria. General Mac Mahon's troops took an elevated position and began an artillery attack against the fortified position as the other divisions in Randon's forces moved to fully surround the Kabyles. This final conquest in Algeria is not expected to last long and the resistance in Kabylia should be cleared out shortly."
  nap_france.153.a: "A Swift Conquest, Hopefully."
@@ -1318,77 +1113,9 @@ FRA_SE_portrait_9_desc_text: "Jean-Baptiste Philibert\n Neutral Bonapartist"
  nap_france.156.d: "General Randon's campaign in Kabylia, the last region in Algeria to holdout against our growing colony, has succeeded. An agreement is being worked out with the Kableys to bring their region under the colonial government in Algeria. With this campaign over we can now begin larger projects in the development of the colony."
  nap_france.156.a: "The Work Has Just Begun"
 
- nap_france.160.t: "Continue the Cochinchina Campaign"
- nap_france.160.d: "The punitive expedition is not as easy as predicted. Should we continue the war and ask later for more reparations or should we give-up instead of wasting more of our soldiers."
- nap_france.160.a: "They will pay for that resistance"
- nap_france.160.b: "Continuing this war will bring nothing"
-
- nap_france.161.t: "Victory in the Cochinchina Campaign"
- nap_france.161.d: "The Treaty of Saigon ended the war in Cochinchina.\nFrance and Spain will receive war reparations.\nSpain is not interested in territorial gains.\nShould we demand the provinces under our control in the lower Cochinchina?"
- nap_france.161.a: "Yes, we should use the newly acquired land as a jumping-off point for future endeavors."
- nap_france.161.b: "Cochinchina is too far away to be of any use to us."
-
- nap_france.162.t: "Garrison of Cochinchina"
- nap_france.162.d: "After our victory in the Cochinchina campaign we must choose the size of the garrison which stay to defend our interests."
- nap_france.162.a: "A big garrison because it is too far"
- nap_france.162.b: "A normal garrison"
- nap_france.162.c: "A small garrison because we have other interests"
-
  nap_france.171.t: "A New Governor for our Colony"
  nap_france.171.d: "The admiral Pierre-Paul de La Grandière replaces the admiral Louis Adolphe Bonard."
  nap_france.171.a: "We welcome our new governor."
-
- nap_france.172.t: "A New Governor for our Colony"
- nap_france.172.d: "The counter-admiral Marie Gustave Hector Ohier who leaded the Chinese division is called to replace the illness admiral Pierre-Paul de La Grandière"
- nap_france.172.a: "We welcome our new governor."
-
- nap_france.173.t: "A New Governor for our Colony"
- nap_france.173.d: "The counter-admiral René de Cornulier replaces the illness counter-admiral Marie Gustave Hector Ohier."
- nap_france.173.a: "We welcome our new governor."
-
- nap_france.174.t: "A New Governor for our Colony"
- nap_france.174.d: "The former Reunion island governor, the counter-admiral Marie Jules Dupré replaces the illness counter-admiral René de Cornulier."
- nap_france.174.a: "We welcome our new governor."
-
- nap_france.175.t: "A New Governor for our Colony"
- nap_france.175.d: "The counter-admiral Victor Duperré replaces the counter-admiral Marie Jules Dupré."
- nap_france.175.a: "We welcome our new governor."
-
- nap_france.176.t: "A New Governor for our Colony"
- nap_france.176.d: "The counter-admiral Louis Charles Georges Jules Lafont who fought in the Cochinchina campaign replaces the counter-admiral Victor Duperré."
- nap_france.176.a: "We welcome our new governor."
-
- nap_france.200.t: "The Regency of Jérôme Bonaparte"
- nap_france.200.d: "After the assasination of Napoleon III, the next in line is Louis Napoleon's young son, Napoléon Eugène, but he is far too young to assume the throne, so a regency is called for. The previous heir, Jérôme Bonaparte, who was Louis Bonaparte's Uncle, has the necessary legitimacy to serve as Imperial Regent until Napoléon Eugène can be crowned Napoleon IV, Emperor of the French."
- nap_france.200.a: "A new Bonaparte, as we wait for the heir."
-
- nap_france.201.t: "The Death of Jérôme Bonaparte"
- nap_france.201.d: "Despair! The Imperial Regent, Jérôme Bonaparte, has died. The government has called for a day of mourning as we remember the Imperial Regent, brother to Napoleon I, former King of Westphalia, Marshal, Senate President, and Prince-Imperial. He shall be suceeded in his duties by his son, Jérôme Napoléon "Bo" Bonaparte, who has returned from America for the Funeral."
- nap_france.201.a: "His son will make a great regent, I'm sure."
-
- nap_france.202.t: "Officialization of the Jerome-Napoleon Bonaparte Regency"
- nap_france.202.d: "With the Regency officially continued with the last Regent's son, a stability arising from political continuity has been calming fears in France of a collapse of government."
- nap_france.202.a: "Our nation is slowly moving towards the path of stability."
-
- nap_france.203.t: "The Crowning of Napoléon IV"
- nap_france.203.d: "What a glorious day! Today His Imperial Majesty, Napoléon Eugène, has finally come of age and was crowned Napoleon IV, Emperor of the French. All Hail His Imperial Majesty, and long may He reign in health and prosperity."
- nap_france.203.a: "At last, we can turn the page on our history."
-
- nap_france.204.t: "The Crowning of Napoléon IV"
- nap_france.204.d: "Jérôme-Napoléon Bonaparte, who was the French regent since the death of his father, has finally decided to legitimize his rule for good. He has claimed himself the Emperor of the French, under the name of Napoléon IV. Most Bonapartistes in the government opposes to this, as the heir, Napoléon Eugène, is still alive and still is the legitimate successor of his father Napoléon III.\n\nThis new emperor on the throne will not stabilize the nation it seems, and has he corwns himself like his ancestor, he doesn't enjoy the same amount of support from the high command and from the government."
- nap_france.204.a: "What's the difference between two Bonapartes anyway?"
-
- nap_france.205.t: "Create the Assemblée Générale"
- nap_france.205.d: ""
- nap_france.205.a: "The path forward is towards representation of the people."
-
- nap_france.206.t: "The Fund for French Art and Culture"
- nap_france.206.d: ""
- nap_france.206.a: "Exquisite."
-
- nap_france.207.t: "The Decree for the Assemblée Générale"
- nap_france.207.d: ""
- nap_france.207.a: "Truly constitutional."
 
  nap_france.219.t: "The Crowning of Maximilian I"
  nap_france.219.d: "Today, Maximilian I was crowned as the Emperor of the Second Mexican Empire."
@@ -1619,14 +1346,6 @@ FRA_SE_portrait_9_desc_text: "Jean-Baptiste Philibert\n Neutral Bonapartist"
  nap_france.401.t: "Renovation of Marseille"
  nap_france.401.d: "The XIXth century was for France the century of great projects and great achievements. From 1840, Marseille launched a major counstruction program never before seen in the history of the city. One the most important investments was Rue Imperiale. Almost 2.500 workers were involved in the building. On the 15th of August, 1864, Rue Imperiale was inaugurated in the presence of Napoleon III. After the fall of the Second Empire, it became Rue de la Republique."
  nap_france.401.a: "Better living conditions for our people!"
-
- nap_france.1610.t: "Chatellerault Factory Renovation Begins"
- nap_france.1610.d: "The Manufacture d'Armes de Châtellerault ("Châtellerault Weapons Factory"), often abbreviated to MAC, is the French state-owned weapons manufacturer in the dearly town of Châtellerault, Vienne. Construction began by royal decree on July 14, 1819, with the purpose of sword manufacturing. Recent plans for renovation to include the production of firearms and cannons by the company owners have come to light, and they have recently been given the greenlight to start on the great reconstruction project."
- nap_france.1610.a: "Begin the Renovation!"
-
- nap_france.1611.t: "Chatellerault Factory Renovation Finishes"
- nap_france.1611.d: "Excellente! The renovation project has been completed. Dozens of workers in need of jobs have come to this project and deemed it an economic miracle for the town of Châtellerault. Renovation finished by expected time, and the predicted cost was spot-on. This great factory has now been brought towards the days of new and away from production of old."
- nap_france.1611.a: "A successful Renovation!"
 
   #CARBONARA RISORGIMENTO
 

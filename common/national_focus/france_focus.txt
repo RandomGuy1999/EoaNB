@@ -37,7 +37,7 @@ focus_tree = {
 			factor = 90
 		}
 		completion_reward = {
-			country_event = nap_france.1
+			
 		}
 	}
 	focus = {
@@ -63,7 +63,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_stability = -0.1
-			country_event = new_nap_france_flavor.4
 		}
 	}
 	focus = {
@@ -139,7 +138,6 @@ focus_tree = {
 		completion_reward = {
 			add_war_support = 0.05
 			add_stability = 0.05
-			country_event = nap_france.2
 		}
 	}
 	focus = {
@@ -201,7 +199,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_political_power = 50
-			country_event = new_nap_france_flavor.4
 		}
 	}
 	focus = {
@@ -419,9 +416,7 @@ focus_tree = {
 			factor = 90
 		}
 		completion_reward = {
-			country_event = {
-				id = nap_france.205
-			}
+			
 		}
 	}
 	focus = {
@@ -455,9 +450,7 @@ focus_tree = {
 			factor = 90
 		}
 		completion_reward = {
-			country_event = {
-				id = nap_france.206
-			}
+			
 		}
 	}
 	focus = {
@@ -574,9 +567,7 @@ focus_tree = {
 			factor = 90
 		}
 		completion_reward = {
-			country_event = {
-				id = nap_france.204
-			}
+			
 		}
 	}
 	focus = {
@@ -592,9 +583,7 @@ focus_tree = {
 			factor = 90
 		}
 		completion_reward = {
-			country_event = {
-				id = nap_france.207
-			}
+			
 		}
 	}
 	focus = {
@@ -616,9 +605,7 @@ focus_tree = {
 			factor = 90
 		}
 		completion_reward = {
-			country_event = {
-				id = nap_france.203
-			}
+			
 		}
 	}
 	focus = {
@@ -1730,9 +1717,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = FRA_ALG_assimilation_colonial_model
-			country_event = {
-				id = nap_france.123
-			}
 			FRA_napoleon_joseph_charles = {
 				add_advisor_role = {
 					advisor = {
@@ -2108,25 +2092,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			custom_effect_tooltip = FRA_french_indochina_tooltip
-			#hidden_effect = { country_event = { id = nap_france.160 days = 30 } }
-			#hidden_effect = { country_event = { id = nap_france.161 days = 1500 } }
-			#hidden_effect = {
-			#	VIN = {
-			#		add_opinion_modifier = { target = FRA modifier = AFR_colonial_conflict }
-			#	}
-			#	add_opinion_modifier = { target = VIN modifier = AFR_colonial_conflict }
-			#}
-			#VIN_Cochinchina_Campaign_InvestmentSetup = yes
-			#VIN = {
-			#	add_timed_idea = {
-			#		idea = VIN_Cochinchina_Campaign_Defense
-			#		days = 2000
-			#	}
-			#}
-			#SPR = {
-			#	VIN_Cochinchina_Campaign_InvestmentSetup = yes
-			#}
+			
 		}
 	}
 	focus = {
