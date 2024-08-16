@@ -410,7 +410,7 @@ characters = {
 		name= "Ilias Kehagias"
 		portraits={
 			civilian={
-				small = "gfx/interface/ideas/GRE/GRE_advisor_Ilias_Kehagias.png"
+				small = "gfx/interface/ideas/GRE/GRE_advisor_Missing_Source.png"
 			}
 		}
 	}
@@ -426,7 +426,7 @@ characters = {
 		name = "Anastassios Tassos Potamianos"
 		portraits={
 			civilian={
-				small = "gfx/interface/ideas/GRE/GRE_advisor_Anastassios_Tassos_Potamianos.png"
+				small = "gfx/interface/ideas/GRE/GRE_advisor_Missing_Source.png"
 			}
 		}
 	}
@@ -434,7 +434,7 @@ characters = {
 		name="Joan Seripieri"
 		portraits={
 			civilian={
-				small = "gfx/interface/ideas/GRE/GRE_advisor_Joan_Seripieri.png"
+				small = "gfx/interface/ideas/GRE/GRE_advisor_Missing_Source.png"
 			}
 		}
 		advisor={
@@ -453,7 +453,7 @@ characters = {
 		}
 	}
 	GRE_emmanuel_han ={
-		name="Emmanuel Han"
+		name="Amadeus Emmanuel Han"
 		portraits={
 			civilian={
 				small = GFX_idea_GRE_Amadeus_Emmanuel_Han
@@ -477,7 +477,7 @@ characters = {
 		name="Leonidas Smolents"
 		portraits={
 			civilian={
-				small = "gfx/interface/ideas/GRE/GRE_advisor_Leonidas_Smolents.png"
+				small = "gfx/interface/ideas/GRE/GRE_advisor_Missing_Source.png"
 			}
 		}
 		advisor={
@@ -498,7 +498,7 @@ characters = {
 		name="Christodoulos Hatzipetros"
 		portraits={
 			civilian={
-				small = "gfx/interface/ideas/GRE/GRE_advisor_Christodoulos_Hatzipetros.png"
+				small = "gfx/interface/ideas/GRE/Portrait_GRE_Christodoulos_Chatzipetros_small.png"
 			}
 		}
 		advisor={
