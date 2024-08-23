@@ -6946,10 +6946,28 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = brazil.901.a
+		ai_chance = {
+			base = 34
+			modifier = {
+				is_historical_focus_on = yes
+				add = 66
+			}
+		}
 		hidden_effect = { country_event = { id = brazil.902 days = 1 } }
 	}
 	option = {
 		name = brazil.901.b
+		ai_chance = {
+			base = 33
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+			modifier = {
+				is_historical_focus_on = no
+				factor = 1
+			}
+		}
 		add_political_power = -25
 		hidden_effect = {
 			random_list = {
@@ -6960,6 +6978,17 @@ country_event = {
 	}
 	option = {
 		name = brazil.901.c
+		ai_chance = {
+			base = 33
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+			modifier = {
+				is_historical_focus_on = no
+				factor = 1
+			}
+		}
 		add_command_power = -10
 		hidden_effect = {
 			random_list = {
@@ -7079,11 +7108,11 @@ country_event = {
 }
 
 country_event = {
-	id = brazil.907
-	title = brazil.907.t
-	desc = brazil.907.d
-	picture = GFX_report_event_military_supression
-	is_triggered_only = yes
+id = brazil.907
+title = brazil.907.t
+desc = brazil.907.d
+picture = GFX_report_event_military_supression
+is_triggered_only = yes
 	option = {
 		name = brazil.907.a
 		499 = {
@@ -7113,6 +7142,7 @@ country_event = {
 	id = brazil.908
 	title = brazil.31.t
 	desc = brazil.31.d
+
 	picture = GFX_report_event_prince_wales
 
 	fire_only_once = yes
@@ -7125,13 +7155,13 @@ country_event = {
 				has_country_flag = ENG_christie_crisis1
 			}
 		}
-	}
+	}  
 
 	option = {
 		name = brazil.31.b
-			trigger = {
-				tag = ENG
-			}
+		trigger = {
+			tag = ENG
+		}
 		add_war_support = 0.012
 		ENG = {
 			add_opinion_modifier = {
@@ -7168,8 +7198,20 @@ country_event = {
 		add_political_power = -25
 		hidden_effect = {
 			random_list = {
-				50 = { country_event = { id = brazil.911 days = 1 } }
-				50 = { country_event = { id = brazil.912 days = 1 } }
+				50 = {
+					modifier = {
+						add = 50
+						is_historical_focus_on = yes
+					}
+					country_event = { id = brazil.911 days = 1 }
+				}
+				50 = {
+					modifier = {
+						add = -50
+						is_historical_focus_on = yes
+					}
+					country_event = { id = brazil.912 days = 1 }
+				}
 			}
 		}
 	}
@@ -13197,25 +13239,22 @@ country_event = {
 	desc = bahia.3.d
 	picture = GFX_report_event_males_crushed
 	is_triggered_only = yes
-
 	immediate = {
-		hidden_effect = {
-			BRA = {
-				remove_mission = Second_Males_Revolt_Peace_Treaty_Mission
-				annex_country = {
-					target = BHA
-				}
+		BRA = {
+			remove_mission = Second_Males_Revolt_Peace_Treaty_Mission
+			annex_country = {
+				target = BHA
 			}
+			add_stability = 0.05
+			increase_ps_by_two = yes
+			set_temp_variable = { political_legitimacy_change = 0.05 }
+			eoanb_political_legitimacy_change = yes
+			add_political_power = -20
+			499 ={ remove_dynamic_modifier = { modifier = BRA_african_workers_strikes } }
 		}
 	}
 	option = {
 		name = bahia.3.a
-		add_stability = 0.05
-		increase_ps_by_two = yes
-		set_temp_variable = { political_legitimacy_change = 0.05 }
-		eoanb_political_legitimacy_change = yes
-		add_political_power = -20
-		499 ={ remove_dynamic_modifier = { modifier = BRA_african_workers_strikes } }
 	}
 }
 
@@ -13226,28 +13265,26 @@ country_event = {
 	picture = GFX_report_event_males_victory
 	is_triggered_only = yes
 	immediate = {
-		hidden_effect = {
-			BRA = {
-				remove_mission = Second_Males_Revolt_Peace_Treaty_Mission
-				annex_country = {
-					target = BHA
-					transfer_troops = yes
-				}
+		BRA = {
+			remove_mission = Second_Males_Revolt_Peace_Treaty_Mission
+			annex_country = {
+				target = BHA
+				transfer_troops = yes
+			}
+			add_stability = -0.05
+			increase_ps_by_one = yes
+			set_temp_variable = { political_legitimacy_change = -0.05 }
+			eoanb_political_legitimacy_change = yes
+			add_political_power = -100
+			499 ={ remove_dynamic_modifier = { modifier = BRA_african_workers_strikes } }
+			add_timed_idea = {
+				idea = BRA_male_revolt_reparation
+				days = 730
 			}
 		}
 	}
 	option = {
 		name = bahia.4.a
-		add_stability = -0.05
-		increase_ps_by_one = yes
-		set_temp_variable = { political_legitimacy_change = -0.05 }
-		eoanb_political_legitimacy_change = yes
-		add_political_power = -100
-		499 ={ remove_dynamic_modifier = { modifier = BRA_african_workers_strikes } }
-		add_timed_idea = {
-			idea = BRA_male_revolt_reparation
-			days = 730
-		}
 	}
 }
 
@@ -13258,20 +13295,18 @@ country_event = {
 	picture = GFX_report_event_males_stalemate
 	is_triggered_only = yes
 	immediate = {
-		hidden_effect = {
-			BRA = {
-				remove_mission = Second_Males_Revolt_Peace_Treaty_Mission
-				annex_country = {
-					target = BHA
-					transfer_troops = yes
-				}
+		BRA = {
+			remove_mission = Second_Males_Revolt_Peace_Treaty_Mission
+			annex_country = {
+				target = BHA
+				transfer_troops = yes
 			}
+			increase_ps_by_one = yes
+			add_political_power = -50
+			499 ={ remove_dynamic_modifier = { modifier = BRA_african_workers_strikes } }
 		}
 	}
 	option = {
 		name = bahia.5.a
-		increase_ps_by_one = yes
-		add_political_power = -50
-		499 ={ remove_dynamic_modifier = { modifier = BRA_african_workers_strikes } }
 	}
 }

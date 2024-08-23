@@ -9698,7 +9698,7 @@ BRA_decision_category_modernize_the_empire = {
 }
 
 eoanb_category_military = {
-	BRA_mission_invest_national_arms_production = {
+		BRA_mission_invest_national_arms_production = {
 		icon = generic_industry
 		days_mission_timeout = 900
 		allowed = { always = no}
