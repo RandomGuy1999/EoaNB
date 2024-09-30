@@ -1,4 +1,4 @@
-﻿add_namespace = dom
+add_namespace = dom
 
 country_event = {
 	id = dom.17
@@ -227,7 +227,7 @@ country_event = {
 						name = DOM_Buenaventura_Baez_temp
 						portraits={
 							civilian={
-								large="GFX_Portrait_DOM_Buenaventura_Baez"
+								large = "GFX_Portrait_DOM_Buenaventura_Baez"
 							}
 						}
 					}
@@ -278,7 +278,6 @@ country_event = {
 				expire = "1903.12.22"
 			}
 		}
-		promote_character = DOM_Jose_Desiderio_Valverde
 		promote_character = {
 			character = DOM_Jose_Desiderio_Valverde
 			Ideology = military_junta
@@ -550,7 +549,7 @@ country_event = {
 						name = DOM_Pedro_Santana_temp
 						portraits={
 							civilian={
-								large="GFX_Portrait_DOM_Pedro_Santana"
+								large = GFX_Portrait_DOM_Pedro_Santana
 							}
 						}
 					}

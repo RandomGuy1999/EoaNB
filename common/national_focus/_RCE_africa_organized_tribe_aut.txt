@@ -6,7 +6,6 @@ focus_tree = {
 			add = 10
 			OR = {
 				tag = WAS
-				tag = KDG
 				tag = DSS
 				tag = ARO
 				tag = BAO
@@ -14,13 +13,10 @@ focus_tree = {
 				tag = BST
 				tag = BUG
 				tag = BUR
-				tag = BUS
-				tag = HER
 				tag = KOY
 				tag = LUO
 				tag = KRG
 				tag = KUB
-				tag = KVG
 				tag = LUB
 				tag = LUN
 				tag = TYO
@@ -40,16 +36,13 @@ focus_tree = {
 				tag = TOG
 				tag = IJW
 				tag = ARR
-				tag = GGL
 				tag = MED
 				tag = BTS
 				tag = IGA
-				tag = KBG
 				tag = MND
 				tag = SIN
 				tag = SAL
 				tag = SID
-				tag = AKA
 			}
 		}
 	}
@@ -812,7 +805,7 @@ focus_tree = {
 		y = 6
 		completion_reward = {
 			swap_ideas = { remove_idea = AF_T_organized_tribal_nation_2 add_idea = AF_T_organized_tribal_nation_3 }
-			country_event = { id = afr_empire_politics_taxes_organized.1 }
+			country_event = { id = RCE_afr_regional_power.10 }
 		}
 	}
 	focus = {

@@ -528,6 +528,11 @@ spriteTypes = {
 				texturefile = "gfx/leaders/Europe/Portrait_Europe_generic_leader_politician_28.png"
 			}
 
+			spriteType = {
+				name = "GFX_portrait_USA_mr_hilt"
+				texturefile = "gfx/leaders/USA/USA_mr_hilt.dds"
+			}
+
 	# TERRITORIES
 
 		# MINNESOTA TERRITORY
@@ -610,7 +615,7 @@ spriteTypes = {
 				texturefile = "gfx/leaders/CIM/Portrait_CIM_nomansland.png"
 			}
 
-		# NEBRASKA TERRITORY
+		# NEBRASKA TERRITORY/ DAKOTA TERRITORY
 
 			spriteType = {
 				name = "GFX_portrait_DAK_wilmot_brookings"
@@ -895,540 +900,998 @@ spriteTypes = {
 				texturefile = "gfx/leaders/TEX/Portrait_TEX_Sam_Houston.png"
 			}
 
+# MEXICO
+
+		# Leaders
+
+			spriteType = {
+				name = "GFX_Portrait_MEX_Ignacio_Comonfort"
+				textureFile = "gfx/leaders/MEX/Portrait_MEX_Ignacio_Comonfort.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_MEX_Felix_Maria_Zuloaga"
+				textureFile = "gfx/leaders/MEX/Portrait_MEX_Felix_Maria_Zuloaga.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_MEX_Benito_Juarez"
+				textureFile = "gfx/leaders/MEX/Portrait_MEX_Benito_Juarez.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_MXE_Juan_Nepomuceno_Almonte"
+				textureFile = "gfx/leaders/MXE/Portrait_MXE_Juan_Nepomuceno_Almonte.png"
+			}
+			
+			spriteType = {
+				name = "GFX_Portrait_MXE_Maxililian_Ferdinand"
+				texturefile = "gfx/leaders/MXE/Portrait_MXE_Maxililian_Ferdinand.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_MXE_Junta_Superior_de_Gobierno"
+				texturefile = "gfx/leaders/MXE/Portrait_MXE_Junta_Superior_de_Gobierno.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_MEC_Jose_Lazaro_de_la_Graza"
+				textureFile = "gfx/leaders/MEC/Portrait_MEC_Jose_Lazaro_de_la_Graza.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_MEC_Miguel_Miramon"
+				textureFile = "gfx/leaders/MEC/Portrait_MEC_Miguel_Miramon.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_MEC_Manuel_Robles_Pezuela"
+				texturefile = "gfx/leaders/MEC/Portrait_MEC_Manuel_Robles_Pezuela.png"
+			}
+
+		# Generals
+			
+			spriteType = {
+				name = "GFX_Portrait_MEX_Jesus_Gonzalez_Ortega"
+				texturefile = "gfx/leaders/MEX/Portrait_MEX_Jesus_Gonzalez_Ortega.png"
+			}
+			
+			spriteType = {
+				name = "GFX_Portrait_MEX_Tomas_Camacho"
+				texturefile = "gfx/leaders/MEX/Portrait_MEX_Tomas_Camacho.png"
+			}
+			
+			spriteType = {
+				name = "GFX_Portrait_MEX_Jose_Degollado"
+				texturefile = "gfx/leaders/MEX/Portrait_MEX_Jose_Degollado.png"
+			}
+			
+			spriteType = {
+				name = "GFX_Portrait_MEX_Luis_Osollo"
+				texturefile = "gfx/leaders/MEX/Portrait_MEX_Luis_Osollo.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_MEX_Leonardo_Valle"
+				texturefile = "gfx/leaders/MEX/Portrait_MEX_Leonardo_Valle.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_MEX_Porfirio_Diaz_Young"
+				texturefile = "gfx/leaders/MEX/Portrait_MEX_Porfirio_Diaz_Young.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_MXE_Karl_Graf_Metsch"
+				texturefile = "gfx/leaders/MXE/Portrait_MXE_Karl_Graf_Metsch.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_MEC_Leonard_Marquez"
+				texturefile = "gfx/leaders/MEC/Portrait_MEC_Leonard_Marquez.png"
+			}
+
+# CENTRAL AMERICA
 	
+	# MAYA
+
+		# Leaders
+
+			spriteType = {
+				name = "GFX_Portrait_MAY_Venancio_Puc"
+				texturefile = "gfx/leaders/MAY/Portrait_MAY_Venancio_Puc.png"
+			}
+
+	# GUATEMALA
+
+		# Leaders + Generals
+
+			spriteType = {
+				name = "GFX_Portrait_GUA_Rafael_Carrera"
+				texturefile = "gfx/leaders/GUA/Portrait_GUA_Rafael_Carrera.png"
+			}
+
+	# EL SALVADOR
+
+		# Leaders + Generals
+
+			spriteType = {
+				name = "GFX_Portrait_ELS_Rafael_Campo"
+				texturefile = "gfx/leaders/ELS/Portrait_ELS_Rafael_Campo.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_ELS_Gerardo_Barrios"
+				texturefile = "gfx/leaders/ELS/Portrait_ELS_Gerardo_Barrios.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_ELS_Ramon_Belloso"
+				texturefile = "gfx/leaders/ELS/Portrait_ELS_Ramon_Belloso.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_ELS_Santiago_Portillo"
+				texturefile = "gfx/leaders/ELS/Portrait_ELS_Santiago_Portillo.png"
+			}
+
+	# HONDURAS
+
+		# Leaders + Generals
+
+			spriteType = {
+				name = "GFX_Portrait_HON_Jose_Guardiola"
+				texturefile = "gfx/leaders/HON/Portrait_HON_Jose_Guardiola.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_HON_William_Walker"
+				texturefile = "gfx/leaders/HON/Portrait_HON_William_Walker.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_HON_Jose_Cabanas"
+				texturefile = "gfx/leaders/HON/Portrait_HON_Jose_Cabanas.png"
+			}
+
+	# NICARAGUA
+
+		# Leaders + Generals
+
+			spriteType = {
+					name = "GFX_Portrait_NIC_Tomas_Martinez"
+					texturefile = "gfx/leaders/NIC/Portrait_NIC_Tomas_Martinez.png"
+			}
+
+	# COSTA RICA
+
+		# Leaders + Generals
+
+			spriteType = {
+					name = "GFX_Portrait_COS_Juan_Rafael_Mora"
+					texturefile = "gfx/leaders/COS/Portrait_COS_Juan_Rafael_Mora.png"
+			}
+
+	# MOSQUITO KINGDOM
+
+		# Leaders + Generals
+
+			spriteType = {
+				name = "GFX_Portrait_MSQ_George_Augustus_Frederick_II"
+				texturefile = "gfx/leaders/MSQ/Portrait_MSQ_George_Augustus_Frederick_II.png"
+			}
+
+# CARRIBEAN
+
+	# HAITI
 	
+		# Leaders + Generals
+
+			spriteType = {
+					name = "GFX_Portrait_HAI_Faustin_Soulouque"
+					texturefile = "gfx/leaders/HAI/Portrait_HAI_Faustin_Soulouque.png"
+			}
+
+			spriteType = {
+					name = "GFX_Portrait_HAI_Fabre_Geffrard"
+					texturefile = "gfx/leaders/HAI/Portrait_HAI_Fabre_Geffrard.png"
+			}
+
+			spriteType = {
+					name = "GFX_Portrait_HAI_Jean_Nicolas_Nissage_Saget"
+					texturefile = "gfx/leaders/HAI/Portrait_HAI_Jean_Nicolas_Nissage_Saget.png"
+			}
+
+			spriteType = {
+					name = "GFX_Portrait_HAI_Sylvain_Salnave"
+					texturefile = "gfx/leaders/HAI/Portrait_HAI_Sylvain_Salnave.png"
+			}
+
+	# DOMINICAN REPUBLIC
 	
+		# Leaders + Generals
+
+			spriteType = {
+				name = "GFX_Portrait_DOM_Buenaventura_Baez"
+				texturefile = "gfx/leaders/DOM/Portrait_DOM_Buenaventura_Baez.png"
+			}
+			
+			spriteType = {
+				name = "GFX_Portrait_DOM_Pedro_Santana"
+				texturefile = "gfx/leaders/DOM/Portrait_DOM_Pedro_Santana.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_DOM_Gregorio_Luperon"
+				textureFile = "gfx/leaders/DOM/Portrait_DOM_Gregorio_Luperon.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_DOM_Gaspar_Polanco"
+				textureFile = "gfx/leaders/DOM/Portrait_DOM_Gaspar_Polanco.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_DOM_Jose_Desiderio_Valverde"
+				texturefile = "gfx/leaders/DOM/Portrait_DOM_Jose_Desiderio_Valverde.png"
+			}
+			spriteType = {
+
+				name = "GFX_Portrait_DOM_Jose_Antonio_Salcedo"
+				texturefile = "gfx/leaders/DOM/Portrait_DOM_Jose_Antonio_Salcedo.png"
+			}
+
+	# JAMAICA
 	
+		# Leaders
+
+			spriteType = {
+				name = "GFX_Portrait_JAM_Robert_Osborn"
+				texturefile = "gfx/leaders/JAM/Portrait_JAM_Robert_Osborn.png"
+			}
+
+	# PUERTO RICO
 	
+		# Leaders + Generals
+
+			spriteType = {
+				name = "GFX_Portrait_PRT_Francisco_Ramirez"
+				texturefile = "gfx/leaders/PRT/Portrait_PRT_Francisco_Ramirez.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_PRT_Manuel_Rojas"
+				texturefile = "gfx/leaders/PRT/Portrait_PRT_Manuel_Rojas.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_PRT_Mathias_Brugman"
+				texturefile = "gfx/leaders/PRT/Portrait_PRT_Mathias_Brugman.png"
+			}
+
+	# SPANISH CARRIBEAN
 	
+		# Leaders + Generals
+
+			spriteType = {
+				name = "GFX_Portrait_SPC_Juan_de_Borbon"
+				textureFile = "gfx/leaders/SPC/Portrait_SPC_Juan_de_Borbon.png"
+			}
+			
+			spriteType = {
+				name = "GFX_Portrait_SPC_Juan_Nepomuceno_de_Orbe"
+				textureFile = "gfx/leaders/SPC/Portrait_SPC_Juan_Nepomuceno_de_Orbe.png"
+			}
+			
+			spriteType = {
+				name = "GFX_Portrait_SPC_Antonio_Dorregaray"
+				textureFile = "gfx/leaders/SPC/Portrait_SPC_Antonio_Dorregaray.png"
+			}
+
+# SOUTH AMERICA
+
+	# COLOMBIA
 	
+		# Leaders + Generals
+
+			spriteType = {
+				name = "GFX_Portrait_COL_Mariano_Ospina_Rodriguez"
+				textureFile = "gfx/leaders/COL/Portrait_COL_Mariano_Ospina_Rodriguez.png"
+			}
+			
+			spriteType = {
+				name = "GFX_Portrait_COL_Antonio_Herran_y_Martinez"
+				textureFile = "gfx/leaders/COL/Portrait_COL_Antonio_Herran_y_Martinez.png"
+			}
+			
+			spriteType = {
+				name = "GFX_Portrait_COL_Tomas_Cipriano_de_Mosquera"
+				textureFile = "gfx/leaders/COL/Portrait_COL_Tomas_Cipriano_de_Mosquera.png"
+			}
+			
+			spriteType = {
+				name = "GFX_Portrait_COL_Jose_Gutierrez"
+				textureFile = "gfx/leaders/COL/Portrait_COL_Jose_Gutierrez.png"
+			}
+			
+			spriteType = {
+				name = "GFX_Portrait_COL_Julio_Arboleda"
+				textureFile = "gfx/leaders/COL/Portrait_COL_Julio_Arboleda.png"
+			}
+			
+			spriteType = {
+				name = "GFX_Portrait_COL_Leonardo_Canal"
+				textureFile = "gfx/leaders/COL/Portrait_COL_Leonardo_Canal.png"
+			}
+			
+			spriteType = {
+				name = "GFX_Portrait_COL_Eustorgio_Salgar"
+				textureFile = "gfx/leaders/COL/Portrait_COL_Eustorgio_Salgar.png"
+			}
+			
+			spriteType = {
+				name = "GFX_Portrait_COL_Juan_Jose_Nieto"
+				textureFile = "gfx/leaders/COL/Portrait_COL_Juan_Jose_Nieto.png"
+			}
+			
+			spriteType = {
+				name = "GFX_Portrait_COL_Jose_Hilario_Lopes"
+				textureFile = "gfx/leaders/COL/Portrait_COL_Jose_Hilario_Lopes.png"
+			}
+
+	# VENEZUELA
 	
+		# Leaders + Generals
+
+			spriteType = {
+				name = "GFX_Portrait_USV_Juan_Falcon"
+				textureFile = "gfx/leaders/USV/Portrait_USV_Juan_Falcon.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_USV_Jose_Ruperto_Monagas"
+				textureFile = "gfx/leaders/USV/Portrait_USV_Jose_Ruperto_Monagas.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_USV_Antonio_Guzman_Blanco"
+				textureFile = "gfx/leaders/USV/Portrait_USV_Antonio_Guzman_Blanco.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_USV_Ezequiel_Zamora"
+				texturefile = "gfx/leaders/USV/Portrait_USV_Ezequiel_Zamora.png"
+			}
+			
+			spriteType = {
+				name = "GFX_Portrait_USV_Manuel_Bruzual"
+				texturefile = "gfx/leaders/USV/Portrait_USV_Manuel_Bruzual.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_VEN_Jose_Tadeo_Monagas"
+				textureFile = "gfx/leaders/VEN/Portrait_VEN_Jose_Tadeo_Monagas.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_VEN_Julian_Castro"
+				textureFile = "gfx/leaders/VEN/Portrait_VEN_Julian_Castro.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_VEN_Jose_Paez"
+				textureFile = "gfx/leaders/VEN/Portrait_VEN_Jose_Paez.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_VEN_Leon_de_Cordero_y_Orberto"
+				texturefile = "gfx/leaders/VEN/Portrait_VEN_Leon_de_Cordero_y_Orberto.png"
+			}
+			
+			spriteType = {
+				name = "GFX_Portrait_VEN_Pedro_Estanislao_Ramos"
+				texturefile = "gfx/leaders/VEN/Portrait_VEN_Pedro_Estanislao_Ramos.png"
+			}
+
+	# ECUADOR
 	
+		# Leaders + Generals
+
+			spriteType = {
+				name = "GFX_Portrait_ECU_Francisco_Robles"
+				texturefile = "gfx/leaders/ECU/Portrait_ECU_Francisco_Robles.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_ECU_Gabriel_Garcia_Moreno"
+				texturefile = "gfx/leaders/ECU/Portrait_ECU_Gabriel_Garcia_Moreno.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_ECU_Guillermo_Herrera"
+				texturefile = "gfx/leaders/ECU/Portrait_ECU_Guillermo_Herrera.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_ECU_Jeronimo_Carrion"
+				texturefile = "gfx/leaders/ECU/Portrait_ECU_Jeronimo_Carrion.png"
+			}
+
+	# PERU
 	
+		# Leaders + Generals
+
+			spriteType = {
+				name = "GFX_Portrait_PRR_Manuel_Ignacio_de_Vivanco"
+				texturefile = "gfx/leaders/PRR/Portrait_PRR_Manuel_Ignacio_de_Vivanco.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_PRR_Jose_Rufino_Echenique"
+				texturefile = "gfx/leaders/PRR/Portrait_PRR_Jose_Rufino_Echenique.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_PRU_Ramon_Castilla"
+				texturefile = "gfx/leaders/PRU/Portrait_PRU_Ramon_Castilla.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_PRU_Juan_Pezet"
+				texturefile = "gfx/leaders/PRU/Portrait_PRU_Juan_Pezet.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_PRU_Francisco_Bolognesi"
+				texturefile = "gfx/leaders/PRU/Portrait_PRU_Francisco_Bolognesi.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_PRU_Miguel_Roman"
+				texturefile = "gfx/leaders/PRU/Portrait_PRU_Miguel_Roman.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_PRU_Guillermo_Miller"
+				texturefile = "gfx/leaders/PRU/Portrait_PRU_Guillermo_Miller.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_PRU_Andres_Caceres"
+				texturefile = "gfx/leaders/PRU/Portrait_PRU_Andres_Caceres.png"
+			}
+
+	# BOLIVIA
 	
+		# Leaders + Generals
+
+			spriteType = {
+				name = "GFX_Portrait_BOL_Jorge_Cordova"
+				texturefile = "gfx/leaders/BOL/Portrait_BOL_Jorge_Cordova.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_BOL_Jose_Maria_Linares"
+				texturefile = "gfx/leaders/BOL/Portrait_BOL_Jose_Maria_Linares.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_BOL_Jose_Maria_de_Acha"
+				texturefile = "gfx/leaders/BOL/Portrait_BOL_Jose_Maria_de_Acha.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_BOL_Manuel_Isidoro_Belzu"
+				texturefile = "gfx/leaders/BOL/Portrait_BOL_Manuel_Isidoro_Belzu.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_BOL_Agustin_Morales"
+				texturefile = "gfx/leaders/BOL/Portrait_BOL_Agustin_Morales.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_BOL_Jose_Miguel_de_Velasco"
+				texturefile = "gfx/leaders/BOL/Portrait_BOL_Jose_Miguel_de_Velasco.png"
+			}
+			
+			spriteType = {
+				name = "GFX_Portrait_BOL_Mariano_Melgarejo"
+				texturefile = "gfx/leaders/BOL/Portrait_BOL_Mariano_Melgarejo.png"
+			}
+
+	# BRAZIL
 	
+		# Leaders + Generals
+
+			spriteType = {
+				name = "GFX_Portrait_BRA_Pedro_II"
+				texturefile = "gfx/leaders/BRA/Portrait_BRA_Pedro_II.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_BRA_Pedro_IIyoung"
+				texturefile = "gfx/leaders/BRA/Portrait_BRA_Pedro_IIyoung.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_BRA_Marquis_of_Olinda"
+				texturefile = "gfx/leaders/BRA/Portrait_BRA_Pedro_de_Araujo_Lima.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_BRA_Viscount_of_Itaborai"
+				texturefile = "gfx/leaders/BRA/Portrait_BRA_Joaquim_Jose_Rodrigues_Torres.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_BRA_Viscount_of_Abaete"
+				texturefile = "gfx/leaders/BRA/Portrait_BRA_Antonio_Paulino_Limpo_de_Abreu_Viscount_of_Abaete.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_BRA_Viscount_of_Sinimbu"
+				texturefile = "gfx/leaders/BRA/Portrait_BRA_Visconde_de_Sinimbu.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_BRA_Viscount_of_Uruguai"
+				texturefile = "gfx/leaders/BRA/Portrait_BRA_Paulino_Jose_Soares_de_Sousa.png"
+			}
+			
+			spriteType = {
+				name = "GFX_Portrait_BRA_2nd_Marquis_of_Paranagua"
+				texturefile = "gfx/leaders/BRA/Portrait_BRA_2nd_Marquis_of_Paranagua.png"
+			}
+			
+			spriteType = {
+				name = "GFX_Portrait_BRA_Eusebio_de_Queiros"
+				texturefile = "gfx/leaders/BRA/Portrait_BRA_Eusebio_de_Queiros.png"
+			}
+			
+			spriteType = {
+				name = "GFX_Portrait_BRA_Francisco_Jose_Furtado"
+				texturefile = "gfx/leaders/BRA/Portrait_BRA_Francisco_Jose_Furtado.png"
+			}
+			
+			spriteType = {
+				name = "GFX_Portrait_BRA_General_Assembly"
+				texturefile = "gfx/leaders/BRA/Portrait_BRA_General_Assembly.png"
+			}
+			
+			spriteType = {
+				name = "GFX_Portrait_BRA_Nabuco_de_Araujo"
+				texturefile = "gfx/leaders/BRA/Portrait_BRA_Jose_Tomas_Nabuco_de_Araujo.png"
+			}
+			
+			spriteType = {
+				name = "GFX_Portrait_BRA_Luis_Alves_Lima_e_Silva"
+				texturefile = "gfx/leaders/BRA/Portrait_BRA_Luis_Alves_de_Lima_e_Silva_better.png"
+			}
+			
+			spriteType = {
+				name = "GFX_Portrait_BRA_Zacarias_de_Gois"
+				texturefile = "gfx/leaders/BRA/Portrait_BRA_Zacarias_de_Gois.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_BRA_Teofilo_Ottoni"
+				texturefile = "gfx/leaders/BRA/Portrait_BRA_Teofilo_Benedito_Ottoni.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_BRA_Viscount_of_Rio_Branco"
+				texturefile = "gfx/leaders/BRA/Portrait_BRA_Jose_Maria_da_Silva_Paranhos.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_BRA_Baron_of_Maua"
+				texturefile = "gfx/leaders/BRA/Portrait_BRA_Irineu_Evangelista_de_Sousa.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_BRA_Baron_of_Uruguaiana"
+				texturefile = "gfx/leaders/BRA/Portrait_BRA_Angelo_da_Silva_Ferraz.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_BRA_Marquis_of_Monte_Alegre"
+				texturefile = "gfx/leaders/BRA/Portrait_BRA_Marquis_of_Monte_Alegre.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_BRA_Francisco_Manuel_Barroso_da_Silva"
+				texturefile = "gfx/leaders/BRA/Portrait_BRA_Francisco_Manuel_Barroso_da_Silva.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_BRA_Joaquim_Antonio_Cordovil_Maurity"
+				texturefile = "gfx/leaders/BRA/Portrait_BRA_Joaquim_Antonio_Cordovil_Maurity.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_BRA_Luis_da_Cunha_Moreira"
+				texturefile = "gfx/leaders/BRA/Portrait_BRA_Luis_da_Cunha_Moreira.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_BRA_Deodoro_da_Fonseca_Young"
+				texturefile = "gfx/leaders/BRA/Portrait_BRA_Deodoro_da_Fonseca_young.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_BRA_Elisiario_Antonio_dos_Santos"
+				texturefile = "gfx/leaders/BRA/Portrait_BRA_Elisario_Antonio.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_BRA_Antonio_Luis_von_Hoonholtz"
+				texturefile = "gfx/leaders/BRA/Portrait_BRA_Luis_von_Hoonholtz.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_BRA_Antonio_Manuel_de_Melo"
+				texturefile = "gfx/leaders/BRA/Portrait_BRA_Antonio_Manuel_de_Melo.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_BRA_Antonio_Nicolau_Falcao_da_Frota"
+				texturefile = "gfx/leaders/BRA/Portrait_BRA_Antonio_Nicolau_Falcao_da_Frota.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_BRA_Antonio_Tiburcio_Ferreira_de_Sousa"
+				texturefile = "gfx/leaders/BRA/Portrait_BRA_Antonio_Tiburcio_Ferreira_de_Sousa.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_BRA_Hilario_Maximiniano_Antunes_Gurjao"
+				texturefile = "gfx/leaders/BRA/Portrait_BRA_Hilario_Maximiniano_Antunes_Gurjao.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_BRA_Hipolito_Pinto_Ribeiro"
+				texturefile = "gfx/leaders/BRA/Portrait_BRA_Hipolito_Pinto_Ribeiro.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_BRA_Joao_Nunes_da_Silva_Tavares"
+				texturefile = "gfx/leaders/BRA/Portrait_BRA_Joao_Nunes_da_Silva_Tavares.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_BRA_Polidoro_da_Fonseca_Quintanilha_Jordao"
+				texturefile = "gfx/leaders/BRA/Portrait_BRA_Polidoro_da_Fonseca_Quintanilha_Jordao.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_BRA_Jose_Auto_da_Silva_Guimaraes"
+				texturefile = "gfx/leaders/BRA/Portrait_BRA_Jose_Auto_da_Silva_Guimaraes.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_BRA_Manuel_da_Fonseca_de_Lima_e_Silva"
+				texturefile = "gfx/leaders/BRA/Portrait_BRA_Manuel_da_Fonseca_de_Lima_e_Silva.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_BRA_Conrado_Jaco_de_Niemeyer"
+				texturefile = "gfx/leaders/BRA/Portrait_BRA_Conrado_Jaco_de_Niemeyer.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_BRA_Francisco_Xavier_Cabral_da_Silva"
+				texturefile = "gfx/leaders/BRA/Portrait_BRA_Francisco_Xavier_Cabral_da_Silva.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_BRA_Jose_Antonio_Correia_da_Camara"
+				texturefile = "gfx/leaders/BRA/Portrait_BRA_Jose_Antonio_Correia_da_Camara.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_BRA_Jose_Simeao_de_Oliveira"
+				texturefile = "gfx/leaders/BRA/Portrait_BRA_Jose_Simeao_de_Oliveira.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_BRA_Severiano_Martins_da_Fonseca"
+				texturefile = "gfx/leaders/BRA/Portrait_BRA_Severiano_Martins_da_Fonseca.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_BRA_Aires_Antonio_de_Morais_Ancora"
+				texturefile = "gfx/leaders/BRA/Portrait_BRA_Aires_Antonio_de_Morais_Ancora.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_BRA_Antonio_Eneas_Gustavo_Galvao"
+				texturefile = "gfx/leaders/BRA/Portrait_BRA_Antonio_Eneas_Gustavo_Galvao.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_BRA_Gustav_Heinrich_von_Braun"
+				texturefile = "gfx/leaders/BRA/Portrait_BRA_Gustav_Heinrich_von_Braun.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_BRA_Emile_Louis_Mallet"
+				texturefile = "gfx/leaders/BRA/Portrait_BRA_Emile_Louis_Mallet.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_BRA_Francisco_Felix_da_Fonseca_Pereira_Pinto"
+				texturefile = "gfx/leaders/BRA/Portrait_BRA_Francisco_Felix_da_Fonseca_Pereira_Pinto.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_BRA_Joao_Frederico_Caldwell"
+				texturefile = "gfx/leaders/BRA/Portrait_BRA_Joao_Frederico_Caldwell.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_BRA_Joao_de_Sousa_da_Fonseca_Costa"
+				texturefile = "gfx/leaders/BRA/Portrait_BRA_Joao_de_Sousa_da_Fonseca_Costa.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_BRA_Jose_Egidio_Gordilho_de_Barbuda_Filho"
+				texturefile = "gfx/leaders/BRA/Portrait_BRA_Jose_Egidio_Gordilho_de_Barbuda_Filho.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_BRA_Pedro_de_Alcantara_Bellegarde"
+				texturefile = "gfx/leaders/BRA/Portrait_BRA_Pedro_de_Alcantara_Bellegarde.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_BRA_Hermes_Ernesto_da_Fonseca"
+				texturefile = "gfx/leaders/BRA/Portrait_BRA_Hermes_Ernesto_da_Fonseca.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_BRA_Augusto_Joao_Manuel_Leverger"
+				texturefile = "gfx/leaders/BRA/Portrait_BRA_Augusto_Joao_Manuel_Leverger.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_BRA_Eduardo_Wandenkolk"
+				texturefile = "gfx/leaders/BRA/Portrait_BRA_Eduardo_Wandenkolk.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_BRA_Manuel_Luis_Osorio"
+				texturefile = "gfx/leaders/BRA/Portrait_BRA_Manuel_Luis_Osorio.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_BRA_Manuel_Marques_de_Sousa"
+				texturefile = "gfx/leaders/BRA/Portrait_BRA_Manuel_Marques_de_Sousa.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_BRA_Gaston_Count_of_Eu"
+				texturefile = "gfx/leaders/BRA/Portrait_BRA_Gaston_Count_of_Eu.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_BRA_Carlos_De_Morais_Camisao"
+				texturefile = "gfx/leaders/BRA/Portrait_BRA_Carlos_De_Morais_Camisao.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_BRA_Jose_Barreto"
+				texturefile = "gfx/leaders/BRA/Portrait_BRA_Jose_Barreto.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_BRA_Henrique_de_Beaurepaire_Rohan"
+				texturefile = "gfx/leaders/BRA/Portrait_BRA_Henrique_de_Beaurepaire_Rohan.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_BRA_Joaquim_Marques_Lisboa"
+				texturefile = "gfx/leaders/BRA/Portrait_BRA_Joaquim_Marques_Lisboa.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_BHA_Luiza_Mahin"
+				texturefile = "gfx/leaders/BHA/Portrait_BHA_Luiza_Mahin.png"
+			}
+
+			spriteType = {
+				name = "Portrait_BHA_African_Brazilian_Warrior"
+				texturefile = "gfx/leaders/BHA/Portrait_BHA_African_Brazilian_Warrior.png"
+			}
+
+	# PARAGUAY
 	
+		# Leaders + Generals
+
+			spriteType = {
+				name = "GFX_Portrait_PAR_Francisco_Antonio_Lopez"
+				texturefile = "gfx/leaders/PAR/Portrait_PAR_Francisco_Antonio_Lopez.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_PAR_Jose_Diaz"
+				texturefile = "gfx/leaders/PAR/Portrait_PAR_Jose_Diaz.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_PAR_Domingo_Francisco_Sanchez"
+				texturefile = "gfx/leaders/PAR/Portrait_PAR_Domingo_Francisco_Sanchez.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_PAR_Carlos_Antonio_Lopez"
+				texturefile = "gfx/leaders/PAR/Portrait_PAR_Carlos_Antonio_Lopez.png"
+			}
+
+	# URUGUAY
 	
+		# Leaders + Generals
+
+			spriteType = {
+				name = "GFX_Portrait_URG_Gabriel_Antonio_Pereira"
+				texturefile = "gfx/leaders/URG/Portrait_URG_Gabriel_Antonio_Pereira.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_URG_Enrique_Castro"
+				texturefile = "gfx/leaders/URG/Portrait_URG_Enrique_Castro.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_URG_Anacleto_Medina"
+				texturefile = "gfx/leaders/URG/Portrait_URG_Anacleto_Medina.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_URC_Venancio_Flores"
+				textureFile = "gfx/leaders/URC/Portrait_URC_Venancio_Flores.png"
+			}
+			
+			spriteType = {
+				name = "GFX_Portrait_URC_Leon_de_Palleja"
+				textureFile = "gfx/leaders/URC/Portrait_URC_Leon_de_Palleja.png"
+			}
+
+	# CHILE
 	
+		# Leaders + Generals
+
+			spriteType = {
+				name = "GFX_Portrait_CHL_Manuel_Montt"
+				texturefile = "gfx/leaders/CHL/Portrait_CHL_Manuel_Montt.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_CHL_Pedro_Leon_Gallo"
+				texturefile = "gfx/leaders/CHL/Portrait_CHL_Pedro_Leon_Gallo.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_CHL_Gregorio_Urrutia"
+				texturefile = "gfx/leaders/CHL/Portrait_CHL_Gregorio_Urrutia.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_CHL_Cornelio_Rodriguez"
+				texturefile = "gfx/leaders/CHL/Portrait_CHL_Cornelio_Rodriguez.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_CHL_Juan_Wiliams"
+				texturefile = "gfx/leaders/CHL/Portrait_CHL_Juan_Wiliams.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_CHL_Jose_Joaquin_Perez"
+				texturefile = "gfx/leaders/CHL/Portrait_CHL_Jose_Joaquin_Perez.png"
+			}
+
+	# ARGENTINA
 	
+		# Leaders + Generals
+
+			spriteType = {
+				name = "GFX_Portrait_ETR_Richardo_Lopez_Jordan"
+				textureFile = "gfx/leaders/ETR/Portrait_ETR_Richardo_Lopez_Jordan.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_BUE_Bartolome_Mitre"
+				textureFile = "gfx/leaders/ARG/Portrait_BUE_Bartolome_Mitre.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_BUE_Bartolome_Mitre_Military"
+				textureFile = "gfx/leaders/ARG/Portrait_BUE_Bartolome_Mitre_Military.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_BUE_Salustiano_Zavalia"
+				textureFile = "gfx/leaders/ARG/Portrait_BUE_Salustiano_Zavalia.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_ARG_Justo_Jose_de_Urquiza"
+				textureFile = "gfx/leaders/ARG/Portrait_ARG_Justo_Jose_de_Urquiza.png"
+			}
+			
+			spriteType = {
+				name = "GFX_Portrait_ARG_Angel_Vicente_Penaloza"
+				textureFile = "gfx/leaders/ARG/Portrait_ARG_Angel_Vicente_Penaloza.png"
+			}
+
+	# PATOGONIA
 	
+		# Leaders + Generals
+
+			spriteType = {
+				name = "GFX_Portrait_WLL_Calfucura"
+				textureFile = "gfx/leaders/WLL/Portrait_WLL_Calfucura.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_WLL_Quilapan_Kulapang"
+				textureFile = "gfx/leaders/WLL/Portrait_WLL_Quilapan_Kulapang.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_WLL_Valentin_Sayhueque"
+				textureFile = "gfx/leaders/WLL/Portrait_WLL_Valentin_Sayhueque.png"
+			}
+			
+			spriteType = {
+				name = "GFX_Portrait_WLL_Modesto_Inacayal"
+				textureFile = "gfx/leaders/WLL/Portrait_WLL_Modesto_Inacayal.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_PUE_Manuel_Namancura"
+				textureFile = "gfx/leaders/WLL/Portrait_PUE_Manuel_Namancura.png"
+			}
+
+# PACIFIC
+
+	# HAWAII
 	
+		# Leaders + Generals
+
+			spriteType = {
+				name = "GFX_Portrait_HAW_kamehameha_iv"
+				texturefile = "gfx/leaders/HAW/Portrait_HAW_Kamehameha_IV.png"
+			}
+
+			spriteType = {
+				name = "GFX_Portrait_HAW_lot_kapuaiwa"
+				texturefile = "gfx/leaders/HAW/Portrait_HAW_Lot_Kapuaiwa.png"
+			}
+			
+			spriteType = {
+				name = "GFX_Portrait_HAW_Kamehameha_V"
+				texturefile = "gfx/leaders/HAW/Portrait_HAW_Kamehameha_V.png"
+			}
+
+	# TAHITI
 	
+		# Leaders + Generals
+
+			spriteType = {
+				name = "GFX_Portrait_TAH_Pomare_IV"
+				texturefile = "gfx/leaders/TAH/Portrait_TAH_Pomare_IV.png"
+			}
+
+	# SAMOA
 	
-	
-	
-	
-	
-# Mexico
-		spriteType = {
-			name = "GFX_Portrait_MEX_Jesus_Gonzalez_Ortega"
-			texturefile = "gfx/leaders/MEX/Portrait_MEX_Jesus_Gonzalez_Ortega.dds"
-		}
-		spriteType = {
-			name = "GFX_Portrait_MEX_Tomas_Camacho"
-			texturefile = "gfx/leaders/MEX/Portrait_MEX_Tomas_Camacho.dds"
-		}
-		spriteType = {
-			name = "GFX_Portrait_MEX_Jose_Degollado"
-			texturefile = "gfx/leaders/MEX/Portrait_MEX_Jose_Degollado.dds"
-		}
-		spriteType = {
-			name = "GFX_Portrait_MEX_Luis_Osollo"
-			texturefile = "gfx/leaders/MEX/Portrait_MEX_Luis_Osollo.dds"
-		}
-	# Maya	
-		spriteType = {
-			name = "GFX_Portrait_MAY_Venancio_Puc"
-			texturefile = "gfx/leaders/MAY/Portrait_MAY_Venancio_Puc.png"
-		}
-	# Chile
-		spriteType = {
-			name = "GFX_Portrait_CHI_Manuel_Montt"
-			texturefile = "gfx/leaders/CHL/Portrait_CHI_Manuel_Montt.png"
-		}
-		spriteType = {
-			name = "GFX_Portrait_CHL_Pedro_Leon_Gallo"
-			texturefile = "gfx/leaders/CHL/Portrait_CHL_Pedro_Leon_Gallo.png"
-		}
-		spriteType = {
-			name = "GFX_Portrait_CHL_Gregorio_Urrutia"
-			texturefile = "gfx/leaders/CHL/Portrait_CHL_Gregorio_Urrutia.png"
-		}
-		spriteType = {
-			name = "GFX_Portrait_CHL_Cornelio_Rodriguez"
-			texturefile = "gfx/leaders/CHL/Portrait_CHL_Cornelio_Rodriguez.png"
-		}
-		spriteType = {
-			name = "GFX_Portrait_CHL_Juan_Wiliams"
-			texturefile = "gfx/leaders/CHL/Portrait_CHL_Juan_Wiliams.png"
-		}
-	# Paraguay
-		spriteType = {
-			name = "GFX_Portrait_PAR_Francisco_Antonio_Lopez"
-			texturefile = "gfx/leaders/PAR/Portrait_PAR_Francisco_Antonio_Lopez.dds"
-		}
-		spriteType = {
-			name = "GFX_Portrait_PAR_Jose_Diaz"
-			texturefile = "gfx/leaders/PAR/Portrait_PAR_Jose_Diaz.dds"
-		}
-		spriteType = {
-			name = "GFX_Portrait_PAR_Domingo_Francisco_Sanchez"
-			texturefile = "gfx/leaders/PAR/Portrait_PAR_Domingo_Francisco_Sanchez.dds"
-		}
-	# Uruguay
-		spriteType = {
-			name = "GFX_Portrait_URG_Enrique_Castro"
-			texturefile = "gfx/leaders/URG/Portrait_URG_Enrique_Castro.dds"
-		}
-		spriteType = {
-			name = "GFX_Portrait_URG_Anacleto_Medina"
-			texturefile = "gfx/leaders/URG/Portrait_URG_Anacleto_Medina.dds"
-		}
-	# Venezuela
-		spriteType = {
-			name = "GFX_Portrait_USV_Ezequiel_Zamora"
-			texturefile = "ggfx/leaders/USV/Portrait_USV_Ezequiel_Zamora.dds"
-		}
-		spriteType = {
-			name = "GFX_Portrait_USV_Manuel_Bruzual"
-			texturefile = "gfx/leaders/USV/Portrait_USV_Manuel_Bruzual.dds"
-		}
-	# Dominican Republic
-		spriteType = {
-			name = "GFX_Portrait_DOM_Buenaventura_Baez"
-			texturefile = "gfx/leaders/DOM/Portrait_DOM_Buenaventura_Baez.png"
-		}
-		spriteType = {
-			name = "GFX_Portrait_DOM_Pedro_Santana"
-			texturefile = "gfx/leaders/DOM/Portrait_DOM_Pedro_Santana.png"
-		}
-	# Bolivia
-		spriteType = {
-			name = "GFX_Portrait_BOL_Jorge_Cordova"
-			texturefile = "gfx/leaders/BOL/Portrait_BOL_Jorge_Cordova.png"
-		}
-		spriteType = {
-			name = "GFX_Portrait_BOL_Jose_Maria_Linares"
-			texturefile = "gfx/leaders/BOL/Portrait_BOL_Jose_Maria_Linares.png"
-		}
-		spriteType = {
-			name = "GFX_Portrait_BOL_Jose_Maria_de_Acha"
-			texturefile = "gfx/leaders/BOL/Portrait_BOL_Jose_Maria_de_Acha.png"
-		}
-		spriteType = {
-			name = "GFX_Portrait_BOL_Manuel_Isidoro_Belzu"
-			texturefile = "gfx/leaders/BOL/Portrait_BOL_Manuel_Isidoro_Belzu.png"
-		}
-		spriteType = {
-			name = "GFX_Portrait_BOL_Agustin_Morales"
-			texturefile = "gfx/leaders/BOL/Portrait_BOL_Agustin_Morales.png"
-		}
-		spriteType = {
-			name = "GFX_Portrait_BOL_Jose_Miguel_de_Velasco"
-			texturefile = "gfx/leaders/BOL/Portrait_BOL_Jose_Miguel_de_Velasco.png"
-		}
-		spriteType = {
-			name = "GFX_Portrait_BOL_Mariano_Melgarejo"
-			texturefile = "gfx/leaders/BOL/Portrait_BOL_Mariano_Melgarejo.png"
-		}
-	 #Peru
-	spriteType = {
-		name = "GFX_Portrait_PRR_Manuel_Ignacio_de_Vivanco"
-		texturefile = "gfx/leaders/PRR/Portrait_PRR_Manuel_Ignacio_de_Vivanco.dds"
-	}
-	spriteType = {
-		name = "GFX_Portrait_DOM_Gregorio_Luperon"
-		textureFile = "gfx/leaders/DOM/Portrait_DOM_Gregorio_Luperon.png"
-	}
-	spriteType = {
-		name = "GFX_Portrait_DOM_Gaspar_Polanco"
-		textureFile = "gfx/leaders/DOM/Portrait_DOM_Gaspar_Polanco.png"
-	}
-	spriteType = {
-		name = "GFX_Portrait_MEX_Ignacio_Comonfort"
-		textureFile = "gfx/leaders/MEX/Portrait_MEX_Ignacio_Comonfort.dds"
-	}
-	spriteType = {
-		name = "GFX_Portrait_SPC_Juan_de_Borbon"
-		textureFile = "gfx/leaders/SPC/Portrait_SPC_Juan_de_Borbon.png"
-	}
-	spriteType = {
-		name = "GFX_Portrait_SPC_Juan_Nepomuceno_de_Orbe"
-		textureFile = "gfx/leaders/SPC/Portrait_SPC_Juan_Nepomuceno_de_Orbe.png"
-	}
-	spriteType = {
-		name = "GFX_Portrait_SPC_Antonio_Dorregaray"
-		textureFile = "gfx/leaders/SPC/Portrait_SPC_Antonio_Dorregaray.png"
-	}
-	spriteType = {
-		name = "GFX_Portrait_ETR_Richardo_Lopez_Jordan"
-		textureFile = "gfx/leaders/ETR/Portrait_ETR_Richardo_Lopez_Jordan.png"
-	}
-	spriteType = {
-		name = "GFX_Portrait_URC_Venancio_Flores"
-		textureFile = "gfx/leaders/URC/Portrait_URC_Venancio_Flores.dds"
-	}
-	spriteType = {
-		name = "GFX_Portrait_URC_Leon_de_Palleja"
-		textureFile = "gfx/leaders/URC/Portrait_URC_Leon_de_Palleja.dds"
-	}
-	spriteType = {
-		name = "GFX_Portrait_USV_Juan_Falcon"
-		textureFile = "gfx/leaders/USV/Portrait_USV_Juan_Falcon.dds"
-	}
-	spriteType = {
-		name = "GFX_Portrait_USV_Jose_Ruperto_Monagas"
-		textureFile = "gfx/leaders/USV/Portrait_USV_Antonio_Guzman_Blanco.dds"
-	}
-	spriteType = {
-		name = "GFX_Portrait_BUE_Bartolome_Mitre"
-		textureFile = "gfx/leaders/ARG/Portrait_BUE_Bartolome_Mitre.png"
-	}
-	spriteType = {
-		name = "GFX_Portrait_BUE_Salustiano_Zavalia"
-		textureFile = "gfx/leaders/ARG/Portrait_BUE_Salustiano_Zavalia.png"
-	}
-	spriteType = {
-		name = "GFX_Portrait_ARG_Justo_Jose_de_Urquiza"
-		textureFile = "gfx/leaders/ARG/Portrait_ARG_Justo_Jose_de_Urquiza.png"
-	}
-	spriteType = {
-		name = "GFX_Portrait_ARG_Angel_Vicente_Penaloza"
-		textureFile = "gfx/leaders/ARG/Portrait_ARG_Angel_Vicente_Penaloza.png"
-	}
-	spriteType = {
-		name = "GFX_Portrait_WLL_Calfucura"
-		textureFile = "gfx/leaders/WLL/Portrait_WLL_Calfucura.png"
-	}
-	spriteType = {
-		name = "GFX_Portrait_WLL_Quilapan_Kulapang"
-		textureFile = "gfx/leaders/WLL/Portrait_WLL_Quilapan_Kulapang.dds"
-	}
-	spriteType = {
-		name = "GFX_Portrait_WLL_Valentin_Sayhueque"
-		textureFile = "gfx/leaders/WLL/Portrait_WLL_Valentin_Sayhueque.dds"
-	}
-	spriteType = {
-		name = "GFX_Portrait_WLL_Modesto_Inacayal"
-		textureFile = "gfx/leaders/WLL/Portrait_WLL_Modesto_Inacayal.dds"
-	}
+		# Leaders + Generals
+			
+			spriteType = {
+				name = "GFX_portrait_TUA_malietoa_moli"
+				texturefile = "gfx/leaders/TUA/Portrait_TUA_Malietoa_Moli.png"
+			}
 
-
-
-
-	spriteType = {
-		name = "GFX_Portrait_HAW_kamehameha_iv"
-		texturefile = "gfx/leaders/HAW/Portrait_HAW_Kamehameha_IV.png"
-	}
-	spriteType = {
-		name = "GFX_Portrait_HAW_lot_kapuaiwa"
-		texturefile = "gfx/leaders/HAW/Portrait_HAW_Lot_Kapuaiwa.png"
-	}
-	spriteType = {
-		name = "GFX_Portrait_HAW_Kamehameha_V"
-		texturefile = "gfx/leaders/HAW/Portrait_HAW_Kamehameha_V.png"
-	}
-
-###	BRA
-	
-	spriteType = {
-		name = "GFX_Portrait_BRA_Pedro_II"
-		texturefile = "gfx/leaders/BRA/Portrait_BRA_Pedro_II.png"
-	}
-	spriteType = {
-		name = "GFX_Portrait_BRA_Pedro_IIyoung"
-		texturefile = "gfx/leaders/BRA/Portrait_BRA_Pedro_IIyoung.png"
-	}
-	spriteType = {
-		name = "GFX_Portrait_BRA_Marquis_of_Olinda"
-		texturefile = "gfx/leaders/BRA/Portrait_BRA_Pedro_de_Araujo_Lima.png"
-	}
-	spriteType = {
-		name = "GFX_Portrait_BRA_Viscount_of_Itaborai"
-		texturefile = "gfx/leaders/BRA/Portrait_BRA_Joaquim_Jose_Rodrigues_Torres.png"
-	}
-	spriteType = {
-		name = "GFX_Portrait_BRA_Viscount_of_Abaete"
-		texturefile = "gfx/leaders/BRA/Portrait_BRA_Antonio_Paulino_Limpo_de_Abreu_Viscount_of_Abaete.png"
-	}
-	spriteType = {
-		name = "GFX_Portrait_BRA_Viscount_of_Sinimbu"
-		texturefile = "gfx/leaders/BRA/Portrait_BRA_Visconde_de_Sinimbu.png"
-	}
-	spriteType = {
-		name = "GFX_Portrait_BRA_Viscount_of_Uruguai"
-		texturefile = "gfx/leaders/BRA/Portrait_BRA_Paulino_Jose_Soares_de_Sousa.png"
-	}
-	
-	spriteType = {
-		name = "GFX_Portrait_BRA_2nd_Marquis_of_Paranagua"
-		texturefile = "gfx/leaders/BRA/Portrait_BRA_2nd_Marquis_of_Paranagua.png"
-	}
-	
-	spriteType = {
-		name = "GFX_Portrait_BRA_Eusebio_de_Queiros"
-		texturefile = "gfx/leaders/BRA/Portrait_BRA_Eusebio_de_Queiros.png"
-	}
-	
-	spriteType = {
-		name = "GFX_Portrait_BRA_Francisco_Jose_Furtado"
-		texturefile = "gfx/leaders/BRA/Portrait_BRA_Francisco_Jose_Furtado.png"
-	}
-	
-	spriteType = {
-		name = "GFX_Portrait_BRA_General_Assembly"
-		texturefile = "gfx/leaders/BRA/Portrait_BRA_General_Assembly.png"
-	}
-	
-	spriteType = {
-		name = "GFX_Portrait_BRA_Nabuco_de_Araujo"
-		texturefile = "gfx/leaders/BRA/Portrait_BRA_Jose_Tomas_Nabuco_de_Araujo.png"
-	}
-	
-	spriteType = {
-		name = "GFX_Portrait_BRA_Luis_Alves_Lima_e_Silva"
-		texturefile = "gfx/leaders/BRA/Portrait_BRA_Luis_Alves_de_Lima_e_Silva_better.png"
-	}
-	
-	spriteType = {
-		name = "GFX_Portrait_BRA_Zacarias_de_Gois"
-		texturefile = "gfx/leaders/BRA/Portrait_BRA_Zacarias_de_Gois.png"
-	}
-
-	spriteType = {
-		name = "GFX_Portrait_BRA_Teofilo_Ottoni"
-		texturefile = "gfx/leaders/BRA/Portrait_BRA_Teofilo_Benedito_Ottoni.png"
-	}
-
-	spriteType = {
-		name = "GFX_Portrait_BRA_Viscount_of_Rio_Branco"
-		texturefile = "gfx/leaders/BRA/Portrait_BRA_Jose_Maria_da_Silva_Paranhos.png"
-	}
-
-	spriteType = {
-		name = "GFX_Portrait_BRA_Baron_of_Maua"
-		texturefile = "gfx/leaders/BRA/Portrait_BRA_Irineu_Evangelista_de_Sousa.png"
-	}
-
-	spriteType = {
-		name = "GFX_Portrait_BRA_Baron_of_Uruguaiana"
-		texturefile = "gfx/leaders/BRA/Portrait_BRA_Angelo_da_Silva_Ferraz.png"
-	}
-
-	spriteType = {
-		name = "GFX_Portrait_BRA_Marquis_of_Monte_Alegre"
-		texturefile = "gfx/leaders/BRA/Portrait_BRA_Marquis_of_Monte_Alegre.png"
-	}
-
-	spriteType = {
-		name = "GFX_Portrait_BRA_Francisco_Manuel_Barroso_da_Silva"
-		texturefile = "gfx/leaders/BRA/Portrait_BRA_Francisco_Manuel_Barroso_da_Silva.png"
-	}
-
-	spriteType = {
-		name = "GFX_Portrait_BRA_Joaquim_Antonio_Cordovil_Maurity"
-		texturefile = "gfx/leaders/BRA/Portrait_BRA_Joaquim_Antonio_Cordovil_Maurity.png"
-	}
-
-	spriteType = {
-		name = "GFX_Portrait_BRA_Luis_da_Cunha_Moreira"
-		texturefile = "gfx/leaders/BRA/Portrait_BRA_Luis_da_Cunha_Moreira.png"
-	}
-
-	spriteType = {
-		name = "GFX_Portrait_BRA_Deodoro_da_Fonseca_Young"
-		texturefile = "gfx/leaders/BRA/Portrait_BRA_Deodoro_da_Fonseca_young.png"
-	}
-
-	spriteType = {
-		name = "GFX_Portrait_BRA_Elisiario_Antonio_dos_Santos"
-		texturefile = "gfx/leaders/BRA/Portrait_BRA_Elisario_Antonio.png"
-	}
-
-	spriteType = {
-		name = "GFX_Portrait_BRA_Antonio_Luis_von_Hoonholtz"
-		texturefile = "gfx/leaders/BRA/Portrait_BRA_Luis_von_Hoonholtz.png"
-	}
-
-	spriteType = {
-		name = "GFX_Portrait_BRA_Antonio_Manuel_de_Melo"
-		texturefile = "gfx/leaders/BRA/Portrait_BRA_Antonio_Manuel_de_Melo.png"
-	}
-
-	spriteType = {
-		name = "GFX_Portrait_BRA_Antonio_Nicolau_Falcao_da_Frota"
-		texturefile = "gfx/leaders/BRA/Portrait_BRA_Antonio_Nicolau_Falcao_da_Frota.png"
-	}
-
-	spriteType = {
-		name = "GFX_Portrait_BRA_Antonio_Tiburcio_Ferreira_de_Sousa"
-		texturefile = "gfx/leaders/BRA/Portrait_BRA_Antonio_Tiburcio_Ferreira_de_Sousa.png"
-	}
-
-	spriteType = {
-		name = "GFX_Portrait_BRA_Hilario_Maximiniano_Antunes_Gurjao"
-		texturefile = "gfx/leaders/BRA/Portrait_BRA_Hilario_Maximiniano_Antunes_Gurjao.png"
-	}
-
-	spriteType = {
-		name = "GFX_Portrait_BRA_Hipolito_Pinto_Ribeiro"
-		texturefile = "gfx/leaders/BRA/Portrait_BRA_Hipolito_Pinto_Ribeiro.png"
-	}
-
-	spriteType = {
-		name = "GFX_Portrait_BRA_Joao_Nunes_da_Silva_Tavares"
-		texturefile = "gfx/leaders/BRA/Portrait_BRA_Joao_Nunes_da_Silva_Tavares.png"
-	}
-
-	spriteType = {
-		name = "GFX_Portrait_BRA_Polidoro_da_Fonseca_Quintanilha_Jordao"
-		texturefile = "gfx/leaders/BRA/Portrait_BRA_Polidoro_da_Fonseca_Quintanilha_Jordao.png"
-	}
-
-	spriteType = {
-		name = "GFX_Portrait_BRA_Jose_Auto_da_Silva_Guimaraes"
-		texturefile = "gfx/leaders/BRA/Portrait_BRA_Jose_Auto_da_Silva_Guimaraes.png"
-	}
-
-	spriteType = {
-		name = "GFX_Portrait_BRA_Manuel_da_Fonseca_de_Lima_e_Silva"
-		texturefile = "gfx/leaders/BRA/Portrait_BRA_Manuel_da_Fonseca_de_Lima_e_Silva.png"
-	}
-
-	spriteType = {
-		name = "GFX_Portrait_BRA_Conrado_Jaco_de_Niemeyer"
-		texturefile = "gfx/leaders/BRA/Portrait_BRA_Conrado_Jaco_de_Niemeyer.png"
-	}
-
-	spriteType = {
-		name = "GFX_Portrait_BRA_Francisco_Xavier_Cabral_da_Silva"
-		texturefile = "gfx/leaders/BRA/Portrait_BRA_Francisco_Xavier_Cabral_da_Silva.png"
-	}
-
-	spriteType = {
-		name = "GFX_Portrait_BRA_Jose_Antonio_Correia_da_Camara"
-		texturefile = "gfx/leaders/BRA/Portrait_BRA_Jose_Antonio_Correia_da_Camara.png"
-	}
-
-	spriteType = {
-		name = "GFX_Portrait_BRA_Jose_Simeao_de_Oliveira"
-		texturefile = "gfx/leaders/BRA/Portrait_BRA_Jose_Simeao_de_Oliveira.png"
-	}
-
-	spriteType = {
-		name = "GFX_Portrait_BRA_Severiano_Martins_da_Fonseca"
-		texturefile = "gfx/leaders/BRA/Portrait_BRA_Severiano_Martins_da_Fonseca.png"
-	}
-
-	spriteType = {
-		name = "GFX_Portrait_BRA_Aires_Antonio_de_Morais_Ancora"
-		texturefile = "gfx/leaders/BRA/Portrait_BRA_Aires_Antonio_de_Morais_Ancora.png"
-	}
-
-	spriteType = {
-		name = "GFX_Portrait_BRA_Antonio_Eneas_Gustavo_Galvao"
-		texturefile = "gfx/leaders/BRA/Portrait_BRA_Antonio_Eneas_Gustavo_Galvao.png"
-	}
-
-	spriteType = {
-		name = "GFX_Portrait_BRA_Gustav_Heinrich_von_Braun"
-		texturefile = "gfx/leaders/BRA/Portrait_BRA_Gustav_Heinrich_von_Braun.png"
-	}
-
-	spriteType = {
-		name = "GFX_Portrait_BRA_Emile_Louis_Mallet"
-		texturefile = "gfx/leaders/BRA/Portrait_BRA_Emile_Louis_Mallet.png"
-	}
-
-	spriteType = {
-		name = "GFX_Portrait_BRA_Francisco_Felix_da_Fonseca_Pereira_Pinto"
-		texturefile = "gfx/leaders/BRA/Portrait_BRA_Francisco_Felix_da_Fonseca_Pereira_Pinto.png"
-	}
-
-	spriteType = {
-		name = "GFX_Portrait_BRA_Joao_Frederico_Caldwell"
-		texturefile = "gfx/leaders/BRA/Portrait_BRA_Joao_Frederico_Caldwell.png"
-	}
-
-	spriteType = {
-		name = "GFX_Portrait_BRA_Joao_de_Sousa_da_Fonseca_Costa"
-		texturefile = "gfx/leaders/BRA/Portrait_BRA_Joao_de_Sousa_da_Fonseca_Costa.png"
-	}
-
-	spriteType = {
-		name = "GFX_Portrait_BRA_Jose_Egidio_Gordilho_de_Barbuda_Filho"
-		texturefile = "gfx/leaders/BRA/Portrait_BRA_Jose_Egidio_Gordilho_de_Barbuda_Filho.png"
-	}
-
-	spriteType = {
-		name = "GFX_Portrait_BRA_Pedro_de_Alcantara_Bellegarde"
-		texturefile = "gfx/leaders/BRA/Portrait_BRA_Pedro_de_Alcantara_Bellegarde.png"
-	}
-
-	spriteType = {
-		name = "GFX_Portrait_BRA_Hermes_Ernesto_da_Fonseca"
-		texturefile = "gfx/leaders/BRA/Portrait_BRA_Hermes_Ernesto_da_Fonseca.png"
-	}
-
-	spriteType = {
-		name = "GFX_Portrait_BRA_Augusto_Joao_Manuel_Leverger"
-		texturefile = "gfx/leaders/BRA/Portrait_BRA_Augusto_Joao_Manuel_Leverger.png"
-	}
-
-	spriteType = {
-		name = "GFX_Portrait_BRA_Eduardo_Wandenkolk"
-		texturefile = "gfx/leaders/BRA/Portrait_BRA_Eduardo_Wandenkolk.png"
-	}
-
-	spriteType = {
-		name = "GFX_Portrait_BRA_Manuel_Luis_Osorio"
-		texturefile = "gfx/leaders/BRA/Portrait_BRA_Manuel_Luis_Osorio.png"
-	}
-
-	spriteType = {
-		name = "GFX_Portrait_BRA_Manuel_Marques_de_Sousa"
-		texturefile = "gfx/leaders/BRA/Portrait_BRA_Manuel_Marques_de_Sousa.png"
-	}
-
-	spriteType = {
-		name = "GFX_Portrait_BRA_Gaston_Count_of_Eu"
-		texturefile = "gfx/leaders/BRA/Portrait_BRA_Gaston_Count_of_Eu.png"
-	}
-
-	spriteType = {
-		name = "GFX_Portrait_BRA_Carlos_De_Morais_Camisao"
-		texturefile = "gfx/leaders/BRA/Portrait_BRA_Carlos_De_Morais_Camisao.png"
-	}
-
-	spriteType = {
-		name = "GFX_Portrait_BRA_Jose_Barreto"
-		texturefile = "gfx/leaders/BRA/Portrait_BRA_Jose_Barreto.png"
-	}
-
-	spriteType = {
-		name = "GFX_Portrait_BRA_Henrique_de_Beaurepaire_Rohan"
-		texturefile = "gfx/leaders/BRA/Portrait_BRA_Henrique_de_Beaurepaire_Rohan.png"
-	}
-
-	spriteType = {
-		name = "GFX_Portrait_BRA_Joaquim_Marques_Lisboa"
-		texturefile = "gfx/leaders/BRA/Portrait_BRA_Joaquim_Marques_Lisboa.png"
-	}
-
-	spriteType = {
-		name = "GFX_Portrait_BHA_Luiza_Mahin"
-		texturefile = "gfx/leaders/BHA/Portrait_BHA_Luiza_Mahin.png"
-	}
-
-	spriteType = {
-		name = "Portrait_BHA_African_Brazilian_Warrior"
-		texturefile = "gfx/leaders/BHA/Portrait_BHA_African_Brazilian_Warrior.png"
-	}
-	#### MSQ (Moskito Kingdom)
-
-	spriteType = {
-		name = "GFX_Portrait_MSQ_George_Augustus_Frederick_II"
-		texturefile = "gfx/leaders/MSQ/Portrait_MSQ_George_Augustus_Frederick_II.png"
-	}
 }
 

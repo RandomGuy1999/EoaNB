@@ -28,6 +28,15 @@
 
 	set_research_slots = 2
 
+
+	add_dynamic_modifier = {
+		modifier = MOR_modifier_winds_of_change
+	}
+	set_variable = { MOR_wc_research_speed = 0 }
+    set_variable = { MOR_wc_psbf = 0 }
+	set_variable = { MOR_wc_lcpef = 0 }
+    set_variable = { MOR_wc_pfmef = 0 }
+
 	### Economy
     add_ideas = generic_unemployment_idea
     set_variable = { unemployment_value_modifier = 0.1 }
@@ -39,6 +48,8 @@
     }
     update_unemployment_modifier = yes
     add_to_variable = { money = 1 }
+
+
 
 	add_ideas = {
 		#POLITICS
@@ -87,6 +98,7 @@
 		MOR_a_loyal_makhzen
 		MOR_mothballed_navy
 		AFR_history_of_colonial_resistance
+		MOR_coinage_crisis
 	}
 
 	set_politics = {
@@ -160,7 +172,17 @@
 	add_equipment_to_stockpile = { type = infantry_equipment_rifle_0 amount = 1000 producer = MOR }
 	add_equipment_to_stockpile = { type = cavalry_equipment_0 amount = 1000 producer = MOR }
 
-		recruit_character = MOR_character_abd_al_rahman_ibn_hisham			 #Leader + Field Marshal
-		recruit_character = MOR_character_muhammad_ibn_abderrahamane_alawite #General+ maybe Leader
+	recruit_character = MOR_character_abd_al_rahman_ibn_hisham			 #Leader + Field Marshal
+	recruit_character = MOR_character_muhammad_ibn_abderrahamane_alawite #General+ maybe Leader
+
+	recruit_character = MOR_ahmed_ibn_khalid_an_nasiri		
+	recruit_character = MOR_muhammad_zebdi
+	recruit_character = MOR_muhammad_bargash		
+	recruit_character = MOR_abd_al_rahman_al_ali
+	recruit_character = MOR_muhhamad_al_salawi			 
+	recruit_character = MOR_tayeb_bouachrine
+	recruit_character = MOR_muhammad_bin_abdullah_al_saffar
+		
+
 
 }

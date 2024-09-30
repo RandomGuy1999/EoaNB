@@ -48,4 +48,145 @@ characters = {
 			logistics_skill = 3
 		}
 	}
+	#Advisors: (Effects/Traits are still needed(Also GFX))
+	MOR_muhammad_bin_abdullah_al_saffar = {
+		name = "Muhhamad bin Abdullah al-Saffar"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/MOR/MOR_advisor_generic.png"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MOR_advisor_muhammad_bin_abdullah_al_saffar
+			allowed = {
+				OR = {
+					original_tag = MOR
+				}
+			}
+			traits = {
+				centrism_alignment
+			}
+		}
+	}
+	MOR_tayeb_bouachrine = {
+		name = "Tayeb Bouachrine"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/MOR/MOR_advisor_generic.png"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MOR_advisor_tayeb_bouachrine
+			allowed = {
+				OR = {
+					original_tag = MOR
+				}
+			}
+			traits = {
+				centrism_alignment
+			}
+		}
+	}
+	MOR_muhhamad_al_salawi = {
+		name = "Muhhamad al-Salawi"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/MOR/MOR_advisor_generic.png"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MOR_advisor_muhhamad_al_salawi
+			allowed = {
+				OR = {
+					original_tag = MOR
+				}
+			}
+			traits = {
+				centrism_alignment
+			}
+		}
+	}
+	MOR_abd_al_rahman_al_ali = {
+		name = "Abd al-rahman al-Ali"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/MOR/MOR_advisor_generic.png"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MOR_advisor_abd_al_rahman_al_ali
+			allowed = {
+				OR = {
+					original_tag = MOR
+				}
+			}
+			traits = {
+				centrism_alignment
+			}
+		}
+	}
+	MOR_muhammad_bargash = {
+		name = "Muhammad Bargash"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/MOR/MOR_advisor_generic.png"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MOR_advisor_muhammad_bargash
+			allowed = {
+				OR = {
+					original_tag = MOR
+				}
+			}
+			traits = {
+				centrism_alignment
+			}
+		}
+	}
+	MOR_muhammad_zebdi = {
+		name = "Muhammad Zebdi"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/MOR/MOR_advisor_generic.png"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MOR_advisor_muhammad_zebdi
+			allowed = {
+				OR = {
+					original_tag = MOR
+				}
+			}
+			traits = {
+				centrism_alignment
+			}
+		}
+	}
+	MOR_ahmed_ibn_khalid_an_nasiri = {
+		name = "Ahmed ibn Khalid an-Nasiri"
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/MOR/MOR_advisor_generic.png"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MOR_advisor_ahmed_ibn_khalid_an_nasiri
+			allowed = {
+				OR = {
+					original_tag = MOR
+				}
+			}
+			traits = {
+				centrism_alignment
+			}
+		}
+	}
 }

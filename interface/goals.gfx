@@ -1064,6 +1064,26 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/_general/army/the_new_army_plan.png"
 	}
 	SpriteType = {
+		name = "GFX_Focus_artillery_innovation"
+		texturefile = "gfx/interface/goals/_general/army/artillery_innovation.png"
+	}
+	SpriteType = {
+		name = "GFX_Focus_improve_fortification"
+		texturefile = "gfx/interface/goals/_general/army/improve_fortification.png"
+	}
+	SpriteType = {
+		name = "GFX_Focus_concrete_fortification"
+		texturefile = "gfx/interface/goals/_general/army/concrete_fortification.png"
+	}
+	SpriteType = {
+		name = "GFX_Focus_medals"
+		texturefile = "gfx/interface/goals/_general/army/medals.png"
+	}
+	SpriteType = {
+		name = "GFX_Focus_office_orders"
+		texturefile = "gfx/interface/goals/_general/army/office_orders.png"
+	}
+	SpriteType = {
 		name = "GFX_Focus_Mandatory_Conscription"
 		texturefile = "gfx/interface/goals/_general/army/Focus_Mandatory_Conscription.png"
 	}
@@ -1370,6 +1390,14 @@ spriteTypes = {
 		name = "GFX_Focus_telephone_network"
 		texturefile = "gfx/interface/goals/_general/economy/telephone_network.dds"
 	}
+	SpriteType = {
+		name = "GFX_Focus_early_telephone"
+		texturefile = "gfx/interface/goals/_general/economy/early_telephone.png"
+	}
+	SpriteType = {
+		name = "GFX_Focus_steam_engine"
+		texturefile = "gfx/interface/goals/_general/economy/steam_engine.png"
+	}
 	#----------------------------------------------------------------------------------------------
 	# EDUCATION_HEALTH
 	#----------------------------------------------------------------------------------------------
@@ -1508,6 +1536,14 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_Focus_Build_More_Hospitals"
 		texturefile = "gfx/interface/goals/_general/education_health/focus_Build_More_Hospitals.png"
+	}
+	SpriteType = {
+		name = "GFX_Focus_medicine_cross"
+		texturefile = "gfx/interface/goals/_general/education_health/medicine_cross.png"
+	}
+	SpriteType = {
+		name = "GFX_Focus_wounded_kit"
+		texturefile = "gfx/interface/goals/_general/education_health/wounded_kit.png"
 	}
 
 	#----------------------------------------------------------------------------------------------
@@ -2313,6 +2349,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/_general/maritime/Focus_Navy_Budget.png"
 	}
 	SpriteType = {
+		name = "GFX_Focus_Navy_no_budget"
+		texturefile = "gfx/interface/goals/_general/maritime/Focus_Navy_no_budget.png"
+	}
+	SpriteType = {
 		name = "GFX_Focus_Navy_Independence"
 		texturefile = "gfx/interface/goals/_general/maritime/Focus_Navy_Independence.png"
 	}
@@ -2375,6 +2415,26 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_Focus_Victorian_Line_Ship"
 		texturefile = "gfx/interface/goals/_general/maritime/Focus_Victorian_Line_Ship.dds"
+	}
+	SpriteType = {
+		name = "GFX_Focus_repair_navy"
+		texturefile = "gfx/interface/goals/_general/maritime/repair_navy.png"
+	}
+	SpriteType = {
+		name = "GFX_Focus_ship_big"
+		texturefile = "gfx/interface/goals/_general/maritime/ship_big.png"
+	}
+	SpriteType = {
+		name = "GFX_Focus_ship_long"
+		texturefile = "gfx/interface/goals/_general/maritime/ship_long.png"
+	}
+	SpriteType = {
+		name = "GFX_Focus_ship_paper"
+		texturefile = "gfx/interface/goals/_general/maritime/ship_paper.png"
+	}
+	SpriteType = {
+		name = "GFX_Focus_upgrade_ships"
+		texturefile = "gfx/interface/goals/_general/maritime/upgrade_ships.png"
 	}
 	#----------------------------------------------------------------------------------------------
 	# POLITICS
@@ -3072,7 +3132,14 @@ spriteTypes = {
 		name = "GFX_Focus_Welfare"
 		texturefile = "gfx/interface/goals/_general/politics/Focus_Welfare.png"
 	}
-
+	SpriteType = {
+		name = "GFX_Focus_court"
+		texturefile = "gfx/interface/goals/_general/politics/Focus_court.png"
+	}
+	SpriteType = {
+		name = "GFX_Focus_royal_decree"
+		texturefile = "gfx/interface/goals/_general/politics/royal_decree.png"
+	}
 	
 	
 	#----------------------------------------------------------------------------------------------
@@ -5334,7 +5401,44 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_Focus_invest_into_vichy_baths"
 		texturefile = "gfx/interface/goals/france/invest_into_vichy_baths.png"
-	}		
+	}
+	SpriteType = {
+		name = "GFX_focus_interests_in_syria"
+		texturefile = "gfx/interface/goals/france/interests_in_syria.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_expand_lorient_drydocks"
+		texturefile = "gfx/interface/goals/france/expand_lorient_drydocks.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_french_senegal_developments"
+		texturefile = "gfx/interface/goals/france/french_senegal_developments.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_forts_along_senegal_river"
+		texturefile = "gfx/interface/goals/france/forts_along_senegal_river.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_annul_prior_treaties_senegal"
+		texturefile = "gfx/interface/goals/france/annul_prior_treaties_senegal.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_colonial_madagascar_consulate"
+		texturefile = "gfx/interface/goals/france/colonial_madagascar_consulate.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_future_of_algeria"
+		texturefile = "gfx/interface/goals/france/future_of_algeria.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_agricultural_projects"
+		texturefile = "gfx/interface/goals/france/agricultural_projects.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_the_regime_du_sabre"
+		texturefile = "gfx/interface/goals/france/regime_du_sabre.png"
+	}
+
 	### Luxembourg
 	SpriteType = {
 		name = "GFX_Focus_LUX_luxembourg_crisis"
@@ -6230,6 +6334,11 @@ spriteTypes = {
 		name = "GFX_goal_focus_brazil_tamandre_acquisition"
 		texturefile = "gfx/interface/goals/brazil/tamandre-acquisition.dds"
 	}
+
+	spriteType = {
+		name = "GFX_goal_focus_brazil_submarine_telegraph"
+		texturefile = "gfx/interface/goals/brazil/submarine_telegraph.png"
+	}
 	
 	### Belgium
 	SpriteType = {
@@ -7093,7 +7202,7 @@ spriteTypes = {
 	#Greece
 	SpriteType = {
 		name = "GFX_goal_GRE_republic"
-		texturefile = "gfx/interface/goals/greece/focus_GRE_republic.dds"
+		texturefile = "gfx/interface/goals/greece/focus_GRE_republic.png"
 	}
 	SpriteType = {
 		name = "GFX_goal_GRE_king_alfred"
@@ -7106,10 +7215,6 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_goal_GRE_king_luitpold"
 		texturefile = "gfx/interface/goals/greece/focus_GRE_king_luitpold.dds"
-	}
-	SpriteType = {
-		name = "GFX_goal_GRE_ionian_islands"
-		texturefile = "gfx/interface/goals/greece/focus_GRE_ionian_islands.dds"
 	}
 	SpriteType = {
 		name = "GFX_goal_GRE_urbanize_athens"
@@ -7158,6 +7263,34 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_goal_GRE_marines"
 		texturefile = "gfx/interface/goals/greece/focus_GRE_marines.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_Revolution_Continues"
+		texturefile = "gfx/interface/goals/greece/focus_GRE_Revolution_Continues.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_Acquisition_Crete"
+		texturefile = "gfx/interface/goals/greece/focus_GRE_Acquisition_Crete.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_Thessaly_Ours"
+		texturefile = "gfx/interface/goals/greece/focus_GRE_Thessaly_Ours.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_Macedonian_Resistance"
+		texturefile = "gfx/interface/goals/greece/focus_GRE_Macedonian_Resistance.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_Ionian_Islands"
+		texturefile = "gfx/interface/goals/greece/focus_GRE_Ionian_Islands.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_Aegen_Sea_Dominance"
+		texturefile = "gfx/interface/goals/greece/focus_GRE_Aegen_Sea_Dominance.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_Megali_Idea"
+		texturefile = "gfx/interface/goals/greece/focus_GRE_Megali_Idea.png"
 	}
 
 	#Qing
@@ -9094,6 +9227,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/portugal/POR_Lisbon_Porto_Railway.png"
 	}
 	SpriteType = {
+		name = "GFX_focus_POR_focus_consolidate_regeneration"
+		texturefile = "gfx/interface/goals/portugal/focus_POR_focus_consolidate_regeneration.png"
+	}
+	SpriteType = {
 		name = "GFX_goal_CHI_The_heavenly_Kingdom"
 		texturefile = "gfx/interface/goals/_country_shields/The_heavenly_Kingdom.dds"
 	}
@@ -9119,7 +9256,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_focus_Naval_moderniszation"
-		texturefile = "gfx/interface/goals/_general/Naval_moderniszation.dds"
+		texturefile = "gfx/interface/goals/_general/maritime/Naval_moderniszation.dds"
 	}
 	# Japan
 	SpriteType = {
@@ -9740,6 +9877,30 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/tunisia/focus_tun_bad_economy.png"
 	}
 	SpriteType = {
+		name = "GFX_focus_tun_uncertain_future"
+		texturefile = "gfx/interface/goals/tunisia/focus_tun_uncertain_future.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_tun_franco_italian_finance_expert"
+		texturefile = "gfx/interface/goals/tunisia/focus_tun_franco_italian_finance_expert.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_tun_army"
+		texturefile = "gfx/interface/goals/tunisia/focus_tun_army.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_tun_anglo_french_assistance"
+		texturefile = "gfx/interface/goals/tunisia/focus_tun_anglo_french_assistance.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_tun_keep_khazdanar"
+		texturefile = "gfx/interface/goals/tunisia/focus_tun_keep_khazdanar.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_french_naval_mision"
+		texturefile = "gfx/interface/goals/tunisia/focus_french_naval_misiion.png"
+	}
+	SpriteType = {
 		name = "GFX_goal_focus_qing_maintain_mandate"
 		texturefile = "gfx/interface/goals/qing/focus_qing_maintain_mandate.dds"
 	}
@@ -10056,5 +10217,92 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_goal_AFG_Afghanistan"
 		texturefile = "gfx/interface/goals/afghanistan/Afghanistan.dds"
+	}
+### OTTOMAN EMPIRE ###########  old icons still spread throughout here sadly
+
+	SpriteType = {
+		name = "GFX_goal_focus_OTO_new_ottoman_army"
+		texturefile = "gfx/interface/goals/ottoman/focus_OTO_new_ottoman_army.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_focus_OTO_state_of_ottoman_navy"
+		texturefile = "gfx/interface/goals/ottoman/focus_OTO_state_of_ottoman_navy.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_focus_OTO_legacy_of_selim_III"
+		texturefile = "gfx/interface/goals/ottoman/focus_OTO_legacy_of_selim_III.dds"
+	}
+#Morocco
+	SpriteType = {
+		name = "GFX_focus_MOR_empower_qaids"
+		texturefile = "gfx/interface/goals/morocco/focus_MOR_empower_qaids.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_MOR_centralize_courts"
+		texturefile = "gfx/interface/goals/morocco/focus_MOR_centralize_courts.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_MOR_effective_justice_system"
+		texturefile = "gfx/interface/goals/morocco/focus_MOR_effective_justice_system.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_MOR_decentralization"
+		texturefile = "gfx/interface/goals/morocco/focus_MOR_decentralization.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_MOR_respect_sheikhs_and_amghar"
+		texturefile = "gfx/interface/goals/morocco/focus_MOR_respect_sheikhs_and_amghar.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_MOR_appoint_representative_tribes"
+		texturefile = "gfx/interface/goals/morocco/focus_MOR_appoint_representative_tribes.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_MOR_train_qaids"
+		texturefile = "gfx/interface/goals/morocco/focus_MOR_train_qaids.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_MOR_begin_qaidization"
+		texturefile = "gfx/interface/goals/morocco/focus_MOR_begin_qaidization.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_MOR_replace_local_chiefs"
+		texturefile = "gfx/interface/goals/morocco/focus_MOR_replace_local_chiefs.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_MOR_introduce_justice_rural"
+		texturefile = "gfx/interface/goals/morocco/focus_MOR_introduce_justice_rural.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_MOR_support_local_madrasas"
+		texturefile = "gfx/interface/goals/morocco/focus_MOR_support_local_madrasas.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_MOR_al_rudani_printing_machine"
+		texturefile = "gfx/interface/goals/morocco/focus_MOR_al_rudani_printing_machine.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_MOR_import_ottoman_egyptian_knowledge"
+		texturefile = "gfx/interface/goals/morocco/focus_MOR_import_ottoman_egyptian_knowledge.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_MOR_madrassa_al_muhandiseen"
+		texturefile = "gfx/interface/goals/morocco/focus_MOR_madrassa_al_muhandiseen.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_MOR_expand_askar_nizami"
+		texturefile = "gfx/interface/goals/morocco/focus_MOR_expand_askar_nizami.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_MOR_sideline_abid_al_bukhari"
+		texturefile = "gfx/interface/goals/morocco/focus_MOR_sideline_abid_al_bukhari.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_MOR_dar_al_makhzen_military_school"
+		texturefile = "gfx/interface/goals/morocco/focus_MOR_dar_al_makhzen_military_school.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_MOR_reconstitute_askar"
+		texturefile = "gfx/interface/goals/morocco/focus_MOR_reconstitute_askar.png"
 	}
 }

@@ -1,7 +1,7 @@
 ﻿1857.1.1 = {
-	capital = 1292
+	capital = 1211
 
-	#oob = "CLR_1857"
+	oob = "SEM_1857"
 
 	set_convoys = 0
 
@@ -18,7 +18,7 @@
     }
     update_unemployment_modifier = yes
     add_to_variable = { money = 1 }
-
+	
 	add_ideas = {
 		#POLITICS
 
@@ -57,15 +57,22 @@
 
 				 #NATIONAL SPIRITS
 			FN_T_nomadic_tribal_nation
-			AFR_history_of_colonial_resistance
+			AFR_history_of_colonial_resistance_1
+	}
 
+	SEM = {
+	set_country_flag = afr_prosperity_mechanic_nomadic_blacksmith_building_flag
+	set_country_flag = afr_nomadic_blacksmith_focus_tribal_weapons
+	set_country_flag = afr_prosperity_mechanic_nomadic_animal_husbandry_building_flag
+	set_country_flag = afr_nomadic_animal_husbandry_focus_horse
+	add_ideas={AF_T_Tribal_Army}
+	add_to_variable = {Tribal_horse_army_num = 1000}
 	}
 
 	#Diplomacy
-	add_opinion_modifier = { target = UTA modifier = first_nations_colonial_encroacher_opinion_modifier }
 	add_opinion_modifier = { target = USA modifier = first_nations_colonial_encroacher_opinion_modifier }
-	give_military_access = USA
-	give_military_access = DAK
+
+	set_country_flag = mhc_ai_war_by_startup
 
 	set_politics = {
 		ruling_party = fundamentalism
@@ -98,10 +105,9 @@ set_popularities = {
 	tribal_weapons = 1
 	tribal_tatics = 1
 	tribal_riding = 1
+	tribal_forging = 1
+	tribal_gunpowder = 1
 	basic_cavalry = 1
 	start_build_tech = 1
 	}
-
-	# POLITICAL LEADERS
-
 }
