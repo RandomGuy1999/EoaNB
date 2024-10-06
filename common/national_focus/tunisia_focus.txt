@@ -29,12 +29,12 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_political_power = 100
-			add_stability = 0.2
-		
-			#swap_ideas = {
-			#	remove_idea = no_heir
-			#	add_idea = weak_heir
-			#}
+			custom_effect_tooltip = TUN_winds_of_change_tt
+			add_to_variable = {
+				var = TUN_wc_sf
+				value = 0.025
+				tooltip = stability_factor_tooltip
+			}
 		}
 	}
 
@@ -97,11 +97,8 @@ focus_tree = {
 		}
 		prerequisite = { focus = TUN_batto_sfez_affair }
 		completion_reward = {
-		add_political_power = 50
-		add_stability = 0.05
-		add_to_variable = { 
-			var = debt_level
-			value = -5 }
+			add_political_power = 50
+			add_stability = 0.05
 		}
 	}
 	focus = {
@@ -195,9 +192,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = { TUN_royal_palace }
-			add_to_variable = { 
-				var = debt_level 
-				value = 5 }
 		}
 	}
 	#---part 1 no reforms
@@ -266,8 +260,6 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 50
-			add_to_variable = { var = debt_level 
-			value = -5 }
 			swap_ideas = {
 				remove_idea = racial_laws
 				add_idea = slavery_all_but_name
@@ -335,7 +327,17 @@ focus_tree = {
 			FOCUS_FILTER_ECONOMY
 		}
 		completion_reward = {
-			add_ideas = { TUN_european_investors }
+			custom_effect_tooltip = TUN_winds_of_change_tt
+			add_to_variable = {
+				var = TUN_wc_sf
+				value = -0.015
+				tooltip = stability_factor_tooltip
+			}
+			add_to_variable = {
+				var = TUN_wc_icf
+				value = 0.01
+				tooltip = money_income_factor_tooltip
+			}
 		}
 	}	
 	focus = {
@@ -1032,6 +1034,30 @@ focus = {
 		
 		completion_reward = {
 			add_ideas = { TUN_idea_ministry_of_defense }
+			if = {
+				limit = {
+					has_idea = army_spending_level_4
+				}
+				swap_ideas = { remove_idea = army_spending_level_4 add_idea = army_spending_level_5 }
+			}
+			else_if = {
+				limit = {
+					has_idea = army_spending_level_3
+				}
+				swap_ideas = { remove_idea = army_spending_level_3 add_idea = army_spending_level_4 }
+			}
+			else_if = {
+				limit = {
+					has_idea = army_spending_2
+				}
+				swap_ideas = { remove_idea = army_spending_level_2 add_idea = army_spending_level_3 }
+			}
+			else_if = {
+				limit = {
+					has_idea = army_spending_level_1
+				}
+				swap_ideas = { remove_idea = army_spending_level_1 add_idea = army_spending_level_2 }
+			}
 		}
 	}
 	focus = {
@@ -1090,7 +1116,7 @@ focus = {
 		completion_reward = {
 			add_opinion_modifier = { target = FRA	modifier = improved_relations }
 			reverse_add_opinion_modifier = { target = FRA modifier = improved_relations }
-
+			add_political_power = 15
 		}
 	}
 	focus = {
@@ -1111,6 +1137,7 @@ focus = {
 		completion_reward = {
 			add_opinion_modifier = { target = ENG	modifier = improved_relations }
 			reverse_add_opinion_modifier = { target = ENG modifier = improved_relations }
+			add_war_support = 0.06
 		}
 	}
 	focus = {
@@ -1133,6 +1160,7 @@ focus = {
 		completion_reward = {
 			add_opinion_modifier = { target = ITA	modifier = improved_relations }
 			reverse_add_opinion_modifier = { target = ITA modifier = improved_relations }
+			add_stability = 0.05
 		}
 	}
 	focus = {
@@ -1216,17 +1244,7 @@ focus = {
 		}
 		prerequisite = { focus = TUN_economical_reforms }
 		completion_reward = {
-			458 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-				type = infrastructure
-				level = 2
-				instant_build = yes
-				}
-			}
-			add_to_variable = { var = debt_level 
-			value = -5 
-			}
+			unlock_decision_tooltip = TUN_decision_renew_old_infrastructures
 		}	
 	}
 	focus = {
@@ -1288,12 +1306,7 @@ focus = {
 		}
 		prerequisite = { focus = TUN_influences_from_the_north}
 		completion_reward = {
-			country_event = {
-			id = tunisia.7
-			}
-			add_to_variable = { var = debt_level 
-			value = 5 
-			}
+			country_event = { id = tunisia.7 }
 		}
 	}	
 	focus = {
@@ -1313,16 +1326,8 @@ focus = {
 			FOCUS_FILTER_INDUSTRY
 		}
 		prerequisite = { focus = TUN_influences_from_the_north }
-			completion_reward = {
-				458 = {
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-					}
-				}
-			add_to_variable = { var = debt_level value = 10 }
+		completion_reward = {
+			unlock_decision_tooltip =TUN_decision_the_marseille_of_the_desert
 		}
 	}
 	focus = {
@@ -1465,9 +1470,16 @@ focus = {
 		available = { has_completed_focus = TUN_anglo_tunisia_bank  }
 		prerequisite = { focus = TUN_bank_of_tunisia_founding }
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = TUN_european_investors2
-				add_idea = TUN_european_investors3
+			custom_effect_tooltip = TUN_winds_of_change_tt
+			add_to_variable = {
+				var = TUN_wc_sf
+				value = -0.015
+				tooltip = stability_factor_tooltip
+			}
+			add_to_variable = {
+				var = TUN_wc_icf
+				value = 0.01
+				tooltip = money_income_factor_tooltip
 			}
 			set_temp_variable = { inflation_to_gain = -0.02 }
 			add_inflation_with_tooltip_effect = yes
@@ -1564,7 +1576,7 @@ focus = {
 	}
 	focus = {
 		id = TUN_Hayreddin_Pasha
-		icon = GFX_
+		icon = GFX_focus_tun_appoint_hayreddin_pasha
 		x = 2
 		y = 1
 		relative_position_id = TUN_politics

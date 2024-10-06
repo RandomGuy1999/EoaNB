@@ -48,6 +48,69 @@ characters = {
 			logistics_skill = 3
 		}
 	}
+	MOR_character_abba_al_alawi = {
+		name = "'Abbas al-'Alawi"
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_MOR_Muhammad_Ibn_Abderrahamae_Alawite
+			}
+			army = {
+				small = "gfx/interface/ideas/MOR/Portrait_MOR_Muhammad_Ibn_Abderrahamae_Alawite_small.png"
+				large = GFX_Portrait_MOR_Muhammad_Ibn_Abderrahamae_Alawite
+			}
+		}
+		corps_commander = {
+			legacy_id = 2022
+			traits = { }
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	MOR_character_ahmed_al_alawi = {
+		name = "'Ahmed al-'Alawi"
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_MOR_Muhammad_Ibn_Abderrahamae_Alawite
+			}
+			army = {
+				small = "gfx/interface/ideas/MOR/Portrait_MOR_Muhammad_Ibn_Abderrahamae_Alawite_small.png"
+				large = GFX_Portrait_MOR_Muhammad_Ibn_Abderrahamae_Alawite
+			}
+		}
+		corps_commander = {
+			legacy_id = 2023
+			traits = { }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 3
+		}
+	}
+	MOR_character_hassan_al_alawi = {
+		name = "'Hassan al-'Alawi"
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_MOR_Muhammad_Ibn_Abderrahamae_Alawite
+			}
+			army = {
+				small = "gfx/interface/ideas/MOR/Portrait_MOR_Muhammad_Ibn_Abderrahamae_Alawite_small.png"
+				large = GFX_Portrait_MOR_Muhammad_Ibn_Abderrahamae_Alawite
+			}
+		}
+		corps_commander = {
+			legacy_id = 2024
+			traits = { }
+			skill = 1
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
 	#Advisors: (Effects/Traits are still needed(Also GFX))
 	MOR_muhammad_bin_abdullah_al_saffar = {
 		name = "Muhhamad bin Abdullah al-Saffar"
@@ -65,12 +128,15 @@ characters = {
 				}
 			}
 			traits = {
-				centrism_alignment
+				MOR_trait_muhammad_bin_abdullah_al_saffar
+			}
+			research_bonus = {
+				humanities_tech = 0.03
 			}
 		}
 	}
 	MOR_tayeb_bouachrine = {
-		name = "Tayeb Bouachrine"
+		name = "Tayeb Ben El Yamani Bouachrine"
 		portraits = {
 			civilian = {
 				small = "gfx/interface/ideas/MOR/MOR_advisor_generic.png"
@@ -85,7 +151,7 @@ characters = {
 				}
 			}
 			traits = {
-				centrism_alignment
+				MOR_trait_tayeb_bouachrine
 			}
 		}
 	}
@@ -105,7 +171,11 @@ characters = {
 				}
 			}
 			traits = {
-				centrism_alignment
+				MOR_trait_muhhamad_al_salawi
+			}
+			research_bonus = {
+				humanities_tech = 0.01
+				art_tech = 0.03
 			}
 		}
 	}
@@ -125,7 +195,7 @@ characters = {
 				}
 			}
 			traits = {
-				centrism_alignment
+				MOR_trait_abd_al_rahman_al_ali
 			}
 		}
 	}
@@ -145,7 +215,7 @@ characters = {
 				}
 			}
 			traits = {
-				centrism_alignment
+				MOR_trait_muhammad_bargash
 			}
 		}
 	}
@@ -165,7 +235,7 @@ characters = {
 				}
 			}
 			traits = {
-				centrism_alignment
+				MOR_trait_muhammad_zebdi
 			}
 		}
 	}
@@ -185,7 +255,10 @@ characters = {
 				}
 			}
 			traits = {
-				centrism_alignment
+				MOR_trait_ahmed_ibn_khalid_an_nasiri
+			}
+			research_bonus = {
+				humanities_tech = 0.03
 			}
 		}
 	}
