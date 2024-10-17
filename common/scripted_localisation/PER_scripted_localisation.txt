@@ -1,18 +1,30 @@
 defined_text = {
 	name = GetQajarLoyaltyStatus
-	#text = {
-	#	trigger = {
-	#		has_country_flag = PER_qajar_destroyed_flag
-	#	}
-	#	localization_key = PER_loyalty_status_crushed
-	#}
-	#text = {
-	#	trigger = {
-	#		original_tag = PER
-	#		has_country_flag = PER_qajar_integrated_flag
-	#	}
-	#	localization_key = PER_loyalty_status_integrated
-	#}
+	text = {
+		trigger = {
+			has_country_flag = PER_qajar_crushed_flag
+		}
+		localization_key = PER_loyalty_status_crushed
+	}
+	text = {
+		trigger = {
+			original_tag = PER
+			has_country_flag = PER_qajar_integrated_flag
+		}
+		localization_key = PER_loyalty_status_integrated
+	}
+	text = {
+		trigger = {
+			has_country_flag = PER_qajar_in_power_flag
+		}
+		localization_key = PER_loyalty_status_in_power
+	}
+	text = {
+		trigger = {
+			has_country_flag = PER_qajar_irrelevant_flag
+		}
+		localization_key = PER_loyalty_status_irrelevant
+	}
 	text = {
 		localization_key = PER_qajar_loyalty_status_amount
 	}
@@ -20,19 +32,27 @@ defined_text = {
 
 defined_text = {
 	name = GetBakhtiariLoyaltyStatus
-	#text = {
-	#	trigger = {
-	#		has_country_flag = PER_qajar_destroyed_flag
-	#	}
-	#	localization_key = PER_loyalty_status_crushed
-	#}
-	#text = {
-	#	trigger = {
-	#		original_tag = PER
-	#		has_country_flag = PER_qajar_integrated_flag
-	#	}
-	#	localization_key = PER_loyalty_status_integrated
-	#}
+	text = {
+		trigger = {
+            original_tag = PER		
+			has_country_flag = PER_bakhtiari_destroyed_flag
+		}
+		localization_key = PER_loyalty_status_crushed
+	}
+	text = {
+		trigger = {
+			original_tag = PER
+			has_country_flag = PER_bakhtiari_integrating_flag
+		}
+		localization_key = PER_loyalty_status_integrating
+	}
+	text = {
+		trigger = {
+			original_tag = PER
+			has_country_flag = PER_bakhtiari_integrated_flag
+		}
+		localization_key = PER_loyalty_status_integrated
+	}
 	text = {
 		localization_key = PER_bakhtiari_loyalty_status_amount
 	}
@@ -160,19 +180,12 @@ defined_text = {
 
 defined_text = {
 	name = GetQajarPopularityStatus
-	#text = {
-	#	trigger = {
-	#		has_country_flag = PER_qajar_destroyed_flag
-	#	}
-	#	localization_key = PER_loyalty_status_crushed
-	#}
-	#text = {
-	#	trigger = {
-	#		original_tag = PER
-	#		has_country_flag = PER_qajar_integrated_flag
-	#	}
-	#	localization_key = PER_loyalty_status_integrated
-	#}
+	text = {
+		trigger = {
+			check_variable = { PER_qajar_popularity = 0 }
+		}
+		localization_key = PER_popularity_status_irrelevant
+	}
 	text = {
 		localization_key = PER_qajar_popularity_status_amount
 	}
@@ -475,5 +488,110 @@ defined_text = {
 	#}
 	text = {
 		localization_key = PER_khamseh_strength_status_amount
+	}
+}
+
+defined_text = {
+	name = GetQajarName
+	text = {
+		trigger = {
+			original_tag = PER
+		}
+		localization_key = PER_qajar_name_and_icon
+	}
+}
+
+defined_text = {
+	name = GetBakhtiariName
+	text = {
+		trigger = {
+			original_tag = PER
+		}
+		localization_key = PER_bakhtiari_name_and_icon
+	}
+}
+
+defined_text = {
+	name = GetQashqaiName
+	text = {
+		trigger = {
+			original_tag = PER
+		}
+		localization_key = PER_qashqai_name_and_icon
+	}
+}
+
+defined_text = {
+	name = GetKurdishLurName
+	text = {
+		localization_key = PER_kurdish_lur_name_and_icon
+	}
+}
+
+defined_text = {
+	name = GetKurdishName
+	text = {
+		localization_key = PER_kurdish_name_and_icon
+	}
+}
+
+defined_text = {
+	name = GetLurName
+	text = {
+		localization_key = PER_lur_name_and_icon
+	}
+}
+
+defined_text = {
+	name = GetTurkmenName
+	text = {
+		localization_key = PER_turkmen_name_and_icon
+	}
+}
+
+defined_text = {
+	name = GetBaluchName
+	text = {
+		localization_key = PER_baluch_name_and_icon
+	}
+}
+
+defined_text = {
+	name = GetShahsavanAfsharName
+	text = {
+		trigger = {
+			original_tag = PER
+		}
+		localization_key = PER_shahsavan_afshar_name_and_icon
+	}
+}
+
+defined_text = {
+	name = GetShahsavanName
+	text = {
+		trigger = {
+			original_tag = PER
+		}
+		localization_key = PER_shahsavan_name_and_icon
+	}
+}
+
+defined_text = {
+	name = GetAfsharName
+	text = {
+		trigger = {
+			original_tag = PER
+		}
+		localization_key = PER_afshar_name_and_icon
+	}
+}
+
+defined_text = {
+	name = GetKhamsehName
+	text = {
+		trigger = {
+			original_tag = PER
+		}
+		localization_key = PER_khamseh_name_and_icon
 	}
 }

@@ -2421,10 +2421,6 @@ PRS_decision_category_projects = {
 		#allowed = { tag = PRS }
 		available = {
 			has_stability > 0.49
-			set_temp_variable = {
-				amount_of_money_to_check = 0.05
-			}
-			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		visible = {
 			PRS_trigger_formed_germany = yes
@@ -2435,12 +2431,20 @@ PRS_decision_category_projects = {
 			owns_state = 951
 		}
 		fire_only_once = yes
-		cost = 50
+		custom_cost_trigger = {
+			set_temp_variable = {
+				amount_of_money_to_check = 0.25
+			}
+			has_specific_amount_of_money_with_inflation_included = yes
+			has_political_power > 49.9
+		}
+		custom_cost_text = eoanb_money_and_political_power_50
 		days_remove = 1095
 		complete_effect = {
 			custom_effect_tooltip = PRS_decision_build_siegessaeule_effect_tt
-			set_temp_variable = { money_to_gain = -0.05 }
-			add_money_with_tooltip_effect = yes
+			set_temp_variable = { money_to_gain = -0.25 }
+			add_money_with_inflation_included_with_tooltip_effect = yes
+			add_political_power = -50
 			hidden_effect = {
 				PRS = {
 					country_event = {
@@ -2547,10 +2551,6 @@ PRS_decision_category_industrialisation = {
 				has_idea = bankruptcy
 			}
 			has_tech = machine_tools_1
-			set_temp_variable = {
-				amount_of_money_to_check = 0.25
-			}
-			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		visible = {
 			PRS = {
@@ -2575,13 +2575,14 @@ PRS_decision_category_industrialisation = {
 			set_temp_variable = {
 				amount_of_money_to_check = 0.25
 			}
+			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		custom_cost_text = CREATE_PUBLIC_WORKS_CUSTOM_COST_TEXT
 		days_re_enable = 730
 		days_remove = 180
 		complete_effect = {
 			set_temp_variable = { money_to_gain = -0.25 }
-			add_money_with_tooltip_effect = yes
+			add_money_with_inflation_included_with_tooltip_effect = yes
 		}
 		remove_effect = {
 			set_temp_variable = {
@@ -2610,10 +2611,6 @@ PRS_decision_category_industrialisation = {
 		#allowed = { tag = PRS }
 		available = {
 			has_completed_focus = PRS_focus_berliner_borse
-			set_temp_variable = {
-				amount_of_money_to_check = 1
-			}
-			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		visible = {
 			owns_state = 951
@@ -2624,12 +2621,13 @@ PRS_decision_category_industrialisation = {
 			set_temp_variable = {
 				amount_of_money_to_check = 1
 			}
+			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		custom_cost_text = CREATE_PUBLIC_WORKS_CUSTOM_COST_TEXT
 		days_remove = 150
 		complete_effect = {
 			set_temp_variable = { money_to_gain = -1 }
-			add_money_with_tooltip_effect = yes
+			add_money_with_inflation_included_with_tooltip_effect = yes
 		}
 		remove_effect = {
 			add_ideas = PRS_Berlin_Stock_Exchange_1
@@ -2649,10 +2647,6 @@ PRS_decision_category_industrialisation = {
 		available = {
 			has_idea = PRS_Berlin_Stock_Exchange_1
 			has_completed_focus = PRS_focus_prussian_consortium
-			set_temp_variable = {
-				amount_of_money_to_check = 2
-			}
-			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		visible = {
 			owns_state = 951
@@ -2663,12 +2657,13 @@ PRS_decision_category_industrialisation = {
 			set_temp_variable = {
 				amount_of_money_to_check = 2
 			}
+			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		custom_cost_text = CREATE_PUBLIC_WORKS_CUSTOM_COST_TEXT
 		days_remove = 150
 		complete_effect = {
 			set_temp_variable = { money_to_gain = -2 }
-			add_money_with_tooltip_effect = yes
+			add_money_with_inflation_included_with_tooltip_effect = yes
 		}
 		remove_effect = {
 			swap_ideas = {
@@ -2817,10 +2812,8 @@ PRS_decision_category_industrialisation = {
 		icon = railway
 		#allowed = { tag = PRS }
 		available = {
-			set_temp_variable = {
-				amount_of_money_to_check = 5
-			}
-			has_specific_amount_of_money_with_inflation_included = yes
+			owns_state = 64
+			owns_state = 951
 		}
 		visible = {
 			has_completed_focus = PRS_focus_berlin_anhalt_rail
@@ -2837,12 +2830,13 @@ PRS_decision_category_industrialisation = {
 			set_temp_variable = {
 				amount_of_money_to_check = 5
 			}
+			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		custom_cost_text = CREATE_PUBLIC_WORKS_CUSTOM_COST_TEXT
 		days_remove = 200
 		complete_effect = {
 			set_temp_variable = { money_to_gain = -5 }
-			add_money_with_tooltip_effect = yes
+			add_money_with_inflation_included_with_tooltip_effect = yes
 		}
 		remove_effect = {
 			build_railway = { #Berlin-Potsdam-Halle
@@ -2984,10 +2978,8 @@ PRS_decision_category_industrialisation = {
 		icon = railway
 		#allowed = { tag = PRS }
 		available = {
-			set_temp_variable = {
-				amount_of_money_to_check = 5
-			}
-			has_specific_amount_of_money_with_inflation_included = yes
+			owns_state = 66
+			owns_state = 67
 		}
 		visible = {
 			has_completed_focus = PRS_focus_silesia_rail
@@ -3004,12 +2996,13 @@ PRS_decision_category_industrialisation = {
 			set_temp_variable = {
 				amount_of_money_to_check = 5
 			}
+			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		custom_cost_text = CREATE_PUBLIC_WORKS_CUSTOM_COST_TEXT
 		days_remove = 200
 		complete_effect = {
 			set_temp_variable = { money_to_gain = -5 }
-			add_money_with_tooltip_effect = yes
+			add_money_with_inflation_included_with_tooltip_effect = yes
 		}
 		remove_effect = {
 			build_railway = { #Breslau-Oppeln
@@ -3204,10 +3197,10 @@ PRS_decision_category_industrialisation = {
 		icon = railway
 		#allowed = { tag = PRS }
 		available = {
-			set_temp_variable = {
-				amount_of_money_to_check = 10
-			}
-			has_specific_amount_of_money_with_inflation_included = yes
+			owns_state = 5
+			owns_state = 85
+			owns_state = 951
+			owns_state = 1001
 		}
 		visible = {
 			has_completed_focus = PRS_focus_ostbahn_rail
@@ -3226,12 +3219,13 @@ PRS_decision_category_industrialisation = {
 			set_temp_variable = {
 				amount_of_money_to_check = 10
 			}
+			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		custom_cost_text = CREATE_PUBLIC_WORKS_CUSTOM_COST_TEXT
 		days_remove = 300
 		complete_effect = {
 			set_temp_variable = { money_to_gain = -10 }
-			add_money_with_tooltip_effect = yes
+			add_money_with_inflation_included_with_tooltip_effect = yes
 		}
 		remove_effect = {
 			build_railway = { #Landsberg-Kreuz
@@ -3424,10 +3418,10 @@ PRS_decision_category_industrialisation = {
 		icon = railway
 		#allowed = { tag = PRS }
 		available = {
-			set_temp_variable = {
-				amount_of_money_to_check = 10
-			}
-			has_specific_amount_of_money_with_inflation_included = yes
+			owns_state = 51
+			owns_state = 57
+			owns_state = 984
+			owns_state = 1009
 		}
 		visible = {
 			has_completed_focus = PRS_focus_rhineland_rail
@@ -3446,12 +3440,13 @@ PRS_decision_category_industrialisation = {
 			set_temp_variable = {
 				amount_of_money_to_check = 10
 			}
+			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		custom_cost_text = CREATE_PUBLIC_WORKS_CUSTOM_COST_TEXT
 		days_remove = 300
 		complete_effect = {
 			set_temp_variable = { money_to_gain = -10 }
-			add_money_with_tooltip_effect = yes
+			add_money_with_inflation_included_with_tooltip_effect = yes
 		}
 		remove_effect = {
 			build_railway = { #Dortmund-Essen-Düsseldorf-Cologne
@@ -3489,18 +3484,12 @@ PRS_decision_category_industrialisation = {
 		icon = steel
 		#allowed = { tag = PRS }
 		available = {
-			set_temp_variable = {
-				amount_of_money_to_check = 10
-			}
-			has_specific_amount_of_money_with_inflation_included = yes
+			owns_state = 51
+			owns_state = 1009
 			has_completed_focus = PRS_focus_mining_standards
 		}
 		visible = {
 			has_completed_focus = PRS_focus_economy
-			owns_state = 51
-			owns_state = 1009
-			controls_state = 51
-			controls_state = 1009
 		}
 		highlight_states = {
 			highlight_state_targets = {
@@ -3513,12 +3502,13 @@ PRS_decision_category_industrialisation = {
 			set_temp_variable = {
 				amount_of_money_to_check = 10
 			}
+			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		custom_cost_text = CREATE_PUBLIC_WORKS_CUSTOM_COST_TEXT
 		days_remove = 300
 		complete_effect = {
 			set_temp_variable = { money_to_gain = -10 }
-			add_money_with_tooltip_effect = yes
+			add_money_with_inflation_included_with_tooltip_effect = yes
 		}
 		remove_effect = {
 			51 = {
@@ -3557,18 +3547,12 @@ PRS_decision_category_industrialisation = {
 		icon = steel
 		#allowed = { tag = PRS }
 		available = {
-			set_temp_variable = {
-				amount_of_money_to_check = 10
-			}
-			has_specific_amount_of_money_with_inflation_included = yes
+			owns_state = 66
+			owns_state = 67
 			has_completed_focus = PRS_focus_mining_standards
 		}
 		visible = {
 			has_completed_focus = PRS_focus_economy
-			owns_state = 66
-			owns_state = 67
-			controls_state = 66
-			controls_state = 67
 		}
 		highlight_states = {
 			highlight_state_targets = {
@@ -3581,12 +3565,13 @@ PRS_decision_category_industrialisation = {
 			set_temp_variable = {
 				amount_of_money_to_check = 10
 			}
+			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		custom_cost_text = CREATE_PUBLIC_WORKS_CUSTOM_COST_TEXT
 		days_remove = 300
 		complete_effect = {
 			set_temp_variable = { money_to_gain = -10 }
-			add_money_with_tooltip_effect = yes
+			add_money_with_inflation_included_with_tooltip_effect = yes
 		}
 		remove_effect = {
 			66 = {
@@ -3629,10 +3614,7 @@ PRS_decision_category_industrialisation = {
 		icon = train
 		#allowed = { tag = PRS }
 		available = {
-			set_temp_variable = {
-				amount_of_money_to_check = 0.5
-			}
-			has_specific_amount_of_money_with_inflation_included = yes
+			#
 		}
 		visible = {
 			has_completed_focus = PRS_focus_state_rail
@@ -3642,12 +3624,13 @@ PRS_decision_category_industrialisation = {
 			set_temp_variable = {
 				amount_of_money_to_check = 0.5
 			}
+			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		custom_cost_text = CREATE_PUBLIC_WORKS_CUSTOM_COST_TEXT
 		days_remove = 120
 		complete_effect = {
 			set_temp_variable = { money_to_gain = -0.5 }
-			add_money_with_tooltip_effect = yes
+			add_money_with_inflation_included_with_tooltip_effect = yes
 		}
 		remove_effect = {
 			add_equipment_to_stockpile = { type = train_equipment amount = 5 producer = PRS }
@@ -3897,16 +3880,12 @@ PRS_decision_category_industrialisation = {
 		icon = generic_industry
 		#allowed = { tag = PRS }
 		available = {
-			set_temp_variable = {
-				amount_of_money_to_check = 0.5
-			}
-			has_specific_amount_of_money_with_inflation_included = yes
+			owns_state = 64
+			owns_state = 951
 			has_completed_focus = PRS_focus_spandau_arsenal
 		}
 		visible = {
 			has_completed_focus = PRS_focus_economy
-			owns_state = 64
-			owns_state = 951
 			64 = {
 				arms_factory > 0
 			}
@@ -3916,12 +3895,13 @@ PRS_decision_category_industrialisation = {
 			set_temp_variable = {
 				amount_of_money_to_check = 0.5
 			}
+			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		custom_cost_text = CREATE_PUBLIC_WORKS_CUSTOM_COST_TEXT
 		days_remove = 365
 		complete_effect = {
 			set_temp_variable = { money_to_gain = -0.5 }
-			add_money_with_tooltip_effect = yes
+			add_money_with_inflation_included_with_tooltip_effect = yes
 		}
 		remove_effect = {
 			951 = {
@@ -4133,10 +4113,8 @@ PRS_decision_category_urbanization = {
 		icon = canal
 		#allowed = { tag = PRS }
 		available = {
-			set_temp_variable = {
-				amount_of_money_to_check = 1
-			}
-			has_specific_amount_of_money_with_inflation_included = yes
+			owns_state = 62
+			has_tech = tech_humanities_sewage_system
 			#has_character = PRS_james_hobrecht
 			PRS_james_hobrecht = {
 				is_hired_as_advisor = yes
@@ -4144,7 +4122,6 @@ PRS_decision_category_urbanization = {
 		}
 		visible = {
 			has_completed_focus = PRS_focus_prussian_urbanization
-			owns_state = 62
 			62 = {
 				infrastructure < 10
 			}
@@ -4154,12 +4131,13 @@ PRS_decision_category_urbanization = {
 			set_temp_variable = {
 				amount_of_money_to_check = 1
 			}
+			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		custom_cost_text = CREATE_PUBLIC_WORKS_CUSTOM_COST_TEXT
 		days_remove = 900
 		complete_effect = {
 			set_temp_variable = { money_to_gain = -1 }
-			add_money_with_tooltip_effect = yes
+			add_money_with_inflation_included_with_tooltip_effect = yes
 		}
 		remove_effect = {
 			62 = {
@@ -4319,11 +4297,9 @@ PRS_decision_category_urbanization = {
 		icon = canal
 		#allowed = { tag = PRS }
 		available = {
-			set_temp_variable = {
-				amount_of_money_to_check = 3
-			}
-			has_specific_amount_of_money_with_inflation_included = yes
+			owns_state = 951
 			has_completed_focus = PRS_focus_establish_sewerage_standards
+			has_tech = tech_humanities_sewage_system
 			#has_character = PRS_james_hobrecht
 			PRS_james_hobrecht = {
 				is_hired_as_advisor = yes
@@ -4331,7 +4307,6 @@ PRS_decision_category_urbanization = {
 		}
 		visible = {
 			has_completed_focus = PRS_focus_prussian_urbanization
-			owns_state = 951
 			951 = {
 				infrastructure < 10
 			}
@@ -4341,12 +4316,13 @@ PRS_decision_category_urbanization = {
 			set_temp_variable = {
 				amount_of_money_to_check = 3
 			}
+			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		custom_cost_text = CREATE_PUBLIC_WORKS_CUSTOM_COST_TEXT
 		days_remove = 1200
 		complete_effect = {
 			set_temp_variable = { money_to_gain = -3 }
-			add_money_with_tooltip_effect = yes
+			add_money_with_inflation_included_with_tooltip_effect = yes
 		}
 		remove_effect = {
 			951 = {
@@ -4639,10 +4615,6 @@ PRS_decision_category_urbanization = {
 		icon = generic_construction
 		#allowed = { tag = PRS }
 		available = {
-			set_temp_variable = {
-				amount_of_money_to_check = 0.25
-			}
-			has_specific_amount_of_money_with_inflation_included = yes
 			has_completed_focus = PRS_focus_establish_sewerage_standards
 		}
 		visible = {
@@ -4653,12 +4625,13 @@ PRS_decision_category_urbanization = {
 			set_temp_variable = {
 				amount_of_money_to_check = 0.25
 			}
+			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		custom_cost_text = CREATE_PUBLIC_WORKS_CUSTOM_COST_TEXT
 		days_remove = 365
 		complete_effect = {
 			set_temp_variable = { money_to_gain = -0.25 }
-			add_money_with_tooltip_effect = yes
+			add_money_with_inflation_included_with_tooltip_effect = yes
 		}
 		remove_effect = {
 			951 = {
@@ -4866,10 +4839,6 @@ PRS_decision_category_heeresreform = {
 					}
 				}
 			}
-			set_temp_variable = {
-				amount_of_money_to_check = 0.25
-			}
-			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		visible = {
 			has_completed_focus = PRS_focus_king_army_prs
@@ -4882,13 +4851,14 @@ PRS_decision_category_heeresreform = {
 			set_temp_variable = {
 				amount_of_money_to_check = 0.25
 			}
+			has_specific_amount_of_money_with_inflation_included = yes
 			command_power > 49.99
 		}
 		custom_cost_text = eoanb_money_and_command_power_50
 		days_remove = 150
 		complete_effect = {
 			set_temp_variable = { money_to_gain = -0.25 }
-			add_money_with_tooltip_effect = yes
+			add_money_with_inflation_included_with_tooltip_effect = yes
 			add_command_power = -50
 		}
 		remove_effect = {
@@ -4911,10 +4881,6 @@ PRS_decision_category_heeresreform = {
 			NOT = {
 				has_country_flag = PRS_heeresreform_measure_in_progress
 			}
-			set_temp_variable = {
-				amount_of_money_to_check = 0.5
-			}
-			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		visible = {
 			OR = {
@@ -4928,14 +4894,15 @@ PRS_decision_category_heeresreform = {
 			set_temp_variable = {
 				amount_of_money_to_check = 0.5
 			}
+			has_specific_amount_of_money_with_inflation_included = yes
 			command_power > 99.9
 			has_army_experience > 24.9
 		}
-		custom_cost_text = eoanb_money_and_command_power_100_army_experience_25
+		custom_cost_text = eoanb_money_and_command_power_100_and_army_experience_25
 		days_remove = 180
 		complete_effect = {
 			set_temp_variable = { money_to_gain = -0.5 }
-			add_money_with_tooltip_effect = yes
+			add_money_with_inflation_included_with_tooltip_effect = yes
 			add_command_power = -100
 			army_experience = -25
 			hidden_effect = {
@@ -4971,10 +4938,6 @@ PRS_decision_category_heeresreform = {
 			NOT = {
 				has_country_flag = PRS_heeresreform_measure_in_progress
 			}
-			set_temp_variable = {
-				amount_of_money_to_check = 0.5
-			}
-			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		visible = {
 			OR = {
@@ -4988,14 +4951,15 @@ PRS_decision_category_heeresreform = {
 			set_temp_variable = {
 				amount_of_money_to_check = 0.5
 			}
+			has_specific_amount_of_money_with_inflation_included = yes
 			command_power > 99.9
 			has_army_experience > 24.9
 		}
-		custom_cost_text = eoanb_money_and_command_power_100_army_experience_25
+		custom_cost_text = eoanb_money_and_command_power_100_and_army_experience_25
 		days_remove = 180
 		complete_effect = {
 			set_temp_variable = { money_to_gain = -0.5 }
-			add_money_with_tooltip_effect = yes
+			add_money_with_inflation_included_with_tooltip_effect = yes
 			add_command_power = -100
 			army_experience = -25
 			hidden_effect = {
@@ -5021,10 +4985,6 @@ PRS_decision_category_heeresreform = {
 			NOT = {
 				has_country_flag = PRS_heeresreform_measure_in_progress
 			}
-			set_temp_variable = {
-				amount_of_money_to_check = 0.5
-			}
-			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		visible = {
 			OR = {
@@ -5038,14 +4998,15 @@ PRS_decision_category_heeresreform = {
 			set_temp_variable = {
 				amount_of_money_to_check = 0.5
 			}
+			has_specific_amount_of_money_with_inflation_included = yes
 			command_power > 99.9
 			has_army_experience > 24.9
 		}
-		custom_cost_text = eoanb_money_and_command_power_100_army_experience_25
+		custom_cost_text = eoanb_money_and_command_power_100_and_army_experience_25
 		days_remove = 180
 		complete_effect = {
 			set_temp_variable = { money_to_gain = -0.5 }
-			add_money_with_tooltip_effect = yes
+			add_money_with_inflation_included_with_tooltip_effect = yes
 			add_command_power = -100
 			army_experience = -25
 			hidden_effect = {
@@ -5080,10 +5041,6 @@ PRS_decision_category_heeresreform = {
 			NOT = {
 				has_country_flag = PRS_heeresreform_measure_in_progress
 			}
-			set_temp_variable = {
-				amount_of_money_to_check = 0.5
-			}
-			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		visible = {
 			OR = {
@@ -5097,14 +5054,15 @@ PRS_decision_category_heeresreform = {
 			set_temp_variable = {
 				amount_of_money_to_check = 0.5
 			}
+			has_specific_amount_of_money_with_inflation_included = yes
 			command_power > 99.9
 			has_army_experience > 24.9
 		}
-		custom_cost_text = eoanb_money_and_command_power_100_army_experience_25
+		custom_cost_text = eoanb_money_and_command_power_100_and_army_experience_25
 		days_remove = 180
 		complete_effect = {
 			set_temp_variable = { money_to_gain = -0.5 }
-			add_money_with_tooltip_effect = yes
+			add_money_with_inflation_included_with_tooltip_effect = yes
 			add_command_power = -100
 			army_experience = -25
 			hidden_effect = {
@@ -5115,7 +5073,7 @@ PRS_decision_category_heeresreform = {
 			add_doctrine_cost_reduction = {
 				cost_reduction = 0.75
 				uses = 1
-				category = doctrine_victorian_innovative_tech
+				category = doctrine_napoleonic_innovative_highcommand_tech
 			}
 			hidden_effect = {
 				set_country_flag = PRS_heeresreform_tactics
@@ -5134,10 +5092,6 @@ PRS_decision_category_heeresreform = {
 			NOT = {
 				has_country_flag = PRS_heeresreform_measure_in_progress
 			}
-			set_temp_variable = {
-				amount_of_money_to_check = 0.5
-			}
-			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		visible = {
 			OR = {
@@ -5151,14 +5105,15 @@ PRS_decision_category_heeresreform = {
 			set_temp_variable = {
 				amount_of_money_to_check = 0.5
 			}
+			has_specific_amount_of_money_with_inflation_included = yes
 			command_power > 99.9
 			has_army_experience > 24.9
 		}
-		custom_cost_text = eoanb_money_and_command_power_100_army_experience_25
+		custom_cost_text = eoanb_money_and_command_power_100_and_army_experience_25
 		days_remove = 180
 		complete_effect = {
 			set_temp_variable = { money_to_gain = -0.5 }
-			add_money_with_tooltip_effect = yes
+			add_money_with_inflation_included_with_tooltip_effect = yes
 			add_command_power = -100
 			army_experience = -25
 			hidden_effect = {
@@ -5188,10 +5143,6 @@ PRS_decision_category_heeresreform = {
 			NOT = {
 				has_country_flag = PRS_heeresreform_measure_in_progress
 			}
-			set_temp_variable = {
-				amount_of_money_to_check = 0.5
-			}
-			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		visible = {
 			has_completed_focus = PRS_focus_king_deposed
@@ -5202,14 +5153,15 @@ PRS_decision_category_heeresreform = {
 			set_temp_variable = {
 				amount_of_money_to_check = 0.5
 			}
+			has_specific_amount_of_money_with_inflation_included = yes
 			command_power > 99.9
 			has_army_experience > 24.9
 		}
-		custom_cost_text = eoanb_money_and_command_power_100_army_experience_25
+		custom_cost_text = eoanb_money_and_command_power_100_and_army_experience_25
 		days_remove = 180
 		complete_effect = {
 			set_temp_variable = { money_to_gain = -0.5 }
-			add_money_with_tooltip_effect = yes
+			add_money_with_inflation_included_with_tooltip_effect = yes
 			add_command_power = -100
 			army_experience = -25
 			hidden_effect = {
@@ -5252,10 +5204,6 @@ PRS_decision_category_heeresreform = {
 			NOT = {
 				has_country_flag = PRS_heeresreform_measure_in_progress
 			}
-			set_temp_variable = {
-				amount_of_money_to_check = 0.5
-			}
-			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		visible = {
 			OR = {
@@ -5268,14 +5216,15 @@ PRS_decision_category_heeresreform = {
 			set_temp_variable = {
 				amount_of_money_to_check = 0.5
 			}
+			has_specific_amount_of_money_with_inflation_included = yes
 			command_power > 99.9
 			has_army_experience > 24.9
 		}
-		custom_cost_text = eoanb_money_and_command_power_100_army_experience_25
+		custom_cost_text = eoanb_money_and_command_power_100_and_army_experience_25
 		days_remove = 180
 		complete_effect = {
 			set_temp_variable = { money_to_gain = -0.5 }
-			add_money_with_tooltip_effect = yes
+			add_money_with_inflation_included_with_tooltip_effect = yes
 			add_command_power = -100
 			army_experience = -25
 			hidden_effect = {
@@ -5388,6 +5337,20 @@ PRS_decision_category_constitutional_crisis = {
 					}
 				}
 			}
+			PRS_rudolph_delbruck = {
+				add_advisor_role = {
+					advisor = {
+						slot = political_advisor
+						idea_token = PRS_advisor_rudolph_delbruck
+						traits = {
+							PRS_trait_Rudolph_Delbruck
+						}
+						ai_will_do = {
+							factor = 8
+						}
+					}
+				}
+			}
 		}
 		ai_will_do = {
 			base = 1000
@@ -5471,10 +5434,6 @@ PRS_decision_category_election_campaign = {
 			NOT = {
 				has_country_flag = PRS_electoral_corruption_in_progress_flag
 			}
-			set_temp_variable = {
-				amount_of_money_to_check = 0.05
-			}
-			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		visible = {
 			#has_completed_focus = PRS_focus_dissolve_parliament
@@ -5491,6 +5450,7 @@ PRS_decision_category_election_campaign = {
 			set_temp_variable = {
 				amount_of_money_to_check = 0.05
 			}
+			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		custom_cost_text = CREATE_PUBLIC_WORKS_CUSTOM_COST_TEXT
 		days_remove = 14
@@ -5499,7 +5459,7 @@ PRS_decision_category_election_campaign = {
 			set_country_flag = PRS_electoral_corruption_in_progress_flag
 			add_political_power = -50
 			set_temp_variable = { money_to_gain = -0.05 }
-			add_money_with_tooltip_effect = yes
+			add_money_with_inflation_included_with_tooltip_effect = yes
 		}
 		remove_effect = {
 			clr_country_flag = PRS_electoral_corruption_in_progress_flag
@@ -5538,10 +5498,6 @@ PRS_decision_category_election_campaign = {
 			NOT = {
 				has_country_flag = PRS_electoral_corruption_in_progress_flag
 			}
-			set_temp_variable = {
-				amount_of_money_to_check = 0.25
-			}
-			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		visible = {
 			#has_completed_focus = PRS_focus_dissolve_parliament
@@ -5558,6 +5514,7 @@ PRS_decision_category_election_campaign = {
 			set_temp_variable = {
 				amount_of_money_to_check = 0.25
 			}
+			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		custom_cost_text = CREATE_PUBLIC_WORKS_CUSTOM_COST_TEXT
 		days_remove = 14
@@ -5566,7 +5523,7 @@ PRS_decision_category_election_campaign = {
 			set_country_flag = PRS_electoral_corruption_in_progress_flag
 			add_political_power = -20
 			set_temp_variable = { money_to_gain = -0.25 }
-			add_money_with_tooltip_effect = yes
+			add_money_with_inflation_included_with_tooltip_effect = yes
 		}
 		remove_effect = {
 			clr_country_flag = PRS_electoral_corruption_in_progress_flag
@@ -5605,10 +5562,6 @@ PRS_decision_category_election_campaign = {
 			NOT = {
 				has_country_flag = PRS_electoral_corruption_in_progress_flag
 			}
-			set_temp_variable = {
-				amount_of_money_to_check = 0.1
-			}
-			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		visible = {
 			#has_completed_focus = PRS_focus_dissolve_parliament
@@ -5625,6 +5578,7 @@ PRS_decision_category_election_campaign = {
 			set_temp_variable = {
 				amount_of_money_to_check = 0.1
 			}
+			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		custom_cost_text = CREATE_PUBLIC_WORKS_CUSTOM_COST_TEXT
 		days_remove = 14
@@ -5633,7 +5587,7 @@ PRS_decision_category_election_campaign = {
 			set_country_flag = PRS_electoral_corruption_in_progress_flag
 			add_political_power = -30
 			set_temp_variable = { money_to_gain = -0.1 }
-			add_money_with_tooltip_effect = yes
+			add_money_with_inflation_included_with_tooltip_effect = yes
 		}
 		remove_effect = {
 			clr_country_flag = PRS_electoral_corruption_in_progress_flag
@@ -5672,10 +5626,6 @@ PRS_decision_category_election_campaign = {
 			NOT = {
 				has_country_flag = PRS_electoral_corruption_in_progress_flag
 			}
-			set_temp_variable = {
-				amount_of_money_to_check = 0.05
-			}
-			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		visible = {
 			#has_completed_focus = PRS_focus_dissolve_parliament
@@ -5692,6 +5642,7 @@ PRS_decision_category_election_campaign = {
 			set_temp_variable = {
 				amount_of_money_to_check = 0.05
 			}
+			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		custom_cost_text = CREATE_PUBLIC_WORKS_CUSTOM_COST_TEXT
 		days_remove = 14
@@ -5700,7 +5651,7 @@ PRS_decision_category_election_campaign = {
 			set_country_flag = PRS_electoral_corruption_in_progress_flag
 			add_political_power = -10
 			set_temp_variable = { money_to_gain = -0.05 }
-			add_money_with_tooltip_effect = yes
+			add_money_with_inflation_included_with_tooltip_effect = yes
 		}
 		remove_effect = {
 			clr_country_flag = PRS_electoral_corruption_in_progress_flag
@@ -5739,10 +5690,6 @@ PRS_decision_category_election_campaign = {
 			NOT = {
 				has_country_flag = PRS_electoral_corruption_in_progress_flag
 			}
-			set_temp_variable = {
-				amount_of_money_to_check = 0.1
-			}
-			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		visible = {
 			#has_completed_focus = PRS_focus_dissolve_parliament
@@ -5759,6 +5706,7 @@ PRS_decision_category_election_campaign = {
 			set_temp_variable = {
 				amount_of_money_to_check = 0.1
 			}
+			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		custom_cost_text = CREATE_PUBLIC_WORKS_CUSTOM_COST_TEXT
 		days_remove = 14
@@ -5767,7 +5715,7 @@ PRS_decision_category_election_campaign = {
 			set_country_flag = PRS_electoral_corruption_in_progress_flag
 			add_political_power = -30
 			set_temp_variable = { money_to_gain = -0.1 }
-			add_money_with_tooltip_effect = yes
+			add_money_with_inflation_included_with_tooltip_effect = yes
 		}
 		remove_effect = {
 			clr_country_flag = PRS_electoral_corruption_in_progress_flag
@@ -5814,10 +5762,6 @@ PRS_decision_category_navy_expansion = {
 			PRS_friedrich_zu_eulenburg = {
 				is_hired_as_advisor = yes
 			}
-			set_temp_variable = {
-				amount_of_money_to_check = 0.1
-			}
-			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		visible = {
 			has_completed_focus = PRS_focus_prussian_navy
@@ -5831,12 +5775,13 @@ PRS_decision_category_navy_expansion = {
 			set_temp_variable = {
 				amount_of_money_to_check = 0.1
 			}
+			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		custom_cost_text = CREATE_PUBLIC_WORKS_CUSTOM_COST_TEXT
 		complete_effect = {
 			custom_effect_tooltip = PRS_decision_eulenburg_expedition_start_effect_tt
 			set_temp_variable = { money_to_gain = -0.1 }
-			add_money_with_tooltip_effect = yes
+			add_money_with_inflation_included_with_tooltip_effect = yes
 			hidden_effect = {
 				PRS = {
 					country_event = {
@@ -5947,17 +5892,13 @@ PRS_decision_category_navy_expansion = {
 		icon = naval_base
 		#allowed = { tag = PRS }
 		available = {
+			owns_state = 1060
 			NOT = {
 				has_country_flag = PRS_jade_bight_expansion_in_progress
 			}
-			set_temp_variable = {
-				amount_of_money_to_check = 0.5
-			}
-			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		visible = {
 			has_active_mission = PRS_mission_hagens_expansion_plan
-			owns_state = 1060
 			1060 = {
 				naval_base < 2
 			}
@@ -5967,13 +5908,14 @@ PRS_decision_category_navy_expansion = {
 			set_temp_variable = {
 				amount_of_money_to_check = 0.5
 			}
+			has_specific_amount_of_money_with_inflation_included = yes
 			has_navy_experience > 24.9
 		}
 		custom_cost_text = eoanb_money_and_navy_experience_25
 		days_remove = 365
 		complete_effect = {
 			set_temp_variable = { money_to_gain = -0.5 }
-			add_money_with_tooltip_effect = yes
+			add_money_with_inflation_included_with_tooltip_effect = yes
 			navy_experience = -25
 			hidden_effect = {
 				set_country_flag = PRS_jade_bight_expansion_in_progress
@@ -6005,17 +5947,13 @@ PRS_decision_category_navy_expansion = {
 		icon = generic_construction
 		#allowed = { tag = PRS }
 		available = {
+			owns_state = 1060
 			NOT = {
 				has_country_flag = PRS_jade_bight_expansion_in_progress
 			}
-			set_temp_variable = {
-				amount_of_money_to_check = 2.5
-			}
-			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		visible = {
 			has_active_mission = PRS_mission_hagens_expansion_plan
-			owns_state = 1060
 			1060 = {
 				dockyard < 1
 			}
@@ -6025,13 +5963,14 @@ PRS_decision_category_navy_expansion = {
 			set_temp_variable = {
 				amount_of_money_to_check = 2.5
 			}
+			has_specific_amount_of_money_with_inflation_included = yes
 			has_navy_experience > 49.9
 		}
 		custom_cost_text = eoanb_money_and_navy_experience_50
 		days_remove = 730
 		complete_effect = {
 			set_temp_variable = { money_to_gain = -2.5 }
-			add_money_with_tooltip_effect = yes
+			add_money_with_inflation_included_with_tooltip_effect = yes
 			navy_experience = -50
 			hidden_effect = {
 				set_country_flag = PRS_jade_bight_expansion_in_progress
@@ -6063,17 +6002,13 @@ PRS_decision_category_navy_expansion = {
 		icon = generic_construction
 		#allowed = { tag = PRS }
 		available = {
+			owns_state = 1060
 			NOT = {
 				has_country_flag = PRS_jade_bight_expansion_in_progress
 			}
-			set_temp_variable = {
-				amount_of_money_to_check = 1
-			}
-			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		visible = {
 			has_active_mission = PRS_mission_hagens_expansion_plan
-			owns_state = 1060
 			1060 = {
 				state_population < 10000
 			}
@@ -6083,12 +6018,13 @@ PRS_decision_category_navy_expansion = {
 			set_temp_variable = {
 				amount_of_money_to_check = 1
 			}
+			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		custom_cost_text = CREATE_PUBLIC_WORKS_CUSTOM_COST_TEXT
 		days_remove = 365
 		complete_effect = {
 			set_temp_variable = { money_to_gain = -1 }
-			add_money_with_tooltip_effect = yes
+			add_money_with_inflation_included_with_tooltip_effect = yes
 			hidden_effect = {
 				set_country_flag = PRS_jade_bight_expansion_in_progress
 			}
@@ -6261,14 +6197,8 @@ PRS_decision_category_navy_expansion = {
 				limit = {
 					is_ai = no
 				}
-				PRS = {
-					has_tech = tech_naval_mtg_1860_gunboat
-				}
+				has_tech = tech_naval_mtg_1860_gunboat
 			}
-			set_temp_variable = {
-				amount_of_money_to_check = 2.5
-			}
-			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		visible = {
 			has_country_flag = PRS_issue_bonds_for_navy
@@ -6281,6 +6211,7 @@ PRS_decision_category_navy_expansion = {
 			set_temp_variable = {
 				amount_of_money_to_check = 2.5
 			}
+			has_specific_amount_of_money_with_inflation_included = yes
 			has_navy_experience > 49.9
 		}
 		custom_cost_text = eoanb_money_and_navy_experience_50
@@ -6288,7 +6219,7 @@ PRS_decision_category_navy_expansion = {
 		complete_effect = {
 			set_country_flag = PRS_ordered_ships_domestically_flag
 			set_temp_variable = { money_to_gain = -2.5 }
-			add_money_with_tooltip_effect = yes
+			add_money_with_inflation_included_with_tooltip_effect = yes
 			navy_experience = -50
 		}
 		remove_effect = {
@@ -6310,14 +6241,8 @@ PRS_decision_category_navy_expansion = {
 				limit = {
 					is_ai = no
 				}
-				PRS = {
-					has_tech = tech_naval_mtg_1860_gunboat
-				}
+				has_tech = tech_naval_mtg_1860_gunboat
 			}
-			set_temp_variable = {
-				amount_of_money_to_check = 1.5
-			}
-			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		visible = {
 			has_country_flag = PRS_issue_bonds_for_navy
@@ -6330,6 +6255,7 @@ PRS_decision_category_navy_expansion = {
 			set_temp_variable = {
 				amount_of_money_to_check = 1.5
 			}
+			has_specific_amount_of_money_with_inflation_included = yes
 			has_navy_experience > 49.9
 		}
 		custom_cost_text = eoanb_money_and_navy_experience_50
@@ -6337,7 +6263,7 @@ PRS_decision_category_navy_expansion = {
 		complete_effect = {
 			set_country_flag = PRS_ordered_ships_domestically_flag
 			set_temp_variable = { money_to_gain = -1.5 }
-			add_money_with_tooltip_effect = yes
+			add_money_with_inflation_included_with_tooltip_effect = yes
 			navy_experience = -50
 		}
 		remove_effect = {
@@ -6396,10 +6322,6 @@ PRS_decision_category_navy_expansion = {
 			NOT = {
 				has_country_flag = PRS_ordered_ships_abroad_flag
 			}
-			set_temp_variable = {
-				amount_of_money_to_check = 0.8
-			}
-			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		visible = {
 			country_exists = ENG
@@ -6418,12 +6340,13 @@ PRS_decision_category_navy_expansion = {
 			set_temp_variable = {
 				amount_of_money_to_check = 0.8
 			}
+			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		custom_cost_text = CREATE_PUBLIC_WORKS_CUSTOM_COST_TEXT
 		days_remove = 120
 		complete_effect = {
 			set_temp_variable = { money_to_gain = -0.8 }
-			add_money_with_tooltip_effect = yes
+			add_money_with_inflation_included_with_tooltip_effect = yes
 			ENG = { country_event = { id = prussia.832 days = 3 } }
 			set_country_flag = PRS_ordered_ships_abroad_flag
 		}
@@ -6487,10 +6410,6 @@ PRS_decision_category_navy_expansion = {
 			NOT = {
 				has_country_flag = PRS_ordered_ships_abroad_flag
 			}
-			set_temp_variable = {
-				amount_of_money_to_check = 0.6
-			}
-			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		visible = {
 			country_exists = ENG
@@ -6509,12 +6428,13 @@ PRS_decision_category_navy_expansion = {
 			set_temp_variable = {
 				amount_of_money_to_check = 0.6
 			}
+			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		custom_cost_text = CREATE_PUBLIC_WORKS_CUSTOM_COST_TEXT
 		days_remove = 150
 		complete_effect = {
 			set_temp_variable = { money_to_gain = -0.6 }
-			add_money_with_tooltip_effect = yes
+			add_money_with_inflation_included_with_tooltip_effect = yes
 			ENG = { country_event = { id = prussia.832 days = 3 } }
 			set_country_flag = PRS_ordered_ships_abroad_flag
 		}
@@ -6578,10 +6498,6 @@ PRS_decision_category_navy_expansion = {
 			NOT = {
 				has_country_flag = PRS_ordered_ships_abroad_flag
 			}
-			set_temp_variable = {
-				amount_of_money_to_check = 0.2
-			}
-			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		visible = {
 			country_exists = FRA
@@ -6600,12 +6516,13 @@ PRS_decision_category_navy_expansion = {
 			set_temp_variable = {
 				amount_of_money_to_check = 0.2
 			}
+			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		custom_cost_text = CREATE_PUBLIC_WORKS_CUSTOM_COST_TEXT
 		days_remove = 150
 		complete_effect = {
 			set_temp_variable = { money_to_gain = -0.2 }
-			add_money_with_tooltip_effect = yes
+			add_money_with_inflation_included_with_tooltip_effect = yes
 			FRA = { country_event = { id = prussia.832 days = 3 } }
 			set_country_flag = PRS_ordered_ships_abroad_flag
 		}
@@ -6669,10 +6586,6 @@ PRS_decision_category_navy_expansion = {
 			NOT = {
 				has_country_flag = PRS_ordered_ships_abroad_flag
 			}
-			set_temp_variable = {
-				amount_of_money_to_check = 0.8
-			}
-			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		visible = {
 			country_exists = FRA
@@ -6691,12 +6604,13 @@ PRS_decision_category_navy_expansion = {
 			set_temp_variable = {
 				amount_of_money_to_check = 0.8
 			}
+			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		custom_cost_text = CREATE_PUBLIC_WORKS_CUSTOM_COST_TEXT
 		days_remove = 180
 		complete_effect = {
 			set_temp_variable = { money_to_gain = -0.8 }
-			add_money_with_tooltip_effect = yes
+			add_money_with_inflation_included_with_tooltip_effect = yes
 			FRA = { country_event = { id = prussia.832 days = 3 } }
 			set_country_flag = PRS_ordered_ships_abroad_flag
 		}
@@ -6819,10 +6733,6 @@ PRS_decision_category_navy_expansion = {
 					}
 				}
 			}
-			set_temp_variable = {
-				amount_of_money_to_check = 0.2
-			}
-			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		visible = {
 			has_completed_focus = PRS_focus_navy_ministry
@@ -6832,6 +6742,7 @@ PRS_decision_category_navy_expansion = {
 			set_temp_variable = {
 				amount_of_money_to_check = 0.2
 			}
+			has_specific_amount_of_money_with_inflation_included = yes
 			has_political_power > 49.9
 		}
 		custom_cost_text = eoanb_money_and_political_power_50
@@ -6839,7 +6750,7 @@ PRS_decision_category_navy_expansion = {
 			custom_effect_tooltip = PRS_decision_navy_ministry_effect_tt
 			add_political_power = -50
 			set_temp_variable = { money_to_gain = -0.2 }
-			add_money_with_tooltip_effect = yes
+			add_money_with_inflation_included_with_tooltip_effect = yes
 			navy_experience = 50
 			add_ideas = PRS_idea_navy_ministry_1
 			if = {
@@ -6884,10 +6795,7 @@ PRS_decision_category_navy_expansion = {
 		icon = generic_operation
 		#allowed = { tag = PRS }
 		available = {
-			set_temp_variable = {
-				amount_of_money_to_check = 0.3
-			}
-			has_specific_amount_of_money_with_inflation_included = yes
+			#
 		}
 		visible = {
 			PRS = {
@@ -6901,6 +6809,7 @@ PRS_decision_category_navy_expansion = {
 			set_temp_variable = {
 				amount_of_money_to_check = 0.3
 			}
+			has_specific_amount_of_money_with_inflation_included = yes
 			has_political_power > 49.9
 		}
 		custom_cost_text = eoanb_money_and_political_power_50
@@ -6908,7 +6817,7 @@ PRS_decision_category_navy_expansion = {
 			custom_effect_tooltip = PRS_decision_detach_navy_ministry_effect_tt
 			add_political_power = -50
 			set_temp_variable = { money_to_gain = -0.3 }
-			add_money_with_tooltip_effect = yes
+			add_money_with_inflation_included_with_tooltip_effect = yes
 			navy_experience = 25
 			swap_ideas = {
 				remove_idea = PRS_idea_navy_ministry_1
@@ -7078,10 +6987,6 @@ PRS_decision_category_navy_expansion = {
 			NOT = {
 				has_country_flag = PRS_ordered_ships_abroad_flag
 			}
-			set_temp_variable = {
-				amount_of_money_to_check = 2.8
-			}
-			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		visible = {
 			country_exists = ENG
@@ -7100,12 +7005,13 @@ PRS_decision_category_navy_expansion = {
 			set_temp_variable = {
 				amount_of_money_to_check = 2.8
 			}
+			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		custom_cost_text = CREATE_PUBLIC_WORKS_CUSTOM_COST_TEXT
 		days_remove = 365
 		complete_effect = {
 			set_temp_variable = { money_to_gain = -2.8 }
-			add_money_with_tooltip_effect = yes
+			add_money_with_inflation_included_with_tooltip_effect = yes
 			ENG = { country_event = { id = prussia.832 days = 3 } }
 			set_country_flag = PRS_ordered_ships_abroad_flag
 		}
@@ -7125,27 +7031,24 @@ PRS_decision_category_navy_expansion = {
 		icon = naval_base
 		#allowed = { tag = PRS }
 		available = {
+			owns_state = 1060
 			has_completed_focus = PRS_focus_war_ports
-			set_temp_variable = {
-				amount_of_money_to_check = 1.5
-			}
-			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		visible = {
 			has_country_flag = PRS_issue_bonds_for_navy_ngc_flag
-			owns_state = 1060
 		}
 		fire_only_once = yes
 		custom_cost_trigger = {
 			set_temp_variable = {
 				amount_of_money_to_check = 1.5
 			}
+			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		custom_cost_text = CREATE_PUBLIC_WORKS_CUSTOM_COST_TEXT
 		days_remove = 180
 		complete_effect = {
 			set_temp_variable = { money_to_gain = -1.5 }
-			add_money_with_tooltip_effect = yes
+			add_money_with_inflation_included_with_tooltip_effect = yes
 		}
 		remove_effect = {
 			navy_experience = 25
@@ -7213,27 +7116,24 @@ PRS_decision_category_navy_expansion = {
 		icon = naval_base
 		#allowed = { tag = PRS }
 		available = {
+			owns_state = 949
 			has_completed_focus = PRS_focus_war_ports
-			set_temp_variable = {
-				amount_of_money_to_check = 1.5
-			}
-			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		visible = {
 			has_country_flag = PRS_issue_bonds_for_navy_ngc_flag
-			owns_state = 949
 		}
 		fire_only_once = yes
 		custom_cost_trigger = {
 			set_temp_variable = {
 				amount_of_money_to_check = 1.5
 			}
+			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		custom_cost_text = CREATE_PUBLIC_WORKS_CUSTOM_COST_TEXT
 		days_remove = 180
 		complete_effect = {
 			set_temp_variable = { money_to_gain = -1.5 }
-			add_money_with_tooltip_effect = yes
+			add_money_with_inflation_included_with_tooltip_effect = yes
 		}
 		remove_effect = {
 			navy_experience = 25
@@ -7301,27 +7201,24 @@ PRS_decision_category_navy_expansion = {
 		icon = generic_construction
 		#allowed = { tag = PRS }
 		available = {
+			owns_state = 949
 			has_completed_focus = PRS_focus_royal_dockyards
-			set_temp_variable = {
-				amount_of_money_to_check = 5
-			}
-			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		visible = {
 			has_country_flag = PRS_issue_bonds_for_navy_ngc_flag
-			owns_state = 949
 		}
 		fire_only_once = yes
 		custom_cost_trigger = {
 			set_temp_variable = {
 				amount_of_money_to_check = 5
 			}
+			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		custom_cost_text = CREATE_PUBLIC_WORKS_CUSTOM_COST_TEXT
 		days_remove = 365
 		complete_effect = {
 			set_temp_variable = { money_to_gain = -5 }
-			add_money_with_tooltip_effect = yes
+			add_money_with_inflation_included_with_tooltip_effect = yes
 		}
 		remove_effect = {
 			navy_experience = 25
@@ -7347,27 +7244,24 @@ PRS_decision_category_navy_expansion = {
 		icon = generic_construction
 		#allowed = { tag = PRS }
 		available = {
+			owns_state = 1002
 			has_completed_focus = PRS_focus_royal_dockyards
-			set_temp_variable = {
-				amount_of_money_to_check = 5
-			}
-			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		visible = {
 			has_country_flag = PRS_issue_bonds_for_navy_ngc_flag
-			owns_state = 1002
 		}
 		fire_only_once = yes
 		custom_cost_trigger = {
 			set_temp_variable = {
 				amount_of_money_to_check = 5
 			}
+			has_specific_amount_of_money_with_inflation_included = yes
 		}
 		custom_cost_text = CREATE_PUBLIC_WORKS_CUSTOM_COST_TEXT
 		days_remove = 365
 		complete_effect = {
 			set_temp_variable = { money_to_gain = -5 }
-			add_money_with_tooltip_effect = yes
+			add_money_with_inflation_included_with_tooltip_effect = yes
 		}
 		remove_effect = {
 			navy_experience = 25
@@ -9439,144 +9333,6 @@ PRS_decision_category_german_war = {
 }
 
 PRS_decision_category_NGC_politics = {
-	#Core Land from Seven Weeks War
-	PRS_decision_core_seven_weeks_war = {
-		icon = generic_form_nation
-		#allowed = { tag = PRS }
-		available = {
-			OR = {
-				has_stability > 0.5
-				date > 1870.1.1
-			}
-		}
-		visible = {
-			OR = {
-				has_country_flag = eoanb_flag_won_7_weeks_war
-				has_country_flag = eoanb_flag_tied_7_weeks_war
-			}
-			has_completed_focus = PRS_focus_ngc_constitutive_reichstag
-			OR = {
-				PRS = {
-					owns_state = 1061
-					owns_state = 56
-					owns_state = 59
-					owns_state = 61
-					owns_state = 938
-					owns_state = 868
-					owns_state = 867
-					owns_state = 745
-					owns_state = 1035
-					owns_state = 869
-					owns_state = 55
-					owns_state = 60
-					owns_state = 65
-					owns_state = 58
-					owns_state = 949
-					owns_state = 1032
-				}
-				any_country = {
-					is_subject_of = PRS
-					owns_state = 1061
-					owns_state = 56
-					owns_state = 59
-					owns_state = 61
-					owns_state = 938
-					owns_state = 868
-					owns_state = 867
-					owns_state = 745
-					owns_state = 1035
-					owns_state = 869
-					owns_state = 55
-					owns_state = 60
-					owns_state = 65
-					owns_state = 58
-					owns_state = 949
-					owns_state = 1032
-				}
-			}
-		}
-		fire_only_once = yes
-		cost = 400
-		complete_effect = {
-			PRS = {
-				add_state_core = 1061
-				add_state_core = 56
-				add_state_core = 59
-				add_state_core = 61
-				add_state_core = 938
-				add_state_core = 868
-				add_state_core = 867
-				add_state_core = 745
-				add_state_core = 1035
-				add_state_core = 869
-				add_state_core = 55
-				add_state_core = 60
-				add_state_core = 65
-				add_state_core = 58
-				add_state_core = 949
-				add_state_core = 1032
-			}
-			custom_effect_tooltip = PRS_decision_core_seven_weeks_war_effect_tt
-			hidden_effect = {
-				HSD = {
-					remove_state_core = 1061
-				}
-				HAN = {
-					remove_state_core = 56
-				}
-				HAN = {
-					remove_state_core = 59
-				}
-				NAS = {
-					remove_state_core = 1035
-				}
-			}
-			if = {
-				limit = {
-					has_cosmetic_tag = GER_north_confederation
-				}
-				MCK = {
-					remove_state_core = 61
-				}
-				LCK = {
-					remove_state_core = 938
-				}
-				HAM = {
-					remove_state_core = 868
-				}
-				BRE = {
-					remove_state_core = 867
-				}
-				OLD = {
-					remove_state_core = 745
-				}
-				FRK = {
-					remove_state_core = 869
-				}
-				HES = {
-					remove_state_core = 55
-				}
-				THU = {
-					remove_state_core = 60
-				}
-				SAX = {
-					remove_state_core = 65
-				}
-				SCH = {
-					remove_state_core = 58
-				}
-				SCH = {
-					remove_state_core = 949
-				}
-				SCH = {
-					remove_state_core = 1032
-				}
-			}
-		}
-		ai_will_do = {
-			base = 1000
-		}
-	}
 	#Draft a Constitution for the Confederation
 	PRS_mission_draft_constitution = {
 		icon = eng_trade_unions_support
@@ -9929,6 +9685,169 @@ PRS_decision_category_NGC_politics = {
 			hidden_effect = {
 				clr_country_flag = PRS_issue_seven_done_flag
 			}
+		}
+		ai_will_do = {
+			base = 1000
+		}
+	}
+	#Core Land from Seven Weeks War
+	PRS_decision_core_seven_weeks_war = {
+		icon = generic_form_nation
+		#allowed = { tag = PRS }
+		available = {
+			OR = {
+				has_stability > 0.5
+				date > 1870.1.1
+			}
+		}
+		visible = {
+			OR = {
+				has_country_flag = eoanb_flag_won_7_weeks_war
+				has_country_flag = eoanb_flag_tied_7_weeks_war
+			}
+			has_completed_focus = PRS_focus_ngc_constitutive_reichstag
+			OR = {
+				PRS = {
+					owns_state = 1061
+					owns_state = 56
+					owns_state = 59
+					owns_state = 61
+					owns_state = 938
+					owns_state = 868
+					owns_state = 867
+					owns_state = 745
+					owns_state = 1035
+					owns_state = 869
+					owns_state = 55
+					owns_state = 60
+					owns_state = 65
+					owns_state = 58
+					owns_state = 949
+					owns_state = 1032
+				}
+				any_country = {
+					is_subject_of = PRS
+					owns_state = 1061
+					owns_state = 56
+					owns_state = 59
+					owns_state = 61
+					owns_state = 938
+					owns_state = 868
+					owns_state = 867
+					owns_state = 745
+					owns_state = 1035
+					owns_state = 869
+					owns_state = 55
+					owns_state = 60
+					owns_state = 65
+					owns_state = 58
+					owns_state = 949
+					owns_state = 1032
+				}
+			}
+		}
+		fire_only_once = yes
+		cost = 400
+		complete_effect = {
+			PRS = {
+				add_state_core = 1061
+				add_state_core = 56
+				add_state_core = 59
+				add_state_core = 61
+				add_state_core = 938
+				add_state_core = 868
+				add_state_core = 867
+				add_state_core = 745
+				add_state_core = 1035
+				add_state_core = 869
+				add_state_core = 55
+				add_state_core = 60
+				add_state_core = 65
+				add_state_core = 58
+				add_state_core = 949
+				add_state_core = 1032
+			}
+			custom_effect_tooltip = PRS_decision_core_seven_weeks_war_effect_tt
+			hidden_effect = {
+				HSD = {
+					remove_state_core = 1061
+				}
+				HAN = {
+					remove_state_core = 56
+				}
+				HAN = {
+					remove_state_core = 59
+				}
+				NAS = {
+					remove_state_core = 1035
+				}
+			}
+			if = {
+				limit = {
+					has_cosmetic_tag = GER_north_confederation
+				}
+				MCK = {
+					remove_state_core = 61
+				}
+				LCK = {
+					remove_state_core = 938
+				}
+				HAM = {
+					remove_state_core = 868
+				}
+				BRE = {
+					remove_state_core = 867
+				}
+				OLD = {
+					remove_state_core = 745
+				}
+				FRK = {
+					remove_state_core = 869
+				}
+				HES = {
+					remove_state_core = 55
+				}
+				THU = {
+					remove_state_core = 60
+				}
+				SAX = {
+					remove_state_core = 65
+				}
+				SCH = {
+					remove_state_core = 58
+				}
+				SCH = {
+					remove_state_core = 949
+				}
+				SCH = {
+					remove_state_core = 1032
+				}
+			}
+		}
+		ai_will_do = {
+			base = 1000
+		}
+	}
+	#Confiscate the Assets of the Royal House of Hanover
+	PRS_decision_confiscate_hanover_assets = {
+		icon = money
+		#allowed = { tag = PRS }
+		available = {
+			has_stability > 0.5
+			has_completed_focus = PRS_focus_ngc_constitution
+			59 = { is_core_of = PRS }
+		}
+		visible = {
+			59 = { is_owned_by = PRS }
+		}
+		fire_only_once = yes
+		cost = 50
+		days_remove = 30
+		complete_effect = {
+			add_stability = -0.02
+		}
+		remove_effect = {
+			PRS = { country_event = { id = sevenweekswar.201 } }
 		}
 		ai_will_do = {
 			base = 1000

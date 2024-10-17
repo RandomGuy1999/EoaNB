@@ -3081,12 +3081,15 @@
  sevenweekswar.152.d: ""
  sevenweekswar.152.a: "Accept."
  sevenweekswar.152.b: "Resist."
+
+ sevenweekswar.201.t: "Confiscation of the Assets of the Royal House of Hanover"
+ sevenweekswar.201.d: "The agitations of former King George V of Hanover against Prussia and the North German Confederation have made it impossible to honor our previous deals with the family of the former ruling house of Hanover, the Guelphs. Thus, it has been decided to confiscate the state treasury to be used to better control and counter these anti-Prussian activities. Additionally, since the acquired funds are under no parliamentary control whatsoever, we can use them to our liking."
+ sevenweekswar.201.a: "These funds could be very useful."
  
  #Luxembourg Crisis
- lux_crisis.1.t: "Ask the Dutch King to Buy Luxembourg?"
- lux_crisis.1.d: "The dissolution of the German Confederation might present the opportunity of acquiring the Grand Duchy of Luxembourg. The Prussian chancellor [PRS.GetLeader] had few objections when the topic arose at the meeting between His Imperial Majesty Napoléon III and the Prussian head of government in Biarritz in September 1865, and we can hope for the goodwill of the Prussians after our neutrality in the German War.\n\nThe Dutch king still rules the duchy under a personal union, but following the Belgian Revolution of 1839 the territories of the Netherlands and Luxembourg have been separated. Should we ask William III of the Netherlands to buy Luxembourg?"
- lux_crisis.1.a: "Send the Offer."
- lux_crisis.1.b: "Nevermind."
+ lux_crisis.1.t: "The French Attempt to Buy Luxembourg"
+ lux_crisis.1.d: "The dissolution of the German Confederation presents us with many new challenges. It appears that the French have high hopes for territorial expansion following their neutrality in the conflict. It seems they have set their eyes on acquiring our country.\n\nOur king, William III of the Netherlands, is in financial trouble and might jump at the opportunity. It's not in our hands, but we might soon have a new ruler..."
+ lux_crisis.1.a: "Is this good or bad news?"
  lux_crisis.2.t: "[FRA.GetNameDef] Asks to Buy Luxembourg"
  lux_crisis.2.d: "[FRA.GetLeader] has approached us with a very interesting offer. The French want to buy the [LUX.GetName] for 5m guilders. Now, although this would mean a loss of prestige, the grand duchy has been a nuisance at times and we are in deep financial trouble, so this sum of money could really help us overcome those problems. How should we respond?"
  lux_crisis.2.a: "We would accept, but the Prussians need to agree."
@@ -3405,6 +3408,9 @@
  fraprswar.13.t: "Victory is ours!"
  fraprswar.13.d: "We have won the war against France! This will greatly aid us in manifesting ourself as a great European power and give us international recognition on the world stage. Additionally, our staff thinks we finally seem ready to initiate German Unification!"
  fraprswar.13.a: "Für das Vaterland!"
+ fraprswar.14.t: "We will have to pay war reparations..."
+ fraprswar.14.d: "We have lost the war against the Germans... Adding insult to injury, we have not only lost Alsace and Lorraine, but we will also have to pay considerable war reparations."
+ fraprswar.14.a: "A sad day for France."
  eoanb_flag_uniting_germany_socialist: "Prussia is uniting Germany under the Red Banner!"
  eoanb_tt_PRS_socialist_messengers: "We will propose negotiations to the southern German states."
  eoanb_tt_PRS_socialist_integrate: "§Y[Root.GetNameDef]§! will integrate the southern German states."
@@ -3508,6 +3514,19 @@
  tech.3.d: "A well-known biologist and author in our country by the name of Charles Darwin has published yet another one of his works, entitled \"On the Origin of Species\". This book deals with evolutionary theory, and how species in our world came along to look like and behave as they do. The initial reactions to the book have been overwhelmingly positive, although some members of the church want to see it banned for opposing the story of creation."
  tech.3.a: "He is doing important work."
  tech.3.b: "Evolutionary theory? Ban this nonsense!"
+
+ tech.4.t: "Age of Napoleonic Warfare"
+ tech.4.d: "Since we and the world have advanced technologically lately, our traditional army structure just doesn't cut it anymore. We should make some reforms to make our Army fit in with current technology and tactics."
+ tech.4.a: "We will restructure our army!"
+
+ tech.5.t: "Advanced thorugh Napoleonic Tactics"
+ tech.5.d: "Since we and the world have advanced technologically lately, our traditional army structure just doesn't cut it anymore. We should make some reforms to make our Army fit in with current technology and tactics."
+ tech.5.a: "This will be costly"
+
+ tech.6.t: "Advanced thorugh Victorian Tactics"
+ tech.6.d: "Since we and the world have advanced technologically lately, our traditional army structure just doesn't cut it anymore. We should make some reforms to make our Army fit in with current technology and tactics."
+ tech.6.a: "This will be costly"
+
  tech_news.1.t: "\"On the Origin of Species\""
  tech_news.1.d: "A renowned scientist in the field of biology from [ENG.GetNameDef] has recently published his newest book, entitled: \"On the Origin of Species\", in which he theorizes about the concept of evolution, how animals and other living matter on this planet came to be and evolved to exist in the forms we know them as today, and makes some predictions about the future of the field of biology and about evolution in general. Some voices in the church called for the banning of the book, but they were unsuccessfull, and it went on to become a massive success, with all of the 1250 stock copies ordered on the first day of its publication. The scientific community is hoping that knowledge in the biological sciences will be significantly brought forward by this book."
  tech_news.1.a: "An outstanding achievement."

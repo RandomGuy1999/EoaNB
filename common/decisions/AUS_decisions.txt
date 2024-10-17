@@ -6674,14 +6674,18 @@ AUS_decision_category_habsburg_industry = {
 
 		fire_only_once = yes
 		
-		cost = 100
+		custom_cost_trigger = {
+			set_temp_variable = {
+				amount_of_money_to_check = 2.5
+			}
+			has_specific_amount_of_money_with_inflation_included = yes
+		}
+		custom_cost_text = CREATE_PUBLIC_WORKS_CUSTOM_COST_TEXT
 		
 		days_remove = 365
 		 
 		modifier = {
 			political_power_gain = -0.05
-			consumer_goods_expected_value = 0.05
-			production_speed_buildings_factor = -0.05
 		}
 		
 		complete_effect = {
@@ -6703,10 +6707,21 @@ AUS_decision_category_habsburg_industry = {
 				}
 				swap_ideas = { remove_idea = road_spending_level_3 add_idea = road_spending_level_4 } 
 			}
+			set_temp_variable = { money_to_gain = -2.5 }
+			add_money_with_inflation_included_with_tooltip_effect = yes
 		}
 			
 		remove_effect = {
 			swap_ideas = { remove_idea = NA_B_small_scale_railways add_idea = NA_B_medium_scale_railways }
+			set_temp_variable = {
+				eoanb_prestige_change = 1
+			}
+			eoanb_change_prestige_score = yes
+			EOANBSYS_institutions_innovative_add_one = yes
+			set_temp_variable = {
+				unemployment_value = -0.0002
+			}
+			add_unemployment_effect = yes
 		}
 		
 		ai_will_do = {
@@ -6766,7 +6781,7 @@ AUS_decision_category_austrian_army = {
 			add_political_power = 100
 			add_stability = 0.05
 			add_war_support = 0.15
-			add_doctrine_cost_reduction = { cost_reduction = 0.5 uses = 2 category = doctrine_victorian_innovative_tech }
+			#add_doctrine_cost_reduction = { cost_reduction = 0.5 uses = 2 category = doctrine_victorian_innovative_tech }
 			hidden_effect = {
 				set_country_flag = AUS_army_reform_success_flag
 			}
@@ -6821,7 +6836,7 @@ AUS_decision_category_austrian_army = {
 			add_political_power = 100
 			add_stability = 0.05
 			add_war_support = 0.15
-			add_doctrine_cost_reduction = { cost_reduction = 0.5 uses = 2 category = doctrine_victorian_traditional_tech }
+			#add_doctrine_cost_reduction = { cost_reduction = 0.5 uses = 2 category = doctrine_victorian_traditional_tech }
 			hidden_effect = {
 				set_country_flag = AUS_army_reform_success_flag
 			}
@@ -6962,9 +6977,9 @@ AUS_decision_category_austrian_army = {
 				}
 				custom_trigger_tooltip = {
 					tooltip = AUS_decision_expand_the_kriegsschule_trigger_1_tt
-					hidden_trigger = {
-						has_tech = doctrine_victorian_innovation_tactics
-					}
+					#hidden_trigger = {
+					#	has_tech = doctrine_victorian_innovation_tactics
+					#}
 				}
 				has_idea = AUS_idea_new_infantry_regulations_degenfeld_1
 			}
@@ -6974,9 +6989,9 @@ AUS_decision_category_austrian_army = {
 				}
 				custom_trigger_tooltip = {
 					tooltip = AUS_decision_expand_the_kriegsschule_trigger_2_tt
-					hidden_trigger = {
-						has_tech = doctrine_victorian_tradition_1848
-					}
+					#hidden_trigger = {
+					#	has_tech = doctrine_victorian_tradition_1848
+					#}
 				}
 				has_idea = AUS_idea_new_infantry_regulations_benedek_1
 			}
@@ -7033,14 +7048,14 @@ AUS_decision_category_austrian_army = {
 				limit = {
 					has_completed_focus = AUS_focus_degenfelds_army_reform_plans
 				}
-				add_doctrine_cost_reduction = { cost_reduction = 0.5 uses = 1 category = doctrine_victorian_innovative_tech }
+				#add_doctrine_cost_reduction = { cost_reduction = 0.5 uses = 1 category = doctrine_victorian_innovative_tech }
 				swap_ideas = {
 					remove_idea = AUS_idea_new_infantry_regulations_degenfeld_1
 					add_idea = AUS_idea_new_infantry_regulations_degenfeld_2
 				}
 			}
 			else = {
-				add_doctrine_cost_reduction = { cost_reduction = 0.5 uses = 1 category = doctrine_victorian_traditional_tech }
+				#add_doctrine_cost_reduction = { cost_reduction = 0.5 uses = 1 category = doctrine_victorian_traditional_tech }
 				swap_ideas = {
 					remove_idea = AUS_idea_new_infantry_regulations_benedek_1
 					add_idea = AUS_idea_new_infantry_regulations_benedek_2
@@ -9392,10 +9407,10 @@ political_actions = {
 						is_part_of_the_german_confederation = yes
 						NOT = { TAG = AUS }
 					}
-					country_event = { days = 1 id = gerconfed.1 }
+					country_event = { days = 1 id = gerconfed.101 }
 				}
-				AUS = { country_event = { days = 6 id = gerconfed.2 } }
-				set_temp_variable = { var = eoanb_var_votes_gerconfed_1_yes value = 1 }
+				AUS = { country_event = { days = 6 id = gerconfed.102 } }
+				set_temp_variable = { var = eoanb_var_votes_gerconfed_101_yes value = 1 }
 			}
 		}
 
@@ -9439,7 +9454,7 @@ political_actions = {
 						is_part_of_the_german_confederation = yes
 						NOT = { TAG = AUS }
 					}
-					country_event = { days = 1 id = gerconfed.6 }
+					country_event = { days = 1 id = gerconfed.106 }
 				}
 			}
 		}

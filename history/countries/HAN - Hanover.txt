@@ -45,7 +45,7 @@
 		#ECONOMIC POLICY
 		mixed_economy
 		limited_exports
-		taxation_level_3
+		taxation_level_1
 		civilian_economy
 		cl_legal
 		agrarian
@@ -60,7 +60,7 @@
 		
 		#NATIONAL SPIRITS
 		victorian_era
-		law_victorian_army
+		doctrine_napoleonic_army_2
 		GEC_idea_german_confederation_middle_power
 		GEC_idea_zollverein_1
 		GEC_idea_vienna_monetary_treaty
