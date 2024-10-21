@@ -256,8 +256,8 @@ spriteTypes = {
 			texturefile = "gfx/interface/ideas/BAD/BAD_badenian_kulturkampf.png"
 		}
 		spriteType = {
-			name = "GFX_idea_BAD_badische_tuftler"
-			texturefile = "gfx/interface/ideas/BAD/BAD_badische_tuftler.png"
+			name = "GFX_idea_BAD_idea_baden_tinkerer"
+			texturefile = "gfx/interface/ideas/BAD/BAD_idea_baden_tinkerer.png"
 		}
 		spriteType = {
 			name = "GFX_idea_BAD_rise_of_industry"
@@ -280,10 +280,6 @@ spriteTypes = {
 		spriteType = {
 			name = "GFX_idea_idea_BAD_badische_maschinenfabrik_durlach"
 			texturefile = "gfx/interface/ideas/BAD/idea_BAD_badische_maschinenfabrik_durlach.png"
-		}
-		spriteType = {
-			name = "GFX_idea_BAD_bergwerk_schauinsland"
-			texturefile = "gfx/interface/ideas/BAD/idea_BAD_bergwerk_schauinsland.png"
 		}
 	
 	# Advisors
