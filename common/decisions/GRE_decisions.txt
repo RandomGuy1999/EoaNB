@@ -978,9 +978,6 @@ GRE_decision_category_industry = {
 			AND = {
 				has_idea = industrializing
 				debt_not_bankrupt_trigger = yes
-				hidden_trigger = {
-					has_idea = egy_vic_debt
-				}
 				custom_trigger_tooltip = {
 					tooltip = GRE_allowed_infrastructure_tt
 					FROM = {
@@ -1015,13 +1012,20 @@ GRE_decision_category_industry = {
 		cost = 25
 
 		days_remove = 365
+		
+		custom_cost_trigger = {
+			set_temp_variable = { amount_of_money_to_check = 0.5 }
+		}
+		custom_cost_text = CREATE_PUBLIC_WORKS_CUSTOM_COST_TEXT
 
         remove_effect = {
 			FROM = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
 		}
 
 		complete_effect = {
-			debt_level_increase_by_1 = yes
+			set_temp_variable = { money_to_gain = -0.5 }
+			add_money_with_tooltip_effect = yes
+
 		}
 
 		modifier = {
@@ -1232,6 +1236,221 @@ GRE_decision_category_industry = {
 			base = 1000
 		}
 	}
+
+	GRE_mission_help_greeks_asia_minor = { 
+
+		icon = generic_construction
+
+		allowed = {
+			always = no
+		}
+
+		available = {
+			owns_state = 1251
+			custom_trigger_tooltip = {
+				tooltip = GRE_mission_asia_minor_tt
+				hidden_trigger = {
+					AND = {
+						has_country_flag = GRE_funded_education
+						has_country_flag = GRE_envoy_to_asia_minor
+						has_country_flag = GRE_food_to_asia_minor
+					}
+				}
+			}
+		}
+
+		activation = {
+			always = no
+		}
+		
+
+		fire_only_once = yes
+		
+		is_good = no
+
+		days_mission_timeout = 730
+
+		timeout_effect = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+				add_political_power = -50
+				add_stability = -0.02
+			}
+		}
+		
+		complete_effect = {
+			add_stability = 0.02
+			add_offsite_building = { type = industrial_complex level = 1 }
+		}
+
+		ai_will_do = {
+			base = 100
+		}
+
+		cancel_trigger = {
+			
+		}
+	}
+
+	GRE_decision_fund_greek_education_in_smyrna = {
+
+        icon = railway
+
+		#allowed = { tag = GRE }
+
+        available = {
+			set_temp_variable = {
+				amount_of_money_to_check = 0.5
+			}
+			has_specific_amount_of_money_with_inflation_included = yes
+		}
+
+		visible = {
+			has_completed_focus = GRE_greeks_asia_minor
+		}
+
+		days_remove = 365
+
+		fire_only_once = yes
+		
+		custom_cost_trigger = {
+			set_temp_variable = {
+				amount_of_money_to_check = 0.5
+			}
+		}
+		custom_cost_text = CREATE_PUBLIC_WORKS_CUSTOM_COST_TEXT
+
+		modifier = {
+			political_power_gain = -0.05
+		}
+
+
+		complete_effect = {
+			set_temp_variable = { money_to_gain = 0.5 }
+			add_money_with_tooltip_effect = yes
+		}
+
+		remove_effect = {
+			add_stability = 0.05
+			set_country_flag = GRE_funded_education
+		}
+
+		
+		cancel_trigger = {
+			
+		}
+
+		ai_will_do = {
+			base = 1000
+		}
+	}
+
+	GRE_decision_send_envoy_to_asia_minor = {
+
+        icon = railway
+
+		#allowed = { tag = GRE }
+
+        available = {
+			set_temp_variable = {
+				amount_of_money_to_check = 0.5
+			}
+			has_specific_amount_of_money_with_inflation_included = yes
+		}
+
+		visible = {
+			has_completed_focus = GRE_greeks_asia_minor
+		}
+
+		days_remove = 365
+
+		fire_only_once = yes
+		
+		custom_cost_trigger = {
+			set_temp_variable = {
+				amount_of_money_to_check = 0.5
+			}
+		}
+		custom_cost_text = CREATE_PUBLIC_WORKS_CUSTOM_COST_TEXT
+
+		modifier = {
+			political_power_gain = -0.05
+		}
+
+
+		complete_effect = {
+			set_temp_variable = { money_to_gain = 0.5 }
+			add_money_with_tooltip_effect = yes
+			add_political_power = -30
+		}
+
+		remove_effect = {
+			add_war_support = 0.03
+			set_country_flag = GRE_envoy_to_asia_minor
+		}
+
+		
+		cancel_trigger = {
+			
+		}
+
+		ai_will_do = {
+			base = 1000
+		}
+	}
+	GRE_decision_provide_food_to_asia_minor = {
+
+        icon = railway
+
+		#allowed = { tag = GRE }
+
+        available = {
+			set_temp_variable = {
+				amount_of_money_to_check = 0.5
+			}
+			has_specific_amount_of_money_with_inflation_included = yes
+		}
+
+		visible = {
+			has_completed_focus = GRE_greeks_asia_minor
+		}
+
+		days_remove = 365
+
+		fire_only_once = yes
+		
+		custom_cost_trigger = {
+			set_temp_variable = {
+				amount_of_money_to_check = 0.5
+			}
+		}
+		custom_cost_text = CREATE_PUBLIC_WORKS_CUSTOM_COST_TEXT
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+
+		complete_effect = {
+			set_temp_variable = { money_to_gain = 0.5 }
+			add_money_with_tooltip_effect = yes
+		}
+
+		remove_effect = {
+			set_country_flag = GRE_food_to_asia_minor
+		}
+
+		
+		cancel_trigger = {
+			
+		}
+
+		ai_will_do = {
+			base = 1000
+		}
+	}
 	
 	GRE_mission_piraeus_port = { 
 
@@ -1322,7 +1541,7 @@ GRE_decision_category_industry = {
 					47 = {
 						dockyard > 0
 					}
-					3401 = {
+					47 = {
 						any_province_building_level = {
 							province = {
 								id = 3401 # Cyclades
@@ -1340,7 +1559,7 @@ GRE_decision_category_industry = {
 		}
 		
 		highlight_states = {
-			state = 1251
+			state = 47
 		}
 
 		fire_only_once = yes
@@ -2595,11 +2814,6 @@ GRE_decision_category_debt_management = {
 
 		available = {
 			AND = {
-				check_variable = {
-					var = debt_level
-					value = 10
-					compare = greater_than_or_equals
-				}
 				NOT = {
 					has_idea = GRE_idea_tax_greek_marine_merchants
 				}
@@ -2612,6 +2826,11 @@ GRE_decision_category_debt_management = {
 				}
 			}
 		}
+
+		custom_cost_trigger = {
+			set_temp_variable = { amount_of_money_to_check = 0.5 }
+		}
+		custom_cost_text = CREATE_PUBLIC_WORKS_CUSTOM_COST_TEXT
 
 		visible = {
 			AND = {
@@ -2645,7 +2864,8 @@ GRE_decision_category_debt_management = {
 		}
 
 		remove_effect = {
-			debt_level_decrease_by_1 = yes
+			set_temp_variable = { money_to_gain = 0.5 }
+			add_money_with_tooltip_effect = yes
 		}
 	}
 	
@@ -4331,7 +4551,8 @@ GRE_decision_category_army = {
 		}
 		
 		complete_effect = {
-			debt_level_increase_by_1 = yes
+			set_temp_variable = { money_to_gain = -0.5 }
+			add_money_with_tooltip_effect = yes
 		}
 		
 		remove_effect = {
@@ -4361,9 +4582,10 @@ GRE_decision_category_army = {
 			has_completed_focus = GRE_renovation_of_nafplion_arsenal
 		}
 		
-		available = {
-			debt_not_bankrupt_trigger = yes
+		custom_cost_trigger = {
+			set_temp_variable = { amount_of_money_to_check = 0.5 }
 		}
+		custom_cost_text = CREATE_PUBLIC_WORKS_CUSTOM_COST_TEXT
 
 		fire_only_once = yes
 		
@@ -4372,7 +4594,8 @@ GRE_decision_category_army = {
 		days_remove = 260
 
 		complete_effect = {
-			debt_level_increase_by_1 = yes
+			set_temp_variable = { money_to_gain = -0.5 }
+			add_money_with_tooltip_effect = yes
 		}
 		
 		remove_effect = {
@@ -4539,16 +4762,27 @@ GRE_decision_category_navy = {
 		#allowed = { tag = GRE }
 
 		available = {
-			set_temp_variable = {
-				amount_of_money_to_check = 2.5
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				set_temp_variable = {
+					amount_of_money_to_check = 2.5
+				}
+				has_specific_amount_of_money_with_inflation_included = yes
+				has_tech = tech_naval_mtg_1860_corvette_hull
 			}
-			has_specific_amount_of_money_with_inflation_included = yes
-			has_tech = tech_naval_corvette_2
+			else = {
+				set_temp_variable = {
+					amount_of_money_to_check = 2.5
+				}
+				has_specific_amount_of_money_with_inflation_included = yes
+				has_tech = tech_naval_corvette_2
+			}
 		}
 
 		visible = {
 			has_completed_focus = GRE_greek_corvettes
-			has_dlc = "Man the Guns"
 		}
 
 		fire_only_once = yes
@@ -4588,6 +4822,9 @@ GRE_decision_category_navy = {
 					}
 				}
 			}
+			else = {
+				navy_experience = 5
+			}
 		}
 
 		remove_effect = {
@@ -4613,16 +4850,27 @@ GRE_decision_category_navy = {
 		#allowed = { tag = GRE }
 
 		available = {
-			set_temp_variable = {
-				amount_of_money_to_check = 5.5
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				set_temp_variable = {
+					amount_of_money_to_check = 5.5
+				}
+				has_specific_amount_of_money_with_inflation_included = yes
+				has_tech = tech_naval_mtg_ironclad
 			}
-			has_specific_amount_of_money_with_inflation_included = yes
-			has_tech = tech_naval_ironclad
+			else = {
+				set_temp_variable = {
+					amount_of_money_to_check = 2.5
+				}
+				has_specific_amount_of_money_with_inflation_included = yes
+				has_tech = tech_naval_ironclad
+			}
 		}
 
 		visible = { 
 			has_completed_focus = GRE_amalia_frigate
-			has_dlc = "Man the Guns"
 		}
 
 		fire_only_once = yes
@@ -4662,6 +4910,9 @@ GRE_decision_category_navy = {
 					}
 				}
 			}
+			else = {
+				navy_experience = 5
+			}
 		}
 
 		remove_effect = {
@@ -4687,16 +4938,27 @@ GRE_decision_category_navy = {
 		#allowed = { tag = GRE }
 
 		available = {
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
 			set_temp_variable = {
 				amount_of_money_to_check = 1.5
 			}
-			has_specific_amount_of_money_with_inflation_included = yes
-			has_tech = tech_naval_1860_gunboat
+				has_specific_amount_of_money_with_inflation_included = yes
+				has_tech = tech_naval_mtg_1860_gunboat
+			}
+			else = {
+				set_temp_variable = {
+					amount_of_money_to_check = 1.5
+				}
+				has_specific_amount_of_money_with_inflation_included = yes
+				has_tech = tech_naval_1860_gunboat
+			}
 		}
 
 		visible = { 
 			has_completed_focus = GRE_greek_gunboats
-			has_dlc = "Man the Guns"
 		}
 
 		#fire_only_once = yes
@@ -4732,6 +4994,9 @@ GRE_decision_category_navy = {
 					}
 				}
 			}
+			else = {
+				navy_experience = 5
+			}
 		}
 
 		remove_effect = {
@@ -4754,7 +5019,7 @@ GRE_decision_category_navy = {
 		icon = generic_naval
 		
 		#allowed = { tag = GRE }
-		
+
 		available = {
 			if = {
 				limit = {
@@ -4810,11 +5075,23 @@ GRE_decision_category_navy = {
 		#allowed = { tag = GRE }
 
 		available = {
-			set_temp_variable = {
-				amount_of_money_to_check = 2.0
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				set_temp_variable = {
+					amount_of_money_to_check = 2.0
+				}
+				has_specific_amount_of_money_with_inflation_included = yes
+				has_tech = tech_naval_mtg_ironclad
 			}
-			has_specific_amount_of_money_with_inflation_included = yes
-			has_tech = tech_naval_mtg_ironclad
+			else = {
+				set_temp_variable = {
+					amount_of_money_to_check = 2.0
+				}
+				has_specific_amount_of_money_with_inflation_included = yes
+				has_tech = tech_naval_prototype_ironclad
+			}
 		}
 
 		visible = { 

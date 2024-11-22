@@ -1400,6 +1400,7 @@ technologies = {
 		path = {
 			leads_to_tech = motorised_infantry
 			research_cost_coeff = 1
+			ignore_for_layout = yes
 		}
 		
 		ai_will_do = {  modifier = { factor = 0.5 is_major = yes has_war = no } modifier = { factor = 0.25 is_major = no has_war = no } modifier = { factor = 1.5 has_war = yes } modifier = { factor = 0 afr_is_tribal = yes  date < 1875.1.1 }
@@ -3637,10 +3638,10 @@ technologies = {
 			mechanized_equipment_3
 		}
 
-		mechanized = {
-			soft_attack = 0.15
-			hard_attack = 0.15
-		}
+		#mechanized = {
+		#	soft_attack = 0.15
+		#	hard_attack = 0.15
+		#}
 		
 		path = {
 			leads_to_tech = mechanised_infantry4

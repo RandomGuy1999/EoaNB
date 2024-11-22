@@ -58,7 +58,6 @@
 		research_spending_level_1
 
 				 #NATIONAL SPIRITS
-					egy_vic_debt
 					CHL_idea_divided_party
 	}
 
@@ -130,7 +129,7 @@ set_popularities = {
 
 	# POLITICAL LEADERS
 
-	recruit_character = CHI_Manuel_Montt
+	recruit_character = CHL_Manuel_Montt
 	#create_country_leader = {
 	#	name = "Manuel Montt"
 	#	desc = "POLITICS_TEMP_DESC"

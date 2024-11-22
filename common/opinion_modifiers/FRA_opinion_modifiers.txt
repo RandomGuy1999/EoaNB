@@ -105,8 +105,8 @@ opinion_modifiers = {
 		value = -20
 	}
 
-	fra_ottoman_railway_cooperation = {
+	fra_ottoman_infantry_arms_deal = {
 		value = 20
-		decay = 0.1
+		years = 1
 	}
 }

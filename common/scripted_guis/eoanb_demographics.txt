@@ -6,7 +6,10 @@ scripted_gui = {
 		context_type = player_context
 
 		visible = {
-			is_ai = no
+			OR = {
+				is_ai = yes
+				check_variable = { show_demographics_window > 0 }
+			}
 		}
 
 		properties = {
@@ -74,7 +77,10 @@ scripted_gui = {
 		context_type = player_context
 
 		visible = {
-			is_ai = no
+			OR = {
+				is_ai = yes
+				check_variable = { show_demographics_window > 0 }
+			}
 		}
 
  		properties = {
@@ -128,7 +134,7 @@ scripted_gui = {
 
 	culture_list_national = {
 		window_name = "culture_list_national"
-		#parent_window_token = politics_tab
+		#parent_window_token = culture_stuff_bar
 
 		context_type = player_context
 
@@ -202,7 +208,7 @@ scripted_gui = {
 
 	religion_list_national = {
 		window_name = "religion_list_national"
-		#parent_window_token = politics_tab
+		#parent_window_token = culture_stuff_bar
 
 		context_type = player_context
 
@@ -444,83 +450,6 @@ scripted_gui = {
 		}
 	}
 
-#	culture_state_dci = { Frankly Don't know what this really did
-#	   window_name = "dci_state_majority"
-#	   parent_window_token = selected_state_view
-#
-#	   context_type = selected_state_context
-#
-#		visible = {
-#			check_variable = {
-#				detrimental_colonial_impact_value > 0
-#			}
-#		}
-#
-# 		properties = {
-#			state_culture_maj = {
-#				image = "[?state_culture_array^i.GetSubcultureLogo]"
-#			}
-#			state_religion_maj = {
-#				image = "[?state_religion_array^i.GetNationalReligion1Icon]"
-#			}
-#		}
-#
-#		effects = {
-#			state_culture_maj_click = {
-#				clear_array = state_culture_array_pop
-#				for_each_loop = {
-#					array = state_culture_array_num
-#
-#					set_temp_variable = {
-#						state_pop_temp = state_population_k
-#					}
-#					multiply_temp_variable = { state_pop_temp = v }
-#					add_to_array = {
-#						array = state_culture_array_pop
-#						#index = state_culture_array
-#						value = state_pop_temp
-#					}
-#				}
-#
-#				ROOT = {
-#					set_temp_variable = { show = 1 }
-#					subtract_from_temp_variable = { show = show_state_culture_list }
-#					set_variable = { show_state_religion_list = 0 }
-#					set_variable = { show_state_culture_list = show }
-#				}
-#			}
-#			state_religion_maj_click = {
-#				clear_array = state_religion_array_pop
-#				for_each_loop = {
-#				 	array = state_religion_array_num
-#
-#					set_temp_variable = {
-#						state_pop_temp = state_population_k
-#					}
-#					multiply_temp_variable = { state_pop_temp = v }
-#					add_to_array = {
-#						array = state_religion_array_pop
-#						#index = state_religion_array
-#						value = state_pop_temp
-#					}
-#				}
-#
-#				ROOT = {
-#					set_temp_variable = { show = 1 }
-#					subtract_from_temp_variable = { show = show_state_religion_list }
-#					set_variable = { show_state_culture_list = 0 }
-#					set_variable = { show_state_religion_list = show }
-#				}
-#			}
-#		}
-#		triggers = {
-#		}
-#
-#		ai_enabled = {
-#			always = no
-#		}
-#	}
-
 	# Culture window
 	culture_list_state = {
 		window_name = "culture_list_state"
@@ -672,6 +601,34 @@ scripted_gui = {
 
 		ai_enabled = {
 			always = no
+		}
+	}
+
+	show_demographics_window = {
+		context_type = player_context
+
+		window_name = "show_demographics_window"
+		parent_window_token = politics_tab
+
+		visible = {
+			is_ai = no
+		}
+
+		effects = {
+			show_demographics_button_click = {
+				if = {
+					limit = {
+						has_variable = show_demographics_window
+					}
+					clear_variable = show_national_religion_list
+					clear_variable = show_national_culture_list
+					clear_variable = show_demographics_window
+				}
+				else = {
+					clear_variable = show_economy_window
+					set_variable = { show_demographics_window = 1 }
+				}
+			}
 		}
 	}
 }
